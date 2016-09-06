@@ -1,5 +1,5 @@
 <?php
-/**
+/** Template Name: Services
  * The template for displaying all pages.
  *
  * @package Sacre Davey Theme

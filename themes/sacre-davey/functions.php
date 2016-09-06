@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Sacre Davey Theme
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :

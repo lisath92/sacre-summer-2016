@@ -1,5 +1,5 @@
 <?php
-/**
+/** Template Name: About
  * The template for displaying all pages.
  *
  * @package Sacre Davey Theme

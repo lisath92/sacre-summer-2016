@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package RED_Starter_Theme
+ * @package Sacre Davey Theme
  */
 
 get_header(); ?>
