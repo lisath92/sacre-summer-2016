@@ -334,6 +334,9 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*-----------------------------------------------------
+  Header
+-------------------------------------------------------*/
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
@@ -341,14 +344,28 @@ textarea {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center; }
+  .main-navigation .fa-bars {
+    font-size: 24px; }
 
 .site-header h1 {
-  background: url("../../assets/images/mobile-logo.png") center/50px 50px no-repeat;
-  height: 50px;
-  width: 50px;
+  background: url("../../assets/images/mobile-logo.png") center/60px 60px no-repeat;
+  height: 60px;
+  width: 60px;
   overflow: hidden;
   text-indent: 80%;
-  margin: 0; }
+  margin: 0;
+  font-size: 1px; }
+  @media (min-width: 600px) {
+    .site-header h1 {
+      background: url("../../assets/images/large-logo.png") center/280px 80px no-repeat;
+      height: 80px;
+      width: 300px; } }
+
+.menu-main-navigation-container {
+  display: none; }
+  @media (min-width: 600px) {
+    .menu-main-navigation-container {
+      display: block; } }
 
 .logged-in .site-header {
   margin-top: 32px; }

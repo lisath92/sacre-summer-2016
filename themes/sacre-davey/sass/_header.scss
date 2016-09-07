@@ -1,20 +1,41 @@
-//Main navigation
+/*-----------------------------------------------------
+  Header
+-------------------------------------------------------*/
 .main-navigation {
   @include display-flex(space-between, center);
+  .fa-bars {
+  font-size: $font__main;
+}
 
 }
 
 .site-header h1 {
   background:
   url("../../assets/images/mobile-logo.png")
-  center/50px 50px
+  center/60px 60px
   no-repeat;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   overflow: hidden;
   text-indent: 80%;
   margin:0;
+  font-size: 1px;
 
+  @include desktop {
+    background: url("../../assets/images/large-logo.png")
+    center/280px 80px
+    no-repeat;
+    height: 80px;
+    width: 300px;
+  }
+}
+
+
+.menu-main-navigation-container {
+  display: none;
+  @include desktop {
+    display: block;
+  }
 }
 
 //Logged in site-header
