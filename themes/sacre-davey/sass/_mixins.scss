@@ -1,12 +1,28 @@
-// Rem output with px fallback
-@mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
-}
-
 // Center block
 @mixin center-block {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+//Flex display
+@mixin display-flex($justify, $align){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//Media Queries
+$mobile-width: 600px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media(min-width: #{$mobile-width}){
+    @content;
+  }
 }

@@ -1,6 +1,6 @@
 <?php
 /** 
- * 
+ * Landing Page
  *
  * @package Sacre Davey Theme
  */
