@@ -45,60 +45,61 @@ get_header(); ?>
 					Canada</p>
 				</div>
 				<div class="office-contact">
-					<p>Phone: (604) 986-0663</p>
-					<p>Fax: (604) 986-0525</p>
-					<p>Email: admin@sacre-davey.com</p>
+					<p>Phone: (604) 986-0663<br/>
+					Fax: (604) 986-0525<br/>
+					Email: admin@sacre-davey.com</p>
 				</div>
 				<h3>Sacre-Davey Calgary Office</h3>
 				<div class="office-address">
-					<p>1300 8th Street SW Suite #403</p>
-					<p>Calgary, Alberta, T2R 1B2</p>
-					<p>Canada</p>
+					<p>1300 8th Street SW Suite #403
+					Calgary, Alberta, T2R 1B2
+					Canada</p>
 				</div>
 				<div class="office-contact">
-					<p>Phone: 403-455-2583</p>
-					<p>Email: admin-ab@sacre-davey.com</p>
+					<p>Phone: 403-455-2583<br/>
+					Email: admin-ab@sacre-davey.com</p>
 				</div>
 			</div>
 			<div class="office-block">
 				<h2>United States Office</h2>
 				<h3>SD3</h3>
 				<div class="office-address">
-					<p>2200 Sixth Avenue</p>
-					<p>Suite #520</p>
-					<p>Seattle, WA 98121</p>
-					<p>USA</p>
+					<p>2200 Sixth Avenue
+					Suite #520
+					Seattle, WA 98121
+					USA</p>
 				</div>
 				<div class="office-contact">
-					<p>Phone: 1-206-462-3600</p>
-					<p>Fax: 1-206-462-3599</p>
+					<p>Phone: 1-206-462-3600<br/>
+					Fax: 1-206-462-3599<br/>
+					Email: solutions@e3energypartners.com</p>
 				</div>
 			</div>					
 			<div class="office-block">
 				<h2>Associated Offices</h2>
 				<h3>Sacre-Davey Group International</h3>
 				<div class="office-address">
-					<p>PO BOX 111751</p>
-					<p>Abu Dhabi</p>
-					<p>United Arab Emirates</p>
+					<p>PO BOX 111751<br/>
+					Abu Dhabi<br/>
+					United Arab Emirates</p>
 				</div>
 				<div class="office-contact">
-					<p>Phone: 971-02-650-9440</p>
-					<p>Fax: 971-02-650-9441</p>
-					<p>Email: admin-me@sacre-davey.com</p>
+					<p>Phone: 971-02-650-9440<br/>
+					Fax: 971-02-650-9441<br/>
+					Email: admin-me@sacre-davey.com</p>
 				</div>
 			</div>	
 			<div class="office-block">
 				<h2>Canadian Regional Offices</h2>
 				<div class="office-address">
-					<p>Toronto, Ontario</p>
-					<p>Vernon, British Columbia</p>
-					<p>Regina, Saskatchewan</p>
+					<p>Toronto, Ontario
+					Vernon, British Columbia<br/>
+					Regina, Saskatchewan</p>
 				</div>
 				<div class="office-contact">
-					<p>Please contact our Head Office for regional office information</p>
-					<p>Phone: 604-986-0663</p>
-					<p>Email: admin@sacre-davey.com</p>
+					<p>Please contact our Head Office for regional office information<br/>
+					Phone: 604-986-0663<br/>
+					Email: admin@sacre-davey.com</p>
 				</div>
 
 			</div>

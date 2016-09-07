@@ -14,17 +14,19 @@
 			
 		}
 		.wpcf7 input {
-			width: 275px;
+			width: 250px;
 			border:3px solid $color__dark-blue;
 		}
 		.wpcf7 p {
 			color: $color__dark-blue;
 		}
 		.wpcf7-submit {
+			
+			text-transform: uppercase;
 			color: white;
-			padding: .45rem 8.8rem;
 			background: $color__dark-blue;
 			box-shadow: none;
+			
 		}
 	}
 }
@@ -34,7 +36,24 @@
 	@include display-flex(center, center);
 	flex-flow: row wrap; 
 	.office-block {
-		flex:1 0 33%;
+		flex:1 0 30%;
+		min-height: 500px;
+		h2 {
+			color: $color__dark-blue;
+		}
+		h3 {
+			font-weight: bold;
+		}
 	}
+	.office-address {
+		width: 200px;
+			p{
+			line-height: 1.25;
+		}
+	}
+	.office-contact {
+		width: 300px;
+	}
+
 }
 

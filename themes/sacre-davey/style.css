@@ -350,13 +350,13 @@ textarea {
       -ms-flex: 1 0 45%;
           flex: 1 0 45%; }
     .page-template-contact-page .entry-content .wpcf7 input {
-      width: 275px;
+      width: 250px;
       border: 3px solid #272D66; }
     .page-template-contact-page .entry-content .wpcf7 p {
       color: #272D66; }
     .page-template-contact-page .entry-content .wpcf7-submit {
+      text-transform: uppercase;
       color: white;
-      padding: .45rem 8.8rem;
       background: #272D66;
       box-shadow: none; }
 
@@ -370,8 +370,19 @@ textarea {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
   .offices-wrapper .office-block {
-    -ms-flex: 1 0 33%;
-        flex: 1 0 33%; }
+    -ms-flex: 1 0 30%;
+        flex: 1 0 30%;
+    min-height: 500px; }
+    .offices-wrapper .office-block h2 {
+      color: #272D66; }
+    .offices-wrapper .office-block h3 {
+      font-weight: bold; }
+  .offices-wrapper .office-address {
+    width: 200px; }
+    .offices-wrapper .office-address p {
+      line-height: 1.25; }
+  .offices-wrapper .office-contact {
+    width: 300px; }
 
 /*-----------------------------------------------------
   Header
