@@ -40,7 +40,7 @@
   @include desktop {
     background-color: white;
     display: block;
-    width: auto;
+    width: 100%;
   }
 
   ul {
@@ -49,14 +49,15 @@
     flex-flow: column wrap;
     @include desktop {
       flex-flow: row nowrap;
+      justify-content: space-around;
     }
   }
 
   li {
     padding-bottom: 20px;
     text-align: center;
+
     @include desktop {
-      padding-right: 15%;
       padding-bottom: 0;
     }
   }
@@ -66,6 +67,7 @@
     text-decoration: none;
 
     @include desktop {
+      margin-right: 15%;
       color: $color__dark-blue;
     }
   }
