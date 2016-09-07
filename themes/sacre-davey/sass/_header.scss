@@ -3,16 +3,50 @@
 -------------------------------------------------------*/
 .main-navigation {
   @include display-flex(space-between, center);
+  flex-wrap: wrap;
+  max-width: 600px;
+  @include desktop {
+    flex-wrap: nowrap;
+    min-width: 100%;
+  }
   .fa-bars {
-  font-size: $font__main;
+    font-size: $font__h3;
+    cursor: pointer;
+    @include desktop {
+      display: none;
+    }
+  }
+
 }
 
+.menu-main-navigation-container {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background-color: $color__dark-blue;
+  text-transform: uppercase;
+  @include desktop {
+    background-color: white;
+    display: block;
+    width: auto;
+  }
+
+  a {  
+    color: white;
+    text-decoration: none;
+
+    @include desktop {
+      color: $color__dark-blue;
+    }
+  }
+  
 }
 
 .site-header h1 {
   background:
   url("../../assets/images/mobile-logo.png")
-  center/60px 60px
+  center/50px 50px
   no-repeat;
   height: 60px;
   width: 60px;
@@ -31,12 +65,7 @@
 }
 
 
-.menu-main-navigation-container {
-  display: none;
-  @include desktop {
-    display: block;
-  }
-}
+
 
 //Logged in site-header
 .logged-in .site-header{

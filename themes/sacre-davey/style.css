@@ -400,12 +400,43 @@ textarea {
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 600px; }
+  @media (min-width: 600px) {
+    .main-navigation {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      min-width: 100%; } }
   .main-navigation .fa-bars {
-    font-size: 24px; }
+    font-size: 40px;
+    cursor: pointer; }
+    @media (min-width: 600px) {
+      .main-navigation .fa-bars {
+        display: none; } }
+
+.menu-main-navigation-container {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background-color: #272D66;
+  text-transform: uppercase; }
+  @media (min-width: 600px) {
+    .menu-main-navigation-container {
+      background-color: white;
+      display: block;
+      width: auto; } }
+  .menu-main-navigation-container a {
+    color: white;
+    text-decoration: none; }
+    @media (min-width: 600px) {
+      .menu-main-navigation-container a {
+        color: #272D66; } }
 
 .site-header h1 {
-  background: url("../../assets/images/mobile-logo.png") center/60px 60px no-repeat;
+  background: url("../../assets/images/mobile-logo.png") center/50px 50px no-repeat;
   height: 60px;
   width: 60px;
   overflow: hidden;
@@ -417,12 +448,6 @@ textarea {
       background: url("../../assets/images/large-logo.png") center/280px 80px no-repeat;
       height: 80px;
       width: 300px; } }
-
-.menu-main-navigation-container {
-  display: none; }
-  @media (min-width: 600px) {
-    .menu-main-navigation-container {
-      display: block; } }
 
 .logged-in .site-header {
   margin-top: 32px; }
