@@ -6,6 +6,7 @@
  */
 
 // Add your custom taxonomies here...
+
 // Register Custom Taxonomy
 function sector_type() {
 
@@ -40,7 +41,7 @@ function sector_type() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'sector_type', array( 'sectors' ), $args );
+	register_taxonomy( 'sector_type', array( 'sector' ), $args );
 
 }
 add_action( 'init', 'sector_type', 0 );
@@ -51,7 +52,7 @@ function project_type() {
 	$labels = array(
 		'name'                       => 'Project Types',
 		'singular_name'              => 'Project Type',
-		'menu_name'                  => 'Project Types',
+		'menu_name'                  => 'Project Type',
 		'all_items'                  => 'All Project Types',
 		'parent_item'                => 'Parent Project Type',
 		'parent_item_colon'          => 'Parent Project Type:',
