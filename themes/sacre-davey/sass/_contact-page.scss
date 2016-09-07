@@ -1,11 +1,20 @@
 .page-template-contact-page {
 	width: 80vw;
 	margin: 0 auto;
+	.entry-title {
+		text-align: center;
+		color: white;
+		line-height: 180px;
+	}
 
 	.entry-header {
-		background: url('');
+		height: 200px;
+		background-image: 
+		url('../../assets/images/mobile-header.png');
+		background-size: cover;
+
 	}
-	
+
 	.entry-content {
 		@include display-flex(center, center);
 	
@@ -21,7 +30,7 @@
 			color: $color__dark-blue;
 		}
 		.wpcf7-submit {
-			
+			min-width: 260px;
 			text-transform: uppercase;
 			color: white;
 			background: $color__dark-blue;
@@ -37,7 +46,7 @@
 	flex-flow: row wrap; 
 	.office-block {
 		flex:1 0 30%;
-		min-height: 500px;
+		min-height: 400px;
 		h2 {
 			color: $color__dark-blue;
 		}

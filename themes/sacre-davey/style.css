@@ -337,8 +337,14 @@ textarea {
 .page-template-contact-page {
   width: 80vw;
   margin: 0 auto; }
+  .page-template-contact-page .entry-title {
+    text-align: center;
+    color: white;
+    line-height: 180px; }
   .page-template-contact-page .entry-header {
-    background: url(""); }
+    height: 200px;
+    background-image: url("../../assets/images/mobile-header.png");
+    background-size: cover; }
   .page-template-contact-page .entry-content {
     display: -ms-flexbox;
     display: flex;
@@ -355,6 +361,7 @@ textarea {
     .page-template-contact-page .entry-content .wpcf7 p {
       color: #272D66; }
     .page-template-contact-page .entry-content .wpcf7-submit {
+      min-width: 260px;
       text-transform: uppercase;
       color: white;
       background: #272D66;
@@ -372,7 +379,7 @@ textarea {
   .offices-wrapper .office-block {
     -ms-flex: 1 0 30%;
         flex: 1 0 30%;
-    min-height: 500px; }
+    min-height: 400px; }
     .offices-wrapper .office-block h2 {
       color: #272D66; }
     .offices-wrapper .office-block h3 {
