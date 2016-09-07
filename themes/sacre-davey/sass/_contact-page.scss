@@ -12,12 +12,11 @@
 		background-image: 
 		url('../../assets/images/mobile-header.png');
 		background-size: cover;
-
 	}
 
 	.entry-content {
 		@include display-flex(center, center);
-	
+
 		div {
 			flex:1 0 45%;
 			
@@ -35,7 +34,6 @@
 			color: white;
 			background: $color__dark-blue;
 			box-shadow: none;
-			
 		}
 	}
 }
@@ -56,7 +54,7 @@
 	}
 	.office-address {
 		width: 200px;
-			p{
+		p{
 			line-height: 1.25;
 		}
 	}
