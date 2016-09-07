@@ -1,0 +1,23 @@
+//Main navigation
+.main-navigation {
+  @include display-flex(space-between, center);
+
+}
+
+.site-header h1 {
+  background:
+  url("../../assets/images/mobile-logo.png")
+  center/50px 50px
+  no-repeat;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-indent: 80%;
+  margin:0;
+
+}
+
+//Logged in site-header
+.logged-in .site-header{
+  margin-top: 32px;
+}
