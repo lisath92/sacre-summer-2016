@@ -1,18 +1,83 @@
 /*-----------------------------------------------------
   Header
 -------------------------------------------------------*/
-.main-navigation {
-  @include display-flex(space-between, center);
-  .fa-bars {
-  font-size: $font__main;
+.site-header {
+  width: 100vw;
+  margin: 0;
+  @include desktop {
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
 
+.main-navigation {
+  @include display-flex(space-between, center);
+  flex-wrap: wrap;
+  max-width: 600px;
+  @include desktop {
+    flex-wrap: nowrap;
+    min-width: 100%;
+  }
+  .fa-bars {
+    font-size: $font__h4;
+    cursor: pointer;
+    @include desktop {
+      display: none;
+    }
+  }
+
+}
+
+.menu-main-navigation-container {
+  font-size: $font__main;
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background-color: $color__dark-blue;
+  text-transform: uppercase;
+
+  @include desktop {
+    background-color: white;
+    display: block;
+    width: 100%;
+  }
+
+  ul {
+    padding: 0;
+    @include display-flex(flex-start, center);
+    flex-flow: column wrap;
+    @include desktop {
+      flex-flow: row nowrap;
+      justify-content: space-around;
+    }
+  }
+
+  li {
+    padding-bottom: 20px;
+    text-align: center;
+
+    @include desktop {
+      padding-bottom: 0;
+    }
+  }
+  a {
+    
+    color: white;
+    text-decoration: none;
+
+    @include desktop {
+      margin-right: 15%;
+      color: $color__dark-blue;
+    }
+  }
+  
 }
 
 .site-header h1 {
   background:
   url("../../assets/images/mobile-logo.png")
-  center/60px 60px
+  center/50px 50px
   no-repeat;
   height: 60px;
   width: 60px;
@@ -23,22 +88,17 @@
 
   @include desktop {
     background: url("../../assets/images/large-logo.png")
-    center/280px 80px
+    center/100% 80%
     no-repeat;
-    height: 80px;
-    width: 300px;
+    height: 8vw;
+    max-height: 80px;
+    max-width: 300px;
+    width: 23vw;
   }
 }
 
 
-.menu-main-navigation-container {
-  display: none;
-  @include desktop {
-    display: block;
-  }
-}
-
-//Logged in site-header
-.logged-in .site-header{
-  margin-top: 32px;
-}
+// //Logged in site-header
+// .logged-in .site-header{
+//   margin-top: 32px;
+// }
