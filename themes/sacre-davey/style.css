@@ -334,15 +334,13 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-<<<<<<< fbf3fa11687e8b38cd8513946fb6bfbe9367de30
 
 /*-----------------------------------------------------
   Header
 -------------------------------------------------------*/
-=======
+
 .page-template-contact-page .entry-header {
   background: url(""); }
->>>>>>> style contact page
 
 .page-template-contact-page .entry-content {
   display: -ms-flexbox;
