@@ -4,6 +4,7 @@
 # =============== #
 .DS_Store
 .DS_Store?
+**/.DS_Store
 ._*
 .Spotlight-V100
 .Trashes
@@ -56,3 +57,4 @@ themes/sacre-davey/node_modules/*
 # ================== #
 themes/sacre-davey/build/*
 themes/sacre-davey/gulpfile.js
+themes/sacre-davey/template-parts/.DS_Store
