@@ -31,8 +31,8 @@
 					<a href="<?php echo esc_url(home_url('/')); ?>" />
 					<img src="<?php echo get_template_directory_uri().'/assets/images/mobile-logo.png'?>" >
 					</div>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<i class="fa fa-bars" aria-hidden="true"></i>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
