@@ -334,28 +334,31 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-
-/*-----------------------------------------------------
-  Header
--------------------------------------------------------*/
-
-.page-template-contact-page .entry-header {
-  background: url(""); }
-
-.page-template-contact-page .entry-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-  .page-template-contact-page .entry-content div {
-    -ms-flex: 1 0 50%;
-        flex: 1 0 50%;
-    margin-right: 20%; }
-
-.wpcf7 {
-  margin-right: 20%; }
+.page-template-contact-page {
+  width: 80vw;
+  margin: 0 auto; }
+  .page-template-contact-page .entry-header {
+    background: url(""); }
+  .page-template-contact-page .entry-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-template-contact-page .entry-content div {
+      -ms-flex: 1 0 45%;
+          flex: 1 0 45%; }
+    .page-template-contact-page .entry-content .wpcf7 input {
+      width: 275px;
+      border: 3px solid #272D66; }
+    .page-template-contact-page .entry-content .wpcf7 p {
+      color: #272D66; }
+    .page-template-contact-page .entry-content .wpcf7-submit {
+      color: white;
+      padding: .45rem 8.8rem;
+      background: #272D66;
+      box-shadow: none; }
 
 .offices-wrapper {
   display: -ms-flexbox;
@@ -370,6 +373,9 @@ textarea {
     -ms-flex: 1 0 33%;
         flex: 1 0 33%; }
 
+/*-----------------------------------------------------
+  Header
+-------------------------------------------------------*/
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
