@@ -334,10 +334,15 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+<<<<<<< fbf3fa11687e8b38cd8513946fb6bfbe9367de30
 
 /*-----------------------------------------------------
   Header
 -------------------------------------------------------*/
+=======
+.page-template-contact-page .entry-header {
+  background: url(""); }
+>>>>>>> style contact page
 
 .page-template-contact-page .entry-content {
   display: -ms-flexbox;
@@ -346,9 +351,10 @@ textarea {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  .page-template-contact-page .entry-content p {
+  .page-template-contact-page .entry-content div {
     -ms-flex: 1 0 50%;
-        flex: 1 0 50%; }
+        flex: 1 0 50%;
+    margin-right: 20%; }
 
 .wpcf7 {
   margin-right: 20%; }
