@@ -334,9 +334,38 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+
 /*-----------------------------------------------------
   Header
 -------------------------------------------------------*/
+
+.page-template-contact-page .entry-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-template-contact-page .entry-content p {
+    -ms-flex: 1 0 50%;
+        flex: 1 0 50%; }
+
+.wpcf7 {
+  margin-right: 20%; }
+
+.offices-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  .offices-wrapper .office-block {
+    -ms-flex: 1 0 33%;
+        flex: 1 0 33%; }
+
 .main-navigation {
   display: -ms-flexbox;
   display: flex;

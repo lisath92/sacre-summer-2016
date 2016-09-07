@@ -1,4 +1,22 @@
-.entry-content {
-	
+.page-template-contact-page .entry-content {
+	@include display-flex(center, center);
+	p {
+		flex:1 0 50%;
+	}
 }
 
+.wpcf7 {
+	margin-right: 20%;
+}
+
+.offices-wrapper {
+	@include display-flex(center, center);
+	flex-flow: row wrap; 
+	.office-block {
+		flex:1 0 33%;
+	}
+}
+
+// .page-title {
+// 	background-color: orange;
+// }

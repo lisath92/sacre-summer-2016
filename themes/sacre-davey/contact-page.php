@@ -5,28 +5,44 @@
  * @package Sacre Davey Theme
  */
 
-?>
-<header class="entry-header">
-	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-</header><!-- .entry-header -->
+get_header(); ?>
+
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		
 		
+
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+	<p>If you have any questions or requests regarding our services, please contact one of our offices below or fill out the contact form.</p>
+
+		<p>We will get back to you as soon as possible</p>
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+</article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>
+
 		<div class="offices-wrapper">
 			<div class="office-block">
 				<h2>Canada</h2>
 				<h3>Sacre-Davey Head Office</h3>
 				<div class="office-address">
-					<p>315 Mountain Hwy</p>
-					<p>North Vancouver, BC, V7J 2K7</p>
-					<p>Canada</p>
+					<p>315 Mountain Hwy
+					North Vancouver, BC, V7J 2K7
+					Canada</p>
 				</div>
 				<div class="office-contact">
 					<p>Phone: (604) 986-0663</p>
