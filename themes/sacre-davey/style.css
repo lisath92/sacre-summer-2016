@@ -410,7 +410,7 @@ textarea {
           flex-wrap: nowrap;
       min-width: 100%; } }
   .main-navigation .fa-bars {
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer; }
     @media (min-width: 600px) {
       .main-navigation .fa-bars {
@@ -448,6 +448,3 @@ textarea {
       background: url("../../assets/images/large-logo.png") center/280px 80px no-repeat;
       height: 80px;
       width: 300px; } }
-
-.logged-in .site-header {
-  margin-top: 32px; }
