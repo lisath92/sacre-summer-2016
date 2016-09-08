@@ -536,3 +536,13 @@ textarea {
   padding: 1.25rem 0; }
   .advantage-banner p {
     padding: 0 8rem; }
+
+.updates-banner {
+  height: 120px;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-color: #279AB6; }
+  .updates-banner p {
+    padding: 0 10rem; }

@@ -39,7 +39,7 @@
 	text-align: center;
 	padding: 3rem 10rem;
 	color: white;
-	background-color: $color__lightblue
+	background-color: $color__lightblue;
 }
 .certification-block {
 	text-align: center;
@@ -62,6 +62,16 @@
 }
 
 
-
+.updates-banner {
+	height: 120px;
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: white;
+	background-color: $color__lightblue;
+	p {
+		padding: 0 10rem;
+	}
+}
 
 
