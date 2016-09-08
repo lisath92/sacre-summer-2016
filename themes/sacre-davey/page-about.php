@@ -57,6 +57,14 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
+					<div class="our-team-wrapper">
+					<h2>Our Team</h2>
+					<div class="team-member-block">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusOurTeamChrisIcon.png' ?>">
+					</div>
+					
+					</div>
+
 					<?php the_content(); ?>
 					
 					</div><!-- .entry-content -->
