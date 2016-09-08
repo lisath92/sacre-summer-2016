@@ -369,24 +369,33 @@ textarea {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    margin: 0 auto; }
-    .page-template-contact-page .entry-content div {
-      -ms-flex: 1 0 45%;
-          flex: 1 0 45%; }
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-contact-page .entry-content p:first-child,
+    .page-template-contact-page .entry-content p:nth-child(2) {
+      width: 80%; }
 
-.wpcf7 input {
-  width: 250px;
-  border: 3px solid #272D66; }
+.wpcf7 {
+  width: 29vw;
+  -ms-flex: none;
+      flex: none; }
+  .wpcf7 form {
+    width: 100%; }
+  .wpcf7 input {
+    width: 250px;
+    border: 3px solid #272D66; }
+  .wpcf7 p {
+    color: #272D66; }
+  .wpcf7 .wpcf7-submit {
+    min-width: 260px;
+    text-transform: uppercase;
+    color: white;
+    background: #272D66;
+    box-shadow: none; }
 
-.wpcf7 p {
-  color: #272D66; }
-
-.wpcf7 .wpcf7-submit {
-  min-width: 260px;
-  text-transform: uppercase;
-  color: white;
-  background: #272D66;
-  box-shadow: none; }
+iframe {
+  width: 50vw; }
 
 .offices-wrapper {
   display: -ms-flexbox;
