@@ -335,7 +335,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Front page */
 .page-template-contact-page {
-  width: 80vw;
+  width: 100vw;
   margin: 0 auto; }
   .page-template-contact-page .entry-title {
     text-align: center;
@@ -482,3 +482,12 @@ textarea {
       max-height: 80px;
       max-width: 300px;
       width: 23vw; } }
+
+.page-template-page-services {
+  width: 100vw;
+  margin: 0 auto; }
+  .page-template-page-services .entry-header {
+    height: 300px;
+    width: 100%;
+    background: url("../../assets/images/ServiceHeader.png") no-repeat;
+    background-size: cover; }
