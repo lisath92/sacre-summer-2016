@@ -484,6 +484,8 @@ textarea {
       .menu-main-navigation-container a {
         margin-right: 15%;
         color: #272D66; } }
+    .menu-main-navigation-container a:hover {
+      color: #279AB6; }
 
 .site-header h1 {
   background: url("../../assets/images/mobile-logo.png") center/50px 50px no-repeat;
