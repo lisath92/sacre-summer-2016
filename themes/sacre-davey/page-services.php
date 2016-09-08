@@ -70,6 +70,26 @@ get_header(); ?>
 						<h2>Advantage</h2>
 						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
 					</div>
+					<div class="icon-list carousel">
+					<div class="icon-block">
+						<img class="slider-icon" src="/assets/images/ServicesRapidResponseIcon.png">
+					</div>
+					<div class="icon-block">
+						<img class="slider-icon" src="/assets/images/ServicesSuperiorservicesIcon.png">
+					</div>
+					<div class="icon-block">
+						<img class="slider-icon" src="/assets/images/ServicesInnovativeIcon.png">
+					</div>
+					<div class="icon-block">
+						<img class="slider-icon" src="/assets/images/ServicesAccessIcon.png">
+					</div>
+					<div class="icon-block">
+						<img class="slider-icon" src="/assets/images/ServicesSafeIcon.png">
+					</div>
+					<div class="icon-block">
+						<img class="slider-icon" src="/assets/images/ServicesProjectIcon.png">
+					</div>
+					</div>
 					<div class="updates-banner">
 						<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
 					</div>
