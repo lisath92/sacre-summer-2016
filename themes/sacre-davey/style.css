@@ -506,7 +506,8 @@ textarea {
 footer {
   background-color: #272D66;
   color: white;
-  text-align: center; }
+  text-align: center;
+  height: 200px; }
 
 .site-info {
   padding-top: 30px;
@@ -570,15 +571,38 @@ footer {
     font-size: 1.3rem;
     font-weight: normal;
     margin-bottom: 10px; }
+    @media (min-width: 600px) {
+      .site-info h1 {
+        font-size: 1rem; } }
   .site-info button {
     background-color: transparent;
     padding: 10px 20px;
     color: white;
     box-shadow: none;
     font-size: 28px; }
+    @media (min-width: 600px) {
+      .site-info button {
+        font-size: 1rem; } }
   .site-info .fa {
     border: 1px white solid;
     border-radius: 30px;
-    padding: 10px 13px;
+    padding: 10px 14px;
     color: white;
     margin-right: 10px; }
+    @media (min-width: 600px) {
+      .site-info .fa {
+        font-size: 1rem;
+        margin-right: 5px; } }
+
+@media (min-width: 600px) {
+  .footer-logo {
+    max-width: 250px;
+    width: 37%; } }
+
+.footer-logo img {
+  width: 100%; }
+
+@media (min-width: 600px) {
+  .more-info {
+    margin-left: auto;
+    padding-right: 5%; } }

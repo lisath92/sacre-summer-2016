@@ -5,6 +5,7 @@ footer {
   background-color: $color__dark-blue;
   color: white;
   text-align: center;
+  height: 200px;
 }
 
 .site-info {
@@ -24,6 +25,9 @@ footer {
     font-size: 1.3rem;
     font-weight: normal;
     margin-bottom: 10px;
+    @include desktop {
+      font-size: 1rem;
+    }
   }
 
   button {
@@ -32,14 +36,38 @@ footer {
     color: white;
     box-shadow: none;
     font-size: $font__p;
+    @include desktop {
+      font-size: 1rem;
+    }
   }
 
   .fa {
     border: 1px white solid;
     border-radius:30px;
-    padding: 10px 13px;
+    padding: 10px 14px;
     color: white;
     margin-right: 10px;
+    @include desktop {
+      font-size: 1rem;
+      margin-right: 5px;
+    }
+  }
+}
+
+.footer-logo {
+  @include desktop {
+    max-width: 250px;
+    width: 37%;
   }
 
+  img { 
+    width: 100%;
+  }
+}
+
+.more-info {
+  @include desktop {
+    margin-left: auto;
+    padding-right: 5%;
+  }
 }
