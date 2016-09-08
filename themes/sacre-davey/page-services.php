@@ -66,6 +66,11 @@ get_header(); ?>
 						<img src="/assets/images/ServicesTriangleDown.png">
 						<p>Our OQM System ensures that we are able to consistently deliver high quality, high value project assistance.</p>
 					</div>
+					<div class="advantage-banner">
+						<h2>Advantage</h2>
+						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
+					</div>
+
 					<?php the_content(); ?>
 					<?php
 					wp_link_pages( array(

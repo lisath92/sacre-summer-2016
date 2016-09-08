@@ -528,3 +528,11 @@ textarea {
     color: #272D66; }
   .certification-block p {
     font-weight: bold; }
+
+.advantage-banner {
+  text-align: center;
+  color: white;
+  background-color: #272D66;
+  padding: 1.25rem 0; }
+  .advantage-banner p {
+    padding: 0 8rem; }
