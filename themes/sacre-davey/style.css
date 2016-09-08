@@ -599,9 +599,33 @@ iframe {
     margin: 0 auto;
     width: 66%; }
 
-.page-template-page.about .entry-header {
+
+.page-template-page-about .entry-header {
+  color: white;
   height: 200px;
-  background: url("../../assets/images/AboutUsHeader.png"); }
+  text-align: center;
+  background: url("../../assets/images/AboutUsHeader.png");
+  background-size: cover;
+  padding: 1rem 3rem; }
+  .page-template-page-about .entry-header h1 {
+    text-transform: uppercase; }
+
+.page-template-page-about .values-block {
+  text-align: center; }
+
+.page-template-page-about .our-team-wrapper {
+  text-align: center; }
+
+.the-excerpt {
+  line-height: -60px; }
+
+.timeline-date,
+.timeline-express-read-more-link {
+  visibility: hidden; }
+
+.fa-circle::before {
+  color: #279AB6; }
+
 
 /*-----------------------------------------
   Footer
@@ -671,21 +695,3 @@ footer {
   .more-info {
     margin-left: auto;
     padding-right: 5%; } }
-
-.page-template-page-about .entry-header {
-  color: white;
-  height: 200px;
-  text-align: center;
-  background: url("../../assets/images/AboutUsHeader.png");
-  background-size: cover;
-  padding: 1rem 3rem; }
-  .page-template-page-about .entry-header h1 {
-    text-transform: uppercase; }
-
-
-.page-template-page-about .values-block {
-  text-align: center; }
-
-.page-template-page-about .our-team-wrapper {
-  text-align: center; }
-

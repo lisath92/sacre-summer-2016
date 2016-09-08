@@ -18,4 +18,18 @@
 	.our-team-wrapper {
 		text-align: center;
 	}
+
+}
+.the-excerpt {
+	line-height: -60px;
+}
+
+.timeline-date,
+.timeline-express-read-more-link {
+	visibility: hidden;
+
+}
+
+.fa-circle::before {
+	color: $color__lightblue;
 }
