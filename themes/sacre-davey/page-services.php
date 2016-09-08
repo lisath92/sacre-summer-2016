@@ -22,7 +22,7 @@ get_header(); ?>
 					<div class="engineering-needs-wrapper">
 						
 						<div class="engineering-needs-block">
-							<h3>Multi-disciplinary engineering</h3>
+							<h4>Multi-disciplinary engineering</h4>
 							<ul class="engineering-needs-list">
 								<li>Process engineering</li>
 								<li>Mechanical engineering</li>
@@ -33,7 +33,7 @@ get_header(); ?>
 							</ul>
 						</div>
 						<div class="engineering-needs-block">
-							<h3>Project Delivery</h3>
+							<h4>Project Delivery</h4>
 							<ul class="engineering-needs-list">
 								<li>Project estimating</li>
 								<li>Procurement</li>
@@ -46,7 +46,7 @@ get_header(); ?>
 							</ul>
 						</div>
 						<div class="engineering-needs-block">
-							<h3>Services</h3>
+							<h4>Services</h4>
 							<ul class="engineering-needs-list">
 								<li>Design and Engineering</li>
 								<li>Feasibility Studies</li>

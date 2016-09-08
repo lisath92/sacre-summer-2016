@@ -527,6 +527,7 @@ iframe {
     text-align: center;
     font-weight: bold; }
   .page-template-page-services h3 {
+    font-size: 40px;
     text-align: center;
     color: white;
     background-color: #272D66; }
@@ -542,9 +543,11 @@ iframe {
       flex-flow: column nowrap;
   margin: 0 auto; }
   .engineering-needs-wrapper .engineering-needs-block {
-    text-align: center; }
-    .engineering-needs-wrapper .engineering-needs-block h3 {
-      background-color: white;
+    text-align: center;
+    width: 60%; }
+    .engineering-needs-wrapper .engineering-needs-block h4 {
+      font-weight: bolder;
+      font-size: 1.3rem;
       color: #279AB6; }
   .engineering-needs-wrapper .engineering-needs-list {
     padding-left: 0;

@@ -16,11 +16,11 @@
 	}
 	
 	h3 {
-	text-align: center;
-	color: white;
-	background-color: $color__dark-blue;
-}
-
+		font-size: $font__h3;
+		text-align: center;
+		color: white;
+		background-color: $color__dark-blue;
+	}
 }
 
 
@@ -30,8 +30,10 @@
 	margin: 0 auto;
 	.engineering-needs-block {
 		text-align: center;
-		h3 {
-			background-color: white;
+		width: 60%;
+		h4 {
+			font-weight: 800;
+			font-size: 1.3rem;
 			color: $color__lightblue;
 		}
 
