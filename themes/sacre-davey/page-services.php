@@ -18,7 +18,47 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
-					<div class="needs-banner">One-stop-shop for all your engineering needs</div>
+					<h2 class="needs-banner">One-stop-shop for all your engineering needs</h2>
+					<div class="engineering-needs-wrapper">
+						<div class="engineering-needs-block">
+							<h3>Multi-disciplinary engineering</h3>
+							<ul class="engineering-needs-list">
+								<li>Process engineering</li>
+								<li>Mechanical engineering</li>
+								<li>Structural engineering</li>
+								<li>Civil engineering</li>
+								<li>Electrical engineering</li>
+								<li>Instrumentation</li>
+							</ul>
+						</div>
+						<div class="engineering-needs-block">
+							<h3>Project Delivery</h3>
+							<ul class="engineering-needs-list">
+								<li>Project estimating</li>
+								<li>Procurement</li>
+								<li>Scheduling</li>
+								<li>Cost management</li>
+								<li>Expediting</li>
+								<li>Site supervision services</li>
+								<li>Project integration</li>
+								<li>Project and construction</li>
+							</ul>
+						</div>
+						<div class="engineering-needs-block">
+							<h3>Services</h3>
+							<ul class="engineering-needs-list">
+								<li>Process engineering</li>
+								<li>Mechanical engineering</li>
+								<li>Structural engineering</li>
+								<li>Civil engineering</li>
+								<li>Electrical engineering</li>
+								<li>Instrumentation</li>
+							</ul>
+						</div>
+						<div class="engineering-needs-block"></div>
+						<div class="engineering-needs-block"></div>
+
+					</div>
 					<?php the_content(); ?>
 					<?php
 					wp_link_pages( array(
