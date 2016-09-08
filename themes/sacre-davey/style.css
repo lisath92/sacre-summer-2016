@@ -626,6 +626,13 @@ iframe {
 .fa-circle::before {
   color: #279AB6; }
 
+.learn-more-banner {
+  color: white;
+  height: 200px;
+  width: 100vw;
+  background: url("../../assets/images/AboutUsLearnmorehead.png") no-repeat;
+  background-size: cover; }
+
 
 /*-----------------------------------------
   Footer
