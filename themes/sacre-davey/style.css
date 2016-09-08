@@ -671,3 +671,14 @@ footer {
   .more-info {
     margin-left: auto;
     padding-right: 5%; } }
+
+.page-template-page-about .entry-header {
+  color: white;
+  height: 200px;
+  text-align: center;
+  background: url("../../assets/images/AboutUsHeader.png");
+  background-size: cover;
+  padding: 1rem 3rem; }
+  .page-template-page-about .entry-header h1 {
+    text-transform: uppercase; }
+

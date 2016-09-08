@@ -1,8 +1,15 @@
-.page-template-page.about {
+.page-template-page-about {
 	
 	.entry-header {
+		color: white;
 		height: 200px;
+		text-align:center;
 		background: url('../../assets/images/AboutUsHeader.png');
+		background-size: cover;
+		padding: 1rem 3rem;
+		h1 {
+			text-transform: uppercase;
+		}
 	}
 
 
