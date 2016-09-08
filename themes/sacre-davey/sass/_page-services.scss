@@ -20,7 +20,6 @@
 		font-size: $font__h3;
 		text-align: center;
 		color: white;
-		background-color: $color__dark-blue;
 	}
 }
 
@@ -46,17 +45,11 @@
 	}
 }
 
-.trust-banner {
-	height: 100px;
-	text-align: center;
-	padding: 3rem 10rem;
-	color: white;
-	background-color: $color__lightblue;
-}
+
 .certification-block {
 	text-align: center;
 	margin: 0 auto;
-	
+
 	p {
 		font-weight: bold;
 		line-height: 1.7;
@@ -102,3 +95,14 @@
 	text-align: center;
 }
 
+.banner {
+	background-color: $color__dark-blue;
+	min-height:240px;
+		h3 {
+		padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 66%;
+	}
+	
+}

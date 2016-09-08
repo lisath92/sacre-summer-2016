@@ -530,8 +530,7 @@ iframe {
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
-    color: white;
-    background-color: #272D66; }
+    color: white; }
 
 .engineering-needs-wrapper {
   display: -ms-flexbox;
@@ -554,13 +553,6 @@ iframe {
   .engineering-needs-wrapper .engineering-needs-list {
     padding-left: 0;
     font-weight: bold; }
-
-.trust-banner {
-  height: 100px;
-  text-align: center;
-  padding: 3rem 10rem;
-  color: white;
-  background-color: #279AB6; }
 
 .certification-block {
   text-align: center;
@@ -597,6 +589,15 @@ iframe {
 .carousel-cell {
   width: 100%;
   text-align: center; }
+
+.banner {
+  background-color: #272D66;
+  min-height: 240px; }
+  .banner h3 {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 66%; }
 
 .page-template-page.about .entry-header {
   height: 200px;
