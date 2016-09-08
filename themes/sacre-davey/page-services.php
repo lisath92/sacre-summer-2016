@@ -63,31 +63,32 @@ get_header(); ?>
 					<div class="certification-block">
 						<h3>Sacre-Davey Engineering Inc. was one of the first companies to be certified under the APEG of BC in Organizational Quality Management Program.</h3>
 						<p>Our in-house quality controls system is compliant with the Organizational Quality Management Program as outlined by the Association of Professional Engineers &amp; Geoscientists of British Columbia.</p>
-						<img src="assets/images/ServicesTriangleDown.png">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesTriangleDown.png' ?>">
+						
 						<p>Our OQM System ensures that we are able to consistently deliver high quality, high value project assistance.</p>
 					</div>
 					<div class="advantage-banner">
 						<h2>Advantage</h2>
 						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
 					</div>
-					<div class="icon-list carousel">
+					<div class="icon-list carousel" data-flickity>
 					<div class="icon-block">
-						<img class="slider-icon" src="assets/images/ServicesRapidResponseIcon.png">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
 					</div>
 					<div class="icon-block">
-						<img class="slider-icon" src="assets/images/ServicesSuperiorservicesIcon.png">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSuperiorservicesIcon.png' ?>">
 					</div>
 					<div class="icon-block">
-						<img class="slider-icon" src="assets/images/ServicesInnovativeIcon.png">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesInnovativeIcon.png' ?>">
 					</div>
 					<div class="icon-block">
-						<img class="slider-icon" src="assets/images/ServicesAccessIcon.png">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesAccessIcon.png' ?>">
 					</div>
 					<div class="icon-block">
-						<img class="slider-icon" src="assets/images/ServicesSafeIcon.png">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSafeIcon.png' ?>">
 					</div>
 					<div class="icon-block">
-						<img class="slider-icon" src="assets/images/ServicesProjectIcon.png">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
 					</div>
 					</div>
 					<div class="updates-banner">
