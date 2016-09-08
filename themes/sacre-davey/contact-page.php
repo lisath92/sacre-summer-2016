@@ -20,17 +20,10 @@ get_header(); ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 	
-	<div class="entry-content container">
+	<div class="entry-content">
 		<?php the_content(); ?>
-	<!-- 	<p>If you have any questions or requests regarding our services, please contact one of our offices below or fill out the contact form.</p>
 
-        <p>We will get back to you as soon as possible</p> -->
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
+		
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 

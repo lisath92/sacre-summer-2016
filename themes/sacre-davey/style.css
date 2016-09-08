@@ -373,17 +373,20 @@ textarea {
     .page-template-contact-page .entry-content div {
       -ms-flex: 1 0 45%;
           flex: 1 0 45%; }
-    .page-template-contact-page .entry-content .wpcf7 input {
-      width: 250px;
-      border: 3px solid #272D66; }
-    .page-template-contact-page .entry-content .wpcf7 p {
-      color: #272D66; }
-    .page-template-contact-page .entry-content .wpcf7-submit {
-      min-width: 260px;
-      text-transform: uppercase;
-      color: white;
-      background: #272D66;
-      box-shadow: none; }
+
+.wpcf7 input {
+  width: 250px;
+  border: 3px solid #272D66; }
+
+.wpcf7 p {
+  color: #272D66; }
+
+.wpcf7 .wpcf7-submit {
+  min-width: 260px;
+  text-transform: uppercase;
+  color: white;
+  background: #272D66;
+  box-shadow: none; }
 
 .offices-wrapper {
   display: -ms-flexbox;
@@ -395,8 +398,8 @@ textarea {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
   .offices-wrapper .office-block {
-    -ms-flex: 1 0 30%;
-        flex: 1 0 30%;
+    -ms-flex: 1 0 28%;
+        flex: 1 0 28%;
     min-height: 825px;
     padding-right: 20px; }
     .offices-wrapper .office-block h2 {
@@ -407,8 +410,6 @@ textarea {
     width: 200px; }
     .offices-wrapper .office-address p {
       line-height: 1.25; }
-  .offices-wrapper .office-contact {
-    width: 300px; }
 
 /*-----------------------------------------------------
   Header

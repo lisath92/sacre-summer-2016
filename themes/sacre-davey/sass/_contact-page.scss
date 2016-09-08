@@ -20,22 +20,26 @@
 
 		div {
 			flex:1 0 45%;
-			
 		}
-		.wpcf7 input {
-			width: 250px;
-			border:3px solid $color__dark-blue;
-		}
-		.wpcf7 p {
-			color: $color__dark-blue;
-		}
-		.wpcf7-submit {
-			min-width: 260px;
-			text-transform: uppercase;
-			color: white;
-			background: $color__dark-blue;
-			box-shadow: none;
-		}
+
+		
+	}
+}
+
+.wpcf7 {
+	input {
+		width: 250px;
+		border:3px solid $color__dark-blue;
+	}
+	p {
+		color: $color__dark-blue;
+	}
+	.wpcf7-submit {
+		min-width: 260px;
+		text-transform: uppercase;
+		color: white;
+		background: $color__dark-blue;
+		box-shadow: none;
 	}
 }
 
@@ -44,9 +48,9 @@
 	@include display-flex(center, center);
 	flex-flow: row wrap; 
 	.office-block {
-		flex:1 0 30%;
+		flex:1 0 28%;
 		min-height: 825px;
-    padding-right: 20px;
+		padding-right: 20px;
 		h2 {
 			color: $color__dark-blue;
 		}
@@ -60,9 +64,5 @@
 			line-height: 1.25;
 		}
 	}
-	.office-contact {
-		width: 300px;
-	}
-
 }
 
