@@ -579,6 +579,17 @@ iframe {
   .updates-banner p {
     padding: 0 10rem; }
 
+.carousel {
+  padding-top: 30px; }
+
+.carousel-cell {
+  width: 100%;
+  text-align: center; }
+
+.page-template-page.about .entry-header {
+  height: 200px;
+  background: url("../../assets/images/AboutUsHeader.png"); }
+
 /*-----------------------------------------
   Footer
 -------------------------------------------*/

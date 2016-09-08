@@ -59,9 +59,6 @@ get_header(); ?>
 								<li>Asset integrity management</li>
 							</ul>
 						</div>
-						<div class="engineering-needs-block"></div>
-						<div class="engineering-needs-block"></div>
-
 					</div>
 					<h2 class="trust-banner">Engineers and project managers<br/>you can trust.</h2>
 					<div class="certification-block">
@@ -76,22 +73,22 @@ get_header(); ?>
 						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
 					</div>
 					<div class="icon-list carousel" data-flickity>
-						<div class="icon-block">
+						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
 						</div>
-						<div class="icon-block">
+						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSuperiorservicesIcon.png' ?>">
 						</div>
-						<div class="icon-block">
+						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesInnovativeIcon.png' ?>">
 						</div>
-						<div class="icon-block">
+						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesAccessIcon.png' ?>">
 						</div>
-						<div class="icon-block">
+						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSafeIcon.png' ?>">
 						</div>
-						<div class="icon-block">
+						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
 						</div>
 					</div>
