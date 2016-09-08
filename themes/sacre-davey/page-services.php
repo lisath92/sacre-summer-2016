@@ -47,12 +47,16 @@ get_header(); ?>
 						<div class="engineering-needs-block">
 							<h3>Services</h3>
 							<ul class="engineering-needs-list">
-								<li>Process engineering</li>
-								<li>Mechanical engineering</li>
-								<li>Structural engineering</li>
-								<li>Civil engineering</li>
-								<li>Electrical engineering</li>
-								<li>Instrumentation</li>
+								<li>Design and Engineering</li>
+								<li>Feasibility Studies</li>
+								<li>Brownfield CapEx and OpEx</li>
+								<li>Turnaround engineering</li>
+								<li>Code compliance</li>
+								<li>Commissioning &amp; discomissioning</li>
+								<li>Funding strategies &amp; capital planning</li>
+								<li>Asset rationalization</li>
+								<li>Energy efficiency studies</li>
+								<li>Asset integrity management</li>
 							</ul>
 						</div>
 						<div class="engineering-needs-block"></div>
@@ -72,24 +76,24 @@ get_header(); ?>
 						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
 					</div>
 					<div class="icon-list carousel" data-flickity>
-					<div class="icon-block">
-						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
-					</div>
-					<div class="icon-block">
-						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSuperiorservicesIcon.png' ?>">
-					</div>
-					<div class="icon-block">
-						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesInnovativeIcon.png' ?>">
-					</div>
-					<div class="icon-block">
-						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesAccessIcon.png' ?>">
-					</div>
-					<div class="icon-block">
-						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSafeIcon.png' ?>">
-					</div>
-					<div class="icon-block">
-						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
-					</div>
+						<div class="icon-block">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
+						</div>
+						<div class="icon-block">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSuperiorservicesIcon.png' ?>">
+						</div>
+						<div class="icon-block">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesInnovativeIcon.png' ?>">
+						</div>
+						<div class="icon-block">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesAccessIcon.png' ?>">
+						</div>
+						<div class="icon-block">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSafeIcon.png' ?>">
+						</div>
+						<div class="icon-block">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
+						</div>
 					</div>
 					<div class="updates-banner">
 						<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
