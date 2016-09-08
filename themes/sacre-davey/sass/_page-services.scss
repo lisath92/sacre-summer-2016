@@ -16,6 +16,7 @@
 	}
 	
 	h3 {
+		text-transform: uppercase;
 		font-size: $font__h3;
 		text-align: center;
 		color: white;
@@ -29,6 +30,7 @@
 	flex-flow: column nowrap;
 	margin: 0 auto;
 	.engineering-needs-block {
+		line-height:1.7;
 		text-align: center;
 		width: 60%;
 		h4 {
@@ -54,12 +56,10 @@
 .certification-block {
 	text-align: center;
 	margin: 0 auto;
-	h3 {
-		color: $color__dark-blue;
-		text-transform: uppercase;
-	}
+	
 	p {
 		font-weight: bold;
+		line-height: 1.7;
 	}
 }
 
