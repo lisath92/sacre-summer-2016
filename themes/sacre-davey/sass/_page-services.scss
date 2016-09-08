@@ -1,6 +1,4 @@
 .page-template-page-services {
-	width: 100vw;
-	margin: 0 auto;
 	font-size: 1rem;
 
 	.entry-header {
@@ -8,23 +6,32 @@
 		width: 100%;
 		background: url('../../assets/images/ServiceHeader.png') no-repeat;
 		background-size: cover;
-
 	}
+
+	h2 {
+		text-transform: uppercase;
+		color: $color__dark-blue;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	h3 {
+	text-align: center;
+	color: white;
+	background-color: $color__dark-blue;
 }
 
-.needs-banner {
-	text-transform: uppercase;
-	color: $color__dark-blue;
-	text-align: center;
-	font-weight: bold;
 }
+
 
 .engineering-needs-wrapper {
 	@include display-flex(center, center);
 	flex-flow: column nowrap;
+	margin: 0 auto;
 	.engineering-needs-block {
 		text-align: center;
 		h3 {
+			background-color: white;
 			color: $color__lightblue;
 		}
 
@@ -44,8 +51,10 @@
 }
 .certification-block {
 	text-align: center;
+	margin: 0 auto;
 	h3 {
 		color: $color__dark-blue;
+		text-transform: uppercase;
 	}
 	p {
 		font-weight: bold;
@@ -66,7 +75,7 @@
 .updates-banner {
 	height: 120px;
 	text-align: center;
-	padding-top: 1rem;
+	// padding-top: 1rem;
 	padding-bottom: 1rem;
 	color: white;
 	background-color: $color__lightblue;
@@ -74,13 +83,20 @@
 		padding: 0 10rem;
 	}
 }
+.attributes {
+	margin: 0 auto;
 
+}
 //Flickity carousel
 .carousel {
 	padding-top: 30px;
+	.flickity-page-dots {
+		bottom: 0px;
+	}
 }
 
 .carousel-cell {
 	width: 100%;
 	text-align: center;
 }
+

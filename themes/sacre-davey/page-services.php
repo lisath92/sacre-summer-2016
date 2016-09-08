@@ -18,8 +18,9 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
-					<h2 class="needs-banner">One-stop-shop for all your engineering needs</h2>
+					<h2>One-stop-shop for all your engineering needs</h2>
 					<div class="engineering-needs-wrapper">
+						
 						<div class="engineering-needs-block">
 							<h3>Multi-disciplinary engineering</h3>
 							<ul class="engineering-needs-list">
@@ -60,19 +61,23 @@ get_header(); ?>
 							</ul>
 						</div>
 					</div>
-					<h2 class="trust-banner">Engineers and project managers<br/>you can trust.</h2>
+					<h3>Engineers and project managers<br/>you can trust.</h3>
 					<div class="certification-block">
-						<h3>Sacre-Davey Engineering Inc. was one of the first companies to be certified under the APEG of BC in Organizational Quality Management Program.</h3>
+						<h2>Sacre-Davey Engineering Inc. was one of the first companies to be certified under the APEG of BC in Organizational Quality Management Program.</h2>
 						<p>Our in-house quality controls system is compliant with the Organizational Quality Management Program as outlined by the Association of Professional Engineers &amp; Geoscientists of British Columbia.</p>
 						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesTriangleDown.png' ?>">
 						
 						<p>Our OQM System ensures that we are able to consistently deliver high quality, high value project assistance.</p>
 					</div>
 					<div class="advantage-banner">
-						<h2>Advantage</h2>
+						<h3>Advantage</h3>
 						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
 					</div>
-					<div class="icon-list carousel" data-flickity>
+					<section class="attributes">
+					<h3>We add measurable value to your project by providing</h3>
+					<div class="icon-list carousel" data-flickity='{
+					"prevNextButtons": false,
+					"cellAlign": "center"}'>
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
 						</div>
@@ -92,16 +97,11 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
 						</div>
 					</div>
+					</section>
 					<div class="updates-banner">
 						<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
 					</div>
-					<?php the_content(); ?>
-					<?php
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-						'after'  => '</div>',
-						) );
-						?>
+					
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
 

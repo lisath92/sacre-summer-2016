@@ -515,20 +515,21 @@ iframe {
       width: 23vw; } }
 
 .page-template-page-services {
-  width: 100vw;
-  margin: 0 auto;
   font-size: 1rem; }
   .page-template-page-services .entry-header {
     height: 300px;
     width: 100%;
     background: url("../../assets/images/ServiceHeader.png") no-repeat;
     background-size: cover; }
-
-.needs-banner {
-  text-transform: uppercase;
-  color: #272D66;
-  text-align: center;
-  font-weight: bold; }
+  .page-template-page-services h2 {
+    text-transform: uppercase;
+    color: #272D66;
+    text-align: center;
+    font-weight: bold; }
+  .page-template-page-services h3 {
+    text-align: center;
+    color: white;
+    background-color: #272D66; }
 
 .engineering-needs-wrapper {
   display: -ms-flexbox;
@@ -538,10 +539,12 @@ iframe {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; }
+      flex-flow: column nowrap;
+  margin: 0 auto; }
   .engineering-needs-wrapper .engineering-needs-block {
     text-align: center; }
     .engineering-needs-wrapper .engineering-needs-block h3 {
+      background-color: white;
       color: #279AB6; }
   .engineering-needs-wrapper .engineering-needs-list {
     padding-left: 0;
@@ -555,9 +558,11 @@ iframe {
   background-color: #279AB6; }
 
 .certification-block {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
   .certification-block h3 {
-    color: #272D66; }
+    color: #272D66;
+    text-transform: uppercase; }
   .certification-block p {
     font-weight: bold; }
 
@@ -572,15 +577,19 @@ iframe {
 .updates-banner {
   height: 120px;
   text-align: center;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   color: white;
   background-color: #279AB6; }
   .updates-banner p {
     padding: 0 10rem; }
 
+.attributes {
+  margin: 0 auto; }
+
 .carousel {
   padding-top: 30px; }
+  .carousel .flickity-page-dots {
+    bottom: 0px; }
 
 .carousel-cell {
   width: 100%;
