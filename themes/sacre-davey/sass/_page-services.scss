@@ -17,3 +17,19 @@
 	text-align: center;
 	font-weight: bold;
 }
+
+.engineering-needs-wrapper {
+	@include display-flex(center, center);
+	flex-flow: column nowrap;
+	.engineering-needs-block {
+		text-align: center;
+		h3 {
+			color: $color__lightblue;
+		}
+
+	}
+	.engineering-needs-list {
+		padding-left: 0;
+		font-weight: bold;
+	}
+}
