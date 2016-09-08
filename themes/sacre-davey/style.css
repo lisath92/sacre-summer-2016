@@ -296,6 +296,12 @@ textarea {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw; }
+
 .sticky {
   display: block; }
 
@@ -482,23 +488,16 @@ textarea {
       max-height: 80px;
       max-width: 300px;
       width: 23vw; } }
+/*-----------------------------------------
+  Footer
+-------------------------------------------*/
+footer {
+  background-color: #272D66;
+  color: white;
+  text-align: center; }
 
-.page-template-page-services {
-  width: 100vw;
-  margin: 0 auto; }
-  .page-template-page-services .entry-header {
-    height: 300px;
-    width: 100%;
-    background: url("../../assets/images/ServiceHeader.png") no-repeat;
-    background-size: cover; }
-
-.needs-banner {
-  text-transform: uppercase;
-  color: #272D66;
-  text-align: center;
-  font-weight: bold; }
-
-.engineering-needs-wrapper {
+.site-info {
+  padding-top: 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -507,6 +506,7 @@ textarea {
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
+
   .engineering-needs-wrapper .engineering-needs-block {
     text-align: center; }
     .engineering-needs-wrapper .engineering-needs-block h3 {
@@ -546,3 +546,18 @@ textarea {
   background-color: #279AB6; }
   .updates-banner p {
     padding: 0 10rem; }
+  @media (min-width: 600px) {
+    .site-info {
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-flow: row  nowrap;
+          flex-flow: row  nowrap; } }
+  .site-info .fa {
+    border: 1px white solid;
+    border-radius: 30px;
+    padding: 10px 13px;
+    color: white;
+    margin-right: 10px; }
+  .site-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px; }

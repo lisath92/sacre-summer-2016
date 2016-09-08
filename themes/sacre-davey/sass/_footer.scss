@@ -1,0 +1,31 @@
+/*-----------------------------------------
+  Footer
+-------------------------------------------*/
+footer {
+  background-color: $color__dark-blue;
+  color: white;
+  text-align: center;
+}
+.site-info {
+  padding-top: 30px;
+  @include display-flex(center, center);
+  flex-flow: column nowrap;
+  @include desktop {
+    justify-content: space-between;
+    flex-flow: row  nowrap;
+  }
+
+  .fa {
+    border: 1px white solid;
+    border-radius:30px;
+    padding: 10px 13px;
+    color: white;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: $font__main;
+    margin-bottom: 10px;
+  }
+
+}

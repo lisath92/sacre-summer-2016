@@ -4,6 +4,11 @@
 
 /* Posts and pages */
 
+.container {
+	@include center-block;
+	width: 80vw;
+}
+
 .sticky {
 	display: block;
 }
