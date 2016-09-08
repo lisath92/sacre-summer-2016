@@ -514,3 +514,10 @@ textarea {
   .engineering-needs-wrapper .engineering-needs-list {
     padding-left: 0;
     font-weight: bold; }
+
+.trust-banner {
+  height: 100px;
+  text-align: center;
+  padding: 3rem 10rem;
+  color: white;
+  background-color: #279AB6; }

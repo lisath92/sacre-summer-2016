@@ -59,6 +59,7 @@ get_header(); ?>
 						<div class="engineering-needs-block"></div>
 
 					</div>
+					<h2 class="trust-banner">Engineers and project managers<br/>you can trust.</h2>
 					<?php the_content(); ?>
 					<?php
 					wp_link_pages( array(
