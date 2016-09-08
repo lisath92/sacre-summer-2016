@@ -222,6 +222,9 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+body {
+  font-size: 24px; }
+
 ul {
   list-style: none; }
 
@@ -561,12 +564,21 @@ footer {
           justify-content: space-between;
       -ms-flex-flow: row  nowrap;
           flex-flow: row  nowrap; } }
+  .site-info div {
+    padding-bottom: 40px; }
+  .site-info h1 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 10px; }
+  .site-info button {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: none;
+    font-size: 28px; }
   .site-info .fa {
     border: 1px white solid;
     border-radius: 30px;
     padding: 10px 13px;
     color: white;
     margin-right: 10px; }
-  .site-info h1 {
-    font-size: 24px;
-    margin-bottom: 10px; }

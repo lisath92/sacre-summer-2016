@@ -6,6 +6,7 @@ footer {
   color: white;
   text-align: center;
 }
+
 .site-info {
   padding-top: 30px;
   @include display-flex(center, center);
@@ -15,17 +16,30 @@ footer {
     flex-flow: row  nowrap;
   }
 
+  div {
+    padding-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: none;
+    font-size: $font__p;
+  }
+
   .fa {
     border: 1px white solid;
     border-radius:30px;
     padding: 10px 13px;
     color: white;
     margin-right: 10px;
-  }
-
-  h1 {
-    font-size: $font__main;
-    margin-bottom: 10px;
   }
 
 }
