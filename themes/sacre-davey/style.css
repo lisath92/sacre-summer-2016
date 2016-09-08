@@ -521,3 +521,10 @@ textarea {
   padding: 3rem 10rem;
   color: white;
   background-color: #279AB6; }
+
+.certification-block {
+  text-align: center; }
+  .certification-block h3 {
+    color: #272D66; }
+  .certification-block p {
+    font-weight: bold; }
