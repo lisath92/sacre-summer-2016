@@ -1,6 +1,6 @@
 .page-template-contact-page {
-	width: 100vw;
-	margin: 0 auto;
+	width: 98.5vw;
+	
 	.entry-title {
 		text-align: center;
 		color: white;
@@ -16,6 +16,7 @@
 
 	.entry-content {
 		@include display-flex(center, center);
+		margin: 0 auto;
 
 		div {
 			flex:1 0 45%;
@@ -44,7 +45,8 @@
 	flex-flow: row wrap; 
 	.office-block {
 		flex:1 0 30%;
-		min-height: 400px;
+		min-height: 825px;
+    padding-right: 20px;
 		h2 {
 			color: $color__dark-blue;
 		}

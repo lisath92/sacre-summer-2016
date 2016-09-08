@@ -19,11 +19,12 @@ get_header(); ?>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<p>If you have any questions or requests regarding our services, please contact one of our offices below or fill out the contact form.</p>
-
-		<p>We will get back to you as soon as possible</p>
-	<div class="entry-content">
+	
+	<div class="entry-content container">
 		<?php the_content(); ?>
+	<!-- 	<p>If you have any questions or requests regarding our services, please contact one of our offices below or fill out the contact form.</p>
+
+        <p>We will get back to you as soon as possible</p> -->
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
@@ -35,7 +36,7 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
-		<div class="offices-wrapper">
+		<div class="offices-wrapper container">
 			<div class="office-block">
 				<h2>Canada</h2>
 				<h3>Sacre-Davey Head Office</h3>
