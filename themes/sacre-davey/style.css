@@ -506,8 +506,10 @@ textarea {
 footer {
   background-color: #272D66;
   color: white;
-  text-align: center;
-  height: 200px; }
+  text-align: center; }
+  @media (min-width: 600px) {
+    footer {
+      height: 200px; } }
 
 .site-info {
   padding-top: 30px;

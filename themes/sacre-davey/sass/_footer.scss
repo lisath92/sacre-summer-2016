@@ -5,69 +5,71 @@ footer {
   background-color: $color__dark-blue;
   color: white;
   text-align: center;
-  height: 200px;
+  @include desktop {
+    height: 200px;
+  }
 }
 
-.site-info {
-  padding-top: 30px;
-  @include display-flex(center, center);
-  flex-flow: column nowrap;
-  @include desktop {
-    justify-content: space-between;
-    flex-flow: row  nowrap;
-  }
-
-  div {
-    padding-bottom: 40px;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-    font-weight: normal;
-    margin-bottom: 10px;
+  .site-info {
+    padding-top: 30px;
+    @include display-flex(center, center);
+    flex-flow: column nowrap;
     @include desktop {
-      font-size: 1rem;
+      justify-content: space-between;
+      flex-flow: row  nowrap;
+    }
+
+    div {
+      padding-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      font-weight: normal;
+      margin-bottom: 10px;
+      @include desktop {
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      padding: 10px 20px;
+      color: white;
+      box-shadow: none;
+      font-size: $font__p;
+      @include desktop {
+        font-size: 1rem;
+      }
+    }
+
+    .fa {
+      border: 1px white solid;
+      border-radius:30px;
+      padding: 10px 14px;
+      color: white;
+      margin-right: 10px;
+      @include desktop {
+        font-size: 1rem;
+        margin-right: 5px;
+      }
     }
   }
 
-  button {
-    background-color: transparent;
-    padding: 10px 20px;
-    color: white;
-    box-shadow: none;
-    font-size: $font__p;
+  .footer-logo {
     @include desktop {
-      font-size: 1rem;
+      max-width: 250px;
+      width: 37%;
+    }
+
+    img { 
+      width: 100%;
     }
   }
 
-  .fa {
-    border: 1px white solid;
-    border-radius:30px;
-    padding: 10px 14px;
-    color: white;
-    margin-right: 10px;
+  .more-info {
     @include desktop {
-      font-size: 1rem;
-      margin-right: 5px;
+      margin-left: auto;
+      padding-right: 5%;
     }
   }
-}
-
-.footer-logo {
-  @include desktop {
-    max-width: 250px;
-    width: 37%;
-  }
-
-  img { 
-    width: 100%;
-  }
-}
-
-.more-info {
-  @include desktop {
-    margin-left: auto;
-    padding-right: 5%;
-  }
-}
