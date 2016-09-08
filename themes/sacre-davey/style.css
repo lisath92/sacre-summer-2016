@@ -413,7 +413,7 @@ textarea {
   Header
 -------------------------------------------------------*/
 .site-header {
-  width: 100vw;
+  width: 96vw;
   margin: 0; }
   @media (min-width: 600px) {
     .site-header {
