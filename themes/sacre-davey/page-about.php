@@ -65,8 +65,9 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="learn-more-banner">
-						<a href="<?php echo the_permalink(); ?>">Sectors</a>
-						<a href="<?php echo the_permalink(); ?>">Projects</a>
+						<h2>Learn More</h2>
+						<a class="button-class"href="<?php echo the_permalink(); ?>">Sectors</a>
+						<a class="button-class"href="<?php echo the_permalink(); ?>">Projects</a>
 					</div>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
