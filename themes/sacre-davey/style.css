@@ -834,3 +834,11 @@ footer {
     text-align: center;
     width: 100%;
     margin: 0 auto; }
+
+.page-template-page-careers .life-work-banner h2 {
+  color: white;
+  background: #279AB6; }
+
+.page-template-page-careers .opportunities-banner {
+  color: white;
+  background: #272D66; }
