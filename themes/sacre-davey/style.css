@@ -644,35 +644,6 @@ iframe {
       .banner p {
         font-weight: bold; } }
 
-.page-template-page-about .entry-header {
-  color: white;
-  height: 200px;
-  text-align: center;
-  background: url("../../assets/images/AboutUsHeader.png");
-  background-size: cover;
-  padding: 1rem 3rem; }
-  .page-template-page-about .entry-header h1 {
-    text-transform: uppercase; }
-
-.page-template-page-about .values-block {
-  text-align: center; }
-
-.page-template-page-about .our-team-wrapper {
-  text-align: center; }
-
-.the-excerpt {
-  line-height: -60px; }
-
-.timeline-date,
-.timeline-express-read-more-link {
-  visibility: hidden; }
-
-.fa-circle::before {
-  color: #279AB6; }
-
-.learn-more-banner {
-  color: white;}
-
 .service-image {
   display: none;
   background: url("../../assets/images/ServicesOverlay.png") right/77% no-repeat, url("../../assets/images/services-footer.png") bottom/100% no-repeat; }
@@ -730,6 +701,39 @@ iframe {
 .carousel-cell {
   width: 100%;
   text-align: center; }
+
+.page-template-page-about .entry-header {
+  color: white;
+  height: 200px;
+  text-align: center;
+  background: url("../../assets/images/AboutUsHeader.png");
+  background-size: cover;
+  padding: 1rem 3rem; }
+  .page-template-page-about .entry-header h1 {
+    text-transform: uppercase; }
+
+.page-template-page-about .values-block {
+  text-align: center; }
+
+.page-template-page-about .our-team-wrapper {
+  text-align: center; }
+
+.the-excerpt {
+  line-height: -60px; }
+
+.timeline-date,
+.timeline-express-read-more-link {
+  visibility: hidden; }
+
+.fa-circle::before {
+  color: #279AB6; }
+
+.learn-more-banner {
+  color: white;
+  height: 200px;
+  width: 100vw;
+  background: url("../../assets/images/AboutUsLearnmorehead.png") no-repeat;
+  background-size: cover; }
 
 /*-----------------------------------------
   Footer
