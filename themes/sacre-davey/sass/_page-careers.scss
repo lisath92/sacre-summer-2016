@@ -13,24 +13,37 @@
 		}
 
 	}
+
 	.life-work-banner {
 		h2{
+			height: 100px;
 			color: white;
 			background: $color__lightblue;
+			padding-top: 2rem;
 		}
 	}
 	.opportunities-banner {
+		height: 100px;
 		color: white;
 		background: $color__dark-blue;
+		text-transform: uppercase;
+		padding-top: 2rem;
+	}
+	.opportunities-title {
+		color: $color__lightblue;
 	}
 	.join-team-banner {
 		@include display-flex(center, center);
 		flex-flow: row nowrap;
+		align-items: flex-start;
 		justify-content: space-between;
 		background: $color__lightblue;
 	}
 	.international-team,
 	.north-american-team {
 		color: white;
+		min-width: 250px;
+		max-width: 500px;
+		padding-bottom: 2rem;
 	}
 }

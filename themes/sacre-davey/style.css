@@ -836,12 +836,20 @@ footer {
     margin: 0 auto; }
 
 .page-template-page-careers .life-work-banner h2 {
+  height: 100px;
   color: white;
-  background: #279AB6; }
+  background: #279AB6;
+  padding-top: 2rem; }
 
 .page-template-page-careers .opportunities-banner {
+  height: 100px;
   color: white;
-  background: #272D66; }
+  background: #272D66;
+  text-transform: uppercase;
+  padding-top: 2rem; }
+
+.page-template-page-careers .opportunities-title {
+  color: #279AB6; }
 
 .page-template-page-careers .join-team-banner {
   display: -ms-flexbox;
@@ -852,10 +860,15 @@ footer {
       align-items: center;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-pack: justify;
       justify-content: space-between;
   background: #279AB6; }
 
 .page-template-page-careers .international-team,
 .page-template-page-careers .north-american-team {
-  color: white; }
+  color: white;
+  min-width: 250px;
+  max-width: 500px;
+  padding-bottom: 2rem; }
