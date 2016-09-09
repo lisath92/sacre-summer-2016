@@ -537,7 +537,9 @@ iframe {
     padding-top: 30px; }
     @media (min-width: 600px) {
       .page-template-page-services h2 {
-        width: 70%; } }
+        max-width: none;
+        font-weight: 800;
+        font-size: 2rem; } }
 
 .engineering-needs-wrapper {
   display: -ms-flexbox;
@@ -549,17 +551,38 @@ iframe {
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   margin: 0 auto; }
+  @media (min-width: 600px) {
+    .engineering-needs-wrapper {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-align: start;
+          -ms-grid-row-align: flex-start;
+          align-items: flex-start;
+      max-width: 91%; } }
   .engineering-needs-wrapper .engineering-needs-block {
     line-height: 1.7;
     text-align: center;
     width: 60%; }
+    @media (min-width: 600px) {
+      .engineering-needs-wrapper .engineering-needs-block {
+        text-align: left;
+        font-size: 24px;
+        padding-left: 5%; } }
     .engineering-needs-wrapper .engineering-needs-block h4 {
       font-weight: 800;
       font-size: 1.3rem;
       color: #279AB6; }
+      @media (min-width: 600px) {
+        .engineering-needs-wrapper .engineering-needs-block h4 {
+          font-size: 2rem;
+          font-weight: normal;
+          line-height: 1; } }
   .engineering-needs-wrapper .engineering-needs-list {
-    padding-left: 0;
+    padding: 0;
     font-weight: bold; }
+    @media (min-width: 600px) {
+      .engineering-needs-wrapper .engineering-needs-list {
+        font-weight: normal; } }
 
 .certification-block {
   text-align: center;
@@ -587,14 +610,6 @@ iframe {
         font-weight: normal;
         font-size: 24px; } }
 
-.advantage-banner {
-  text-align: center;
-  color: white;
-  background-color: #272D66;
-  padding: 1.25rem 0; }
-  .advantage-banner p {
-    padding: 0 8rem; }
-
 .updates-banner {
   display: -ms-flexbox;
   display: flex;
@@ -618,9 +633,6 @@ iframe {
         font-size: 1.5rem;
         line-height: 1.5; } }
 
-.attributes {
-  margin: 0 auto; }
-
 .carousel {
   padding-top: 30px; }
   .carousel .flickity-page-dots {
@@ -643,7 +655,6 @@ iframe {
       flex-flow: column nowrap;
   color: white; }
   .banner h3 {
-    text-transform: uppercase;
     font-size: 30px;
     text-align: center;
     color: white;

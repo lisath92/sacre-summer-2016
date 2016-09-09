@@ -26,7 +26,9 @@
 		width: 90%;
 		padding-top: 30px;
 		@include desktop {
-			width: 70%;
+			max-width: none;
+			font-weight: 800;
+			font-size: 2rem;
 		}
 	}
 }
@@ -35,20 +37,39 @@
 	@include display-flex(center, center);
 	flex-flow: column nowrap;
 	margin: 0 auto;
+	@include desktop {
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		max-width: 91%;
+	}
 	.engineering-needs-block {
 		line-height:1.7;
 		text-align: center;
 		width: 60%;
+		@include desktop {
+			text-align: left;
+			font-size: $font__main;
+			padding-left: 5%;
+			
+		}
 		h4 {
 			font-weight: 800;
 			font-size: 1.3rem;
 			color: $color__lightblue;
+			@include desktop {
+				font-size: 2rem;
+				font-weight: normal;
+				line-height:1;
+			}
 		}
 
 	}
 	.engineering-needs-list {
-		padding-left: 0;
+		padding:0;
 		font-weight: bold;
+		@include desktop {
+			font-weight: normal;
+		}
 	}
 }
 
@@ -68,9 +89,7 @@
     	width: 70%;
     	font-weight: normal;
     	font-size: $font__main;
-    }
-		
-   
+    } 
 	}
 	.quality-details {
 		max-width: 350px;
@@ -84,17 +103,6 @@
 		}
 	}
 }
-
-.advantage-banner {
-	text-align: center;
-	color: white;
-	background-color: $color__dark-blue;
-	padding: 1.25rem 0;
-	p {
-		padding: 0 8rem;
-	}
-}
-
 
 .updates-banner {
 	@include display-flex(center,center);
@@ -115,10 +123,7 @@
 		}
 	}
 }
-.attributes {
-	margin: 0 auto;
 
-}
 //Flickity carousel
 .carousel {
 	padding-top: 30px;
@@ -139,7 +144,6 @@
 	flex-flow: column nowrap;
 	color: white;
 		h3 {
-		text-transform: uppercase;
 		font-size: $font__h4;
 		text-align: center;
 		color: white;
