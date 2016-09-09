@@ -70,14 +70,16 @@ get_header(); ?>
 						<p>Our in-house quality controls system is compliant with the Organizational Quality Management Program as outlined by the Association of Professional Engineers &amp; Geoscientists of British Columbia.</p>
 						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesTriangleDown.png' ?>">
 						
-						<p>Our OQM System ensures that we are able to consistently deliver high quality, high value project assistance.</p>
+						<div class="quality-details">
+						<?php echo CFS()->get('heading_details');?>
+						</div>
 					</div>
-					<div class="advantage-banner">
+					<div class="banner">
 						<h3>Advantage</h3>
 						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
 					</div>
 					<section class="attributes">
-					<h3>We add measurable value to your project by providing</h3>
+					<h2>We add measurable value to your project by providing</h2>
 					<div class="icon-list carousel" data-flickity='{
 					"prevNextButtons": false,
 					"cellAlign": "center"}'>
