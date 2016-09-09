@@ -115,7 +115,7 @@
 		text-align: center;
 		color: white;
 		padding: 30px;
-		max-width: 800px;
+		max-width: 650px;
 		margin: 0 auto;
 		width: 90%;
 		@include desktop {
@@ -146,7 +146,7 @@
 		color: white;
 		max-width: 42%;
 		padding: 89px 0 30px;
-		font-size: 2em;
+		font-size: 2vw;
 		margin: 2% 3% 0 auto;
 		list-style-type: none;
 		line-height: 1.3;
@@ -158,13 +158,13 @@
 		&:before {
 			content: "";
 			position: absolute;
-			top: 0px;
-			left: -40px;
-			width: 100%;
-			height: 100%;
-			background:  
-			url('../../assets/images/arrow-right.png')
-			no-repeat;
+			top: -1.2vw;
+	    left: -5vw;
+	    width: 3vw;
+	    height: 6vw;
+	    background: 
+	    url(../../assets/images/arrow-right.png) 
+	    top center/79% no-repeat;
 		}
 	}
 	@include desktop {
