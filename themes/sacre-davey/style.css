@@ -873,16 +873,21 @@ footer {
   max-width: 500px;
   padding-bottom: 2rem; }
 
-.page-template-page-oil-gas .entry-title {
+.page-template-page-oil-gas .entry-header {
+  padding-top: 2rem;
+  color: white;
   height: 600px;
   background: url("../../assets/images/SectorsOil_GasHeader.png");
   background-size: cover; }
+  .page-template-page-oil-gas .entry-header p {
+    max-width: 680px; }
 
 .page-template-page-oil-gas .what-we-offer-wrapper {
-  height: 300px;
+  padding-top: 2rem;
+  color: white;
+  height: 500px;
   background-color: #272D66; }
 
 .page-template-page-oil-gas ul.what-we-offer-list {
   padding-top: 2rem;
-  color: white;
   list-style-image: url("../../assets/images/SectorOil_GasTriangle90.png"); }

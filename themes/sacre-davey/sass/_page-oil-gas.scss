@@ -1,18 +1,25 @@
 .page-template-page-oil-gas {
 	
 	
-	.entry-title {
+	.entry-header {
+		padding-top: 2rem;
+		color: white;
 		height: 600px;
 		background: url('../../assets/images/SectorsOil_GasHeader.png');
 		background-size: cover;
+		p {
+			max-width: 680px;
+		}
 	}
 	.what-we-offer-wrapper {
-		height: 300px;
+		padding-top: 2rem;
+		color: white;
+		height: 500px;
 		background-color: $color__dark-blue;
 	}
 	ul.what-we-offer-list {
 		padding-top: 2rem;
-		color: white;
+		
 		list-style-image: url('../../assets/images/SectorOil_GasTriangle90.png');
 	
 
