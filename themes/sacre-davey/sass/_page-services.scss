@@ -195,13 +195,27 @@
 //Flickity carousel
 .carousel {
 	padding-top: 30px;
+	margin: 0 auto;
 	.flickity-page-dots {
 		bottom: 0px;
+		@include desktop {
+			display: none;
+		}
 	}
 }
 
 .carousel-cell {
 	width: 100%;
 	text-align: center;
+	min-height: 200px;
+	@include desktop {
+		width: 15%;
+	}
+
+	img {
+		@include desktop {
+			width: 100%;
+		}
+	}
 }
 

@@ -694,13 +694,24 @@ iframe {
         line-height: 1.5; } }
 
 .carousel {
-  padding-top: 30px; }
+  padding-top: 30px;
+  margin: 0 auto; }
   .carousel .flickity-page-dots {
     bottom: 0px; }
+    @media (min-width: 600px) {
+      .carousel .flickity-page-dots {
+        display: none; } }
 
 .carousel-cell {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  min-height: 200px; }
+  @media (min-width: 600px) {
+    .carousel-cell {
+      width: 15%; } }
+  @media (min-width: 600px) {
+    .carousel-cell img {
+      width: 100%; } }
 
 .page-template-page-about .entry-header {
   color: white;

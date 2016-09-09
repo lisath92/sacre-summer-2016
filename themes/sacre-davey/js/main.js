@@ -14,8 +14,7 @@
   
 //Show Menu if more than 600px view width
   $(window).resize(function(){
-    console.log($(window).width());
-    if($(window).width()>582) {
+    if($(window).width()>600) {
       mainMenu.show();
     } else {
       mainMenu.hide();
