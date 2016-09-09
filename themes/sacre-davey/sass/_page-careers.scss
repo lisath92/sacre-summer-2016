@@ -24,6 +24,9 @@
 		background: $color__dark-blue;
 	}
 	.join-team-banner {
+		@include display-flex(center, center);
+		flex-flow: row nowrap;
+		justify-content: space-between;
 		background: $color__lightblue;
 	}
 	.international-team,

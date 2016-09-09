@@ -844,6 +844,16 @@ footer {
   background: #272D66; }
 
 .page-template-page-careers .join-team-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   background: #279AB6; }
 
 .page-template-page-careers .international-team,
