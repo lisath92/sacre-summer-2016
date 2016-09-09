@@ -891,3 +891,10 @@ footer {
 .page-template-page-oil-gas ul.what-we-offer-list {
   padding-top: 2rem;
   list-style-image: url("../../assets/images/SectorOil_GasTriangle90.png"); }
+
+.page-template-page-oil-gas .oil-gas-dropdown-wrapper h1 {
+  color: #272D66;
+  border-bottom: 2px solid #272D66; }
+
+.page-template-page-oil-gas .oil-gas-dropdown-wrapper ul {
+  list-style: circle; }
