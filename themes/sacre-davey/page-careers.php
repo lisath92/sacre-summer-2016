@@ -42,9 +42,18 @@ get_header(); ?>
 								<li>Senior Process Engineer, SDE3</li>
 							</ul>
 						</li>
-					</ul>
+					</ul>	
+					</div>
+					<div class="join-team-banner">
+						<div class="north-american-team">
+						<p>To apply to become a part of our North American teams, send your information to</p>
+						<a href="">makingadifference@sacre-davey.com.</a>
+						</div>
+						<div class="international-team">
+						<p>Interested in working for our office in the UAE? Send your information to </p>
+						<a href="">admin-me@sacre-davey.com.</a>
+						</div>
 
-						
 					</div>
 					<?php the_content(); ?>
 

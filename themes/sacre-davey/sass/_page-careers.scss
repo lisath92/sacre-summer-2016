@@ -1,5 +1,5 @@
 .page-template-page-careers {
-		
+
 
 	.entry-header {
 		height: 200px;
@@ -22,5 +22,12 @@
 	.opportunities-banner {
 		color: white;
 		background: $color__dark-blue;
+	}
+	.join-team-banner {
+		background: $color__lightblue;
+	}
+	.international-team,
+	.north-american-team {
+		color: white;
 	}
 }

@@ -842,3 +842,10 @@ footer {
 .page-template-page-careers .opportunities-banner {
   color: white;
   background: #272D66; }
+
+.page-template-page-careers .join-team-banner {
+  background: #279AB6; }
+
+.page-template-page-careers .international-team,
+.page-template-page-careers .north-american-team {
+  color: white; }
