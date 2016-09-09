@@ -514,8 +514,13 @@ iframe {
       max-width: 300px;
       width: 23vw; } }
 
+/*--------------------------------------------------------------
+# Services Page Template
+--------------------------------------------------------------*/
 .page-template-page-services {
   font-size: 1rem; }
+  .page-template-page-services .hentry {
+    margin: 0; }
   .page-template-page-services .entry-header {
     height: 300px;
     width: 100%;
@@ -528,8 +533,11 @@ iframe {
     font-weight: bold;
     max-width: 800px;
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     padding-top: 30px; }
+    @media (min-width: 600px) {
+      .page-template-page-services h2 {
+        width: 70%; } }
 
 .engineering-needs-wrapper {
   display: -ms-flexbox;
@@ -558,7 +566,26 @@ iframe {
   margin: 0 auto; }
   .certification-block p {
     font-weight: bold;
-    line-height: 1.7; }
+    line-height: 1.7;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0; }
+    @media (min-width: 600px) {
+      .certification-block p {
+        width: 70%;
+        font-weight: normal;
+        font-size: 24px; } }
+  .certification-block .quality-details {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px 0;
+    line-height: 1.7;
+    font-weight: bold; }
+    @media (min-width: 600px) {
+      .certification-block .quality-details {
+        font-weight: normal;
+        font-size: 24px; } }
 
 .advantage-banner {
   text-align: center;
@@ -569,13 +596,27 @@ iframe {
     padding: 0 8rem; }
 
 .updates-banner {
-  height: 120px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
-  padding-bottom: 1rem;
-  color: white;
-  background-color: #279AB6; }
+  background-color: #279AB6;
+  margin-top: 30px; }
   .updates-banner p {
-    padding: 0 10rem; }
+    color: white;
+    padding: 30px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 90%;
+    margin: 0 auto; }
+    @media (min-width: 600px) {
+      .updates-banner p {
+        max-width: 800px;
+        font-size: 1.5rem;
+        line-height: 1.5; } }
 
 .attributes {
   margin: 0 auto; }
@@ -609,16 +650,17 @@ iframe {
     padding: 30px;
     max-width: 800px;
     margin: 0 auto;
-    width: 66%; }
+    width: 90%; }
     @media (min-width: 600px) {
       .banner h3 {
+        width: 66%;
         font-size: 40px; } }
   .banner p {
     margin-top: 0;
     max-width: 850px;
     width: 70%;
     text-align: center;
-    font-size: 24px; }
+    font-size: 1.2rem; }
     @media (min-width: 600px) {
       .banner p {
         font-weight: bold; } }
