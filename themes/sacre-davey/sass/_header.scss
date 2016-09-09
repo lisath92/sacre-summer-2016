@@ -2,12 +2,21 @@
   Header
 -------------------------------------------------------*/
 .site-header {
-  width: 96vw;
+  width: 100vw;
   margin: 0;
+  position: fixed;
+  z-index: 100000;
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px $color__lightblue solid;
+
   @include desktop {
-    width: 80vw;
     margin: 0 auto;
   }
+}
+
+.site-content {
+  padding-top: 80px;
 }
 
 .main-navigation {

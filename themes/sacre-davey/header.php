@@ -21,11 +21,6 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- .site-branding -->
-
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title screen-reader-text"></h1></a>
 					<i class="fa fa-bars" aria-hidden="true"></i>
