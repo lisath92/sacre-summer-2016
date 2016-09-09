@@ -104,6 +104,56 @@
 	}
 }
 
+.banner {
+	background-color: $color__dark-blue;
+	min-height:240px;
+	@include display-flex(center,center);
+	flex-flow: column nowrap;
+	color: white;
+		h3 {
+		font-size: $font__h4;
+		text-align: center;
+		color: white;
+		padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 90%;
+    @include desktop {
+    	width: 66%;
+    	font-size: $font__h3;
+    }
+	}
+	p {
+		margin-top: 0;
+		max-width: 850px;
+		width: 70%;
+		text-align: center;
+    font-size: 1.2rem;
+    @include desktop {
+    	font-weight: bold;
+    }
+	}
+}
+
+.service-image {
+	display: none;
+	background: 
+	url('../../assets/images/ServicesOverlay.png')
+	right/80% no-repeat,
+	url('../../assets/images/services-footer.png')
+	bottom/100% no-repeat;
+	ul {
+		color: white;
+		max-width: 50%;
+		margin-left: auto;
+		list-style-image: 
+		url('../../assets/images/arrow-right.png');
+	}
+	@include desktop {
+		display: block;
+	}
+}
+
 .updates-banner {
 	@include display-flex(center,center);
 	text-align: center;
@@ -137,33 +187,3 @@
 	text-align: center;
 }
 
-.banner {
-	background-color: $color__dark-blue;
-	min-height:240px;
-	@include display-flex(center,center);
-	flex-flow: column nowrap;
-	color: white;
-		h3 {
-		font-size: $font__h4;
-		text-align: center;
-		color: white;
-		padding: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-    width: 90%;
-    @include desktop {
-    	width: 66%;
-    	font-size: $font__h3;
-    }
-	}
-	p {
-		margin-top: 0;
-		max-width: 850px;
-		width: 70%;
-		text-align: center;
-    font-size: 1.2rem;
-    @include desktop {
-    	font-weight: bold;
-    }
-	}
-}

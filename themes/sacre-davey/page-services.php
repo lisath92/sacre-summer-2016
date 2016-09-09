@@ -63,7 +63,7 @@ get_header(); ?>
 					</div>
 					
 					<div class="banner">
-					<h3>Engineers and project managers you can trust.</h3>
+						<h3>Engineers and project managers you can trust.</h3>
 					</div>
 					<div class="certification-block">
 						<h2>Sacre-Davey Engineering Inc. was one of the first companies to be certified under the APEG of BC in Organizational Quality Management Program.</h2>
@@ -71,18 +71,24 @@ get_header(); ?>
 						<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesTriangleDown.png' ?>">
 						
 						<div class="quality-details">
-						<?php echo CFS()->get('heading_details');?>
+							<?php echo CFS()->get('heading_details');?>
 						</div>
 					</div>
+					<section class="service-image">
+						<ul class="items">
+							<li>We have in-house project design and cost control systems helping the project team make effective and timely decisions - ensuring our customer's experience is a positive one.</li>
+						<li>From feasibility studies &amp; concepts, to detailed design, systems integration and buildings, we have the team to meet your project execution &amp; delivery needs.</li>
+						</ul>
+					</section>
 					<div class="banner">
 						<h3>Advantage</h3>
 						<p>Clients choose Sacré-Davey for our superior customer support, technical expertise, and entrepreneurial approach.</p>
 					</div>
 					<section class="attributes">
-					<h2>We add measurable value to your project by providing</h2>
-					<div class="icon-list carousel" data-flickity='{
-					"prevNextButtons": false,
-					"cellAlign": "center"}'>
+						<h2>We add measurable value to your project by providing</h2>
+						<div class="icon-list carousel" data-flickity='{
+						"prevNextButtons": false,
+						"cellAlign": "center"}'>
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
 						</div>
@@ -102,18 +108,18 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
 						</div>
 					</div>
-					</section>
-					<div class="updates-banner">
-						<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
-					</div>
-					
-					</div><!-- .entry-content -->
-				</article><!-- #post-## -->
+				</section>
+				<div class="updates-banner">
+					<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
+				</div>
 
-			<?php endwhile; // End of the loop. ?>
+			</div><!-- .entry-content -->
+		</article><!-- #post-## -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<?php endwhile; // End of the loop. ?>
+
+</main><!-- #main -->
+</div><!-- #primary -->
 
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>
