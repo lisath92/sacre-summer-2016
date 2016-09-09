@@ -814,3 +814,12 @@ footer {
   .more-info {
     margin-left: auto;
     padding-right: 5%; } }
+
+.page-template-page-careers .entry-header {
+  height: 200px;
+  background: url("../../assets/images/Careers1stHeader.png") no-repeat;
+  background-size: cover; }
+  .page-template-page-careers .entry-header .growing-text {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto; }
