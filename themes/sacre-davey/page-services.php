@@ -86,8 +86,9 @@ get_header(); ?>
 					</div>
 					<section class="attributes">
 						<h2>We add measurable value to your project by providing</h2>
-						<div class="carousel" data-flickity='{ "autoPlay":true, "cellAlign": "center",
-        "contain": true, "prevNextButtons": false}'>
+						<div class="carousel" data-flickity='{  "cellAlign": "center",
+        		"contain": true, 
+        		"prevNextButtons": false}'>
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
 						</div>

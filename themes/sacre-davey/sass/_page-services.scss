@@ -197,10 +197,13 @@
 	padding-top: 30px;
 	margin: 0 auto;
 	.flickity-page-dots {
-		bottom: 0px;
+		bottom: -15px;
 		@include desktop {
 			display: none;
 		}
+	}
+	@include desktop {
+		max-width: 90%;
 	}
 }
 
@@ -210,6 +213,7 @@
 	min-height: 200px;
 	@include desktop {
 		width: 15%;
+		margin-right: 1vw
 	}
 
 	img {
