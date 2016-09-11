@@ -919,6 +919,7 @@ footer {
 .page-template-page-oil-gas .oil-gas-dropdown-wrapper ul {
   list-style: circle; }
 
+
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/
@@ -944,6 +945,9 @@ footer {
 .partners {
   background-color: lightgray;
   height: 340px;
+}
+.post-type-archive .projects-grid {
+
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -970,3 +974,14 @@ footer {
     color: white;
     text-transform: uppercase;
     text-align: center; }
+
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.post-type-archive .projects {
+  max-width: 400px;
+  -ms-flex: 1 0 18%;
+      flex: 1 0 18%; }
+

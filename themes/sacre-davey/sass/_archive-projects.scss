@@ -1,0 +1,18 @@
+.post-type-archive {
+
+	
+	.projects-grid {
+		@include display-flex (center, center);
+		flex-flow: row wrap;
+		align-items: flex-start;
+		
+
+	}
+	.projects {
+		max-width: 400px;
+		flex: 1 0 18%;
+	}
+
+
+
+}
