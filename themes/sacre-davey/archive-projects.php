@@ -24,11 +24,11 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<div class="projects-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
-				
+				<div class="project">
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+				</div>
 			<?php endwhile; ?>
 			</div>
 		<?php else : ?>

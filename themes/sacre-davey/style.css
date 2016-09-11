@@ -920,6 +920,7 @@ footer {
   list-style: circle; }
 
 
+
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/
@@ -946,7 +947,9 @@ footer {
   background-color: lightgray;
   height: 340px;
 }
-.post-type-archive .projects-grid {
+
+
+.projects-grid {
 
   display: -ms-flexbox;
   display: flex;
@@ -984,4 +987,50 @@ footer {
   max-width: 400px;
   -ms-flex: 1 0 18%;
       flex: 1 0 18%; }
+
+
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  @media (min-width: 600px) {
+    .projects-grid {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      -ms-flex-align: start;
+          -ms-grid-row-align: flex-start;
+          align-items: flex-start; } }
+
+.project {
+  -ms-flex: 1 0 100%;
+      flex: 1 0 100%;
+  width: 100%;
+  margin: 0;
+  position: relative; }
+  @media (min-width: 600px) {
+    .project {
+      max-width: 400px;
+      -ms-flex: 1 0 18%;
+          flex: 1 0 18%; } }
+  .project .wp-post-image {
+    min-width: 100%;
+    height: auto;
+    position: relative; }
+  .project .entry-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 525px;
+    background-color: #272D66;
+    height: 150px;
+    color: white;
+    text-decoration: none;
+    text-align: center; }
+    .project .entry-title a {
+      color: white;
+      text-decoration: none;
+      text-align: center; }
 

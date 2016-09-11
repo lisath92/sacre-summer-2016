@@ -1,5 +1,5 @@
 <?php
-/** Template Name: Single Project
+/** Template name: Single Project
  * The template for displaying all single projects.
  *
  * @package Sacre Davey Theme
@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
+			<div class="project">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 
@@ -27,6 +27,7 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
+					
 					<?php the_content(); ?>
 					
 					</div><!-- .entry-content -->
@@ -34,7 +35,7 @@ get_header(); ?>
 					
 				</article><!-- #post-## -->
 
-
+				</div>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

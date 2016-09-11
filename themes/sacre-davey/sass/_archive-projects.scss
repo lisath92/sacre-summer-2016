@@ -1,18 +1,49 @@
-.post-type-archive {
+
 
 	
 	.projects-grid {
 		@include display-flex (center, center);
+		flex-flow: column nowrap;
+		@include desktop {
 		flex-flow: row wrap;
 		align-items: flex-start;
+		}
 		
 
 	}
-	.projects {
+	.project {
+		flex: 1 0 100%;
+		width: 100%;
+		margin: 0;
+		position: relative;
+		@include desktop {
 		max-width: 400px;
 		flex: 1 0 18%;
+	
+		}
+	
+
+	.wp-post-image {
+		min-width: 100%;
+		height: auto;
+		position: relative;
+		
 	}
-
-
-
-}
+	.entry-title {
+		@include display-flex(center,center);
+		position: absolute;
+		width: 100%;
+		top: 525px;
+		background-color: $color__dark-blue;
+		height: 150px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		a{
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		
+	 	}
+	 }
+}	
