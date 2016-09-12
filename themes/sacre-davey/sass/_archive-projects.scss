@@ -73,10 +73,15 @@
 	}
 
 
+
 }	
 
+	article {
+		margin:0; //removes bottom margin from project
+	}
+
 .entry-content {
-	// display:none;
+	display:none;
 	font-size: 1rem;
 	text-align: center;
 	.fa-times {
@@ -84,7 +89,7 @@
 	text-align: center;
 	color: white;
 	border-radius: 50%;
-	padding: .50rem;
+	padding: .4rem .5rem;
 	background-color: $color__dark-blue;
 	}
 	@include desktop {
