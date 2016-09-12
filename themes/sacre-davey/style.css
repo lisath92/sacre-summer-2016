@@ -382,24 +382,34 @@ textarea {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; } }
 
-form textarea {
-  width: 765px; }
-
-form label {
+form {
   width: 100%; }
-
-form input,
-form textarea {
-  background-color: #f4f4f4;
-  border: blue;
-  margin-top: 10px; }
-
-form input {
-  font-size: 1rem;
-  padding: 7px; }
-
-form .required {
-  color: #272D66; }
+  @media (min-width: 600px) {
+    form {
+      width: 28vw; } }
+  form p {
+    width: 100%; }
+  form textarea {
+    width: 100%;
+    height: 20vw; }
+    @media (min-width: 600px) {
+      form textarea {
+        width: 50%; } }
+  form input,
+  form textarea {
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 3px blue solid;
+    margin-top: 10px; }
+    @media (min-width: 600px) {
+      form input,
+      form textarea {
+        width: 50%; } }
+  form input {
+    font-size: 1.5rem;
+    padding: 7px; }
+  form .required {
+    color: #272D66; }
 
 iframe {
   width: 100%; }

@@ -32,23 +32,34 @@
 }
 
 form{
-	textarea {
-		width: 765px;
+	width: 100%;
+	@include desktop {
+		width: 28vw;
 	}
-
-	label {
+	p {
 		width: 100%;
+	}
+	textarea {
+		width: 100%;
+		height: 20vw;
+		@include desktop {
+			width: 50%;
+		}
 	}
 
 	input,
 	textarea{
+		width: 100%;
 		background-color: #f4f4f4;
-		border: blue;
+		border: 3px blue solid;
 		margin-top: 10px;
+		@include desktop {
+			width: 50%;
+		}
 	}
 
 	input {
-		font-size: 1rem;
+		font-size: 1.5rem;
 		padding: 7px;
 
 	}
