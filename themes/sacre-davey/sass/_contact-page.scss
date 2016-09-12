@@ -8,9 +8,6 @@
 	}
 
 .entry-header {
-	background: 
-  // linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-	linear-gradient(rbga(0,0,0,0.4), rgba(0,0,0,0.4));
 		color: white;
     height: 50vw;
     text-align: center;
@@ -23,43 +20,81 @@
 	}
 
 	.entry-content {
-		@include display-flex(center, center);
+		// @include display-flex(center, center);
+		display: flex;
+		width: 80%;
 		margin: 0 auto;
-		flex-wrap: wrap;
-
-	 p:first-child,
-	 p:nth-child(2) {
-	 	width: 80%;
-	 }
-		
+		flex-flow: column nowrap;
+		@include desktop {
+			flex-flow: row wrap;
+		}
 	}
 }
 
-.wpcf7 {
-	width: 29vw;
-	flex: none;
+form{
+	textarea {
+		width: 765px;
+	}
 
-	form {
+	label {
 		width: 100%;
 	}
+
+	input,
+	textarea{
+		background-color: #f4f4f4;
+		border: blue;
+		margin-top: 10px;
+	}
+
 	input {
-		width: 250px;
-		border:3px solid $color__dark-blue;
+		font-size: 1rem;
+		padding: 7px;
+
 	}
-	p {
+
+	.required {
 		color: $color__dark-blue;
-	}
-	.wpcf7-submit {
-		min-width: 260px;
-		text-transform: uppercase;
-		color: white;
-		background: $color__dark-blue;
-		box-shadow: none;
 	}
 }
 
+
+
+// .wpcf7 {
+// 	width: 50vw;
+// 	align-self: center;
+
+// 	@include desktop {
+// 	width: 29vw;
+// 	flex: none;
+// }
+
+// 	form {
+// 		width: 100%;
+// 	}
+// 	input {
+// 		border:3px solid $color__dark-blue;
+// 		width: 80%;
+// 		@include desktop {
+// 		width: 250px;
+	
+// 	}
+// 	}
+// 	p {
+// 		width: 100%;
+// 		color: $color__dark-blue;
+// 	}
+// 	.wpcf7-submit {
+// 		min-width: 260px;
+// 		text-transform: uppercase;
+// 		color: white;
+// 		background: $color__dark-blue;
+// 		box-shadow: none;
+// 	}
+// }
+
 iframe {
-	width: 50vw;
+	width: 100%;
 }
 
 .offices-wrapper {

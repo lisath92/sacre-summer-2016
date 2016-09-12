@@ -360,7 +360,6 @@ textarea {
     color: white;
     line-height: 180px; }
   .page-template-contact-page .entry-header {
-    background: linear-gradient(rbga(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     color: white;
     height: 50vw;
     text-align: center;
@@ -374,37 +373,36 @@ textarea {
   .page-template-contact-page .entry-content {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
+    width: 80%;
     margin: 0 auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .page-template-contact-page .entry-content p:first-child,
-    .page-template-contact-page .entry-content p:nth-child(2) {
-      width: 80%; }
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    @media (min-width: 600px) {
+      .page-template-contact-page .entry-content {
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; } }
 
-.wpcf7 {
-  width: 29vw;
-  -ms-flex: none;
-      flex: none; }
-  .wpcf7 form {
-    width: 100%; }
-  .wpcf7 input {
-    width: 250px;
-    border: 3px solid #272D66; }
-  .wpcf7 p {
-    color: #272D66; }
-  .wpcf7 .wpcf7-submit {
-    min-width: 260px;
-    text-transform: uppercase;
-    color: white;
-    background: #272D66;
-    box-shadow: none; }
+form textarea {
+  width: 765px; }
+
+form label {
+  width: 100%; }
+
+form input,
+form textarea {
+  background-color: #f4f4f4;
+  border: blue;
+  margin-top: 10px; }
+
+form input {
+  font-size: 1rem;
+  padding: 7px; }
+
+form .required {
+  color: #272D66; }
 
 iframe {
-  width: 50vw; }
+  width: 100%; }
 
 .offices-wrapper {
   display: -ms-flexbox;
