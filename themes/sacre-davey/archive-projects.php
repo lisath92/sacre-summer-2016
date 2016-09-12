@@ -22,50 +22,43 @@ get_header(); ?>
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-
+			<div class="desktop-project-info"></div> 
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<div class="projects-grid">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="project">
-						<?php
-/**
- * Template part for displaying posts.
- *
- * @package Sacre Davey Theme
- */
 
-?>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<header class="entry-header">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'large' ); ?>
+								<?php endif; ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+
+								<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+
+								<?php if ( 'post' === get_post_type() ) : ?>
+
+								<?php endif; ?>
+							</header><!-- .entry-header -->
+
+							<div class="entry-content">
+								<?php the_content(); ?>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div><!-- .entry-content -->
+						</article><!-- #post-## -->
+					</div>
+				<?php endwhile; ?>
+			</div>
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<i class="fa fa-times" aria-hidden="true"></i
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
-</div>
-<?php endwhile; ?>
-</div>
-<?php else : ?>
-
-	<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-<?php endif; ?>
-
-</main><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #primary -->
 
 

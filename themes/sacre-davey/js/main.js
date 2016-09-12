@@ -34,9 +34,25 @@ $(window).resize(function(){
   }
 });
 
+
 $('.button-group').on( 'click', '.button', function() {
   var index = $(this).index();
   $gallery.flickity( 'select', index );
 });
+
+//Shows and hides Project description on click
+var projectDescription = $('.entry-content');
+
+$('body').on('click', function(event) {
+   if($(event.target).hasClass('entry-title')){ 
+    // projectDescription.show();
+    projectDescription.css("display", "block");
+  
+  } else if($(event.target).hasClass('fa-times')){
+    // projectDescription.hide();
+    projectDescription.css("display", "none");
+}
+});
+
 
 })(jQuery);
