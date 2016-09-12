@@ -14,9 +14,10 @@ get_header(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
-					<!-- <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> -->
+					<div id="about-hero" class="about-us-hero">
 					<h1>Our Mission</h1>
 					<p>We provide engineering, project management, and related technical services that make our customers look good and their operations better.</p>
+					</div>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">

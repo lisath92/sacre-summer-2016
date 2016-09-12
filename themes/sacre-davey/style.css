@@ -733,21 +733,21 @@ iframe {
     .carousel-cell img {
       width: 100%; } }
 
-.page-template-page-about .entry-header {
-  color: white;
-  height: 200px;
-  text-align: center;
-  background: url("../../assets/images/AboutUsHeader.png");
-  background-size: cover;
-  padding: 1rem 3rem; }
-  .page-template-page-about .entry-header h1 {
-    text-transform: uppercase; }
-
-.page-template-page-about .values-block {
-  text-align: center; }
-
-.page-template-page-about .our-team-wrapper {
-  text-align: center; }
+.page-template-page-about {
+  font-size: 1rem; }
+  .page-template-page-about .entry-header {
+    color: white;
+    height: 300px;
+    text-align: center; }
+    .page-template-page-about .entry-header h1 {
+      text-transform: uppercase; }
+    .page-template-page-about .entry-header p {
+      width: 80%;
+      max-width: 400px; }
+  .page-template-page-about .values-block {
+    text-align: center; }
+  .page-template-page-about .our-team-wrapper {
+    text-align: center; }
 
 .the-excerpt {
   line-height: -60px; }

@@ -21,6 +21,49 @@ function sacre_davey_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'sacre_davey_body_classes' );
 
+/**
+*Remove "Editor" link from sub-menus
+*/
+function sacre_davey_remove_submenus() {
+  remove_submenu_page('themes.php', 'theme-editor.php');
+  remove_submenu_page('plugins.php','plugin-editor.php');
+}
+
+add_action('admin_menu','sacre_davey_remove_submenus',110);
+
+
+/**
+* Add featured image for about us page
+*/
+function sacre_davey_inline_styles() {
+  if(!is_page_template('page-about.php')) {
+    return;
+  }
+  $css='';
+  $logo= CFS()->get('about_us_hero_image');
+  if(!$logo) {
+    return;
+  }
+  $css .='
+      #about-hero {
+        background:
+        url('.$logo.') bottom no-repeat;
+        height: 300px;
+        background-size: cover, cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+}';
+
+wp_add_inline_style('sacre-davey-style', $css);
+}
+
+add_action( 'wp_enqueue_scripts','sacre_davey_inline_styles');
+/**
+* Custom loop for projects archive page
+*/
 function sacre_davey_modifying_product_archive_query($query) {
     if (is_post_type_archive('projects') && !is_admin() && $query->is_main_query()) {
         $query->set( 'posts_per_page', 25);
