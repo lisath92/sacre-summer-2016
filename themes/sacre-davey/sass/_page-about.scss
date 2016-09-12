@@ -3,11 +3,14 @@
 	
 	.entry-header {
 		color: white;
-		height: 300px;
-		text-align:center;
+    height: 50vw;
+    text-align: center;
+    width: 100vw;
+    max-height: 300px;
 		
 		h1 {
 			text-transform: uppercase;
+
 		}
 		p {
 			width: 80%;

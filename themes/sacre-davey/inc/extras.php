@@ -47,9 +47,9 @@ function sacre_davey_inline_styles() {
   $css .='
       #about-hero {
         background:
-        url('.$logo.') bottom no-repeat;
-        height: 300px;
-        background-size: cover, cover;
+        url('.$logo.') bottom/100% 100% no-repeat;
+        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

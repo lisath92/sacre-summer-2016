@@ -737,8 +737,10 @@ iframe {
   font-size: 1rem; }
   .page-template-page-about .entry-header {
     color: white;
-    height: 300px;
-    text-align: center; }
+    height: 50vw;
+    text-align: center;
+    width: 100vw;
+    max-height: 300px; }
     .page-template-page-about .entry-header h1 {
       text-transform: uppercase; }
     .page-template-page-about .entry-header p {
