@@ -1023,12 +1023,13 @@ footer {
         align-items: center;
     position: absolute;
     width: 100%;
-    top: 525px;
+    bottom: 0;
     background-color: #272D66;
-    height: 150px;
+    height: 175px;
     color: white;
     text-decoration: none;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
     .project .entry-title a {
       color: white;
       text-decoration: none;
