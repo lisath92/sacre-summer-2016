@@ -919,7 +919,6 @@ footer {
 .page-template-page-oil-gas .oil-gas-dropdown-wrapper ul {
   list-style: circle; }
 
-
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/
@@ -945,34 +944,6 @@ footer {
 .partners {
   background-color: lightgray;
   height: 340px;
-}
-
-
-.project-description-banner {
-  display: none; }
-  @media (min-width: 600px) {
-    .project-description-banner {
-      display: block;
-      padding: 1rem 0;
-      text-align: center;
-      color: white;
-      background: #272D66; }
-      .project-description-banner input {
-        font-size: 14px;
-        padding: .5rem 2rem;
-        border-radius: 0; } }
-
-.project-description-button {
-  padding: .75rem 2rem;
-  border-radius: 0;
-  color: white;
-  background: #279AB6;
-  box-shadow: none;
-  border: none; }
-
-
-.projects-grid {
-
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1000,17 +971,35 @@ footer {
     text-transform: uppercase;
     text-align: center; }
 
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-align: start;
-      align-items: flex-start; }
+.project-description-banner {
+  display: none; }
+  @media (min-width: 600px) {
+    .project-description-banner {
+      display: block;
+      padding: 1rem 0;
+      text-align: center;
+      color: white;
+      background: #272D66; }
+      .project-description-banner input {
+        font-size: 14px;
+        padding: .5rem 2rem;
+        border-radius: 0; } }
 
-.post-type-archive .projects {
-  max-width: 400px;
-  -ms-flex: 1 0 18%;
-      flex: 1 0 18%; }
+.project-description-button {
+  padding: .75rem 2rem;
+  border-radius: 0;
+  color: white;
+  background: #279AB6;
+  box-shadow: none;
+  border: none; }
 
-
+.projects-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
   @media (min-width: 600px) {
@@ -1057,8 +1046,6 @@ footer {
       color: white;
       text-decoration: none;
       text-align: center; }
-
     @media (min-width: 600px) {
       .project .entry-title {
         height: 50px; } }
-
