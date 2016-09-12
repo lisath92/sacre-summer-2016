@@ -44,8 +44,8 @@
 		@include desktop {
 	// width: 400px;
 	flex: 1 0 18%;
-}
-<<<<<<< b12cf18888fb2e581a13c09ec61bd280b8cdfe6b
+	}
+
 .entry-title {
 	@include display-flex(center,center);
 	position: absolute;
@@ -57,6 +57,7 @@
 	text-decoration: none;
 	text-align: center;
 	margin: 0;
+	// margin: .5rem .5rem;
 	a{
 		color: white;
 		text-decoration: none;
@@ -65,25 +66,28 @@
 	@include desktop {
 		height: 50px;
 	}
-}
-}	
-=======
 
+
+}	
+
+.entry-content {
+	// display:none;
+	font-size: 1rem;
+	text-align: center;
+}
 .entry-header {
 	width: 100%;
+	
 }
 .wp-post-image {
 	min-width: 100%;
-	height: auto;
-	position: relative;
+	height: auto;	
 	max-height: 700px;
 	
 }
 .entry-title {
 	@include display-flex(center,center);
-	position: absolute;
 	width: 100%;
-	bottom: 0;
 	background-color: $color__dark-blue;
 	height: 175px;
 	color: white;
@@ -101,4 +105,4 @@
 	}
 }	
 }
->>>>>>> fix lost projects banner
+

@@ -1104,18 +1104,19 @@ footer {
   -ms-flex: 1 0 100%;
       flex: 1 0 100%;
   width: 100%;
-  margin: 0;
-  position: relative; }
+  margin: .5rem .5rem; }
   @media (min-width: 600px) {
     .project {
       -ms-flex: 1 0 18%;
           flex: 1 0 18%; } }
+  .project .entry-content {
+    font-size: 1rem;
+    text-align: center; }
   .project .entry-header {
     width: 100%; }
   .project .wp-post-image {
     min-width: 100%;
     height: auto;
-    position: relative;
     max-height: 700px; }
   .project .entry-title {
     display: -ms-flexbox;
@@ -1124,9 +1125,7 @@ footer {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    position: absolute;
     width: 100%;
-    bottom: 0;
     background-color: #272D66;
     height: 175px;
     color: white;
