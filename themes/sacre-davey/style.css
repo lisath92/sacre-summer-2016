@@ -1058,3 +1058,7 @@ footer {
       text-decoration: none;
       text-align: center; }
 
+    @media (min-width: 600px) {
+      .project .entry-title {
+        height: 50px; } }
+

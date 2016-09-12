@@ -70,5 +70,8 @@
 		text-align: center;
 		
 	 	}
+	 	@include desktop {
+	 		height: 50px;
+	 	}
 	 }
 }	
