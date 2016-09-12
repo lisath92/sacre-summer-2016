@@ -4,12 +4,10 @@
   var mainMenu = $('.menu-main-navigation-container');
 
   $('body').on('click', function(event){
-  // $('.fa-bars').on('click', function(){
-    event.preventDefault();
     if($(event.target).hasClass('fa-bars') && mainMenu.is(":hidden")){ 
-    // if (mainMenu.is(":hidden")) {
       mainMenu.slideDown('slow');
       $('body').css("background-color","rgba(0,0,0,0.4)");
+      mainMenu.submit();
   } else {
     mainMenu.slideUp('slow');
     $('body').css("background-color","rgba(0,0,0,0)");
