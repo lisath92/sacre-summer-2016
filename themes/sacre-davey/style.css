@@ -1076,12 +1076,14 @@ footer {
         border-radius: 0; } }
 
 .project-description-button {
-  padding: .20rem 1rem;
+  padding: .6rem 2.25rem;
   border-radius: 0;
   color: white;
   background: #279AB6;
   box-shadow: none;
-  border: none; }
+  border: none;
+  text-transform: uppercase;
+  font-size: .75rem; }
 
 .projects-grid {
   display: -ms-flexbox;

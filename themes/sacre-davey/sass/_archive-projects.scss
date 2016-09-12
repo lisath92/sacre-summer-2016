@@ -16,15 +16,21 @@
 	}
 }
 .project-description-button {
-	padding: .75rem 1rem;
+
+	padding: .6rem 2.25rem;
 	border-radius: 0;
 	color: white;
 	background: $color__lightblue;
 	box-shadow: none;
 	border: none;
 	text-transform: uppercase;
+	font-size: .75rem;
 
 }
+
+	
+	
+
 
 .projects-grid {
 	@include display-flex (center, center);
