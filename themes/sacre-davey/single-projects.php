@@ -27,9 +27,7 @@ get_header(); ?>
 
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-					<div class="entry-meta">
-						
-					</div><!-- .entry-meta -->
+					
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">

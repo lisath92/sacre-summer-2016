@@ -32,19 +32,8 @@
 	@include desktop {
 		flex-flow: row wrap;
 		align-items: flex-start;
-
-
-
 	}
-	.project {
-		flex: 1 0 100%;
-		width: 100%;
-		margin: 0;
-		position: relative;
-		@include desktop {
-	// width: 400px;
-	flex: 1 0 18%;
-	}
+
 
 .entry-title {
 	@include display-flex(center,center);
@@ -66,6 +55,16 @@
 	@include desktop {
 		height: 50px;
 	}
+}
+
+.project {
+	flex: 1 0 100%;
+	width: 100%;
+	@include desktop {
+	// width: 400px;
+	flex: 1 0 18%;
+	margin: .5rem .5rem;
+	}
 
 
 }	
@@ -74,35 +73,36 @@
 	// display:none;
 	font-size: 1rem;
 	text-align: center;
+	.fa-times {
+	font-size: 1.5rem;
+	text-align: center;
+	color: white;
+	border-radius: 50%;
+	padding: .50rem;
+	background-color: $color__dark-blue;
+	}
+	@include desktop {
+		display: none;
+	}
+
 }
 .entry-header {
 	width: 100%;
+	h2 {
+		margin: 0;
+		border: 0;
+	}
 	
 }
 .wp-post-image {
 	min-width: 100%;
 	height: auto;	
 	max-height: 700px;
+	// background: url('../../assets/images/ProjectsHeaderOverlay.png')no-repeat;
+	background-size: cover;
 	
 }
-.entry-title {
-	@include display-flex(center,center);
-	width: 100%;
-	background-color: $color__dark-blue;
-	height: 175px;
-	color: white;
-	text-decoration: none;
-	text-align: center;
-	margin: 0;
-	font-size: 18px;
-	a{
-		color: white;
-		text-decoration: none;
-		text-align: center;
-	}
-	@include desktop {
-		height: 50px;
-	}
-}	
+
+
 }
 
