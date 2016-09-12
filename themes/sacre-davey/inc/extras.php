@@ -35,7 +35,7 @@ add_action('admin_menu','sacre_davey_remove_submenus',110);
 /**
 * Add featured image for about us page
 */
-function sacre_davey_inline_styles() {
+function sacre_davey_about_inline_styles() {
   if(!is_page_template('page-about.php')) {
     return;
   }
@@ -45,7 +45,7 @@ function sacre_davey_inline_styles() {
     return;
   }
   $css .='
-      #about-hero {
+      .hero {
         background:
         url('.$logo.') bottom/100% 100% no-repeat;
         height: 100%;
@@ -60,7 +60,41 @@ function sacre_davey_inline_styles() {
 wp_add_inline_style('sacre-davey-style', $css);
 }
 
-add_action( 'wp_enqueue_scripts','sacre_davey_inline_styles');
+add_action( 'wp_enqueue_scripts','sacre_davey_about_inline_styles');
+
+/**
+* Add featured image for contact us page
+*/
+function sacre_davey_contact_inline_styles() {
+  if(!is_page_template('contact-page.php')) {
+    return;
+  }
+  $css='';
+  $logo= CFS()->get('contact_page_image');
+  if(!$logo) {
+    return;
+  }
+  $css .='
+      .hero {
+        background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('.$logo.') bottom/100% 100% no-repeat;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+}';
+
+wp_add_inline_style('sacre-davey-style', $css);
+}
+
+add_action( 'wp_enqueue_scripts','sacre_davey_contact_inline_styles');
+
+
+
 /**
 * Custom loop for projects archive page
 */

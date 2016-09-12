@@ -7,11 +7,19 @@
 		line-height: 180px;
 	}
 
-	.entry-header {
-		height: 200px;
-		background-image: 
-		url('../../assets/images/mobile-header.png');
-		background-size: cover;
+.entry-header {
+	background: 
+  // linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+	linear-gradient(rbga(0,0,0,0.4), rgba(0,0,0,0.4));
+		color: white;
+    height: 50vw;
+    text-align: center;
+    width: 100vw;
+    max-height: 300px;
+		
+		h1 {
+			@include impact-heading($font__h2, uppercase);
+		}
 	}
 
 	.entry-content {
