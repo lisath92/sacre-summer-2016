@@ -30,16 +30,21 @@
   @include display-flex(center,center);
   align-content: center;
   flex-flow: row wrap;
+  @include desktop {
+    height: 40%;
+  }
 
   img {
     width: 37vw;
     padding: 20px;
-
+    @include desktop {
+      width: 17vw;
+    }
   }
 
 
   h3 {
-    font-size: $font__h3;
+    font-size: $font__h2;
     margin-bottom: 0;
     width: 100vw;
     color: white;

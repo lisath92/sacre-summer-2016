@@ -942,7 +942,7 @@ footer {
 
 .partners {
   background-color: lightgray;
-  height: 400px;
+  height: 340px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -953,11 +953,17 @@ footer {
       align-content: center;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
+  @media (min-width: 600px) {
+    .partners {
+      height: 40%; } }
   .partners img {
     width: 37vw;
     padding: 20px; }
+    @media (min-width: 600px) {
+      .partners img {
+        width: 17vw; } }
   .partners h3 {
-    font-size: 40px;
+    font-size: 48px;
     margin-bottom: 0;
     width: 100vw;
     color: white;
