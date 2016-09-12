@@ -544,10 +544,12 @@ iframe {
     background: url("../../assets/images/ServiceHeader.png") top/100% 100% no-repeat;
     background-size: cover; }
   .page-template-page-services h2 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: 3px;
     color: #272D66;
     text-align: center;
-    font-weight: bold;
     max-width: 800px;
     margin: 0 auto;
     width: 90%;
@@ -640,7 +642,10 @@ iframe {
       flex-flow: column nowrap;
   color: white; }
   .banner h3 {
+    font-family: "Impact", "Charcoal", sans-serif;
     font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     text-align: center;
     color: white;
     padding: 30px 0;
@@ -651,6 +656,8 @@ iframe {
       .banner h3 {
         width: 66%;
         font-size: 40px; } }
+  .banner .engineer-trust {
+    text-transform: none; }
   .banner p {
     margin-top: 0;
     max-width: 850px;
@@ -698,10 +705,12 @@ iframe {
   background-color: #279AB6;
   margin-top: 30px; }
   .updates-banner p {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 1.3rem;
+    text-transform: none;
+    letter-spacing: 3px;
     color: white;
     padding: 30px 0;
-    font-size: 1.3rem;
-    font-weight: bold;
     width: 90%;
     margin: 0 auto; }
     @media (min-width: 600px) {

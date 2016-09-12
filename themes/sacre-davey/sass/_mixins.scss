@@ -19,10 +19,10 @@
 }
 
 //Impact font
-@mixin impact-heading($size) {
+@mixin impact-heading($size, $transform) {
   font-family: $font__impact;
   font-size: $size;
-  text-transform: uppercase;
+  text-transform: $transform;
   letter-spacing: 3px;
 }
 
