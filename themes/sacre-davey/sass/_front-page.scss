@@ -26,9 +26,22 @@
 
 .partners {
   background-color: lightgray;
-  height: 400px;
+  height: 340px;
+  @include display-flex(center,center);
+  align-content: center;
+  flex-flow: row wrap;
+
+  img {
+    width: 37vw;
+    padding: 20px;
+
+  }
+
 
   h3 {
+    font-size: $font__h3;
+    margin-bottom: 0;
+    width: 100vw;
     color: white;
     text-transform: uppercase;
     text-align: center;
