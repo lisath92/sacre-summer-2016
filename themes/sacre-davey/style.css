@@ -223,7 +223,8 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 body {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "Helvetica", "Arial", sans-serif; }
 
 ul {
   list-style: none; }
@@ -742,7 +743,10 @@ iframe {
     width: 100vw;
     max-height: 300px; }
     .page-template-page-about .entry-header h1 {
-      text-transform: uppercase; }
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
     .page-template-page-about .entry-header p {
       width: 80%;
       max-width: 400px; }

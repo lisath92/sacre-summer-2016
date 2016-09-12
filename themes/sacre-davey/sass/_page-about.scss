@@ -9,7 +9,7 @@
     max-height: 300px;
 		
 		h1 {
-			text-transform: uppercase;
+			@include impact-heading($font__h2);
 
 		}
 		p {
