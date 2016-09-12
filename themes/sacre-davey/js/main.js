@@ -44,12 +44,10 @@ $('.button-group').on( 'click', '.button', function() {
 var projectDescription = $('.entry-content');
 
 $('body').on('click', function(event) {
-   if($(event.target).hasClass('entry-title')){ 
-    // projectDescription.show();
+   if($(event.target).hasClass('entry-title') && $(window).width()<582){ 
     projectDescription.css("display", "block");
   
   } else if($(event.target).hasClass('fa-times')){
-    // projectDescription.hide();
     projectDescription.css("display", "none");
 }
 });

@@ -95,6 +95,7 @@
 	border-radius: 50%;
 	padding: .4rem .5rem;
 	background-color: $color__dark-blue;
+	cursor: pointer;
 	}
 	@include desktop {
 		display: none;

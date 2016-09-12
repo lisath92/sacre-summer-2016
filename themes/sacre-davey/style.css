@@ -1127,7 +1127,8 @@ footer {
       color: white;
       border-radius: 50%;
       padding: .4rem .5rem;
-      background-color: #272D66; }
+      background-color: #272D66;
+      cursor: pointer; }
     @media (min-width: 600px) {
       .project .entry-content {
         display: none; } }
