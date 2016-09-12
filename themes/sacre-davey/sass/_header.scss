@@ -44,14 +44,15 @@
 }
 
 .menu-main-navigation-container {
+  font-weight: bold;
   font-size: 1rem;
+  text-transform: uppercase;
   display: none;
   width: 100%;
   padding-right: 10%;
   max-width: 600px;
   text-align: center;
   background-color: $color__dark-blue;
-  text-transform: uppercase;
 
   @include desktop {
     font-size: 0.8rem;
