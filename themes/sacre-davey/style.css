@@ -223,7 +223,8 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 body {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "Helvetica", "Arial", sans-serif; }
 
 ul {
   list-style: none; }
@@ -359,43 +360,59 @@ textarea {
     color: white;
     line-height: 180px; }
   .page-template-contact-page .entry-header {
-    height: 200px;
-    background-image: url("../../assets/images/mobile-header.png");
-    background-size: cover; }
+    color: white;
+    height: 50vw;
+    text-align: center;
+    width: 100vw;
+    max-height: 300px; }
+    .page-template-contact-page .entry-header h1 {
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
   .page-template-contact-page .entry-content {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
+    width: 80%;
     margin: 0 auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .page-template-contact-page .entry-content p:first-child,
-    .page-template-contact-page .entry-content p:nth-child(2) {
-      width: 80%; }
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    @media (min-width: 600px) {
+      .page-template-contact-page .entry-content {
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; } }
 
-.wpcf7 {
-  width: 29vw;
-  -ms-flex: none;
-      flex: none; }
-  .wpcf7 form {
+form {
+  width: 100%; }
+  @media (min-width: 600px) {
+    form {
+      width: 28vw; } }
+  form p {
     width: 100%; }
-  .wpcf7 input {
-    width: 250px;
-    border: 3px solid #272D66; }
-  .wpcf7 p {
+  form textarea {
+    width: 100%;
+    height: 20vw; }
+    @media (min-width: 600px) {
+      form textarea {
+        width: 50%; } }
+  form input,
+  form textarea {
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 3px blue solid;
+    margin-top: 10px; }
+    @media (min-width: 600px) {
+      form input,
+      form textarea {
+        width: 50%; } }
+  form input {
+    font-size: 1.5rem;
+    padding: 7px; }
+  form .required {
     color: #272D66; }
-  .wpcf7 .wpcf7-submit {
-    min-width: 260px;
-    text-transform: uppercase;
-    color: white;
-    background: #272D66;
-    box-shadow: none; }
 
 iframe {
-  width: 50vw; }
+  width: 100%; }
 
 .offices-wrapper {
   display: -ms-flexbox;
@@ -468,14 +485,15 @@ iframe {
         display: none; } }
 
 .menu-main-navigation-container {
+  font-weight: bold;
   font-size: 1rem;
+  text-transform: uppercase;
   display: none;
   width: 100%;
   padding-right: 10%;
   max-width: 600px;
   text-align: center;
-  background-color: #272D66;
-  text-transform: uppercase; }
+  background-color: #272D66; }
   @media (min-width: 600px) {
     .menu-main-navigation-container {
       font-size: 0.8rem;
@@ -543,10 +561,12 @@ iframe {
     background: url("../../assets/images/ServiceHeader.png") top/100% 100% no-repeat;
     background-size: cover; }
   .page-template-page-services h2 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: 3px;
     color: #272D66;
     text-align: center;
-    font-weight: bold;
     max-width: 800px;
     margin: 0 auto;
     width: 90%;
@@ -639,7 +659,10 @@ iframe {
       flex-flow: column nowrap;
   color: white; }
   .banner h3 {
+    font-family: "Impact", "Charcoal", sans-serif;
     font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     text-align: center;
     color: white;
     padding: 30px 0;
@@ -650,6 +673,8 @@ iframe {
       .banner h3 {
         width: 66%;
         font-size: 40px; } }
+  .banner .engineer-trust {
+    text-transform: none; }
   .banner p {
     margin-top: 0;
     max-width: 850px;
@@ -697,10 +722,12 @@ iframe {
   background-color: #279AB6;
   margin-top: 30px; }
   .updates-banner p {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 1.3rem;
+    text-transform: none;
+    letter-spacing: 3px;
     color: white;
     padding: 30px 0;
-    font-size: 1.3rem;
-    font-weight: bold;
     width: 90%;
     margin: 0 auto; }
     @media (min-width: 600px) {
@@ -733,21 +760,26 @@ iframe {
     .carousel-cell img {
       width: 100%; } }
 
-.page-template-page-about .entry-header {
-  color: white;
-  height: 200px;
-  text-align: center;
-  background: url("../../assets/images/AboutUsHeader.png");
-  background-size: cover;
-  padding: 1rem 3rem; }
-  .page-template-page-about .entry-header h1 {
-    text-transform: uppercase; }
-
-.page-template-page-about .values-block {
-  text-align: center; }
-
-.page-template-page-about .our-team-wrapper {
-  text-align: center; }
+.page-template-page-about {
+  font-size: 1rem; }
+  .page-template-page-about .entry-header {
+    color: white;
+    height: 50vw;
+    text-align: center;
+    width: 100vw;
+    max-height: 300px; }
+    .page-template-page-about .entry-header h1 {
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    .page-template-page-about .entry-header p {
+      width: 80%;
+      max-width: 400px; }
+  .page-template-page-about .values-block {
+    text-align: center; }
+  .page-template-page-about .our-team-wrapper {
+    text-align: center; }
 
 .the-excerpt {
   line-height: -60px; }

@@ -1,14 +1,19 @@
 .page-template-page-about {
+	font-size: 1rem;
 	
 	.entry-header {
 		color: white;
-		height: 200px;
-		text-align:center;
-		background: url('../../assets/images/AboutUsHeader.png');
-		background-size: cover;
-		padding: 1rem 3rem;
+    height: 50vw;
+    text-align: center;
+    width: 100vw;
+    max-height: 300px;
+		
 		h1 {
-			text-transform: uppercase;
+			@include impact-heading($font__h2, uppercase);
+		}
+		p {
+			width: 80%;
+			max-width: 400px;
 		}
 	}
 	.values-block {

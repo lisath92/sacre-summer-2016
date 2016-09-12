@@ -7,51 +7,105 @@
 		line-height: 180px;
 	}
 
-	.entry-header {
-		height: 200px;
-		background-image: 
-		url('../../assets/images/mobile-header.png');
-		background-size: cover;
+.entry-header {
+		color: white;
+    height: 50vw;
+    text-align: center;
+    width: 100vw;
+    max-height: 300px;
+		
+		h1 {
+			@include impact-heading($font__h2, uppercase);
+		}
 	}
 
 	.entry-content {
-		@include display-flex(center, center);
+		// @include display-flex(center, center);
+		display: flex;
+		width: 80%;
 		margin: 0 auto;
-		flex-wrap: wrap;
-
-	 p:first-child,
-	 p:nth-child(2) {
-	 	width: 80%;
-	 }
-		
+		flex-flow: column nowrap;
+		@include desktop {
+			flex-flow: row wrap;
+		}
 	}
 }
 
-.wpcf7 {
-	width: 29vw;
-	flex: none;
-
-	form {
-		width: 100%;
-	}
-	input {
-		width: 250px;
-		border:3px solid $color__dark-blue;
+form{
+	width: 100%;
+	@include desktop {
+		width: 28vw;
 	}
 	p {
-		color: $color__dark-blue;
+		width: 100%;
 	}
-	.wpcf7-submit {
-		min-width: 260px;
-		text-transform: uppercase;
-		color: white;
-		background: $color__dark-blue;
-		box-shadow: none;
+	textarea {
+		width: 100%;
+		height: 20vw;
+		@include desktop {
+			width: 50%;
+		}
+	}
+
+	input,
+	textarea{
+		width: 100%;
+		background-color: #f4f4f4;
+		border: 3px blue solid;
+		margin-top: 10px;
+		@include desktop {
+			width: 50%;
+		}
+	}
+
+	input {
+		font-size: 1.5rem;
+		padding: 7px;
+
+	}
+
+	.required {
+		color: $color__dark-blue;
 	}
 }
 
+
+
+// .wpcf7 {
+// 	width: 50vw;
+// 	align-self: center;
+
+// 	@include desktop {
+// 	width: 29vw;
+// 	flex: none;
+// }
+
+// 	form {
+// 		width: 100%;
+// 	}
+// 	input {
+// 		border:3px solid $color__dark-blue;
+// 		width: 80%;
+// 		@include desktop {
+// 		width: 250px;
+	
+// 	}
+// 	}
+// 	p {
+// 		width: 100%;
+// 		color: $color__dark-blue;
+// 	}
+// 	.wpcf7-submit {
+// 		min-width: 260px;
+// 		text-transform: uppercase;
+// 		color: white;
+// 		background: $color__dark-blue;
+// 		box-shadow: none;
+// 	}
+// }
+
 iframe {
-	width: 50vw;
+	width: 100%;
 }
 
 .offices-wrapper {

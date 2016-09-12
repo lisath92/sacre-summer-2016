@@ -1,5 +1,5 @@
 <?php
-/** Template name: Single Project
+/**
  * The template for displaying all single projects.
  *
  * @package Sacre Davey Theme

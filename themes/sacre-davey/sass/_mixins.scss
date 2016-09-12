@@ -18,6 +18,14 @@
   align-items: $align;
 }
 
+//Impact font
+@mixin impact-heading($size, $transform) {
+  font-family: $font__impact;
+  font-size: $size;
+  text-transform: $transform;
+  letter-spacing: 3px;
+}
+
 //Media Queries
 $mobile-width: 600px;
 

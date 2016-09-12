@@ -20,10 +20,9 @@
 	}
 
 	h2 {
-		text-transform: uppercase;
+		@include impact-heading(1rem, uppercase);
 		color: $color__dark-blue;
 		text-align: center;
-		font-weight: bold;
 		max-width: 800px;
 		margin: 0 auto;
 		width: 90%;
@@ -114,7 +113,7 @@
 	flex-flow: column nowrap;
 	color: white;
 	h3 {
-		font-size: $font__h4;
+		@include impact-heading($font__h4, uppercase);
 		text-align: center;
 		color: white;
 		padding: 30px 0;
@@ -126,6 +125,9 @@
 			font-size: $font__h3;
 		}
 	}
+	.engineer-trust {
+	text-transform: none;
+}
 	p {
 		margin-top: 0;
 		max-width: 850px;
@@ -137,6 +139,7 @@
 		}
 	}
 }
+
 
 .service-image {
 	display: none;
@@ -181,10 +184,9 @@
 	background-color: $color__lightblue;
 	margin-top: 30px;
 	p {
+		@include impact-heading(1.3rem, none);
 		color: white;
 		padding: 30px 0;
-		font-size: 1.3rem;
-		font-weight: bold;
 		width: 90%;
 		margin: 0 auto;
 		@include desktop {

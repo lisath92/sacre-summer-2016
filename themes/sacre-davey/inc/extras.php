@@ -11,16 +11,93 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-// function red_starter_body_classes( $classes ) {
-// 	// Adds a class of group-blog to blogs with more than 1 published author.
-// 	if ( is_multi_author() ) {
-// 		$classes[] = 'group-blog';
-// 	}
+function sacre_davey_body_classes( $classes ) {
+	// Adds a class of group-blog to blogs with more than 1 published author.
+	if ( is_multi_author() ) {
+		$classes[] = 'group-blog';
+	}
 
-// 	return $classes;
-// }
-// add_filter( 'body_class', 'red_starter_body_classes' );
+	return $classes;
+}
+add_filter( 'body_class', 'sacre_davey_body_classes' );
 
+/**
+*Remove "Editor" link from sub-menus
+*/
+function sacre_davey_remove_submenus() {
+  remove_submenu_page('themes.php', 'theme-editor.php');
+  remove_submenu_page('plugins.php','plugin-editor.php');
+}
+
+add_action('admin_menu','sacre_davey_remove_submenus',110);
+
+
+/**
+* Add featured image for about us page
+*/
+function sacre_davey_about_inline_styles() {
+  if(!is_page_template('page-about.php')) {
+    return;
+  }
+  $css='';
+  $logo= CFS()->get('about_us_hero_image');
+  if(!$logo) {
+    return;
+  }
+  $css .='
+      .hero {
+        background:
+        url('.$logo.') bottom/100% 100% no-repeat;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+}';
+
+wp_add_inline_style('sacre-davey-style', $css);
+}
+
+add_action( 'wp_enqueue_scripts','sacre_davey_about_inline_styles');
+
+/**
+* Add featured image for contact us page
+*/
+function sacre_davey_contact_inline_styles() {
+  if(!is_page_template('contact-page.php')) {
+    return;
+  }
+  $css='';
+  $logo= CFS()->get('contact_page_image');
+  if(!$logo) {
+    return;
+  }
+  $css .='
+      .hero {
+        background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('.$logo.') bottom/100% 100% no-repeat;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+}';
+
+wp_add_inline_style('sacre-davey-style', $css);
+}
+
+add_action( 'wp_enqueue_scripts','sacre_davey_contact_inline_styles');
+
+
+
+/**
+* Custom loop for projects archive page
+*/
 function sacre_davey_modifying_product_archive_query($query) {
     if (is_post_type_archive('projects') && !is_admin() && $query->is_main_query()) {
         $query->set( 'posts_per_page', 25);
