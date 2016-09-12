@@ -920,7 +920,6 @@ footer {
   list-style: circle; }
 
 
-
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/
@@ -947,6 +946,29 @@ footer {
   background-color: lightgray;
   height: 340px;
 }
+
+
+.project-description-banner {
+  display: none; }
+  @media (min-width: 600px) {
+    .project-description-banner {
+      display: block;
+      padding: 1rem 0;
+      text-align: center;
+      color: white;
+      background: #272D66; }
+      .project-description-banner input {
+        font-size: 14px;
+        padding: .5rem 2rem;
+        border-radius: 0; } }
+
+.project-description-button {
+  padding: .75rem 2rem;
+  border-radius: 0;
+  color: white;
+  background: #279AB6;
+  box-shadow: none;
+  border: none; }
 
 
 .projects-grid {
@@ -1013,7 +1035,8 @@ footer {
   .project .wp-post-image {
     min-width: 100%;
     height: auto;
-    position: relative; }
+    position: relative;
+    max-height: 700px; }
   .project .entry-title {
     display: -ms-flexbox;
     display: flex;

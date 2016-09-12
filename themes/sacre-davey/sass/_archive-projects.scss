@@ -1,5 +1,28 @@
 
+	.project-description-banner {
+		display: none;
+		@include desktop {
+		display: block;
+		padding: 1rem 0;
+		text-align: center;
+		color: white;
+		background: $color__dark-blue;
+		input {
+			font-size: 14px;
+			padding: .5rem 2rem;
+			border-radius: 0;
+			}
+		}
+	}
+	.project-description-button {
+		padding: .75rem 2rem;
+		border-radius: 0;
+		color: white;
+		background: $color__lightblue;
+		box-shadow: none;
+		border: none;
 
+		}
 	
 	.projects-grid {
 		@include display-flex (center, center);
@@ -26,6 +49,7 @@
 		min-width: 100%;
 		height: auto;
 		position: relative;
+		max-height: 700px;
 		
 	}
 	.entry-title {
