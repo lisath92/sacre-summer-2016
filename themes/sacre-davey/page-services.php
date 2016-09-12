@@ -13,7 +13,8 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+				<div class="entry-header">
+				</div>
 				<div class="entry-content">
 					<h2>One-stop-shop for all your engineering needs</h2>
 					<div class="engineering-needs-wrapper">
