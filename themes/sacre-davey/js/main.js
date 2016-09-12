@@ -53,4 +53,16 @@ $('body').on('click', function(event) {
 });
 
 
+$('body').on('click', function(event) {
+  if($(event.target).hasClass('entry-title') && $(window).width()>582) {
+      // projectDescription.css("display", "block");
+      document.createElement("div"); 
+      document.body.insertBefore($('.projects-grid'));
+      
+  } else if($(event.target).hasClass('fa-times')){
+    projectDescription.css("display", "none");
+  }
+});
+
+
 })(jQuery);
