@@ -9,7 +9,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div class="project-description-banner">
+		<p>For a detailed description of a project please enter the information below</p>
+		<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
+		<submit class="project-description-button">Send</submit>
+		</div>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

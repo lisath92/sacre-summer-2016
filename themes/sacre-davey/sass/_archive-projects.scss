@@ -15,12 +15,13 @@
 		}
 	}
 	.project-description-button {
-		padding: .75rem 2rem;
+		padding: .75rem 1rem;
 		border-radius: 0;
 		color: white;
 		background: $color__lightblue;
 		box-shadow: none;
 		border: none;
+		text-transform: uppercase;
 
 		}
 	
@@ -64,11 +65,9 @@
 		text-align: center;
 		margin: 0;
 		a{
-
 		color: white;
 		text-decoration: none;
 		text-align: center;
-		
 	 	}
 	 	@include desktop {
 	 		height: 50px;
