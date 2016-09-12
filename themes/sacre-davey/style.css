@@ -1070,12 +1070,13 @@ footer {
       color: white;
       background: #272D66; }
       .project-description-banner input {
+        margin-right: .5rem;
         font-size: 14px;
         padding: .5rem 2rem;
         border-radius: 0; } }
 
 .project-description-button {
-  padding: .75rem 2rem;
+  padding: .20rem 1rem;
   border-radius: 0;
   color: white;
   background: #279AB6;
@@ -1107,9 +1108,10 @@ footer {
   position: relative; }
   @media (min-width: 600px) {
     .project {
-      max-width: 400px;
       -ms-flex: 1 0 18%;
           flex: 1 0 18%; } }
+  .project .entry-header {
+    width: 100%; }
   .project .wp-post-image {
     min-width: 100%;
     height: auto;
@@ -1130,7 +1132,8 @@ footer {
     color: white;
     text-decoration: none;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    font-size: 18px; }
     .project .entry-title a {
       color: white;
       text-decoration: none;

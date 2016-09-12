@@ -1,38 +1,39 @@
 
-	.project-description-banner {
-		display: none;
-		@include desktop {
+.project-description-banner {
+	display: none;
+	@include desktop {
 		display: block;
 		padding: 1rem 0;
 		text-align: center;
 		color: white;
 		background: $color__dark-blue;
 		input {
+			margin-right: .5rem;
 			font-size: 14px;
 			padding: .5rem 2rem;
 			border-radius: 0;
-			}
 		}
 	}
-	.project-description-button {
-		padding: .75rem 1rem;
-		border-radius: 0;
-		color: white;
-		background: $color__lightblue;
-		box-shadow: none;
-		border: none;
-		text-transform: uppercase;
+}
+.project-description-button {
+	padding: .75rem 1rem;
+	border-radius: 0;
+	color: white;
+	background: $color__lightblue;
+	box-shadow: none;
+	border: none;
+	text-transform: uppercase;
 
-		}
-	
-	.projects-grid {
-		@include display-flex (center, center);
-		flex-flow: column nowrap;
-		@include desktop {
+}
+
+.projects-grid {
+	@include display-flex (center, center);
+	flex-flow: column nowrap;
+	@include desktop {
 		flex-flow: row wrap;
 		align-items: flex-start;
-		}
-		
+
+
 
 	}
 	.project {
@@ -41,36 +42,63 @@
 		margin: 0;
 		position: relative;
 		@include desktop {
-		max-width: 400px;
-		flex: 1 0 18%;
-		}
-	
-
-	.wp-post-image {
-		min-width: 100%;
-		height: auto;
-		position: relative;
-		max-height: 700px;
-		
+	// width: 400px;
+	flex: 1 0 18%;
+}
+<<<<<<< b12cf18888fb2e581a13c09ec61bd280b8cdfe6b
+.entry-title {
+	@include display-flex(center,center);
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: $color__dark-blue;
+	height: 175px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	margin: 0;
+	a{
+		color: white;
+		text-decoration: none;
+		text-align: center;
 	}
-	.entry-title {
-		@include display-flex(center,center);
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		background-color: $color__dark-blue;
-		height: 175px;
-		color: white;
-		text-decoration: none;
-		text-align: center;
-		margin: 0;
-		a{
-		color: white;
-		text-decoration: none;
-		text-align: center;
-	 	}
-	 	@include desktop {
-	 		height: 50px;
-	 	}
-	 }
+	@include desktop {
+		height: 50px;
+	}
+}
 }	
+=======
+
+.entry-header {
+	width: 100%;
+}
+.wp-post-image {
+	min-width: 100%;
+	height: auto;
+	position: relative;
+	max-height: 700px;
+	
+}
+.entry-title {
+	@include display-flex(center,center);
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: $color__dark-blue;
+	height: 175px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	margin: 0;
+	font-size: 18px;
+	a{
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+	@include desktop {
+		height: 50px;
+	}
+}	
+}
+>>>>>>> fix lost projects banner
