@@ -918,3 +918,10 @@ footer {
 
 .page-template-page-oil-gas .oil-gas-dropdown-wrapper ul {
   list-style: circle; }
+/*---------------------------------------------------------------
+  Front Page
+----------------------------------------------------------------*/
+.hero-image {
+  width: 100vw; }
+  .hero-image img {
+    width: 100%; }
