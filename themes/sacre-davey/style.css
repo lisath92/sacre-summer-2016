@@ -924,4 +924,26 @@ footer {
 .hero-image {
   width: 100vw; }
   .hero-image img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
+
+.intro {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #272D66; }
+  @media (min-width: 600px) {
+    .intro {
+      color: black;
+      font-size: 1.5rem;
+      max-width: 800px; } }
+
+.partners {
+  background-color: lightgray;
+  height: 400px; }
+  .partners h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center; }
