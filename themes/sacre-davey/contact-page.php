@@ -19,11 +19,10 @@ get_header(); ?>
 		<header class="entry-header">
 					<div id="contact-hero" class="hero">
 					<h1>Contact Us</h1>
-	</header><!-- .entry-header -->
-	
+	</header> <!-- .entry-header-->
 	<div class="entry-content">
 		<?php the_content(); ?>
-	</div><!-- .entry-content -->
+	</div><!-- .entry-content-->
 </article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>

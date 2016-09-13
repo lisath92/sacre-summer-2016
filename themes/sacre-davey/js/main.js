@@ -1,7 +1,17 @@
 (function($) {
 
 //Toggle hamburger menu
-var mainMenu = $('.menu-main-navigation-container');
+var mainMenu = $('.menu-main-navigation-container'),
+$carousel = $('.carousel').flickity({
+  cellAlign: 'center',
+  contain: true,
+  prevNextButtons: false
+}),
+
+$gallery = $('.gallery').flickity({
+  cellAlign: 'left',
+  pageDots: false
+});
 
 $('body').on('click', function(event){
   if($(event.target).hasClass('fa-bars') && mainMenu.is(":hidden")){ 
@@ -22,6 +32,11 @@ $(window).resize(function(){
   } else {
     mainMenu.hide();
   }
-})
+});
+
+$('.button-group').on( 'click', '.button', function() {
+  var index = $(this).index();
+  $gallery.flickity( 'select', index );
+});
 
 })(jQuery);
