@@ -843,8 +843,49 @@ iframe {
   width: 100%;
   height: 200px; }
 
-.our-team-wrapper {
-  text-align: center; }
+.our-team {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  color: #272D66;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .our-team {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
+
+.each-member {
+  width: 100%;
+  margin-bottom: 30px; }
+  @media (min-width: 600px) {
+    .each-member {
+      width: 30vw;
+      max-width: 239px;
+      padding-right: 30px; } }
+  .each-member .name {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 0; }
+  .each-member .position {
+    font-family: Helvetica;
+    margin-top: 0;
+    font-size: 1.5rem;
+    word-wrap: break-word; }
+  @media (min-width: 600px) {
+    .each-member img {
+      width: 100%; } }
+
+.timeline {
+  background-color: #272D66; }
 
 .the-excerpt {
   line-height: -60px; }
