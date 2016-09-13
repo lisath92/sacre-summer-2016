@@ -113,6 +113,10 @@
 		font-size: 1.5rem;
 		word-wrap: break-word;
 	}
+
+	.member-photo {
+		border-radius: 50%;
+	}
 	img {
 		@include desktop {
 			width: 100%;

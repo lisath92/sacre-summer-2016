@@ -880,6 +880,8 @@ iframe {
     margin-top: 0;
     font-size: 1.5rem;
     word-wrap: break-word; }
+  .each-member .member-photo {
+    border-radius: 50%; }
   @media (min-width: 600px) {
     .each-member img {
       width: 100%; } }
