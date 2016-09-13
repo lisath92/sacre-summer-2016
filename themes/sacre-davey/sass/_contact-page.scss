@@ -1,5 +1,4 @@
 .page-template-contact-page {
-	width: 98.5vw;
 	
 	.entry-title {
 		text-align: center;
@@ -11,7 +10,7 @@
 		color: white;
     height: 50vw;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     max-height: 300px;
 		
 		h1 {
@@ -20,7 +19,6 @@
 	}
 
 	.entry-content {
-		// @include display-flex(center, center);
 		display: flex;
 		width: 80%;
 		margin: 0 auto;
@@ -31,90 +29,59 @@
 	}
 }
 
+		p {
+			width: 100%;
+		}
+
 form{
 	width: 100%;
-	@include desktop {
-		width: 28vw;
-	}
-	p {
-		width: 100%;
-	}
-	textarea {
-		width: 100%;
-		height: 20vw;
-		@include desktop {
-			width: 50%;
-		}
-	}
 
-	input,
+	textarea {
+		height: 20vw;
+		max-height: 300px;
+	}
+	
+	input[type="email"],
+	input[type="text"],
 	textarea{
 		width: 100%;
 		background-color: #f4f4f4;
-		border: 3px blue solid;
-		margin-top: 10px;
-		@include desktop {
-			width: 50%;
-		}
+		margin-bottom: 30px;
 	}
 
 	input {
 		font-size: 1.5rem;
 		padding: 7px;
-
 	}
 
 	.required {
 		color: $color__dark-blue;
 	}
+
+	input[type="submit"] {
+		padding: 10px 20px;
+		text-align: center;
+		border: none;
+		background-color: $color__dark-blue;
+		color: white;
+		box-shadow: none;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
 }
 
-
-
-// .wpcf7 {
-// 	width: 50vw;
-// 	align-self: center;
-
-// 	@include desktop {
-// 	width: 29vw;
-// 	flex: none;
-// }
-
-// 	form {
-// 		width: 100%;
-// 	}
-// 	input {
-// 		border:3px solid $color__dark-blue;
-// 		width: 80%;
-// 		@include desktop {
-// 		width: 250px;
-	
-// 	}
-// 	}
-// 	p {
-// 		width: 100%;
-// 		color: $color__dark-blue;
-// 	}
-// 	.wpcf7-submit {
-// 		min-width: 260px;
-// 		text-transform: uppercase;
-// 		color: white;
-// 		background: $color__dark-blue;
-// 		box-shadow: none;
-// 	}
-// }
-
 iframe {
-	width: 100%;
+	width: 100%
 }
 
 .offices-wrapper {
+	width: 80%;
+	margin: 0 auto;
 
-	@include display-flex(center, center);
+	@include display-flex(center, flex-start);
 	flex-flow: row wrap; 
 	.office-block {
 		flex:1 0 28%;
-		min-height: 825px;
 		padding-right: 20px;
 		h2 {
 			color: $color__dark-blue;
