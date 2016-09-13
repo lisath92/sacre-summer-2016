@@ -16,9 +16,7 @@
 			max-width: 400px;
 		}
 	}
-	.values-block {
-		text-align: center;
-	}
+
 
 	.our-team-wrapper {
 		text-align: center;
@@ -61,7 +59,18 @@
 	
 }
 
-
+//Flickity
+.button-group {
+	width: 90%;
+	margin: 0 auto;
+	img {
+		width: 20%;
+	}
+}
+.gallery-cell {
+	width: 100%;
+	height: 200px;
+}
 
 
 

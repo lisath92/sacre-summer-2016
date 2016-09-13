@@ -6,6 +6,11 @@ $carousel = $('.carousel').flickity({
   cellAlign: 'center',
   contain: true,
   prevNextButtons: false
+}),
+
+$gallery = $('.gallery').flickity({
+  cellAlign: 'left',
+  prevNextButtons: false
 });
 
 $('body').on('click', function(event){
@@ -29,11 +34,9 @@ $(window).resize(function(){
   }
 });
 
-
-
 $('.button-group').on( 'click', '.button', function() {
   var index = $(this).index();
-  $carousel.flickity( 'select', index );
+  $gallery.flickity( 'select', index );
 });
 
 })(jQuery);
