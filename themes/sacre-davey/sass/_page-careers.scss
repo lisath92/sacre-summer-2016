@@ -4,13 +4,21 @@
 		margin-bottom: 0;
 	}
 
-	.entry-header {
-		height: 200px;
-		background: url('../../assets/images/Careers1stHeader.png')no-repeat;
-		background-size: cover;
+	.hero-image {
+		width: 100%;
+		img {
+		width: 100%;
+		height: 100%;
+		}
+	}
+	// .entry-header {
+	// 	height: 200px;
+	// 	width: 100%;
+	// 	background: url('../../assets/images/Careers1stHeader.png')top/100% 100% no-repeat;
+	// 	background-size: cover;
 
 		
-	}
+	// }
 
 	.growing-text {
 		text-align: center;
@@ -29,11 +37,11 @@
 		margin: 0 auto;
 		}
 		h2{
-			
-			height: 100px;
+			@include display-flex(center, center)
+			height: 100%;
 			color: white;
 			background: $color__lightblue;
-			padding-top: 3rem;
+			padding: 1rem 0rem;
 			@include impact-heading(3rem, lowercase);
 		}
 	}

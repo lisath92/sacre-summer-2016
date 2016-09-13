@@ -13,10 +13,12 @@ get_header(); ?>
 		
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header class="entry-header">
-				
-			</header><!-- .entry-header -->
-
+			
+			<section class="hero-image">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail( 'full' ); ?>
+			<?php endif; ?>
+			</section>
 			<div class="entry-content">
 				<div class="growing-text">
 					<p>Our established engineering firm is GROWING! With our home office in North Vancouver and regional offices across Canada and the Western United States, we are looking for dynamic, well rounded individuals to join our team. These positions require an individual who is highly motivated, self-directed and has amazing attention to detail. We’re always looking for talented individuals to join our team in making a difference.</p>

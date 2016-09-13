@@ -991,10 +991,11 @@ footer {
 .page-template-page-careers article {
   margin-bottom: 0; }
 
-.page-template-page-careers .entry-header {
-  height: 200px;
-  background: url("../../assets/images/Careers1stHeader.png") no-repeat;
-  background-size: cover; }
+.page-template-page-careers .hero-image {
+  width: 100%; }
+  .page-template-page-careers .hero-image img {
+    width: 100%;
+    height: 100%; }
 
 .page-template-page-careers .growing-text {
   text-align: center;
@@ -1010,10 +1011,16 @@ footer {
     width: 90%;
     margin: 0 auto; }
   .page-template-page-careers .life-work-banner h2 {
-    height: 100px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100%;
     color: white;
     background: #279AB6;
-    padding-top: 3rem;
+    padding: 1rem 0rem;
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 3rem;
     text-transform: lowercase;
