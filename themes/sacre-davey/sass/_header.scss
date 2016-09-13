@@ -127,6 +127,7 @@
   }
 }
 
+//About Us sub-menu
 .about-menu {
   max-width: 400px;
   margin: 0 auto;
@@ -137,3 +138,11 @@
   }
 }
 
+
+//Mobile view menu
+.nav-mobile {
+  
+  @include desktop {
+    display: none;
+  }
+}

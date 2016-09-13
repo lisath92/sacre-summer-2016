@@ -582,6 +582,10 @@ iframe {
   .about-menu li {
     text-align: right; }
 
+@media (min-width: 600px) {
+  .nav-mobile {
+    display: none; } }
+
 /*--------------------------------------------------------------
 # Services Page Template
 --------------------------------------------------------------*/
