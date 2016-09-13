@@ -1037,8 +1037,17 @@ footer {
   background: #272D66;
   padding-bottom: 1rem; }
   .page-template-page-careers .opportunities-banner-wrapper .select-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
     width: 90%;
     margin: 0 auto; }
+    @media (min-width: 600px) {
+      .page-template-page-careers .opportunities-banner-wrapper .select-wrapper {
+        display: block; } }
   .page-template-page-careers .opportunities-banner-wrapper .opportunity-dropdowns {
     border-radius: 0;
     width: 10rem;

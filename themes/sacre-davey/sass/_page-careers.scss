@@ -11,14 +11,6 @@
 		height: 100%;
 		}
 	}
-	// .entry-header {
-	// 	height: 200px;
-	// 	width: 100%;
-	// 	background: url('../../assets/images/Careers1stHeader.png')top/100% 100% no-repeat;
-	// 	background-size: cover;
-
-		
-	// }
 
 	.growing-text {
 		text-align: center;
@@ -58,14 +50,20 @@
 		background: $color__dark-blue;
 		padding-bottom: 1rem;
 		.select-wrapper {
+			@include display-flex (center, center); 
 			width: 90%;
 			margin: 0 auto;
+			@include desktop {
+				display: block;
+			}
 		}
+
 		.opportunity-dropdowns {
 			border-radius: 0;
 			width: 10rem;
 			margin-left: 2rem;
 			margin-right: 2rem;
+
 		}
 		.dropdown-titles {
 			color: white;
