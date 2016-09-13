@@ -1,7 +1,7 @@
 (function($) {
 
 //Toggle hamburger menu
-var mainMenu = $('.menu-main-navigation-container'),
+var mainMenu = $('.nav-mobile'),
 $carousel = $('.carousel').flickity({
   cellAlign: 'center',
   contain: true,
@@ -28,8 +28,6 @@ $('body').on('click', function(event){
 //Show Menu if more than 600px view width
 $(window).resize(function(){
   if($(window).width()>582) {
-    mainMenu.show();
-  } else {
     mainMenu.hide();
   }
 });

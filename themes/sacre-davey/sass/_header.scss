@@ -7,7 +7,7 @@
   width: 100vw;
   margin: 0;
   position: fixed;
-  z-index: 100000;
+  z-index: 1000000000;
   height: 80px;
   background-color: white;
   border-bottom: 1px $color__lightblue solid;
@@ -24,77 +24,7 @@
   padding-top: 80px;
 }
 
-.main-navigation {
-  @include display-flex(space-between, center);
-  flex-wrap: wrap;
-  width: 100%;
-  @include desktop {
-    flex-wrap: nowrap;
-    margin: 0 auto;
-  }
-  .fa-bars {
-    font-size: $font__h4;
-    cursor: pointer;
-    padding-right: 10%;
-    @include desktop {
-      display: none;
-    }
-  }
-
-}
-
-.menu-main-navigation-container {
-  font-weight: bold;
-  font-size: 1rem;
-  text-transform: uppercase;
-  display: none;
-  width: 100%;
-  padding-right: 10%;
-  max-width: 600px;
-  text-align: center;
-  background-color: $color__dark-blue;
-
-  @include desktop {
-    font-size: 0.8rem;
-    background-color: white;
-    display: block;
-    width: 100%;
-  }
-
-  ul {
-    padding: 0;
-    @include display-flex(flex-start, stretch);
-    flex-flow: column wrap;
-    @include desktop {
-      flex-flow: row nowrap;
-      justify-content: flex-end;
-    }
-  }
-
-  li {
-    line-height: 2;
-    width: 100%;
-    text-align: center;
-
-    @include desktop {
-      padding-bottom: 0;
-      white-space: nowrap;
-    }
-  }
-  a {
-    color: white;
-    text-decoration: none;
-
-    @include desktop {
-      color: $color__dark-blue;
-    }
-    &:hover {
-      color: $color__lightblue;
-    }
-  }
-  
-}
-
+//Logo
 .site-header h1 {
   background:
   url("../../assets/images/mobile-logo.png")
@@ -115,5 +45,134 @@
     max-height: 55px;
     max-width: 200px;
     width: 23vw;
+  }
+}
+
+
+//Main Navigation
+.main-navigation {
+  @include display-flex(space-between, center);
+  // flex-wrap: wrap;
+  width: 100%;
+  @include desktop {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+  .fa-bars {
+    font-size: $font__h4;
+    cursor: pointer;
+    padding-right: 10%;
+    @include desktop {
+      display: none;
+    }
+  }
+
+}
+
+.about-menu,
+.menu-main-navigation-container {
+  display: none;
+  @include desktop {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    max-width: 600px;
+    text-align: center;
+    width: 100%;
+    // padding-right: 30px;
+    ul {
+      width: 80%;
+      @include display-flex(flex-end, center);
+      flex-flow: row nowrap;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: $color__dark-blue;
+      width: 10vw;
+      &:hover {
+        color: $color__lightblue;
+      }
+    }
+    
+    li {
+      width: 100%;
+     padding-bottom: 0;
+     white-space: nowrap;
+
+     &.current-menu-item a {
+      text-decoration: underline;
+      font-size: 1rem;
+      color: black;
+    }
+  }
+}
+}
+
+
+.nav-mobile {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  padding-right: 10%;
+  max-width: 600px;
+  text-align: center;
+  background-color: $color__dark-blue;
+
+  @include desktop {
+   display: none;
+ }
+
+ ul {
+    padding: 0;
+    @include display-flex(center, center);
+    flex-flow: column wrap;
+    @include desktop {
+
+    }
+  }
+
+  li {
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+
+    // @include desktop {
+    //   color: $color__dark-blue;
+    // }
+    // &:hover {
+    //   color: $color__lightblue;
+    // }
+  }
+}
+
+//About Us sub-menu
+.about-menu {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+
+  li {
+    text-align: right;
+  }
+}
+
+
+//Mobile view menu
+.nav-mobile {
+
+  @include desktop {
+    display: none;
   }
 }

@@ -25,6 +25,7 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title screen-reader-text"></h1></a>
 					<i class="fa fa-bars" aria-hidden="true"></i>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary-mobile-menu', 'container_class' => 'nav-mobile') ) ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

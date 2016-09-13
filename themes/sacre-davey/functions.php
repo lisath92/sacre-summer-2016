@@ -24,6 +24,8 @@ function sacre_davey_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'about-us' => esc_html( 'About Us' ),
+		'primary-mobile-menu' => esc_html('Mobile Menu'),
 	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
