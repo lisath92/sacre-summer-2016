@@ -175,17 +175,22 @@
 
 //new timeline
 .timeline {
+
 	padding-top: 2rem;
 	text-align: center;
 	color: white;
 	background-color: $color__dark-blue;
 	h2 {
-		text-transform:uppercase;
+		@include impact-heading (2rem ,uppercase);
+		
 	}
 
+
+}
+.history-wrapper {
+	width: 90%;
 }
 .mobile-history {
-	
 		@include desktop {
 			display:none
 		}
@@ -193,6 +198,7 @@
 	.desktop-history {
 		display: none;
 		@include desktop {
+
 			display: unset;
 		}
 	}
