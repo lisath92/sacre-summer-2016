@@ -126,32 +126,29 @@
 
 
 //Timeline
-.timeline {
-	color: white;
-	background-color: $color__dark-blue;
-}
-.the-excerpt {
-	line-height: -60px;
-}
-.cd-timeline-content {
-	background-color: $color__dark-blue;
-	box-shadow: 0;
-	.cd-timeline-img {
-	box-shadow: 0;
-  }
-}
 
-.timeline-date,
-.timeline-express-read-more-link {
-	visibility: hidden;
+// .the-excerpt {
+// 	line-height: -60px;
+// }
+// .cd-timeline-content {
+// 	background-color: $color__dark-blue;
+// 	box-shadow: 0;
+// 	.cd-timeline-img {
+// 	box-shadow: 0;
+//   }
+// }
 
-}
+// .timeline-date,
+// .timeline-express-read-more-link {
+// 	visibility: hidden;
 
-.fa-circle::before {
-	box-shadow: 0;
-	color: $color__lightblue;
+// }
 
-}
+// .fa-circle::before {
+// 	box-shadow: 0;
+// 	color: $color__lightblue;
+
+// }
 
 //Learn more banner
 .learn-more-banner {
@@ -177,7 +174,10 @@
 }
 
 //new timeline
-
+.timeline {
+	color: white;
+	background-color: $color__dark-blue;
+}
 .tm_timeline__event__date {
 	display: none;
 }
@@ -220,12 +220,9 @@
 	}
 }
 
-
-
 .tm_timeline__body-tense {
 
 	color: white;
 }
 
-// to remove timeline when in mobile
 
