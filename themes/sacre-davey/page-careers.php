@@ -25,12 +25,13 @@ get_header(); ?>
 					<h2>Join us and put a little more life in your life/work</h2>
 					<p>Sacré Davey is our home not just where we work, we are a family and we want you to be apart of it. Come join us for a challenging yet rewarding work experience where you'll be able to learn and move your career forward.</p>
 				</div>
+				<h1 class="opportunities-banner">Opportunities</h1>
 				<div class="opportunities-wrapper">
-					<h1 class="opportunities-banner">Opportunities</h1>
+					
 					<ul class="canadian-opportunities">
 						<li><span class="opportunities-title">Calgary, Canada</span>
 							<ul>
-								<li>Intermediate Process Engineer</li>
+								<li class="job-positions">Intermediate Process Engineer</li>
 							</ul>
 						</li>
 					</ul>
@@ -38,8 +39,8 @@ get_header(); ?>
 					<ul class="american-opportunities">
 						<li><span class="opportunities-title">Seattle, USA</span>
 							<ul>
-								<li>Office &amp; Finance Manager</li>
-								<li>Senior Process Engineer, SDE3</li>
+								<li class="job-positions">Office &amp; Finance Manager</li>
+								<li class="job-positions">Senior Process Engineer, SDE3</li>
 							</ul>
 						</li>
 					</ul>	

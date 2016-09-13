@@ -1016,6 +1016,13 @@ footer {
     text-transform: lowercase;
     letter-spacing: 3px; }
 
+.page-template-page-careers .opportunities-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2rem; }
+  .page-template-page-careers .opportunities-wrapper .job-positions {
+    padding-top: 2rem; }
+
 .page-template-page-careers .opportunities-banner {
   text-align: center;
   height: 100px;

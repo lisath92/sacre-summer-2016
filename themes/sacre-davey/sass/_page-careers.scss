@@ -34,6 +34,16 @@
 			@include impact-heading(3rem, lowercase);
 		}
 	}
+	.opportunities-wrapper {
+			width: 90%;
+			margin: 0 auto;
+			padding-bottom: 2rem;
+		.job-positions {
+			padding-top: 2rem;
+			
+		}
+	}
+	
 	.opportunities-banner {
 		text-align:center;
 		height: 100px;
