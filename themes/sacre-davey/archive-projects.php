@@ -19,7 +19,7 @@ get_header(); ?>
 			<header class="page-header">
 				
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				// the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				<!-- <div class="desktop-project-info">
@@ -40,9 +40,9 @@ get_header(); ?>
 										<?php the_post_thumbnail( 'large' ); ?>
 									<?php endif; ?>
 
-
+									
 									<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-
+									
 									<?php if ( 'post' === get_post_type() ) : ?>
 
 									<?php endif; ?>
