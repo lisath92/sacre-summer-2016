@@ -939,15 +939,30 @@ iframe {
   background-color: #272D66; }
   .timeline h2 {
     font-family: "Impact", "Charcoal", sans-serif;
+<<<<<<< eaa4b1cb1ab9ea188ae39c71873eeb6e5514d5d6
     font-size: 48px;
+=======
+    font-size: 2rem;
+>>>>>>> style fonts in timeline
     text-transform: uppercase;
     letter-spacing: 3px; }
 
-@media (min-width: 600px) {
-  .mobile-history {
-    display: none; } }
+.history-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+
+.mobile-history {
+  font-size: 20px;
+  font-size: 1.25rem; }
+  @media (min-width: 600px) {
+    .mobile-history {
+      display: none; } }
 
 .desktop-history {
+  line-height: 1.25;
+  font-size: 20px;
+  font-size: 1.25rem;
   display: none; }
   @media (min-width: 600px) {
     .desktop-history {
