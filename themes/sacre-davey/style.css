@@ -1026,11 +1026,25 @@ footer {
   .page-template-page-careers .opportunities-wrapper .job-positions {
     padding-top: 2rem; }
 
+.page-template-page-careers .opportunities-banner-wrapper {
+  background: #272D66;
+  padding-bottom: 1rem; }
+  .page-template-page-careers .opportunities-banner-wrapper .select-wrapper {
+    width: 90%;
+    margin: 0 auto; }
+  .page-template-page-careers .opportunities-banner-wrapper .opportunity-dropdowns {
+    border-radius: 0;
+    width: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+  .page-template-page-careers .opportunities-banner-wrapper .dropdown-titles {
+    color: white;
+    text-transform: uppercase; }
+
 .page-template-page-careers .opportunities-banner {
   text-align: center;
   height: 100px;
   color: white;
-  background: #272D66;
   padding-top: 2rem;
   font-family: "Impact", "Charcoal", sans-serif;
   font-size: 3rem;

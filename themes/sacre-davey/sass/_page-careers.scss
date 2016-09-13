@@ -46,12 +46,28 @@
 			
 		}
 	}
-	
+	.opportunities-banner-wrapper {
+		background: $color__dark-blue;
+		padding-bottom: 1rem;
+		.select-wrapper {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.opportunity-dropdowns {
+			border-radius: 0;
+			width: 10rem;
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
+		.dropdown-titles {
+			color: white;
+			text-transform: uppercase;
+		}
+	}
 	.opportunities-banner {
 		text-align:center;
 		height: 100px;
 		color: white;
-		background: $color__dark-blue;
 		padding-top: 2rem;
 		@include impact-heading(3rem, uppercase);
 	}

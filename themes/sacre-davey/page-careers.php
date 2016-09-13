@@ -25,7 +25,13 @@ get_header(); ?>
 					<h2>Join us and put a little more life in your life/work</h2>
 					<p>Sacré Davey is our home not just where we work, we are a family and we want you to be apart of it. Come join us for a challenging yet rewarding work experience where you'll be able to learn and move your career forward.</p>
 				</div>
+				<div class="opportunities-banner-wrapper">
 				<h1 class="opportunities-banner">Opportunities</h1>
+				<div class="select-wrapper">
+				<span class="dropdown-titles">Locations:</span><select class="opportunity-dropdowns" name="location"></select>
+				<span class="dropdown-titles">Field:</span><select class="opportunity-dropdowns" name="field"></select>
+				</div>
+				</div>
 				<div class="opportunities-wrapper">
 					
 					<ul class="canadian-opportunities">
