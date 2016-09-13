@@ -923,27 +923,6 @@ iframe {
     .each-member img {
       width: 100%; } }
 
-.timeline {
-  color: white;
-  background-color: #272D66; }
-
-.the-excerpt {
-  line-height: -60px; }
-
-.cd-timeline-content {
-  background-color: #272D66;
-  box-shadow: 0; }
-  .cd-timeline-content .cd-timeline-img {
-    box-shadow: 0; }
-
-.timeline-date,
-.timeline-express-read-more-link {
-  visibility: hidden; }
-
-.fa-circle::before {
-  box-shadow: 0;
-  color: #279AB6; }
-
 .learn-more-banner {
   color: white;
   height: 250px;
@@ -961,6 +940,24 @@ iframe {
   border: 1px solid white;
   padding: .75rem 1.5rem;
   text-decoration: none; }
+
+.timeline {
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+  background-color: #272D66; }
+  .timeline h2 {
+    text-transform: uppercase; }
+
+@media (min-width: 600px) {
+  .mobile-history {
+    display: none; } }
+
+.desktop-history {
+  display: none; }
+  @media (min-width: 600px) {
+    .desktop-history {
+      display: unset; } }
 
 .tm_timeline__event__date {
   display: none; }

@@ -175,9 +175,27 @@
 
 //new timeline
 .timeline {
+	padding-top: 2rem;
+	text-align: center;
 	color: white;
 	background-color: $color__dark-blue;
+	h2 {
+		text-transform:uppercase;
+	}
+
 }
+.mobile-history {
+	
+		@include desktop {
+			display:none
+		}
+	}
+	.desktop-history {
+		display: none;
+		@include desktop {
+			display: unset;
+		}
+	}
 .tm_timeline__event__date {
 	display: none;
 }

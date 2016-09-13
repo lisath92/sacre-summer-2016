@@ -62,6 +62,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					</div>
 				</div>
 				<section class="timeline">
+				<h2>Our History</h2>
 				<div class="mobile-history">
 				<?php echo CFS()->get('mobile_history');?>
 				</div>
