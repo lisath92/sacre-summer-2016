@@ -1,7 +1,7 @@
 (function($) {
 
 //Toggle hamburger menu
-var mainMenu = $('.menu-main-navigation-container'),
+var mainMenu = $('.nav-mobile'),
 $carousel = $('.carousel').flickity({
   cellAlign: 'center',
   contain: true,

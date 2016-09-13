@@ -69,6 +69,7 @@
 
 }
 
+.nav-mobile,
 .about-menu,
 .menu-main-navigation-container {
   font-weight: bold;
@@ -141,7 +142,7 @@
 
 //Mobile view menu
 .nav-mobile {
-  
+
   @include desktop {
     display: none;
   }
