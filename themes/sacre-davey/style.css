@@ -535,7 +535,7 @@ iframe {
     @media (min-width: 600px) {
       .menu-main-navigation-container li {
         padding-bottom: 0;
-        padding-right: 3vw; } }
+        white-space: nowrap; } }
   .menu-main-navigation-container a {
     color: white;
     text-decoration: none; }
