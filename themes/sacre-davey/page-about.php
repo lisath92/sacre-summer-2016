@@ -22,20 +22,27 @@ get_header(); ?>
 
 				<div class="entry-content">
 					<h1>Our Values</h1>
-					<div class="values-slider">
-						<div class="values-block">
+					<div class="button-group">
+						<button class="button">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusServiceIcon.png' ?>">
-							<div class="icon-slider-text">
+							</button>
+							<button class="button">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusValueIcon.png' ?>">
+							</button>
+							</div>
+							<div class="carousel">
+							<div class="carousel-cell">
 								<p>People who operate plants have enough headaches as it is. When we get a call and engineering help is needed, we’re here for you to help you deal with the challenges at hand, 24 hours a day, 7 days a week. </p>
 								<p>We will provide our best advice and services to assist you with engineering, project planning, shutdowns, emergency measures and everything else it takes to help you meet your project needs.</p>
 							</div>
-						</div>
-						<div class="values-block">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusValueIcon.png' ?>">
-							<div class="icon-slider-text">
+							<div class="carousel-cell">
 								<p>A platitude to some, to us, value is embedded into our DNA. We must add value to our clients businesses and we strive to do so by optimizing your project’s financial and technical performance. </p>
 								<p>This includes finding ways to execute a project while minimizing impact on existing operations, working with you to shorten a project’s delivery schedule, or using our engineering skills to reduce investment requirements.</p>
 							</div>
+						</div>
+						
+							
+							
 						</div>
 						<div class="values-block">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusInnovationIcon.png' ?>">
