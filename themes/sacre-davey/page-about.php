@@ -60,12 +60,13 @@ get_header(); ?>
 							<p>We will not be afraid of having the hard discussion that sometimes needs to happen, to meet the needs of a project and will promise to do so with integrity and respect for our customers and stakeholders.</p>
 						</div>
 					</div>
-					<div class="our-team-wrapper">
-						<h2>Our Team</h2>
+					<?php the_content(); ?>
+					<section class="our-team-wrapper">
+						<h1>Our Team</h1>
 						<div class="team-member-block">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusOurTeamChrisIcon.png' ?>">
 						</div>
-					</div>
+					</section>
 					<div class="learn-more-banner">
 						<h2>Learn More</h2>
 						<a class="button-class"href="<?php echo the_permalink(); ?>">Sectors</a>
