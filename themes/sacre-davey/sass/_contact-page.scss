@@ -35,7 +35,7 @@
 
 form{
 	width: 100%;
-
+	
 	textarea {
 		height: 20vw;
 		max-height: 300px;
@@ -80,9 +80,17 @@ iframe {
 
 	@include display-flex(center, flex-start);
 	flex-flow: row wrap; 
+	@include desktop {
+		justify-content: space-between;
+	}
 	.office-block {
-		flex:1 0 28%;
-		padding-right: 20px;
+		width: 100%;
+		@include desktop {
+			padding-bottom: 20px;
+			width: 30%;
+			padding-right: 20px;
+		}
+		
 		h2 {
 			color: $color__dark-blue;
 		}

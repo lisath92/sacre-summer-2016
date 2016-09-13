@@ -402,6 +402,7 @@ form {
   form .required {
     color: #272D66; }
   form input[type="submit"] {
+    margin: 0;
     padding: 10px 20px;
     text-align: center;
     border: none;
@@ -425,10 +426,17 @@ iframe {
       align-items: flex-start;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
+  @media (min-width: 600px) {
+    .offices-wrapper {
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
   .offices-wrapper .office-block {
-    -ms-flex: 1 0 28%;
-        flex: 1 0 28%;
-    padding-right: 20px; }
+    width: 100%; }
+    @media (min-width: 600px) {
+      .offices-wrapper .office-block {
+        padding-bottom: 20px;
+        width: 30%;
+        padding-right: 20px; } }
     .offices-wrapper .office-block h2 {
       color: #272D66; }
     .offices-wrapper .office-block h3 {
