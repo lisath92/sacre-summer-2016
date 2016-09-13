@@ -72,7 +72,8 @@
   }
 
   li {
-    padding-bottom: 20px;
+    line-height: 2;
+    width: 100%;
     text-align: center;
 
     @include desktop {
