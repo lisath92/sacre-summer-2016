@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php //	while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
@@ -63,9 +63,20 @@ get_header(); ?>
 					<?php the_content(); ?>
 					<section class="our-team-wrapper">
 						<h1>Our Team</h1>
-						<div class="team-member-block">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusOurTeamChrisIcon.png' ?>">
-						</div>
+						<?php 
+						$members = CFS()->get( 'our_team' );
+								foreach ( $members as $member ) : ?>
+    							<div class="member-photo">
+    							<img src="<?php echo $member['photo']; ?>">
+  								</div>
+  								<p class="name">
+  								<?php echo $member['first_and_last_name'];?>
+  								</p>
+  								<p class="position">
+
+    							<?php echo $member['position'];
+    							 endforeach
+    							 ?></p>
 					</section>
 					<div class="learn-more-banner">
 						<h2>Learn More</h2>
@@ -74,9 +85,6 @@ get_header(); ?>
 					</div>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
-
-		<?php endwhile; // End of the loop. ?>
-
 	</main><!-- #main -->
 </div><!-- #primary -->
 
