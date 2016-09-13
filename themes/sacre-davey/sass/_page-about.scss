@@ -3,10 +3,10 @@
 	
 	.entry-header {
 		color: white;
-    height: 50vw;
-    text-align: center;
-    width: 100%;
-    max-height: 300px;
+		height: 50vw;
+		text-align: center;
+		width: 100%;
+		max-height: 300px;
 		
 		h1 {
 			@include impact-heading($font__h2, uppercase);
@@ -53,10 +53,22 @@
 		width: 30px;
 		height: 30px;
 		background: transparent;
+		&:hover {
+			.arrow {
+				fill: $color__lightblue;
+			}
+		}
 		.arrow {
 			fill: $color__dark-blue;
 		}
-		
+		&.previous {
+			left: -5%;
+			top: 40%;
+		}
+		&.next {
+			right: -5%;
+			top: 40%;
+		}
 	}
 }
 .gallery-cell {
@@ -67,34 +79,11 @@
 	height: 200px;
 }
 
-.gallery {
-.flickity-prev-next-button:hover {
-  background: #F90;
-}
-/* arrow color */
-
-.flickity-prev-next-button.no-svg {
-  color: white;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
-}
-}
-// .flickity-prev-next-button svg {
-// 	color: $color__dark-blue;
-// 	width: 10px;
-// 	height: 10px;
-// 	border: 0;
-// }
 
 //Our Team
 .our-team-wrapper {
-		text-align: center;
-	}
+	text-align: center;
+}
 
 
 //Timeline

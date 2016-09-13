@@ -825,8 +825,16 @@ iframe {
     width: 30px;
     height: 30px;
     background: transparent; }
+    .gallery .flickity-prev-next-button:hover .arrow {
+      fill: #279AB6; }
     .gallery .flickity-prev-next-button .arrow {
       fill: #272D66; }
+    .gallery .flickity-prev-next-button.previous {
+      left: -5%;
+      top: 40%; }
+    .gallery .flickity-prev-next-button.next {
+      right: -5%;
+      top: 40%; }
 
 .gallery-cell {
   text-align: center;
@@ -834,18 +842,6 @@ iframe {
   line-height: 1.5;
   width: 100%;
   height: 200px; }
-
-.gallery {
-  /* arrow color */
-  /* position outside */ }
-  .gallery .flickity-prev-next-button:hover {
-    background: #F90; }
-  .gallery .flickity-prev-next-button.no-svg {
-    color: white; }
-  .gallery .flickity-prev-next-button.previous {
-    left: -40px; }
-  .gallery .flickity-prev-next-button.next {
-    right: -40px; }
 
 .our-team-wrapper {
   text-align: center; }
