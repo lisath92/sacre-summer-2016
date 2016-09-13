@@ -6,7 +6,7 @@
  */
 
 get_header(); 
-wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'menu-main-navigation-container') );?>
+wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-menu') );?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">

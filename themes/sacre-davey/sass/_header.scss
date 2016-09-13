@@ -69,6 +69,7 @@
 
 }
 
+.about-menu,
 .menu-main-navigation-container {
   font-weight: bold;
   font-size: 1rem;
@@ -124,6 +125,15 @@
       color: $color__lightblue;
     }
   }
-  
+}
+
+.about-menu {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+
+  li {
+    text-align: right;
+  }
 }
 

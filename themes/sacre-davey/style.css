@@ -512,6 +512,7 @@ iframe {
       .main-navigation .fa-bars {
         display: none; } }
 
+.about-menu,
 .menu-main-navigation-container {
   font-weight: bold;
   font-size: 1rem;
@@ -523,11 +524,13 @@ iframe {
   text-align: center;
   background-color: #272D66; }
   @media (min-width: 600px) {
+    .about-menu,
     .menu-main-navigation-container {
       font-size: 0.8rem;
       background-color: white;
       display: block;
       width: 100%; } }
+  .about-menu ul,
   .menu-main-navigation-container ul {
     padding: 0;
     display: -ms-flexbox;
@@ -539,31 +542,45 @@ iframe {
     -ms-flex-flow: column wrap;
         flex-flow: column wrap; }
     @media (min-width: 600px) {
+      .about-menu ul,
       .menu-main-navigation-container ul {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
         -ms-flex-pack: end;
             justify-content: flex-end; } }
+  .about-menu li,
   .menu-main-navigation-container li {
     line-height: 2;
     width: 100%;
     text-align: center; }
     @media (min-width: 600px) {
+      .about-menu li,
       .menu-main-navigation-container li {
         padding-bottom: 0;
         white-space: nowrap; }
+        .about-menu li.current-menu-item a,
         .menu-main-navigation-container li.current-menu-item a {
           text-decoration: underline;
           font-size: 1rem;
           color: black; } }
+  .about-menu a,
   .menu-main-navigation-container a {
     color: white;
     text-decoration: none; }
     @media (min-width: 600px) {
+      .about-menu a,
       .menu-main-navigation-container a {
         color: #272D66; } }
+    .about-menu a:hover,
     .menu-main-navigation-container a:hover {
       color: #279AB6; }
+
+.about-menu {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0; }
+  .about-menu li {
+    text-align: right; }
 
 /*--------------------------------------------------------------
 # Services Page Template
