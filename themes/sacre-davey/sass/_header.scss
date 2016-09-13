@@ -24,6 +24,32 @@
   padding-top: 80px;
 }
 
+//Logo
+.site-header h1 {
+  background:
+  url("../../assets/images/mobile-logo.png")
+  center/100% 68%
+  no-repeat;
+  height: 80px;
+  width: 60px;
+  overflow: hidden;
+  text-indent: 80%;
+  margin:0;
+  font-size: 1px;
+
+  @include desktop {
+    background: url("../../assets/images/large-logo.png")
+    center/100% 80%
+    no-repeat;
+    height: 8vw;
+    max-height: 55px;
+    max-width: 200px;
+    width: 23vw;
+  }
+}
+
+
+//Main Navigation
 .main-navigation {
   @include display-flex(space-between, center);
   flex-wrap: wrap;
@@ -95,25 +121,3 @@
   
 }
 
-.site-header h1 {
-  background:
-  url("../../assets/images/mobile-logo.png")
-  center/100% 68%
-  no-repeat;
-  height: 80px;
-  width: 60px;
-  overflow: hidden;
-  text-indent: 80%;
-  margin:0;
-  font-size: 1px;
-
-  @include desktop {
-    background: url("../../assets/images/large-logo.png")
-    center/100% 80%
-    no-repeat;
-    height: 8vw;
-    max-height: 55px;
-    max-width: 200px;
-    width: 23vw;
-  }
-}
