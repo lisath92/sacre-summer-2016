@@ -28,8 +28,6 @@ $('body').on('click', function(event){
 //Show Menu if more than 600px view width
 $(window).resize(function(){
   if($(window).width()>582) {
-    mainMenu.show();
-  } else {
     mainMenu.hide();
   }
 });

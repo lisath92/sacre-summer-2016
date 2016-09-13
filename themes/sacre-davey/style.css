@@ -460,7 +460,7 @@ iframe {
   width: 100vw;
   margin: 0;
   position: fixed;
-  z-index: 100000;
+  z-index: 1000000000;
   height: 80px;
   background-color: white;
   border-bottom: 1px #279AB6 solid; }
@@ -496,8 +496,6 @@ iframe {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 100%; }
   @media (min-width: 600px) {
     .main-navigation {
@@ -512,78 +510,82 @@ iframe {
       .main-navigation .fa-bars {
         display: none; } }
 
-.nav-mobile,
 .about-menu,
 .menu-main-navigation-container {
+  display: none; }
+  @media (min-width: 600px) {
+    .about-menu,
+    .menu-main-navigation-container {
+      display: block;
+      font-weight: bold;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      max-width: 600px;
+      text-align: center;
+      width: 100%; }
+      .about-menu ul,
+      .menu-main-navigation-container ul {
+        width: 80%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+      .about-menu a,
+      .menu-main-navigation-container a {
+        text-decoration: none;
+        color: #272D66;
+        width: 10vw; }
+        .about-menu a:hover,
+        .menu-main-navigation-container a:hover {
+          color: #279AB6; }
+      .about-menu li,
+      .menu-main-navigation-container li {
+        width: 100%;
+        padding-bottom: 0;
+        white-space: nowrap; }
+        .about-menu li.current-menu-item a,
+        .menu-main-navigation-container li.current-menu-item a {
+          text-decoration: underline;
+          font-size: 1rem;
+          color: black; } }
+
+.nav-mobile {
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
   display: none;
+  position: absolute;
+  top: 80px;
   width: 100%;
   padding-right: 10%;
   max-width: 600px;
   text-align: center;
   background-color: #272D66; }
   @media (min-width: 600px) {
-    .nav-mobile,
-    .about-menu,
-    .menu-main-navigation-container {
-      font-size: 0.8rem;
-      background-color: white;
-      display: block;
-      width: 100%; } }
-  .nav-mobile ul,
-  .about-menu ul,
-  .menu-main-navigation-container ul {
+    .nav-mobile {
+      display: none; } }
+  .nav-mobile ul {
     padding: 0;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-flow: column wrap;
         flex-flow: column wrap; }
-    @media (min-width: 600px) {
-      .nav-mobile ul,
-      .about-menu ul,
-      .menu-main-navigation-container ul {
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-        -ms-flex-pack: end;
-            justify-content: flex-end; } }
-  .nav-mobile li,
-  .about-menu li,
-  .menu-main-navigation-container li {
+  .nav-mobile li {
     line-height: 2;
     width: 100%;
     text-align: center; }
-    @media (min-width: 600px) {
-      .nav-mobile li,
-      .about-menu li,
-      .menu-main-navigation-container li {
-        padding-bottom: 0;
-        white-space: nowrap; }
-        .nav-mobile li.current-menu-item a,
-        .about-menu li.current-menu-item a,
-        .menu-main-navigation-container li.current-menu-item a {
-          text-decoration: underline;
-          font-size: 1rem;
-          color: black; } }
-  .nav-mobile a,
-  .about-menu a,
-  .menu-main-navigation-container a {
+  .nav-mobile a {
     color: white;
-    text-decoration: none; }
-    @media (min-width: 600px) {
-      .nav-mobile a,
-      .about-menu a,
-      .menu-main-navigation-container a {
-        color: #272D66; } }
-    .nav-mobile a:hover,
-    .about-menu a:hover,
-    .menu-main-navigation-container a:hover {
-      color: #279AB6; }
+    text-decoration: none;
+    padding: 0; }
 
 .about-menu {
   max-width: 400px;
