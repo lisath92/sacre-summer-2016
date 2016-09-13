@@ -1,5 +1,8 @@
 .page-template-page-careers {
-	
+	//removes white space between footer and content
+	article {
+		margin-bottom: 0;
+	}
 
 	.entry-header {
 		height: 200px;
@@ -56,6 +59,7 @@
 		color: $color__lightblue;
 	}
 	.join-team-banner {
+
 		@include display-flex(center, center);
 		flex-flow: row nowrap;
 		align-items: flex-start;
@@ -64,9 +68,15 @@
 	}
 	.international-team,
 	.north-american-team {
+		width: 90%;
+		margin:0 auto;
 		color: white;
 		min-width: 250px;
 		max-width: 500px;
 		padding-bottom: 2rem;
+		p {
+			margin-bottom: 0;
+		}
+
 	}
 }
