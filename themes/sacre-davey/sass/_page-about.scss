@@ -17,47 +17,14 @@
 		}
 	}
 
-
-	.our-team-wrapper {
+	.entry-content h1 {
+		@include impact-heading($font__h2, uppercase);
+		color: $color__dark-blue;
 		text-align: center;
 	}
-
-}
-.the-excerpt {
-	line-height: -60px;
 }
 
-.timeline-date,
-.timeline-express-read-more-link {
-	visibility: hidden;
 
-}
-
-.fa-circle::before {
-	color: $color__lightblue;
-}
-
-.learn-more-banner {
-	color: white;
-	height: 250px;
-	width: 100%;
-	background: url('../../assets/images/AboutUsHeader.png') no-repeat;
-	background-size: cover;
-	text-align: center;
-	padding-top: 2rem;
-	h2 {
-		color:white;
-		text-transform: uppercase;
-	}
-}
-
-.button-class {
-	color: white;
-	border: 1px solid white;
-	padding: .75rem 1.5rem;
-	text-decoration: none;
-	
-}
 
 //Flickity
 .button-group {
@@ -84,9 +51,59 @@
 	margin: 0 auto;
 }
 .gallery-cell {
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.5;
 	width: 100%;
 	height: 200px;
 }
 
+.flickity-prev-next-button {
+	color: $color__dark-blue;
+	left: 0;
+	border: 0;
+}
+
+//Our Team
+.our-team-wrapper {
+		text-align: center;
+	}
 
 
+//Timeline
+.the-excerpt {
+	line-height: -60px;
+}
+
+.timeline-date,
+.timeline-express-read-more-link {
+	visibility: hidden;
+
+}
+
+.fa-circle::before {
+	color: $color__lightblue;
+}
+
+//Learn more banner
+.learn-more-banner {
+	color: white;
+	height: 250px;
+	width: 100%;
+	background: url('../../assets/images/AboutUsHeader.png') no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-top: 2rem;
+	h2 {
+		color:white;
+		text-transform: uppercase;
+	}
+}
+
+.button-class {
+	color: white;
+	border: 1px solid white;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	
+}

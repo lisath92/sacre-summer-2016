@@ -10,7 +10,7 @@ $carousel = $('.carousel').flickity({
 
 $gallery = $('.gallery').flickity({
   cellAlign: 'left',
-  prevNextButtons: false
+  pageDots: false
 });
 
 $('body').on('click', function(event){
