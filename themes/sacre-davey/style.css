@@ -473,6 +473,22 @@ iframe {
 .site-content {
   padding-top: 80px; }
 
+.site-header h1 {
+  background: url("../../assets/images/mobile-logo.png") center/100% 68% no-repeat;
+  height: 80px;
+  width: 60px;
+  overflow: hidden;
+  text-indent: 80%;
+  margin: 0;
+  font-size: 1px; }
+  @media (min-width: 600px) {
+    .site-header h1 {
+      background: url("../../assets/images/large-logo.png") center/100% 80% no-repeat;
+      height: 8vw;
+      max-height: 55px;
+      max-width: 200px;
+      width: 23vw; } }
+
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
@@ -518,8 +534,8 @@ iframe {
     display: flex;
     -ms-flex-pack: start;
         justify-content: flex-start;
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    -ms-flex-align: center;
+        align-items: center;
     -ms-flex-flow: column wrap;
         flex-flow: column wrap; }
     @media (min-width: 600px) {
@@ -535,7 +551,11 @@ iframe {
     @media (min-width: 600px) {
       .menu-main-navigation-container li {
         padding-bottom: 0;
-        white-space: nowrap; } }
+        white-space: nowrap; }
+        .menu-main-navigation-container li.current-menu-item a {
+          text-decoration: underline;
+          font-size: 1rem;
+          color: black; } }
   .menu-main-navigation-container a {
     color: white;
     text-decoration: none; }
@@ -544,22 +564,6 @@ iframe {
         color: #272D66; } }
     .menu-main-navigation-container a:hover {
       color: #279AB6; }
-
-.site-header h1 {
-  background: url("../../assets/images/mobile-logo.png") center/100% 68% no-repeat;
-  height: 80px;
-  width: 60px;
-  overflow: hidden;
-  text-indent: 80%;
-  margin: 0;
-  font-size: 1px; }
-  @media (min-width: 600px) {
-    .site-header h1 {
-      background: url("../../assets/images/large-logo.png") center/100% 80% no-repeat;
-      height: 8vw;
-      max-height: 55px;
-      max-width: 200px;
-      width: 23vw; } }
 
 /*--------------------------------------------------------------
 # Services Page Template

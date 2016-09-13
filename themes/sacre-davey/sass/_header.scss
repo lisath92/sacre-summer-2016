@@ -89,7 +89,7 @@
 
   ul {
     padding: 0;
-    @include display-flex(flex-start, stretch);
+    @include display-flex(flex-start, center);
     flex-flow: column wrap;
     @include desktop {
       flex-flow: row nowrap;
@@ -105,6 +105,12 @@
     @include desktop {
       padding-bottom: 0;
       white-space: nowrap;
+
+      &.current-menu-item a {
+        text-decoration: underline;
+        font-size: 1rem;
+        color: black;
+      }
     }
   }
   a {
