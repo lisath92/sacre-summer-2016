@@ -49,6 +49,15 @@
 .gallery {
 	width: 90%;
 	margin: 0 auto;
+	.flickity-prev-next-button {
+		width: 30px;
+		height: 30px;
+		background: transparent;
+		.arrow {
+			fill: $color__dark-blue;
+		}
+		
+	}
 }
 .gallery-cell {
 	text-align: center;
@@ -58,11 +67,29 @@
 	height: 200px;
 }
 
-.flickity-prev-next-button {
-	color: $color__dark-blue;
-	left: 0;
-	border: 0;
+.gallery {
+.flickity-prev-next-button:hover {
+  background: #F90;
 }
+/* arrow color */
+
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+}
+// .flickity-prev-next-button svg {
+// 	color: $color__dark-blue;
+// 	width: 10px;
+// 	height: 10px;
+// 	border: 0;
+// }
 
 //Our Team
 .our-team-wrapper {
