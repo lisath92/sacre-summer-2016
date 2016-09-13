@@ -822,7 +822,9 @@ iframe {
 .button-group {
   width: 90%;
   margin: 0 auto; }
-  .button-group img {
+  .button-group button {
+    background-color: transparent;
+    border: none;
     width: 20%; }
 
 .gallery-cell {

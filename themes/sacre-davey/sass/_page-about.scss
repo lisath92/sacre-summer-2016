@@ -63,7 +63,9 @@
 .button-group {
 	width: 90%;
 	margin: 0 auto;
-	img {
+	button {
+		background-color: transparent;
+		border: none;
 		width: 20%;
 	}
 }
