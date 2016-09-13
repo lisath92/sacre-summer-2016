@@ -992,23 +992,40 @@ footer {
   height: 200px;
   background: url("../../assets/images/Careers1stHeader.png") no-repeat;
   background-size: cover; }
-  .page-template-page-careers .entry-header .growing-text {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto; }
 
-.page-template-page-careers .life-work-banner h2 {
-  height: 100px;
-  color: white;
-  background: #279AB6;
-  padding-top: 2rem; }
+.page-template-page-careers .growing-text {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.75; }
+
+.page-template-page-careers .life-work-banner {
+  text-align: center;
+  padding-top: 1.75rem;
+  padding-bottom: 1rem; }
+  .page-template-page-careers .life-work-banner p {
+    width: 90%;
+    margin: 0 auto; }
+  .page-template-page-careers .life-work-banner h2 {
+    height: 100px;
+    color: white;
+    background: #279AB6;
+    padding-top: 3rem;
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 3rem;
+    text-transform: lowercase;
+    letter-spacing: 3px; }
 
 .page-template-page-careers .opportunities-banner {
+  text-align: center;
   height: 100px;
   color: white;
   background: #272D66;
+  padding-top: 2rem;
+  font-family: "Impact", "Charcoal", sans-serif;
+  font-size: 3rem;
   text-transform: uppercase;
-  padding-top: 2rem; }
+  letter-spacing: 3px; }
 
 .page-template-page-careers .opportunities-title {
   color: #279AB6; }

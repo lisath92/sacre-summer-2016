@@ -1,33 +1,46 @@
 .page-template-page-careers {
-
+	
 
 	.entry-header {
 		height: 200px;
 		background: url('../../assets/images/Careers1stHeader.png')no-repeat;
 		background-size: cover;
 
-		.growing-text {
-		text-align: center;
-		width: 100%;
-		margin: 0 auto;
-		}
-
+		
 	}
 
+	.growing-text {
+		text-align: center;
+		width: 90%;
+		margin: 0 auto;
+		line-height: 1.75;
+		}
+
+
 	.life-work-banner {
+		text-align: center;
+		padding-top: 1.75rem;
+		padding-bottom: 1rem;
+		p{
+		width: 90%;
+		margin: 0 auto;
+		}
 		h2{
+			
 			height: 100px;
 			color: white;
 			background: $color__lightblue;
-			padding-top: 2rem;
+			padding-top: 3rem;
+			@include impact-heading(3rem, lowercase);
 		}
 	}
 	.opportunities-banner {
+		text-align:center;
 		height: 100px;
 		color: white;
 		background: $color__dark-blue;
-		text-transform: uppercase;
 		padding-top: 2rem;
+		@include impact-heading(3rem, uppercase);
 	}
 	.opportunities-title {
 		color: $color__lightblue;
