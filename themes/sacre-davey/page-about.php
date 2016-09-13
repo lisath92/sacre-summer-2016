@@ -18,7 +18,7 @@ get_header(); ?>
 						<h1>Our Mission</h1>
 						<p>We provide engineering, project management, and related technical services that make our customers look good and their operations better.</p>
 					</div>
-				</header><!-- .entry-header -->
+				</header><!-- .entry-header-->
 
 				<div class="entry-content">
 					<h1>Our Values</h1>
