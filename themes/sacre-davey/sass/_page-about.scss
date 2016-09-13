@@ -127,10 +127,18 @@
 
 //Timeline
 .timeline {
+	color: white;
 	background-color: $color__dark-blue;
 }
 .the-excerpt {
 	line-height: -60px;
+}
+.cd-timeline-content {
+	background-color: $color__dark-blue;
+	box-shadow: 0;
+	.cd-timeline-img {
+	box-shadow: 0;
+  }
 }
 
 .timeline-date,
@@ -140,7 +148,9 @@
 }
 
 .fa-circle::before {
+	box-shadow: 0;
 	color: $color__lightblue;
+
 }
 
 //Learn more banner
@@ -164,4 +174,40 @@
 	padding: .75rem 1.5rem;
 	text-decoration: none;
 	
+}
+
+//new timeline
+
+.tm_timeline__event__date {
+	display: none;
+}
+.tm_timeline__event__dot {
+	background-color: $color__lightblue;
+	box-shadow: 0 0 0 4px #279AB6;
+}
+
+.tm_timeline__event__title {
+	color: white;
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+.tm_timeline-layout-vertical-chessOrder {
+.tm_timeline__tense {
+	background-color: $color__lightblue;
+	height: 82%;
+	top: 5%;
+	}
+}
+
+.tm_timeline__event__description {
+	padding-top: 1rem;
+	margin-left: 1rem;
+	font-size: 1.25rem;
+}
+
+
+
+.tm_timeline__body-tense {
+
+	color: white;
 }

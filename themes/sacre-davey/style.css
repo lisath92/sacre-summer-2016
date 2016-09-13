@@ -924,16 +924,24 @@ iframe {
       width: 100%; } }
 
 .timeline {
+  color: white;
   background-color: #272D66; }
 
 .the-excerpt {
   line-height: -60px; }
+
+.cd-timeline-content {
+  background-color: #272D66;
+  box-shadow: 0; }
+  .cd-timeline-content .cd-timeline-img {
+    box-shadow: 0; }
 
 .timeline-date,
 .timeline-express-read-more-link {
   visibility: hidden; }
 
 .fa-circle::before {
+  box-shadow: 0;
   color: #279AB6; }
 
 .learn-more-banner {
@@ -953,6 +961,31 @@ iframe {
   border: 1px solid white;
   padding: .75rem 1.5rem;
   text-decoration: none; }
+
+.tm_timeline__event__date {
+  display: none; }
+
+.tm_timeline__event__dot {
+  background-color: #279AB6;
+  box-shadow: 0 0 0 4px #279AB6; }
+
+.tm_timeline__event__title {
+  color: white;
+  font-size: 2rem;
+  margin-left: 1rem; }
+
+.tm_timeline-layout-vertical-chessOrder .tm_timeline__tense {
+  background-color: #279AB6;
+  height: 82%;
+  top: 5%; }
+
+.tm_timeline__event__description {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1.25rem; }
+
+.tm_timeline__body-tense {
+  color: white; }
 
 /*-----------------------------------------
   Footer
