@@ -52,7 +52,6 @@
 //Main Navigation
 .main-navigation {
   @include display-flex(space-between, center);
-  // flex-wrap: wrap;
   width: 100%;
   @include desktop {
     flex-wrap: nowrap;
@@ -69,6 +68,7 @@
 
 }
 
+//Menus at desktop view
 .about-menu,
 .menu-main-navigation-container {
   display: none;
@@ -80,10 +80,10 @@
     max-width: 600px;
     text-align: center;
     width: 100%;
-    // padding-right: 30px;
     ul {
-      width: 80%;
-      @include display-flex(flex-end, center);
+      width: 94%;
+      padding-left: 0;
+      @include display-flex(space-between, center);
       flex-flow: row nowrap;
 
     }
@@ -98,8 +98,6 @@
     }
     
     li {
-      width: 100%;
-     padding-bottom: 0;
      white-space: nowrap;
 
      &.current-menu-item a {
@@ -111,7 +109,7 @@
 }
 }
 
-
+//Drop down menu at mobile width
 .nav-mobile {
   font-weight: bold;
   font-size: 1rem;
@@ -147,32 +145,16 @@
     color: white;
     text-decoration: none;
     padding: 0;
-
-    // @include desktop {
-    //   color: $color__dark-blue;
-    // }
-    // &:hover {
-    //   color: $color__lightblue;
-    // }
   }
 }
 
 //About Us sub-menu
 .about-menu {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 0;
 
   li {
     text-align: right;
-  }
-}
-
-
-//Mobile view menu
-.nav-mobile {
-
-  @include desktop {
-    display: none;
   }
 }

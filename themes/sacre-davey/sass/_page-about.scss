@@ -27,28 +27,51 @@
 
 
 //Flickity
-.button-group {
-	@include display-flex(space-around, flex-end);
-	width: 90%;
+.carousel-nav {
+	height: 20vh;
+	width:80%;
 	margin: 0 auto;
-	padding-bottom: 20px;
-	border-bottom: 3px $color__dark-blue solid;
-	button {
-		background-color: transparent;
-		border: none;
-		width: 19%;
-		max-width: 100px;
-		text-align: center;
-		box-shadow: none;
+	max-height: 150px;
+	padding-bottom: 30px;
+	@include desktop {
+		border-bottom: 3px $color__dark-blue solid;
+	}
+	.carousel-cell{
+		width: 42%;
+		height: 100%;
+		max-width: 125px;
+		padding: 0 25vw;
+		@include desktop {
+			padding: 0 4vw;
+			width: 10%;
+			max-width: 100px;
+		}
+		
+		.icon-active {
+			display: none;
+		}
+		&.is-selected  {
+			.icon-inactive {
+				display: none;
+			}
+
+			.icon-active {
+				display: unset;
+			}
+		}
+		
 		img {
 			width: 100%;
+			height: 100%;
 		}
 	}
 }
 
-.gallery {
+
+.carousel-main {
 	width: 90%;
 	margin: 0 auto;
+	min-height: 200px;
 	.flickity-prev-next-button {
 		width: 30px;
 		height: 30px;
@@ -71,13 +94,19 @@
 		}
 	}
 }
+
 .gallery-cell {
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	line-height: 1.5;
 	width: 100%;
-	height: 200px;
+	min-height: 250px;
+	p {
+		width: 90%;
+		margin: 15px auto;
+	}
 }
+
 
 
 //Our Team
@@ -124,31 +153,90 @@
 	}
 }
 
+// Timeline
+.timeline {
 
-//Timeline
+	position:relative;
+	z-index: 1;
+	padding-top: 2rem;
+	text-align: center;
+	color: white;
+	background-color: $color__dark-blue;
+	h2 {
+		@include impact-heading($font__h2, uppercase);
 
-// .the-excerpt {
-// 	line-height: -60px;
-// }
-// .cd-timeline-content {
-// 	background-color: $color__dark-blue;
-// 	box-shadow: 0;
-// 	.cd-timeline-img {
-// 	box-shadow: 0;
-//   }
-// }
+	}
 
-// .timeline-date,
-// .timeline-express-read-more-link {
-// 	visibility: hidden;
 
-// }
+}
+.history-wrapper {
+	width: 90%;
+}
+.mobile-history {
 
-// .fa-circle::before {
-// 	box-shadow: 0;
-// 	color: $color__lightblue;
+	
+	@include desktop {
+		display:none
+	}
+}
+.desktop-history {
+	display: none;
+	@include desktop {
+		@include display-flex(center,center);
+		flex-flow: column wrap;
+		width: 80%;
+		margin: 0 auto;
+		line-height: 1.5;
+		font-size: 1.5rem;
+	}
+}
+.tm_timeline__event__date {
+	display: none;
+}
+.tm_timeline__event__dot {
+	background-color: $color__lightblue;
+	box-shadow: 0 0 0 6px #279AB6;
+}
 
-// }
+.tm_timeline__event__title {
+	color: white;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	@include desktop {
+		font-size: 2rem;
+	}
+}
+.tm_timeline-layout-vertical-chessOrder {
+	.tm_timeline__tense {
+		background-color: $color__lightblue;
+		height: 82%;
+		top: 3.5%;
+		@include desktop {
+			height: 82%;
+			top: 5%;
+		}	
+	}
+}
+.tm_timeline {
+	text-align: left;
+}
+.tm_timeline__layout_vertical {
+
+}
+.tm_timeline__event__description {
+	padding-top: 1rem;
+	margin-left: 1rem;
+	font-size: 1rem;
+	@include desktop {
+		font-size: 1.25rem;
+	}
+}
+
+.tm_timeline__body-tense {
+
+	color: white;
+}
+
 
 //Learn more banner
 .learn-more-banner {
@@ -172,81 +260,3 @@
 	text-decoration: none;
 	
 }
-
-//new timeline
-.timeline {
-
-	padding-top: 2rem;
-	text-align: center;
-	color: white;
-	background-color: $color__dark-blue;
-	h2 {
-		@include impact-heading (2rem ,uppercase);
-		
-	}
-
-
-}
-.history-wrapper {
-	width: 90%;
-}
-.mobile-history {
-		@include desktop {
-			display:none
-		}
-	}
-	.desktop-history {
-		display: none;
-		@include desktop {
-
-			display: unset;
-		}
-	}
-.tm_timeline__event__date {
-	display: none;
-}
-.tm_timeline__event__dot {
-	background-color: $color__lightblue;
-	box-shadow: 0 0 0 6px #279AB6;
-}
-
-.tm_timeline__event__title {
-	color: white;
-	font-size: 1.5rem;
-	margin-left: 1rem;
-	@include desktop {
-	font-size: 2rem;
-	}
-}
-.tm_timeline-layout-vertical-chessOrder {
-.tm_timeline__tense {
-	background-color: $color__lightblue;
-	height: 82%;
-	top: 3.5%;
-	@include desktop {
-	height: 82%;
-	top: 5%;
-	}	
-	}
-}
-.tm_timeline {
-	text-align: left;
-}
-.tm_timeline__layout_vertical {
-
-}
-.tm_timeline__event__description {
-	padding-top: 1rem;
-	margin-left: 1rem;
-	font-size: 1rem;
-	@include desktop {
-	font-size: 1.25rem;
-	}
-}
-
-.tm_timeline__body-tense {
-
-	color: white;
-}
-
-

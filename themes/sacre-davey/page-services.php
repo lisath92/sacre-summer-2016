@@ -75,7 +75,7 @@ get_header(); ?>
 					<section class="service-image">
 						<ul class="items">
 							<li>We have in-house project design and cost control systems helping the project team make effective and timely decisions - ensuring our customer's experience is a positive one.</li>
-						<li>From feasibility studies &amp; concepts, to detailed design, systems integration and buildings, we have the team to meet your project execution &amp; delivery needs.</li>
+							<li>From feasibility studies &amp; concepts, to detailed design, systems integration and buildings, we have the team to meet your project execution &amp; delivery needs.</li>
 						</ul>
 					</section>
 					<div class="banner">
@@ -85,36 +85,36 @@ get_header(); ?>
 					<section class="attributes">
 						<h2>We add measurable value to your project by providing</h2>
 						<div class="carousel" >
-						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
+							<div class="carousel-cell">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
+							</div>
+							<div class="carousel-cell">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSuperiorservicesIcon.png' ?>">
+							</div>
+							<div class="carousel-cell">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesInnovativeIcon.png' ?>">
+							</div>
+							<div class="carousel-cell">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesAccessIcon.png' ?>">
+							</div>
+							<div class="carousel-cell">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSafeIcon.png' ?>">
+							</div>
+							<div class="carousel-cell">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
+							</div>
 						</div>
-						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSuperiorservicesIcon.png' ?>">
-						</div>
-						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesInnovativeIcon.png' ?>">
-						</div>
-						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesAccessIcon.png' ?>">
-						</div>
-						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesSafeIcon.png' ?>">
-						</div>
-						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesProjectIcon.png' ?>">
-						</div>
+					</section>
+					<div class="updates-banner">
+						<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
 					</div>
-				</section>
-				<div class="updates-banner">
-					<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
-				</div>
 
-			</div><!-- .entry-content -->
-		</article><!-- #post-## -->
+				</div><!-- .entry-content -->
+			</article><!-- #post-## -->
 
-	<?php endwhile; // End of the loop. ?>
+		<?php endwhile; // End of the loop. ?>
 
-</main><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #primary -->
 
 
