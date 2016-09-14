@@ -81,6 +81,15 @@ function sacre_davey_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'sacre_davey_minified_css', 10, 2 );
 
+/*
+* Check for post type.
+*/
+function is_post_type($type){
+    global $wp_query;
+    if($type == get_post_type($wp_query->post->ID)) return true;
+    return false;
+}
+
 /**
  * Enqueue scripts and styles.
  */

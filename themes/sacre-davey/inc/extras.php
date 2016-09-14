@@ -93,6 +93,45 @@ wp_add_inline_style('sacre-davey-style', $css);
 
 add_action( 'wp_enqueue_scripts','sacre_davey_contact_inline_styles');
 
+//
+function sacre_davey_sectors_inline_styles() {
+  if(!is_single() && is_post_type('sector')) {
+    return;
+  }
+
+  $css='';
+  $logo='';
+  $counter=1;
+  $images= CFS()->get('development');
+  if(!$images) {
+    return;
+  }
+
+  foreach($images as $image) {
+    $logo = $image['development_photo'];
+    $css .='
+          .entry-content section:nth-of-type('.$counter.') {
+      background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('.$logo.') bottom/100% 100% no-repeat;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+          }
+    ';
+    $counter++;
+  
+wp_add_inline_style('sacre-davey-style', $css);
+}
+}
+add_action( 'wp_enqueue_scripts','sacre_davey_sectors_inline_styles');  
+
+
+
+
 
 
 /**
