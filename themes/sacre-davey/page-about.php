@@ -23,24 +23,19 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 
 				<div class="entry-content">
 					<h1>Our Values</h1>
-					<div class="carousel carousel-nav">
-						<!-- <button class="button"> -->
+					<div class="carousel-nav">
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusServiceIcon.png' ?>">
 						</div>
-						<!-- <button class="button"> -->
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusValueIcon.png' ?>">
 						</div>
-						<!-- <button class="button"> -->
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusInnovationIcon.png' ?>">
 						</div>
-						<!-- <button class="button"> -->
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusQualityIcon.png' ?>">
 						</div>
-						<!-- <button class="button"> -->
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusIntegrityIcon.png' ?>">
 						</div>

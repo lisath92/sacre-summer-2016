@@ -13,7 +13,7 @@
   asNavFor: $('.carousel-main'),
   prevNextButtons: false,
   pageDots: false,
-  cellAlign: 'left',
+  setGallerySize: false,
   contain: true
 }),
 
@@ -32,6 +32,7 @@ $('.carousel-main').on( 'select.flickity', function() {
     .removeClass('is-selected');
   $navCells.eq( $flkty.selectedIndex )
     .addClass('is-selected');
+  $nav.flickity('select', $flkty.selectedIndex);
 });
 
 

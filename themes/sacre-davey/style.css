@@ -834,40 +834,42 @@ iframe {
     text-align: center; }
 
 .carousel-nav {
-  width: 90%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  border-bottom: 3px #272D66 solid; }
+  border-bottom: 3px #272D66 solid;
+  height: 20vh;
+  max-height: 250px;
+  padding-bottom: 30px; }
   .carousel-nav .carousel-cell {
     background-color: transparent;
-    width: 100%;
-    max-width: 100px;
-    text-align: center;
-    box-shadow: none; }
-    .carousel-nav .carousel-cell.is-selected {
+    width: 100px;
+    height: 100%;
+    padding: 0 40vw; }
+    @media (min-width: 600px) {
+      .carousel-nav .carousel-cell {
+        padding: 0 20px;
+        width: 20%; } }
+    .carousel-nav .carousel-cell .carousel-cell.is-selected {
       border: 3px red solid; }
     .carousel-nav .carousel-cell img {
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
 
-@media (min-width: 600px) {
-  .gallery {
-    width: 90%;
-    margin: 0 auto; }
-    .gallery .flickity-prev-next-button {
-      width: 30px;
-      height: 30px;
-      background: transparent; }
-      .gallery .flickity-prev-next-button:hover .arrow {
-        fill: #279AB6; }
-      .gallery .flickity-prev-next-button .arrow {
-        fill: #272D66; }
-      .gallery .flickity-prev-next-button.previous {
-        left: -5%;
-        top: 40%; }
-      .gallery .flickity-prev-next-button.next {
-        right: -5%;
-        top: 40%; } }
+.gallery {
+  width: 90%;
+  margin: 0 auto; }
+  .gallery .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    background: transparent; }
+    .gallery .flickity-prev-next-button:hover .arrow {
+      fill: #279AB6; }
+    .gallery .flickity-prev-next-button .arrow {
+      fill: #272D66; }
+    .gallery .flickity-prev-next-button.previous {
+      left: -5%;
+      top: 40%; }
+    .gallery .flickity-prev-next-button.next {
+      right: -5%;
+      top: 40%; }
 
 .gallery-cell {
   text-align: center;
