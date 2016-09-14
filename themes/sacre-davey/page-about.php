@@ -67,6 +67,8 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 							<?php echo CFS()->get('mobile_history');?>
 						</div>
 						<div class="desktop-history">
+							<?php echo CFS() ->get('mobile_history'); ?>
+							<img src="<?php echo get_template_directory_uri() .'/assets/images/diamond.png'; ?>" alt="">
 							<?php echo CFS()->get('desktop_history');?>
 						</div>
 						<?php the_content(); ?>

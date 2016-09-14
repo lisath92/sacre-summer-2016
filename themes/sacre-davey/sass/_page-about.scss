@@ -156,7 +156,7 @@
 	color: white;
 	background-color: $color__dark-blue;
 	h2 {
-		text-transform:uppercase;
+		@include impact-heading($font__h2, uppercase);
 	}
 
 }
@@ -169,7 +169,12 @@
 	.desktop-history {
 		display: none;
 		@include desktop {
-			display: unset;
+			@include display-flex(center,center);
+			flex-flow: column wrap;
+			width: 80%;
+			margin: 0 auto;
+			line-height: 1.5;
+			font-size: 1.5rem;
 		}
 	}
 .tm_timeline__event__date {

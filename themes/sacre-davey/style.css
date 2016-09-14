@@ -948,7 +948,10 @@ iframe {
   color: white;
   background-color: #272D66; }
   .timeline h2 {
-    text-transform: uppercase; }
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
 
 @media (min-width: 600px) {
   .mobile-history {
@@ -958,7 +961,18 @@ iframe {
   display: none; }
   @media (min-width: 600px) {
     .desktop-history {
-      display: unset; } }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 1.5;
+      font-size: 1.5rem; } }
 
 .tm_timeline__event__date {
   display: none; }
