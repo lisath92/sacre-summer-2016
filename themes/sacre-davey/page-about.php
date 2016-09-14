@@ -23,24 +23,30 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 
 				<div class="entry-content">
 					<h1>Our Values</h1>
-					<div class="carousel carousel-nav">
+					<div class="carousel-nav">
 						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusServiceIcon.png' ?>">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/service_active.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/service_inactive.png' ?>" class="icon-inactive">
 						</div>
 						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusValueIcon.png' ?>">
-						</div>
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_inactive.png' ?>" class="icon-inactive">
+							</div>
 						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusInnovationIcon.png' ?>">
-						</div>
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/innovation_active.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/innovation_inactive.png' ?>" class="icon-inactive">
+
+							</div>
 						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusQualityIcon.png' ?>">
-						</div>
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_active.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_inactive.png' ?>" class="icon-inactive">
+							</div>
 						<div class="carousel-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusIntegrityIcon.png' ?>">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_active.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_inactive.png' ?>" class="icon-inactive">
 						</div>
 					</div>
-					<div class="carousel carousel-main">
+					<div class="carousel-main">
 						<div class="gallery-cell">
 							<p>People who operate plants have enough headaches as it is. When we get a call and engineering help is needed, we’re here for you to help you deal with the challenges at hand, 24 hours a day, 7 days a week. </p>
 							<p>We will provide our best advice and services to assist you with engineering, project planning, shutdowns, emergency measures and everything else it takes to help you meet your project needs.</p>
