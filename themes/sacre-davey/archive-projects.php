@@ -22,11 +22,6 @@ get_header(); ?>
 				// the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-				<!-- <div class="desktop-project-info">
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<i class="fa fa-times" aria-hidden="true"></i>
-					</div>  -->
 				</header><!-- .page-header -->
 
 				<?php /* Start the Loop */ ?>

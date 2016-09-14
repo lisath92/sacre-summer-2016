@@ -1,3 +1,5 @@
+//project info email submit banner
+
 .project-description-banner {
     display: none;
     @include desktop {
@@ -24,6 +26,9 @@
     text-transform: uppercase;
     font-size: .75rem;
 }
+
+//grid for displaying projects page
+
 .projects-grid {
     @include display-flex (center, center);
     flex-flow: column nowrap;
@@ -35,7 +40,6 @@
         flex: 1 0 100%;
         width: 100%;
         @include desktop {
-            max-height: 400px;
             flex: 1 0 18%;
             margin: .5rem .5rem;
         }
@@ -64,8 +68,13 @@
     .wp-post-image {
         min-width: 100%;
         height: auto;
-        max-height: 700px;
+        max-height: 600px;
+        display:block;
+        @include desktop {
+            
+        }
     }
+
     .entry-header {
         width: 100%;
         h2 {
