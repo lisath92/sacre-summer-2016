@@ -525,11 +525,12 @@ iframe {
       width: 100%; }
       .about-menu ul,
       .menu-main-navigation-container ul {
-        width: 80%;
+        width: 94%;
+        padding-left: 0;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         -ms-flex-align: center;
             align-items: center;
         -ms-flex-flow: row nowrap;
@@ -544,8 +545,6 @@ iframe {
           color: #279AB6; }
       .about-menu li,
       .menu-main-navigation-container li {
-        width: 100%;
-        padding-bottom: 0;
         white-space: nowrap; }
         .about-menu li.current-menu-item a,
         .menu-main-navigation-container li.current-menu-item a {

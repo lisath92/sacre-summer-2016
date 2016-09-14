@@ -52,7 +52,6 @@
 //Main Navigation
 .main-navigation {
   @include display-flex(space-between, center);
-  // flex-wrap: wrap;
   width: 100%;
   @include desktop {
     flex-wrap: nowrap;
@@ -80,10 +79,10 @@
     max-width: 600px;
     text-align: center;
     width: 100%;
-    // padding-right: 30px;
     ul {
-      width: 80%;
-      @include display-flex(flex-end, center);
+      width: 94%;
+      padding-left: 0;
+      @include display-flex(space-between, center);
       flex-flow: row nowrap;
 
     }
@@ -98,8 +97,6 @@
     }
     
     li {
-      width: 100%;
-     padding-bottom: 0;
      white-space: nowrap;
 
      &.current-menu-item a {
@@ -147,13 +144,6 @@
     color: white;
     text-decoration: none;
     padding: 0;
-
-    // @include desktop {
-    //   color: $color__dark-blue;
-    // }
-    // &:hover {
-    //   color: $color__lightblue;
-    // }
   }
 }
 
