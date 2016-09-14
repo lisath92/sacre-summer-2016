@@ -807,6 +807,8 @@ iframe {
 
 .page-template-page-about {
   font-size: 1rem; }
+  .page-template-page-about article {
+    margin-bottom: 0; }
   .page-template-page-about .entry-header {
     color: white;
     height: 50vw;

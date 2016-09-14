@@ -1,6 +1,8 @@
 .page-template-page-about {
 	font-size: 1rem;
-	
+	article {
+		margin-bottom: 0; // removes white space between content and footer
+	}
 	.entry-header {
 		color: white;
 		height: 50vw;
@@ -187,7 +189,7 @@
 	text-decoration: none;
 	@include desktop {
 		@include font-size (2);
-		
+
 		padding: 1.5rem 5rem;
 	}
 	
