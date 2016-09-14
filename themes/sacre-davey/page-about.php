@@ -67,30 +67,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 							<p>We will not be afraid of having the hard discussion that sometimes needs to happen, to meet the needs of a project and will promise to do so with integrity and respect for our customers and stakeholders.</p>
 						</div>
 					</div>
-<<<<<<< HEAD
-				</div>
-				<section class="timeline">
-				<div class="history-wrapper">
-				<h2>Our History</h2>
-				<div class="mobile-history">
-				<?php echo CFS()->get('mobile_history');?>
-				</div>
-				<div class="desktop-history">
-				<?php echo CFS()->get('desktop_history');?>
-				</div>
-				</div>
-				<?php the_content(); ?>
-				</section>
-				<section class="our-team-wrapper">
-					<h1>Our Team</h1>
-					<div class="our-team">
-					<?php 
-					$members = CFS()->get( 'our_team' );
-					foreach ( $members as $member ) : ?>
-					<div class="each-member">
-						<div class="member-photo">
-							<img src="<?php echo $member['photo']; ?>">
-=======
+
 					<section class="timeline">
 						<h2>Our History</h2>
 						<div class="mobile-history">
@@ -100,7 +77,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 							<?php echo CFS() ->get('mobile_history'); ?>
 							<img src="<?php echo get_template_directory_uri() .'/assets/images/diamond.png'; ?>" alt="">
 							<?php echo CFS()->get('desktop_history');?>
->>>>>>> b25146ab22d36d95089958dc6eaf9912c33ff689
+
 						</div>
 						<?php the_content(); ?>
 					</section>
@@ -125,18 +102,9 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 						<?php endforeach;
 						?>
 					</div>
-<<<<<<< 497fe782373d156231cd6bef702f5433c360814f
+
 				</section>
-				<div class="learn-more-banner">
-					<h2>Learn More</h2>
-					<a class="button-class"href="<?php echo the_permalink(); ?>">Sectors</a>
-					<a class="button-class"href="<?php echo the_permalink(); ?>">Projects</a>
-				</div>
-			</div><!-- .entry-content -->
-		</article><!-- #post-## -->
-	<?php endwhile; ?>
-=======
-			</section>
+		
 			<div class="learn-more-banner">
 				<h2>Learn More</h2>
 				<div class="button-wrapper">
@@ -147,7 +115,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 		</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 <?php endwhile; ?>
->>>>>>> flex learn more banner buttons
+
 </main><!-- #main -->
 </div><!-- #primary -->
 

@@ -932,8 +932,6 @@ iframe {
     .each-member img {
       width: 100%; } }
 
-<<<<<<< 497fe782373d156231cd6bef702f5433c360814f
-=======
 .learn-more-banner {
   color: white;
   height: 250px;
@@ -978,7 +976,6 @@ iframe {
       font-size: 2rem;
       padding: 1.5rem 5rem; } }
 
->>>>>>> flex learn more banner buttons
 .timeline {
   position: relative;
   z-index: 1;
@@ -988,11 +985,7 @@ iframe {
   background-color: #272D66; }
   .timeline h2 {
     font-family: "Impact", "Charcoal", sans-serif;
-<<<<<<< eaa4b1cb1ab9ea188ae39c71873eeb6e5514d5d6
     font-size: 48px;
-=======
-    font-size: 2rem;
->>>>>>> style fonts in timeline
     text-transform: uppercase;
     letter-spacing: 3px; }
 
@@ -1012,6 +1005,13 @@ iframe {
   line-height: 1.25;
   font-size: 20px;
   font-size: 1.25rem;
+  display: none; }
+
+@media (min-width: 600px) and (min-width: 600px) {
+  .desktop-history {
+    display: none; } }
+
+.desktop-history {
   display: none; }
   @media (min-width: 600px) {
     .desktop-history {

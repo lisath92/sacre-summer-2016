@@ -167,7 +167,7 @@
 	@include display-flex(center, center);
 	flex-flow: column nowrap;
 	@include desktop {
-	height: 400px;
+		height: 400px;
 	}
 
 	h2 {
@@ -229,19 +229,20 @@
 
 	
 	@include font-size (1.25);
+	@include desktop {
+		display:none
+	}
+}
+.desktop-history {
+	line-height: 1.25;
+	@include font-size (1.25);
+	display: none;
+	@include desktop {
+
+		
 		@include desktop {
 			display:none
 		}
-	}
-	.desktop-history {
-		line-height: 1.25;
-		@include font-size (1.25);
-		display: none;
-		@include desktop {
-
-	
-	@include desktop {
-		display:none
 	}
 }
 .desktop-history {
@@ -325,3 +326,4 @@
 	text-decoration: none;
 	
 }
+
