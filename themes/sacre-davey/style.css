@@ -1559,6 +1559,8 @@ footer {
   .projects-grid article {
     margin: 0; }
   .projects-grid .entry-content {
+    margin: 0 auto;
+    width: 90%;
     display: none;
     font-size: 1rem;
     text-align: center;
@@ -1570,7 +1572,7 @@ footer {
       text-align: center;
       color: white;
       border-radius: 50%;
-      padding: .4rem .5rem;
+      padding: .4rem .6rem;
       background-color: #272D66;
       cursor: pointer; }
     @media (min-width: 600px) {

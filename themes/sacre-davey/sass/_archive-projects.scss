@@ -86,11 +86,14 @@
         margin: 0; //removes bottom margin from project
     }
     .entry-content {
+        margin: 0 auto;
+        width: 90%;
         display: none;
         font-size: 1rem;
         text-align: center;
         padding-bottom: 1rem;
         p {
+            
             text-align: left;
         }
         .fa-times {
@@ -98,7 +101,7 @@
             text-align: center;
             color: white;
             border-radius: 50%;
-            padding: .4rem .5rem;
+            padding: .4rem .6rem;
             background-color: $color__dark-blue;
             cursor: pointer;
         }
