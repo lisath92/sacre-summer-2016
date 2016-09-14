@@ -13,8 +13,10 @@
   asNavFor: $('.carousel-main'),
   prevNextButtons: false,
   pageDots: false,
-  setGallerySize: false,
-  contain: true
+  cellAlign: 'left',
+  dragThreshold: 1,
+  contain: true,
+  setGallerySize: false
 }),
 
   $navGroup = $('.carousel-nav'),

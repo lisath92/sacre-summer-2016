@@ -23,7 +23,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 
 				<div class="entry-content">
 					<h1>Our Values</h1>
-					<div class="carousel-nav">
+					<div class="carousel carousel-nav">
 						<div class="carousel-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/AboutusServiceIcon.png' ?>">
 						</div>
