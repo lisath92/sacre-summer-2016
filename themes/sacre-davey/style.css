@@ -797,16 +797,16 @@ iframe {
     .carousel {
       max-width: 90%; } }
 
-.carousel-cell {
+.page-template-page-services .carousel-cell {
   width: 100%;
   text-align: center;
   min-height: 200px; }
   @media (min-width: 600px) {
-    .carousel-cell {
+    .page-template-page-services .carousel-cell {
       width: 15%;
       margin-right: 1vw; } }
   @media (min-width: 600px) {
-    .carousel-cell img {
+    .page-template-page-services .carousel-cell img {
       width: 100%; } }
 
 .page-template-page-about {
@@ -833,27 +833,22 @@ iframe {
     color: #272D66;
     text-align: center; }
 
-.button-group {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: end;
-      align-items: flex-end;
+.carousel-nav {
   width: 90%;
+  box-sizing: border-box;
   margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: 3px #272D66 solid; }
-  @media (min-width: 600px) {
-    .button-group button {
-      background-color: transparent;
-      border: none;
-      width: 19%;
-      max-width: 100px;
-      text-align: center;
-      box-shadow: none; } }
-  .button-group button img {
-    width: 100%; }
+  .carousel-nav .carousel-cell {
+    background-color: transparent;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    box-shadow: none; }
+    .carousel-nav .carousel-cell.is-selected {
+      border: 3px red solid; }
+    .carousel-nav .carousel-cell img {
+      width: 100%; }
 
 @media (min-width: 600px) {
   .gallery {

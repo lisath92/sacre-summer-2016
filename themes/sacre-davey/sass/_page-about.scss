@@ -27,26 +27,29 @@
 
 
 //Flickity
-.button-group {
-	@include display-flex(space-around, flex-end);
+.carousel-nav {
+//	@include display-flex(space-around, flex-end);
 	width: 90%;
+	box-sizing: border-box;
 	margin: 0 auto;
 	padding-bottom: 20px;
 	border-bottom: 3px $color__dark-blue solid;
-	button {
-		@include desktop {
-			background-color: transparent;
-			border: none;
-			width: 19%;
-			max-width: 100px;
-			text-align: center;
-			box-shadow: none;
+	.carousel-cell{
+		background-color: transparent;
+		width: 100%;
+		max-width: 100px;
+		text-align: center;
+		box-shadow: none;
+		&.is-selected  {
+			border: 3px red solid;
 		}
+		
 		img {
 			width: 100%;
 		}
 	}
 }
+
 
 .gallery {
 	@include desktop {
