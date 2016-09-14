@@ -949,9 +949,17 @@ iframe {
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
+  @media (min-width: 600px) {
+    .learn-more-banner {
+      height: 400px; } }
   .learn-more-banner h2 {
     color: white;
     text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .learn-more-banner h2 {
+        padding-bottom: 2rem;
+        font-size: 48px;
+        font-size: 3rem; } }
 
 .button-wrapper {
   margin-bottom: 3rem;

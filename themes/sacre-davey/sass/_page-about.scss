@@ -166,11 +166,17 @@
 	text-align: center;
 	@include display-flex(center, center);
 	flex-flow: column nowrap;
+	@include desktop {
+	height: 400px;
+	}
 
 	h2 {
-		
 		color:white;
 		text-transform: uppercase;
+		@include desktop {
+			padding-bottom: 2rem;
+			@include font-size (3);
+		}
 	}
 }
 .button-wrapper {
