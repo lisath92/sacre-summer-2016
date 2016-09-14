@@ -38,17 +38,17 @@
 	}
 	.carousel-cell{
 		width: 42%;
-    height: 100%;
-    padding: 0 25vw;
-    @include desktop {
+		height: 100%;
+		padding: 0 25vw;
+		@include desktop {
 			padding: 0 4vw;
-	    width: 10%;
-	    max-width: 100px;
+			width: 10%;
+			max-width: 100px;
 		}
 		
 		.icon-active {
-		display: none;
-	}
+			display: none;
+		}
 		&.is-selected  {
 			.icon-inactive {
 				display: none;
@@ -57,8 +57,6 @@
 			.icon-active {
 				display: unset;
 			}
-
-
 		}
 		
 		img {
@@ -70,30 +68,30 @@
 
 
 .carousel-main {
-		width: 90%;
-		margin: 0 auto;
-		.flickity-prev-next-button {
-			width: 30px;
-			height: 30px;
-			background: transparent;
-			&:hover {
-				.arrow {
-					fill: $color__lightblue;
-				}
-			}
+	width: 90%;
+	margin: 0 auto;
+	.flickity-prev-next-button {
+		width: 30px;
+		height: 30px;
+		background: transparent;
+		&:hover {
 			.arrow {
-				fill: $color__dark-blue;
-			}
-			&.previous {
-				left: -5%;
-				top: 40%;
-			}
-			&.next {
-				right: -5%;
-				top: 40%;
+				fill: $color__lightblue;
 			}
 		}
+		.arrow {
+			fill: $color__dark-blue;
+		}
+		&.previous {
+			left: -5%;
+			top: 40%;
+		}
+		&.next {
+			right: -5%;
+			top: 40%;
+		}
 	}
+}
 
 .gallery-cell {
 	text-align: center;
@@ -153,7 +151,7 @@
 	}
 }
 
-//new timeline
+// Timeline
 .timeline {
 	position:relative;
 	z-index: 1;
