@@ -1364,8 +1364,8 @@ footer {
     @media (min-width: 600px) {
       .projects-grid .project {
         max-height: 400px;
-        -ms-flex: 1 0 18%;
-            flex: 1 0 18%;
+        -ms-flex: 1 0 20%;
+            flex: 1 0 20%;
         margin: .5rem .5rem; } }
   .projects-grid article {
     margin: 0; }
