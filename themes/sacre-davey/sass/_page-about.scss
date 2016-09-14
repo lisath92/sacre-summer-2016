@@ -124,32 +124,6 @@
 	}
 }
 
-
-//Timeline
-
-// .the-excerpt {
-// 	line-height: -60px;
-// }
-// .cd-timeline-content {
-// 	background-color: $color__dark-blue;
-// 	box-shadow: 0;
-// 	.cd-timeline-img {
-// 	box-shadow: 0;
-//   }
-// }
-
-// .timeline-date,
-// .timeline-express-read-more-link {
-// 	visibility: hidden;
-
-// }
-
-// .fa-circle::before {
-// 	box-shadow: 0;
-// 	color: $color__lightblue;
-
-// }
-
 //Learn more banner
 .learn-more-banner {
 	color: white;
@@ -175,6 +149,8 @@
 
 //new timeline
 .timeline {
+	position:relative;
+	z-index: 1;
 	padding-top: 2rem;
 	text-align: center;
 	color: white;
