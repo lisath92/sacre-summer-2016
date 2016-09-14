@@ -34,12 +34,14 @@
 	padding-bottom: 20px;
 	border-bottom: 3px $color__dark-blue solid;
 	button {
-		background-color: transparent;
-		border: none;
-		width: 19%;
-		max-width: 100px;
-		text-align: center;
-		box-shadow: none;
+		@include desktop {
+			background-color: transparent;
+			border: none;
+			width: 19%;
+			max-width: 100px;
+			text-align: center;
+			box-shadow: none;
+		}
 		img {
 			width: 100%;
 		}
@@ -47,37 +49,44 @@
 }
 
 .gallery {
-	width: 90%;
-	margin: 0 auto;
-	.flickity-prev-next-button {
-		width: 30px;
-		height: 30px;
-		background: transparent;
-		&:hover {
-			.arrow {
-				fill: $color__lightblue;
+	@include desktop {
+		width: 90%;
+		margin: 0 auto;
+		.flickity-prev-next-button {
+			width: 30px;
+			height: 30px;
+			background: transparent;
+			&:hover {
+				.arrow {
+					fill: $color__lightblue;
+				}
 			}
-		}
-		.arrow {
-			fill: $color__dark-blue;
-		}
-		&.previous {
-			left: -5%;
-			top: 40%;
-		}
-		&.next {
-			right: -5%;
-			top: 40%;
+			.arrow {
+				fill: $color__dark-blue;
+			}
+			&.previous {
+				left: -5%;
+				top: 40%;
+			}
+			&.next {
+				right: -5%;
+				top: 40%;
+			}
 		}
 	}
 }
 .gallery-cell {
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	line-height: 1.5;
 	width: 100%;
-	height: 200px;
+	min-height: 250px;
+	p {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
+
 
 
 //Our Team
@@ -124,6 +133,84 @@
 	}
 }
 
+//new timeline
+.timeline {
+	position:relative;
+	z-index: 1;
+	padding-top: 2rem;
+	text-align: center;
+	color: white;
+	background-color: $color__dark-blue;
+	h2 {
+		@include impact-heading($font__h2, uppercase);
+	}
+
+}
+.mobile-history {
+	
+	@include desktop {
+		display:none
+	}
+}
+.desktop-history {
+	display: none;
+	@include desktop {
+		@include display-flex(center,center);
+		flex-flow: column wrap;
+		width: 80%;
+		margin: 0 auto;
+		line-height: 1.5;
+		font-size: 1.5rem;
+	}
+}
+.tm_timeline__event__date {
+	display: none;
+}
+.tm_timeline__event__dot {
+	background-color: $color__lightblue;
+	box-shadow: 0 0 0 6px #279AB6;
+}
+
+.tm_timeline__event__title {
+	color: white;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	@include desktop {
+		font-size: 2rem;
+	}
+}
+.tm_timeline-layout-vertical-chessOrder {
+	.tm_timeline__tense {
+		background-color: $color__lightblue;
+		height: 82%;
+		top: 3.5%;
+		@include desktop {
+			height: 82%;
+			top: 5%;
+		}	
+	}
+}
+.tm_timeline {
+	text-align: left;
+}
+.tm_timeline__layout_vertical {
+
+}
+.tm_timeline__event__description {
+	padding-top: 1rem;
+	margin-left: 1rem;
+	font-size: 1rem;
+	@include desktop {
+		font-size: 1.25rem;
+	}
+}
+
+.tm_timeline__body-tense {
+
+	color: white;
+}
+
+
 //Learn more banner
 .learn-more-banner {
 	color: white;
@@ -146,82 +233,3 @@
 	text-decoration: none;
 	
 }
-
-//new timeline
-.timeline {
-	position:relative;
-	z-index: 1;
-	padding-top: 2rem;
-	text-align: center;
-	color: white;
-	background-color: $color__dark-blue;
-	h2 {
-		@include impact-heading($font__h2, uppercase);
-	}
-
-}
-.mobile-history {
-	
-		@include desktop {
-			display:none
-		}
-	}
-	.desktop-history {
-		display: none;
-		@include desktop {
-			@include display-flex(center,center);
-			flex-flow: column wrap;
-			width: 80%;
-			margin: 0 auto;
-			line-height: 1.5;
-			font-size: 1.5rem;
-		}
-	}
-.tm_timeline__event__date {
-	display: none;
-}
-.tm_timeline__event__dot {
-	background-color: $color__lightblue;
-	box-shadow: 0 0 0 6px #279AB6;
-}
-
-.tm_timeline__event__title {
-	color: white;
-	font-size: 1.5rem;
-	margin-left: 1rem;
-	@include desktop {
-	font-size: 2rem;
-	}
-}
-.tm_timeline-layout-vertical-chessOrder {
-.tm_timeline__tense {
-	background-color: $color__lightblue;
-	height: 82%;
-	top: 3.5%;
-	@include desktop {
-	height: 82%;
-	top: 5%;
-	}	
-	}
-}
-.tm_timeline {
-	text-align: left;
-}
-.tm_timeline__layout_vertical {
-
-}
-.tm_timeline__event__description {
-	padding-top: 1rem;
-	margin-left: 1rem;
-	font-size: 1rem;
-	@include desktop {
-	font-size: 1.25rem;
-	}
-}
-
-.tm_timeline__body-tense {
-
-	color: white;
-}
-
-
