@@ -588,14 +588,10 @@ iframe {
 
 .about-menu {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 0; }
   .about-menu li {
     text-align: right; }
-
-@media (min-width: 600px) {
-  .nav-mobile {
-    display: none; } }
 
 /*--------------------------------------------------------------
 # Services Page Template
@@ -845,6 +841,7 @@ iframe {
   .carousel-nav .carousel-cell {
     width: 42%;
     height: 100%;
+    max-width: 125px;
     padding: 0 25vw; }
     @media (min-width: 600px) {
       .carousel-nav .carousel-cell {

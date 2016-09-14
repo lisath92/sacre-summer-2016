@@ -68,6 +68,7 @@
 
 }
 
+//Menus at desktop view
 .about-menu,
 .menu-main-navigation-container {
   display: none;
@@ -108,7 +109,7 @@
 }
 }
 
-
+//Drop down menu at mobile width
 .nav-mobile {
   font-weight: bold;
   font-size: 1rem;
@@ -150,19 +151,10 @@
 //About Us sub-menu
 .about-menu {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 0;
 
   li {
     text-align: right;
-  }
-}
-
-
-//Mobile view menu
-.nav-mobile {
-
-  @include desktop {
-    display: none;
   }
 }
