@@ -860,7 +860,8 @@ iframe {
 
 .carousel-main {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 200px; }
   .carousel-main .flickity-prev-next-button {
     width: 30px;
     height: 30px;
@@ -878,13 +879,13 @@ iframe {
 
 .gallery-cell {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   width: 100%;
   min-height: 250px; }
   .gallery-cell p {
     width: 90%;
-    margin: 0 auto; }
+    margin: 15px auto; }
 
 .our-team {
   display: -ms-flexbox;

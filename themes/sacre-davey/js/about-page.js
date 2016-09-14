@@ -5,7 +5,8 @@
 
     var $gallery = $('.carousel-main').flickity({
             cellAlign: 'left',
-            pageDots: false
+            pageDots: false,
+            resize: true
         }),
 
         $flkty = $gallery.data('flickity'),
