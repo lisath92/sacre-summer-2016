@@ -125,6 +125,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 						<?php endforeach;
 						?>
 					</div>
+<<<<<<< 497fe782373d156231cd6bef702f5433c360814f
 				</section>
 				<div class="learn-more-banner">
 					<h2>Learn More</h2>
@@ -134,6 +135,19 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 			</div><!-- .entry-content -->
 		</article><!-- #post-## -->
 	<?php endwhile; ?>
+=======
+			</section>
+			<div class="learn-more-banner">
+				<h2>Learn More</h2>
+				<div class="button-wrapper">
+				<a class="button-class-sectors"href="<?php echo the_permalink(); ?>">Sectors</a>
+				<a class="button-class-projects"href="<?php echo the_permalink(); ?>">Projects</a>
+				</div>
+			</div>
+		</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+<?php endwhile; ?>
+>>>>>>> flex learn more banner buttons
 </main><!-- #main -->
 </div><!-- #primary -->
 

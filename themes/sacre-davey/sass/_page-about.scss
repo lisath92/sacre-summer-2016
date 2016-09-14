@@ -153,7 +153,40 @@
 	}
 }
 
-// Timeline
+
+//Learn more banner
+.learn-more-banner {
+	color: white;
+	height: 200px;
+	width: 100%;
+	background: url('../../assets/images/AboutUsHeader.png') no-repeat;
+	background-size: cover;
+	text-align: center;
+	@include display-flex(center, center);
+	flex-flow: column nowrap;
+
+	h2 {
+		
+		color:white;
+		text-transform: uppercase;
+	}
+}
+.button-wrapper {
+	margin-bottom: 3rem;
+
+}
+.button-class-projects,
+.button-class-sectors {
+	margin-left: 1rem;
+	color: white;
+	border: 1px solid white;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	
+}
+
+//new timeline
+
 .timeline {
 
 	position:relative;
