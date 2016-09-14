@@ -42,7 +42,7 @@ get_header(); ?>
 
 									
 									<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-									
+									<?php echo CFS()->get('project_type_icon');?>
 									<?php if ( 'post' === get_post_type() ) : ?>
 
 									<?php endif; ?>
