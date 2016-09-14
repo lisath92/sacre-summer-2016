@@ -16,11 +16,13 @@ get_header(); ?>
           <?php $developments = CFS()->get( 'development' );
           foreach( $developments as $development ): ?>
           <section class="development">
+          <div class="development-overlay">
             <h1 class="development-title">
               <?php echo $development['development_title']; ?>
             </h1>
             <div class="development-description">
               <?php echo $development['development_description']; ?>
+            </div>
             </div>
             </section>
             <div class="read-more">

@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------
+ Sectors
+-------------------------------------------------------------*/
+.development {
+	color: white;
+	text-align: center;
+	@include desktop {
+		height: 100vh;
+	}
+
+	h1 {
+		@include impact-heading($font__h2, uppercase);
+	}
+}
+
+.development-overlay { 
+	@include display-flex(center, center);
+	flex-flow: column nowrap;
+	background:
+	linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+	height: 80vh;
+	@include desktop {
+		z-index: 2;
+		background:
+		url('../../assets/images/left-overlay.png')
+		left/100% 100% no-repeat;
+		max-width: 80vw;
+  	height: 100vh;
+    align-items: flex-start;
+    text-align: left;
+	}
+}

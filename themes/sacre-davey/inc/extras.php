@@ -47,6 +47,7 @@ function sacre_davey_about_inline_styles() {
   $css .='
       .hero {
         background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url('.$logo.') bottom/100% 100% no-repeat;
         height: 100%;
         width: 100%;
@@ -112,14 +113,10 @@ function sacre_davey_sectors_inline_styles() {
     $css .='
           .entry-content section:nth-of-type('.$counter.') {
       background:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url('.$logo.') bottom/100% 100% no-repeat;
+        url('.$logo.') center no-repeat;
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column nowrap;
+        z-index: -1;
           }
     ';
     $counter++;

@@ -1264,31 +1264,42 @@ footer {
   .page-template-page-careers .north-american-team p {
     margin-bottom: 0; }
 
-.page-template-page-oil-gas .entry-header {
-  padding-top: 2rem;
+/*-----------------------------------------------------------
+ Sectors
+-------------------------------------------------------------*/
+.development {
   color: white;
-  height: 600px;
-  background: url("../../assets/images/SectorsOil_GasHeader.png");
-  background-size: cover; }
-  .page-template-page-oil-gas .entry-header p {
-    max-width: 680px; }
+  text-align: center; }
+  @media (min-width: 600px) {
+    .development {
+      height: 100vh; } }
+  .development h1 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
 
-.page-template-page-oil-gas .what-we-offer-wrapper {
-  padding-top: 2rem;
-  color: white;
-  height: 500px;
-  background-color: #272D66; }
-
-.page-template-page-oil-gas ul.what-we-offer-list {
-  padding-top: 2rem;
-  list-style-image: url("../../assets/images/SectorOil_GasTriangle90.png"); }
-
-.page-template-page-oil-gas .oil-gas-dropdown-wrapper h1 {
-  color: #272D66;
-  border-bottom: 2px solid #272D66; }
-
-.page-template-page-oil-gas .oil-gas-dropdown-wrapper ul {
-  list-style: circle; }
+.development-overlay {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  height: 80vh; }
+  @media (min-width: 600px) {
+    .development-overlay {
+      z-index: 2;
+      background: url("../../assets/images/left-overlay.png") left/100% 100% no-repeat;
+      max-width: 80vw;
+      height: 100vh;
+      -ms-flex-align: start;
+          -ms-grid-row-align: flex-start;
+          align-items: flex-start;
+      text-align: left; } }
 
 /*---------------------------------------------------------------
   Front Page
