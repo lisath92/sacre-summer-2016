@@ -47,7 +47,7 @@
 }
 
 //Read More 
-.read-more{
+.style-2{
 	display: none;
 	column-count: 2;
 	width: 90%;
@@ -57,8 +57,36 @@
 	h3 {
 		width: 100%;
 	}
-
 }
+
+.style-1 {
+	background-color: $color__dark-blue;
+
+	ul {
+		margin: 0 auto 25px;
+		color: white;
+		padding: 50px 0px;
+		width: 80%;
+	}
+
+	li {
+		position: relative;
+		padding-bottom: 20px;
+		&:before {
+			content:"";
+			position:absolute;
+			top: -1.2vw;
+	    left: -5vw;
+	    width: 3vw;
+	    height: 6vw;
+	    background: 
+	    url(../../assets/images/arrow-right.png) 
+	    top center/79% no-repeat;
+
+		}
+	}
+}
+
 
 
 //Sub Sectors

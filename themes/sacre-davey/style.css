@@ -1340,7 +1340,7 @@ footer {
       font-size: 0.7em;
       line-height: 1.5; } }
 
-.read-more {
+.style-2 {
   display: none;
   -moz-column-count: 2;
        column-count: 2;
@@ -1348,8 +1348,27 @@ footer {
   margin: 0 auto;
   -moz-column-width: 300px;
        column-width: 300px; }
-  .read-more h3 {
+  .style-2 h3 {
     width: 100%; }
+
+.style-1 {
+  background-color: #272D66; }
+  .style-1 ul {
+    margin: 0 auto 25px;
+    color: white;
+    padding: 50px 0px;
+    width: 80%; }
+  .style-1 li {
+    position: relative;
+    padding-bottom: 20px; }
+    .style-1 li:before {
+      content: "";
+      position: absolute;
+      top: -1.2vw;
+      left: -5vw;
+      width: 3vw;
+      height: 6vw;
+      background: url(../../assets/images/arrow-right.png) top center/79% no-repeat; }
 
 .sub-sector {
   display: -ms-flexbox;

@@ -31,7 +31,6 @@
     });
 
     //Show Sub Sectors Lists
-
     $('.sub-sector-title').on('click', function() {
         var subSectorList = $(this).next('div');
         subSectorList.slideToggle('fast', function() {
@@ -43,4 +42,7 @@
         })
     });
 
+ if($('body').hasClass('postid-67')) {
+  $('.read-more').toggleClass('style-1');
+ }
 })(jQuery);
