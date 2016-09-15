@@ -28,13 +28,12 @@ get_header(); ?>
 								<?php endif; ?>
 
 										<?php  //project icons on project page
-										$arg = array( 'taxonomy' => 'project_type', 'fields' => 'id=>slug', 'hide_empty' => true);
-										$projects = get_terms( $arg ); 
-										print_r ( $projects );
+										$arg = array( 'taxonomy' => 'project-type', 'hide_empty' => true);
+										$term = get_term($arg);
+									
 										?>
-										
-
-										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$projects->id_slug. '.png';?>" alt = ""/>
+									
+										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$term->slug. '.png';?>" alt = ""/>
 								
 										
 										<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
