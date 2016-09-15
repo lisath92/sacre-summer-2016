@@ -22,9 +22,8 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
             <div class="development-description">
               <?php echo $development['development_description']; ?>
             </div>
-            <div class="read-more-button">Read More</div>
-
           </div>
+          <div class="read-more-button">Read More</div>
         </section>
         <div class="read-more">
           <?php echo $development['read_more']; ?>

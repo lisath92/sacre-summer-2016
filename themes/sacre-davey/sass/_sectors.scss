@@ -4,12 +4,12 @@
 .development {
 	color: white;
 	text-align: center;
+	position: relative;
 	@include desktop {
 		height: 100vh;
 	}
 
 	h1 {
-		padding-top: 10%;
 		@include impact-heading($font__h2, uppercase);
 		@include desktop {
 			padding-left: 15px;
@@ -22,14 +22,13 @@
 	flex-flow: column nowrap;
 	background:
 	linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
-	height: 80vh;
+	height:100%;
 	@include desktop {
 		z-index: 2;
 		background:
 		url('../../assets/images/left-overlay.png')
 		left/100% 100% no-repeat;
-		max-width: 80vw;
-		height: 100%;
+		max-width: 80%;
 		max-height: 600px;
 		align-items: flex-start;
 		text-align: left;
@@ -38,16 +37,16 @@
 
 .development-description {
 	font-size: 0.8em;
-	padding: 0 20px;
+	padding: 0 20px 50px;
 	@include desktop {
 		width: 64%;
-		padding: 0 30px 10%;
+		padding: 0 30px 15%;
 		font-size: 0.7em;
 		line-height: 1.5;
 	}
 }
 
-//Read More 
+//Mining specific styles
 .style-2{
 	display: none;
 	column-count: 2;
@@ -60,6 +59,21 @@
 	}
 }
 
+.read-more-button {
+	position: absolute;		
+	text-align: center;
+	padding: 8px 15px;
+	font-size: 1.3rem;
+	bottom: 30px;
+	left: 35%;
+	border: 2px white solid;
+	@include desktop {
+		left: 42%;
+		padding: 10px 20px;
+		font-size: 1.5rem;
+	}
+}
+//Oil and Gas sector specific styles
 .style-1 {
 	background-color: $color__dark-blue;
 
@@ -83,7 +97,6 @@
 			background: 
 			url(../../assets/images/arrow-right.png) 
 			top center/79% no-repeat;
-
 		}
 	}
 }
