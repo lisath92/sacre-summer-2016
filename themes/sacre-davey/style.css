@@ -824,7 +824,7 @@ iframe {
   min-height: 200px; }
   @media (min-width: 600px) {
     .page-template-page-services.carousel-cell {
-      width: 15%;
+      width: 20%;
       margin-right: 1vw; } }
   @media (min-width: 600px) {
     .page-template-page-services.carousel-cell img {

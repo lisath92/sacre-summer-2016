@@ -219,7 +219,7 @@
 	text-align: center;
 	min-height: 200px;
 	@include desktop {
-		width: 15%;
+		width: 20%;
 		margin-right: 1vw
 	}
 
@@ -229,9 +229,13 @@
 		}
 	}
 }
+
+// add to fix mobile slider
+
 .flickity-viewport {
 	max-height: 250px;
 	text-align: center;
 	margin: 0 auto;
 	padding-top:2rem;
 }
+
