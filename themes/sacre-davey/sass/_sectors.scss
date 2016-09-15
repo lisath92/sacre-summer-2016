@@ -86,3 +86,11 @@
     cursor: pointer;
 	}
 }
+
+.new-sub-sector-title:after {
+		background-image:
+		url(../../assets/images/arrow-down.png);
+		width: 25px;
+		height:25px;
+		margin-top: 6px;
+}

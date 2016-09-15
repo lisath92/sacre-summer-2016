@@ -37,6 +37,13 @@ $(window).resize(function(){
   }
 });
 
+//Show Sub Sectors Lists
+var subSector = $('.sub-sector-title');
+subSector.on('click', function(){
+  console.log(this);
+  $(this).next('div').slideToggle('fast');
+  $(this).addClass('new-sub-sector-title');
+});
 
 
 
