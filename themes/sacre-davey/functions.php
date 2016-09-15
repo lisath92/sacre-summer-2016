@@ -82,6 +82,18 @@ function sacre_davey_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'sacre_davey_minified_css', 10, 2 );
 
+
+/**
+* Customize TinyMCE to client's need
+*/
+function sacre_davey_mce( $init ) {
+	$init['theme_advanced_text_colors'] = '272D66,279AB6';
+	return $init;
+}
+
+add_filter('tiny_mce_before_init', 'sacre_davey_mce');
+
+
 /*
 * Check for post type.
 */
@@ -127,3 +139,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
