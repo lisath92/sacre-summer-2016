@@ -14,13 +14,12 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">	
-				<div class="404-banner">
-				<img class="404-image" src="<?php echo get_template_directory_uri() .'/assets/images/404Header.png'?>" alt="">
-				</div>
+				
 					
 				</header><!-- .page-header -->
 
 				<div class="page-content">
+		
 				<h1 class="page-title"><?php echo esc_html( 'Oh no! Wrong Turn' ); ?></h1>
 				<p><?php echo esc_html( '404 page not found' ); ?></p>
 				<a class="home-button" href="<?php echo home_url() ?>">Back To Home</a>
