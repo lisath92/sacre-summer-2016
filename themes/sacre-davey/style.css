@@ -1444,6 +1444,7 @@ footer {
 .projects-block {
   position: relative; }
   .projects-block .wp-post-image {
+    display: block;
     width: 100%;
     height: auto; }
   .projects-block .projects-block-info {
@@ -1457,8 +1458,19 @@ footer {
       background: #279AB6;
       position: absolute;
       top: 0;
-      font-size: 32px;
-      font-size: 2rem; }
+      font-size: 20px;
+      font-size: 1.25rem; }
+    .projects-block .projects-block-info p {
+      font-size: 19.2px;
+      font-size: 1.2rem;
+      margin: 0;
+      height: 200px;
+      line-height: 2;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+      color: white;
+      position: absolute;
+      bottom: 0;
+      text-align: center; }
 
 .partners {
   background-color: lightgray;
