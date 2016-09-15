@@ -830,6 +830,12 @@ iframe {
     .page-template-page-services.carousel-cell img {
       width: 100%; } }
 
+.flickity-viewport {
+  max-height: 250px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2rem; }
+
 .page-template-page-about {
   font-size: 1rem; }
   .page-template-page-about article {
