@@ -1340,6 +1340,38 @@ footer {
       font-size: 0.7em;
       line-height: 1.5; } }
 
+.sub-sector {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  width: 90%;
+  margin: 30px auto;
+  height: 100%; }
+  .sub-sector .sub-sector-lists {
+    display: none;
+    padding-top: 15px;
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-width: 250px;
+         column-width: 250px; }
+  .sub-sector ul {
+    margin: 0;
+    list-style-type: disc; }
+
+.sub-sector-title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #272D66;
+  border-bottom: 3px #272D66 solid; }
+
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/

@@ -46,4 +46,30 @@
 	}
 }
 
-
+//Sub Sectors
+.sub-sector {
+	@include display-flex(center,center);
+	flex-flow: column nowrap;
+	width: 90%;
+	margin: 30px auto;
+	height: 100%;
+	.sub-sector-lists {
+		display: none;
+		padding-top: 15px;
+		column-count: 2;
+		column-width: 250px;
+	}
+	ul {
+		margin: 0;
+		list-style-type: disc;
+	}
+}
+.sub-sector-title {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: $font__h4;
+	padding-bottom: 15px;
+	color: $color__dark-blue;
+	border-bottom: 3px $color__dark-blue solid;
+}
