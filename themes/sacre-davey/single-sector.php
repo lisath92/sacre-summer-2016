@@ -12,7 +12,7 @@ get_header(); ?>
     <?php while ( have_posts() ) : the_post(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <section class="entry-content">
+  
           <?php $developments = CFS()->get( 'development' );
           foreach( $developments as $development ): ?>
           <section class="development">
@@ -30,12 +30,7 @@ get_header(); ?>
             </div>
           <?php endforeach; ?>
         </div>  
-      </section><!-- .entry-content -->
-
-
     </article><!-- #post-## -->
-
-
   <?php endwhile; // End of the loop. ?>
 </main><!-- #main -->
 </div><!-- #primary -->

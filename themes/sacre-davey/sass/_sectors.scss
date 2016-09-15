@@ -9,7 +9,11 @@
 	}
 
 	h1 {
+		margin-top: 0;
 		@include impact-heading($font__h2, uppercase);
+		@include desktop {
+			padding-left: 15px;
+		}
 	}
 }
 
@@ -25,8 +29,21 @@
 		url('../../assets/images/left-overlay.png')
 		left/100% 100% no-repeat;
 		max-width: 80vw;
-  	height: 100vh;
-    align-items: flex-start;
-    text-align: left;
+		height: 100vh;
+		align-items: flex-start;
+		text-align: left;
 	}
 }
+
+.development-description {
+	font-size: 0.8em;
+	padding: 0 20px;
+	@include desktop {
+		width: 64%;
+		padding-left: 30px;
+		font-size: 0.7em;
+		line-height: 1.5;
+	}
+}
+
+

@@ -1274,10 +1274,14 @@ footer {
     .development {
       height: 100vh; } }
   .development h1 {
+    margin-top: 0;
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 3px; }
+    @media (min-width: 600px) {
+      .development h1 {
+        padding-left: 15px; } }
 
 .development-overlay {
   display: -ms-flexbox;
@@ -1300,6 +1304,16 @@ footer {
           -ms-grid-row-align: flex-start;
           align-items: flex-start;
       text-align: left; } }
+
+.development-description {
+  font-size: 0.8em;
+  padding: 0 20px; }
+  @media (min-width: 600px) {
+    .development-description {
+      width: 64%;
+      padding-left: 30px;
+      font-size: 0.7em;
+      line-height: 1.5; } }
 
 /*---------------------------------------------------------------
   Front Page

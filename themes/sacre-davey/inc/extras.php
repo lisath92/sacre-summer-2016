@@ -111,7 +111,7 @@ function sacre_davey_sectors_inline_styles() {
   foreach($images as $image) {
     $logo = $image['development_photo'];
     $css .='
-          .entry-content section:nth-of-type('.$counter.') {
+          .development:nth-of-type('.$counter.') {
       background:
         url('.$logo.') center no-repeat;
         height: 100%;
