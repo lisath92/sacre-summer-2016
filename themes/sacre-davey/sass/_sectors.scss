@@ -46,6 +46,21 @@
 	}
 }
 
+//Read More 
+.read-more{
+	display: none;
+	column-count: 2;
+	width: 90%;
+	margin: 0 auto;
+	column-width: 300px;
+
+	h3 {
+		width: 100%;
+	}
+
+}
+
+
 //Sub Sectors
 .sub-sector {
 	@include display-flex(center,center);
