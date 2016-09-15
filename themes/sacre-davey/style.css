@@ -1458,10 +1458,17 @@ footer {
     display: block;
     width: 100%;
     height: auto; }
+    @media (min-width: 600px) {
+      .carousel .wp-post-image {
+        background: url("../../assets/images/LandingpageFeatureOverlay.png");
+        background-size: cover; } }
   .carousel .projects-block-info {
     color: white; }
     .carousel .projects-block-info h1 {
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 1rem;
       text-transform: uppercase;
+      letter-spacing: 3px;
       margin-top: 0;
       padding: 1rem 0;
       text-align: center;
@@ -1469,11 +1476,11 @@ footer {
       width: 100%;
       background: #279AB6;
       position: absolute;
-      top: 0;
-      font-size: 20px;
-      font-size: 1.25rem; }
+      top: 0; }
       @media (min-width: 600px) {
         .carousel .projects-block-info h1 {
+          font-size: 24px;
+          font-size: 1.5rem;
           width: 65%;
           top: 3rem;
           right: 0; } }

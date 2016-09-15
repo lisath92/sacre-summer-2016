@@ -29,10 +29,10 @@ get_header(); ?>
 
    				$projects_posts = get_posts( $args ); // returns an array of posts
    				?>
-   				<div class="projects-wrapper carousel">
+   				<div class="carousel">
    				<?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
    				
-   				<div class="projects-block carousel-cell">
+   				<div class="carousel-cell">
 
    					<div class="projects-block-image"><?php the_post_thumbnail(); ?></div> 
 
