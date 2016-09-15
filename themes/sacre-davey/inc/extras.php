@@ -94,7 +94,7 @@ wp_add_inline_style('sacre-davey-style', $css);
 
 add_action( 'wp_enqueue_scripts','sacre_davey_contact_inline_styles');
 
-//
+//Sectors page inline style
 function sacre_davey_sectors_inline_styles() {
   if(!is_single() && is_post_type('sector')) {
     return;
@@ -125,10 +125,6 @@ wp_add_inline_style('sacre-davey-style', $css);
 }
 }
 add_action( 'wp_enqueue_scripts','sacre_davey_sectors_inline_styles');  
-
-
-
-
 
 
 /**
