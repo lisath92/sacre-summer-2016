@@ -28,12 +28,12 @@ get_header(); ?>
 								<?php endif; ?>
 
 										<?php  //project icons on project page
-										$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => true);
-										$terms = get_terms( $arg ); 
+										$arg = array( 'post_type' => 'project_type', 'hide_empty' => true);
+										$projects = get_terms( $arg ); 
 										?>
-										<?php foreach ( $terms as $term ) : ?>
+										<?php foreach ( $projects as $project ) : ?>
 											
-											<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$term->slug. '.png';?>" alt = ""/>
+											<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$project->slug. '.png';?>" alt = ""/>
 									
 										<?php endforeach; ?>
 
