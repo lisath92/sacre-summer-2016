@@ -1,13 +1,13 @@
 (function($) {
 
 
-var mainMenu = $('.nav-mobile'),
-$carousel = $('.carousel').flickity({
-  cellAlign: 'center',
-  contain: true,
-  prevNextButtons: false
-}),
-projectDescription = $('.entry-content');
+  var mainMenu = $('.nav-mobile'),
+  $carousel = $('.carousel').flickity({
+    cellAlign: 'center',
+    contain: true,
+    prevNextButtons: false
+  }),
+  projectDescription = $('.entry-content');
 
 
 //Toggle hamburger menu
@@ -24,10 +24,10 @@ $('body').on('click', function(event){
 
   if($(event.target).hasClass('entry-title') && $(window).width()<582){ 
     projectDescription.css("display", "block");
-  
+
   } else if($(event.target).hasClass('fa-times')){
     projectDescription.css("display", "none");
-} 
+  } 
 });
 
 //Show Menu if more than 600px view width
@@ -40,9 +40,15 @@ $(window).resize(function(){
 //Show Sub Sectors Lists
 var subSector = $('.sub-sector-title');
 subSector.on('click', function(){
-  console.log(this);
-  $(this).next('div').slideToggle('fast');
-  $(this).addClass('new-sub-sector-title');
+  if($(this).next('div').is(':hidden')){
+    $(this).next('div').slideToggle('fast');  
+    $(this).addClass('new-sub-sector-title');
+  } else {
+    $(this).next('div').slideToggle('fast');
+    $(this).removeClass('new-sub-sector-title');
+  }
+  
+
 });
 
 
