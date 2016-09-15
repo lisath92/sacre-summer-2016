@@ -85,7 +85,7 @@
     ul {
       width: 94%;
       padding-left: 0;
-      @include display-flex(space-between, center);
+      @include display-flex(space-around, center);
       flex-flow: row nowrap;
 
     }
