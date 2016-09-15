@@ -1,7 +1,32 @@
+.error-404 .page-content {
+	height: 100%;
+	margin-top:0;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: $color__dark-blue;
+	.page-title {
+		margin-top: 0;
+		margin-bottom: 0;
+		@include impact-heading (5rem, uppercase);
+	}
+	p {
+		@include font-size (3);
+		margin-top: 0;
+		margin-bottom: 4rem;
+	}
+}
 .404-banner {
 	width: 100%;
 }
+.404-image {
+	width:100%;
+}
+
 
 .home-button {
+	text-decoration: none;
+	text-transform: uppercase;
 	border: 2px solid $color__dark-blue;
+	padding: 1rem 2rem;
+
 }
