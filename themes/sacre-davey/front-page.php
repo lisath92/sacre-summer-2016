@@ -29,6 +29,7 @@ get_header(); ?>
 
    				$projects_posts = get_posts( $args ); // returns an array of posts
    				?>
+               <div class="project-overlay">
    				<div class="carousel">
    				<?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
    				
@@ -46,6 +47,7 @@ get_header(); ?>
    				
    			<?php endforeach; wp_reset_postdata(); ?>
 				</div>
+            </div>
    			<section class="partners">
    				<h3>Partners</h3>
    				<img src="<?php echo get_template_directory_uri() .'/assets/images/Biochem Logo.png'?>" alt="Biochem partner logo">

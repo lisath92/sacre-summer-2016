@@ -1441,10 +1441,20 @@ footer {
       font-size: 1.5rem;
       max-width: 800px; } }
 
+.project-overlay {
+  z-index: 2;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  height: 80vh; }
+  @media (min-width: 600px) {
+    .project-overlay {
+      background: url("../../assets/images/LandingpageFeatureOverlay.png") left/100% 100% no-repeat;
+      height: 100vh; } }
+
 .carousel {
   width: 100%; }
   @media (min-width: 600px) {
     .carousel {
+      z-index: 1;
       width: 100%;
       height: 100%; } }
   .carousel .carousel-cell {
@@ -1453,14 +1463,17 @@ footer {
     height: auto; }
     @media (min-width: 600px) {
       .carousel .carousel-cell {
+        z-index: 1;
         height: 500px; } }
   .carousel .wp-post-image {
+    z-index: 1;
     display: block;
     width: 100%;
     height: auto; }
     @media (min-width: 600px) {
       .carousel .wp-post-image {
-        background: url("../../assets/images/LandingpageFeatureOverlay.png");
+        z-index: 1;
+        background: url("../../assets/images/LandingpageFeatureOverlay.png") left/100% 100% no-repeat;
         background-size: cover; } }
   .carousel .projects-block-info {
     color: white; }
