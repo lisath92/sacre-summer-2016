@@ -1,18 +1,24 @@
 .error-404 .page-content {
 	height: 100%;
 	margin-top:0;
-	margin-bottom: 2rem;
+	margin-bottom: 8rem;
 	text-align: center;
 	color: $color__dark-blue;
 	.page-title {
 		margin-top: 0;
 		margin-bottom: 0;
-		@include impact-heading (5rem, uppercase);
+		@include impact-heading (3rem, uppercase);
+		@include desktop {
+			@include font-size (6);
+		}
 	}
 	p {
-		@include font-size (3);
+		@include font-size (2);
 		margin-top: 0;
 		margin-bottom: 4rem;
+		@include desktop {
+			@include font-size (3);
+		}
 	}
 }
 .404-banner {
@@ -21,8 +27,6 @@
 .404-image {
 	width:100%;
 }
-
-
 .home-button {
 	text-decoration: none;
 	text-transform: uppercase;

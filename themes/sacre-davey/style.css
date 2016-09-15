@@ -1691,21 +1691,29 @@ footer {
 .error-404 .page-content {
   height: 100%;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   text-align: center;
   color: #272D66; }
   .error-404 .page-content .page-title {
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 3px; }
+    @media (min-width: 600px) {
+      .error-404 .page-content .page-title {
+        font-size: 96px;
+        font-size: 6rem; } }
   .error-404 .page-content p {
-    font-size: 48px;
-    font-size: 3rem;
+    font-size: 32px;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 4rem; }
+    @media (min-width: 600px) {
+      .error-404 .page-content p {
+        font-size: 48px;
+        font-size: 3rem; } }
 
 
 .404-banner {
