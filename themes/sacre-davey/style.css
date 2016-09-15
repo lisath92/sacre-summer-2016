@@ -1402,7 +1402,11 @@ footer {
       .read-more h3 {
         display: unset; } }
   .read-more h2 {
-    color: #272D66; }
+    color: #272D66;
+    padding-bottom: 20px; }
+    @media (min-width: 600px) {
+      .read-more h2 {
+        border-bottom: 2px #272D66 solid; } }
   .read-more ul {
     list-style-type: disc;
     font-size: 24px;

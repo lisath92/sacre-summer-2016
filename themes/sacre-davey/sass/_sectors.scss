@@ -122,6 +122,10 @@
 
 	h2 {
 		color: $color__dark-blue;
+		padding-bottom: 20px;
+		@include desktop {
+			border-bottom: 2px $color__dark-blue solid;
+		}
 	}
 
 	ul {
