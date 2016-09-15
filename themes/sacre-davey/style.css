@@ -1441,6 +1441,25 @@ footer {
       font-size: 1.5rem;
       max-width: 800px; } }
 
+.projects-block {
+  position: relative; }
+  .projects-block .wp-post-image {
+    width: 100%;
+    height: auto; }
+  .projects-block .projects-block-info {
+    color: white; }
+    .projects-block .projects-block-info h1 {
+      margin-top: 0;
+      padding: 1rem 0;
+      text-align: center;
+      color: white;
+      width: 100%;
+      background: #279AB6;
+      position: absolute;
+      top: 0;
+      font-size: 32px;
+      font-size: 2rem; }
+
 .partners {
   background-color: lightgray;
   height: 340px;

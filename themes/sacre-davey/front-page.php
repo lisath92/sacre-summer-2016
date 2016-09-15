@@ -23,16 +23,37 @@ get_header(); ?>
 					We work hard to develop a deep understanding of your needs 
 					and objectives, and to provide you with the personal service you deserve.</p>
 				</section>
-			<section class="partners">
-			<h3>Partners</h3>
-			<img src="<?php echo get_template_directory_uri() .'/assets/images/Biochem Logo.png'?>" alt="Biochem partner logo">
-			<img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo">
-			<img src="<?php echo get_template_directory_uri() .'/assets/images/FerencoLogo.png'?>" alt="Ferenco partner logo">
-			<img src="<?php echo get_template_directory_uri() .'/assets/images/HTEClogo.png'?>" alt="HTEC partner logo">
-			</section>
+
+				<?php //sacre-davey project post types on front page
+				$args = array( 'post_type' => 'projects', 'posts_per_page'   => 3 );
+
+   				$projects_posts = get_posts( $args ); // returns an array of posts
+   				?>
+   				<?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
+   				<div class="projects-block">
+
+   					<div class="projects-block-image"><?php the_post_thumbnail(); ?></div> 
+
+   					<div class="projects-block-info">
+
+   						<a><h1><?php the_title(); ?></h1></a>
+   						<p><?php the_content(); ?></p>
+
+   					</div>	
+   				</div>
+   			<?php endforeach; wp_reset_postdata(); ?>
 
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
+   			<section class="partners">
+   				<h3>Partners</h3>
+   				<img src="<?php echo get_template_directory_uri() .'/assets/images/Biochem Logo.png'?>" alt="Biochem partner logo">
+   				<img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo">
+   				<img src="<?php echo get_template_directory_uri() .'/assets/images/FerencoLogo.png'?>" alt="Ferenco partner logo">
+   				<img src="<?php echo get_template_directory_uri() .'/assets/images/HTEClogo.png'?>" alt="HTEC partner logo">
+   			</section>
 
-		<?php get_footer(); ?>
+
+   		</main><!-- #main -->
+   	</div><!-- #primary -->
+
+   	<?php get_footer(); ?>
