@@ -1441,15 +1441,27 @@ footer {
       font-size: 1.5rem;
       max-width: 800px; } }
 
-.projects-block {
-  position: relative; }
-  .projects-block .wp-post-image {
+.carousel {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .carousel {
+      width: 100%;
+      height: 100%; } }
+  .carousel .carousel-cell {
+    position: relative;
+    width: 100%;
+    height: auto; }
+    @media (min-width: 600px) {
+      .carousel .carousel-cell {
+        height: 500px; } }
+  .carousel .wp-post-image {
     display: block;
     width: 100%;
     height: auto; }
-  .projects-block .projects-block-info {
+  .carousel .projects-block-info {
     color: white; }
-    .projects-block .projects-block-info h1 {
+    .carousel .projects-block-info h1 {
+      text-transform: uppercase;
       margin-top: 0;
       padding: 1rem 0;
       text-align: center;
@@ -1460,11 +1472,16 @@ footer {
       top: 0;
       font-size: 20px;
       font-size: 1.25rem; }
-    .projects-block .projects-block-info p {
-      font-size: 19.2px;
-      font-size: 1.2rem;
+      @media (min-width: 600px) {
+        .carousel .projects-block-info h1 {
+          width: 65%;
+          top: 3rem;
+          right: 0; } }
+    .carousel .projects-block-info p {
+      font-size: 16px;
+      font-size: 1rem;
       margin: 0;
-      height: 200px;
+      height: auto;
       line-height: 2;
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
       color: white;
