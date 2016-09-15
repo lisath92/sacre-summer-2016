@@ -38,15 +38,18 @@ $(window).resize(function(){
 });
 
 //Show Sub Sectors Lists
-var subSector = $('.sub-sector-title');
-subSector.on('click', function(){
-  if($(this).next('div').is(':hidden')){
-    $(this).next('div').slideToggle('fast');  
-    $(this).addClass('new-sub-sector-title');
-  } else {
-    $(this).next('div').slideToggle('fast');
-    $(this).removeClass('new-sub-sector-title');
-  }
+
+$('.sub-sector-title').on('click', function(){
+  var subSectorList = $(this).next('div');
+  subSectorList.slideToggle('fast', function(){
+    if(subSectorList.is(':visible')){
+      $(this).prev('div').addClass('new-sub-sector-title');
+    } else {
+      $(this).prev('div').removeClass('new-sub-sector-title');
+    }
+
+  })
+ 
   
 
 });
