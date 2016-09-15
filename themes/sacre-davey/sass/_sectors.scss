@@ -37,7 +37,7 @@
 
 .development-description {
 	font-size: 0.8em;
-	padding: 0 20px 50px;
+	padding: 0 20px 30%;
 	@include desktop {
 		width: 64%;
 		padding: 0 30px 15%;
@@ -45,6 +45,22 @@
 		line-height: 1.5;
 	}
 }
+
+.read-more-button {
+	position: absolute;		
+	text-align: center;
+	padding: 8px 15px;
+	font-size: 1.3rem;
+	bottom: 30px;
+	left: 33vw;
+	border: 2px white solid;
+	@include desktop {
+		left: 42%;
+		padding: 10px 20px;
+		font-size: 1.5rem;
+	}
+}
+
 
 //Mining specific styles
 .style-2{
@@ -59,20 +75,7 @@
 	}
 }
 
-.read-more-button {
-	position: absolute;		
-	text-align: center;
-	padding: 8px 15px;
-	font-size: 1.3rem;
-	bottom: 30px;
-	left: 35%;
-	border: 2px white solid;
-	@include desktop {
-		left: 42%;
-		padding: 10px 20px;
-		font-size: 1.5rem;
-	}
-}
+
 //Oil and Gas sector specific styles
 .style-1 {
 	background-color: $color__dark-blue;

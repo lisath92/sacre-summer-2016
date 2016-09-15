@@ -1338,13 +1338,27 @@ footer {
 
 .development-description {
   font-size: 0.8em;
-  padding: 0 20px 50px; }
+  padding: 0 20px 30%; }
   @media (min-width: 600px) {
     .development-description {
       width: 64%;
       padding: 0 30px 15%;
       font-size: 0.7em;
       line-height: 1.5; } }
+
+.read-more-button {
+  position: absolute;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 1.3rem;
+  bottom: 30px;
+  left: 33vw;
+  border: 2px white solid; }
+  @media (min-width: 600px) {
+    .read-more-button {
+      left: 42%;
+      padding: 10px 20px;
+      font-size: 1.5rem; } }
 
 .style-2 {
   display: none;
@@ -1356,20 +1370,6 @@ footer {
        column-width: 300px; }
   .style-2 h3 {
     width: 100%; }
-
-.read-more-button {
-  position: absolute;
-  text-align: center;
-  padding: 8px 15px;
-  font-size: 1.3rem;
-  bottom: 30px;
-  left: 35%;
-  border: 2px white solid; }
-  @media (min-width: 600px) {
-    .read-more-button {
-      left: 42%;
-      padding: 10px 20px;
-      font-size: 1.5rem; } }
 
 .style-1 {
   background-color: #272D66; }
