@@ -9,7 +9,7 @@
 	}
 
 	h1 {
-		margin-top: 0;
+		padding-top: 10%;
 		@include impact-heading($font__h2, uppercase);
 		@include desktop {
 			padding-left: 15px;
@@ -41,7 +41,7 @@
 	padding: 0 20px;
 	@include desktop {
 		width: 64%;
-		padding-left: 30px;
+		padding: 0 30px 10%;
 		font-size: 0.7em;
 		line-height: 1.5;
 	}
@@ -76,13 +76,13 @@
 		&:before {
 			content:"";
 			position:absolute;
-			top: -1.2vw;
-	    left: -5vw;
-	    width: 3vw;
-	    height: 6vw;
-	    background: 
-	    url(../../assets/images/arrow-right.png) 
-	    top center/79% no-repeat;
+			top: -0.2vw;
+			left: -4vw;
+			width: 2vw;
+			height: 6vw;
+			background: 
+			url(../../assets/images/arrow-right.png) 
+			top center/79% no-repeat;
 
 		}
 	}
@@ -120,21 +120,21 @@
 
 	&:after {
 		width: 20px;
-    margin-left: 10px;
-    height: 30px;
-    content: 'sd';
-    background: url(../../assets/images/arrow-right.png) center/100% 100% no-repeat;
-    overflow: hidden;
-    text-indent: 100%;
-    position: absolute;
-    cursor: pointer;
+		margin-left: 10px;
+		height: 30px;
+		content: 'sd';
+		background: url(../../assets/images/arrow-right.png) center/100% 100% no-repeat;
+		overflow: hidden;
+		text-indent: 100%;
+		position: absolute;
+		cursor: pointer;
 	}
 }
 
 .new-sub-sector-title:after {
-		background-image:
-		url(../../assets/images/arrow-down.png);
-		width: 25px;
-		height:25px;
-		margin-top: 6px;
+	background-image:
+	url(../../assets/images/arrow-down.png);
+	width: 25px;
+	height:25px;
+	margin-top: 6px;
 }

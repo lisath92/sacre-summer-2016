@@ -533,8 +533,8 @@ iframe {
         padding-left: 0;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         -ms-flex-align: center;
             align-items: center;
         -ms-flex-flow: row nowrap;
@@ -1305,7 +1305,7 @@ footer {
     .development {
       height: 100vh; } }
   .development h1 {
-    margin-top: 0;
+    padding-top: 10%;
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
@@ -1330,7 +1330,8 @@ footer {
       z-index: 2;
       background: url("../../assets/images/left-overlay.png") left/100% 100% no-repeat;
       max-width: 80vw;
-      height: 100vh;
+      height: 100%;
+      max-height: 600px;
       -ms-flex-align: start;
           -ms-grid-row-align: flex-start;
           align-items: flex-start;
@@ -1342,7 +1343,7 @@ footer {
   @media (min-width: 600px) {
     .development-description {
       width: 64%;
-      padding-left: 30px;
+      padding: 0 30px 10%;
       font-size: 0.7em;
       line-height: 1.5; } }
 
@@ -1370,9 +1371,9 @@ footer {
     .style-1 li:before {
       content: "";
       position: absolute;
-      top: -1.2vw;
-      left: -5vw;
-      width: 3vw;
+      top: -0.2vw;
+      left: -4vw;
+      width: 2vw;
       height: 6vw;
       background: url(../../assets/images/arrow-right.png) top center/79% no-repeat; }
 

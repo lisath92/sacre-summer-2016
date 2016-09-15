@@ -22,6 +22,8 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
             <div class="development-description">
               <?php echo $development['development_description']; ?>
             </div>
+            <div class="read-more-button">Read More</div>
+
           </div>
         </section>
         <div class="read-more">
@@ -29,14 +31,14 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
         </div>
       <?php endforeach; ?>
       
-      <?php $subSectors = CFS()->get('sub_sector'); 
-      foreach($subSectors as $subSector): ?>
+      <?php $sub_sectors = CFS()->get('sub_sector'); 
+      foreach($sub_sectors as $sub_sector): ?>
       <section class="sub-sector">
         <div class="sub-sector-title">
-          <?php echo $subSector['sub_sector_title']; ?>
+          <?php echo $sub_sector['sub_sector_title']; ?>
         </div>
         <div class="sub-sector-lists">
-          <?php echo $subSector['sub_sector_lists']; ?>
+          <?php echo $sub_sector['sub_sector_lists']; ?>
         </div>
       </section> 
     <?php endforeach; ?> 
