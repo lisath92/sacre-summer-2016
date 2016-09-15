@@ -510,10 +510,12 @@ iframe {
       .main-navigation .fa-bars {
         display: none; } }
 
+.sector-menu,
 .about-menu,
 .menu-main-navigation-container {
   display: none; }
   @media (min-width: 600px) {
+    .sector-menu,
     .about-menu,
     .menu-main-navigation-container {
       display: block;
@@ -523,6 +525,7 @@ iframe {
       max-width: 600px;
       text-align: center;
       width: 100%; }
+      .sector-menu ul,
       .about-menu ul,
       .menu-main-navigation-container ul {
         width: 94%;
@@ -535,17 +538,21 @@ iframe {
             align-items: center;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap; }
+      .sector-menu a,
       .about-menu a,
       .menu-main-navigation-container a {
         text-decoration: none;
         color: #272D66;
         width: 10vw; }
+        .sector-menu a:hover,
         .about-menu a:hover,
         .menu-main-navigation-container a:hover {
           color: #279AB6; }
+      .sector-menu li,
       .about-menu li,
       .menu-main-navigation-container li {
         white-space: nowrap; }
+        .sector-menu li.current-menu-item a,
         .about-menu li.current-menu-item a,
         .menu-main-navigation-container li.current-menu-item a {
           text-decoration: underline;

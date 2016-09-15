@@ -26,6 +26,7 @@ function sacre_davey_setup() {
 		'primary' => esc_html( 'Primary Menu' ),
 		'about-us' => esc_html( 'About Us' ),
 		'primary-mobile-menu' => esc_html('Mobile Menu'),
+		'sector-posts' => esc_html( 'Sector Posts' ),
 	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.

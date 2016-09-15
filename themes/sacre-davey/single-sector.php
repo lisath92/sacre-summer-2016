@@ -5,7 +5,8 @@
  * @package Sacre Davey Theme
  */
 
-get_header(); ?>
+get_header(); 
+wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sector-menu' ) ); ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
