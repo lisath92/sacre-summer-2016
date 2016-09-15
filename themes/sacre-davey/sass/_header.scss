@@ -74,13 +74,14 @@
 .menu-main-navigation-container {
   display: none;
   @include desktop {
-    display: block;
+    display: unset;
     font-weight: bold;
     font-size: 0.8rem;
     text-transform: uppercase;
     max-width: 600px;
     text-align: center;
     width: 100%;
+    margin: 0 auto;
     ul {
       width: 94%;
       padding-left: 0;
@@ -157,5 +158,21 @@
 
   li {
     text-align: right;
+  }
+}
+
+//Sectors sub-menu
+.sector-menu {
+  @include desktop {
+    @include display-flex(space-around, center);
+    max-width: none;
+
+    ul {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    li {
+      padding: 5px;
+    }
   }
 }

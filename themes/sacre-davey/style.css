@@ -518,13 +518,14 @@ iframe {
     .sector-menu,
     .about-menu,
     .menu-main-navigation-container {
-      display: block;
+      display: unset;
       font-weight: bold;
       font-size: 0.8rem;
       text-transform: uppercase;
       max-width: 600px;
       text-align: center;
-      width: 100%; }
+      width: 100%;
+      margin: 0 auto; }
       .sector-menu ul,
       .about-menu ul,
       .menu-main-navigation-container ul {
@@ -599,6 +600,23 @@ iframe {
   padding: 0; }
   .about-menu li {
     text-align: right; }
+
+@media (min-width: 600px) {
+  .sector-menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    max-width: none; }
+    .sector-menu ul {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .sector-menu li {
+      padding: 5px; } }
 
 /*--------------------------------------------------------------
 # Services Page Template
