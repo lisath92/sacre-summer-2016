@@ -30,7 +30,10 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
         </div>
       <?php endforeach; ?>
       
-      <?php $sub_sectors = CFS()->get('sub_sector'); 
+      <?php $sub_sectors = CFS()->get('sub_sector');
+      if(!$sub_sectors){
+        return;
+      };
       foreach($sub_sectors as $sub_sector): ?>
       <section class="sub-sector">
         <div class="sub-sector-title">

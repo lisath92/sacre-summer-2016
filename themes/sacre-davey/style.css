@@ -1346,6 +1346,17 @@ footer {
       font-size: 0.7em;
       line-height: 1.5; } }
 
+.style-2 {
+  display: none;
+  -moz-column-count: 2;
+       column-count: 2;
+  width: 90%;
+  margin: 0 auto;
+  -moz-column-width: 300px;
+       column-width: 300px; }
+  .style-2 h3 {
+    width: 100%; }
+
 .read-more-button {
   position: absolute;
   text-align: center;
@@ -1359,17 +1370,6 @@ footer {
       left: 42%;
       padding: 10px 20px;
       font-size: 1.5rem; } }
-
-.style-2 {
-  display: none;
-  -moz-column-count: 2;
-       column-count: 2;
-  width: 90%;
-  margin: 0 auto;
-  -moz-column-width: 300px;
-       column-width: 300px; }
-  .style-2 h3 {
-    width: 100%; }
 
 .style-1 {
   background-color: #272D66; }
@@ -1389,6 +1389,24 @@ footer {
       width: 2vw;
       height: 6vw;
       background: url(../../assets/images/arrow-right.png) top center/79% no-repeat; }
+
+.read-more {
+  width: 90%;
+  margin: 0 auto; }
+  .read-more h2,
+  .read-more h3 {
+    text-align: center; }
+  .read-more h3 {
+    display: none; }
+    @media (min-width: 600px) {
+      .read-more h3 {
+        display: unset; } }
+  .read-more h2 {
+    color: #272D66; }
+  .read-more ul {
+    list-style-type: disc;
+    font-size: 24px;
+    line-height: 1.4; }
 
 .sub-sector {
   display: -ms-flexbox;
