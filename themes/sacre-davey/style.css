@@ -1369,6 +1369,7 @@ footer {
     width: 100%; }
 
 .read-more-button {
+  cursor: pointer;
   position: absolute;
   text-align: center;
   padding: 8px 15px;
@@ -1479,6 +1480,22 @@ footer {
   width: 25px;
   height: 25px;
   margin-top: 6px; }
+
+.read-less-button {
+  display: none; }
+  @media (min-width: 600px) {
+    .read-less-button {
+      display: block;
+      background-color: #272D66;
+      color: white;
+      box-shadow: none;
+      padding: 10px 0;
+      text-align: center;
+      margin: 0 auto;
+      width: 166px;
+      border: 0;
+      cursor: pointer;
+      text-shadow: none; } }
 
 /*---------------------------------------------------------------
   Front Page

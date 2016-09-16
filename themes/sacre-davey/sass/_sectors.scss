@@ -62,6 +62,7 @@
 }
 
 .read-more-button {
+	cursor: pointer;
 	position: absolute;		
 	text-align: center;
 	padding: 8px 15px;
@@ -190,4 +191,22 @@
 	width: 25px;
 	height:25px;
 	margin-top: 6px;
+}
+
+.read-less-button {
+	display: none;
+	@include desktop {
+	display: block;
+	background-color: $color__dark-blue;
+	color: white;
+	box-shadow: none;
+	padding: 10px 0;
+	text-align: center;
+	margin: 0 auto;
+	width: 166px;
+	border: 0;
+	cursor: pointer;
+	text-shadow: none;
+}
+	
 }
