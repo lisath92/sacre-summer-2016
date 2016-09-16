@@ -12,7 +12,7 @@ get_header(); ?>
 	<section class="project-nav-list">
 
 				<?php  //shop stuff on front page
-				$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => true);
+				$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => false);
 
 				$terms = get_terms( $arg ); 
 				?>

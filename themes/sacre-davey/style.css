@@ -1651,7 +1651,13 @@ footer {
       flex-flow: row nowrap;
   height: 100%; }
   .project-nav-list ul a {
-    text-decoration: none; }
+    font-size: 20px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #c6c6c6; }
+    .project-nav-list ul a:hover {
+      color: black;
+      text-decoration: underline; }
 
 .project-description-banner {
   display: none; }
