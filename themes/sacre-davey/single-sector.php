@@ -31,9 +31,7 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
       <?php endforeach; ?>
       
       <?php $sub_sectors = CFS()->get('sub_sector');
-      if(!$sub_sectors){
-        break;
-      };
+      if($sub_sectors) : 
       foreach($sub_sectors as $sub_sector): ?>
       <section class="sub-sector">
         <div class="sub-sector-title">
@@ -42,8 +40,15 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
         <div class="sub-sector-lists">
           <?php echo $sub_sector['sub_sector_lists']; ?>
         </div>
-      </section> 
+      </section>
     <?php endforeach; ?> 
+  <?php endif; ?>
+    <section class="more-projects">
+      <h2>Learn more about <?php echo get_the_title(); ?> projects.</h2>
+      <div class="link-to-projects">
+      <?php echo get_the_title(); ?> Projects
+      </div>
+    </section>
   </article><!-- #post-## -->
 <?php endwhile; // End of the loop. ?>
 </main><!-- #main -->
