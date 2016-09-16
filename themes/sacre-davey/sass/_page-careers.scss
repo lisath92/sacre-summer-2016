@@ -49,14 +49,15 @@
 	.opportunities-banner-wrapper {
 		background: $color__dark-blue;
 		padding-bottom: 1rem;
-		.select-wrapper {
+		
+		}
+	.select-wrapper {
 			@include display-flex (center, center); 
 			width: 90%;
 			margin: 0 auto;
 			@include desktop {
 				display: block;
 			}
-		}
 
 		.opportunity-dropdowns {
 			border-radius: 0;
