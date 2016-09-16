@@ -45,8 +45,8 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
   <?php endif; ?>
     <section class="more-projects">
       <h2>Learn more about <?php echo get_the_title(); ?> projects.</h2>
-      <div class="link-to-projects">
-      <?php echo get_the_title(); ?> Projects
+      <div class="link-to-projects"><a href="/sacre-davey/project-type/oil-gas">
+      <?php echo get_the_title(); ?> Projects</a>
       </div>
     </section>
   </article><!-- #post-## -->

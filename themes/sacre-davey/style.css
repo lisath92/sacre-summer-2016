@@ -1497,6 +1497,26 @@ footer {
       cursor: pointer;
       text-shadow: none; } }
 
+.more-projects {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #272D66;
+  margin: 80px auto 10px; }
+  .more-projects h2 {
+    font-weight: bold;
+    font-size: 30px; }
+
+.link-to-projects {
+  width: 250px;
+  padding: 10px 20px;
+  border: 1px #272D66 solid;
+  margin: 0 auto; }
+  .link-to-projects a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none; }
+
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/
