@@ -830,6 +830,11 @@ iframe {
     .page-template-page-services .carousel-cell img {
       width: 100%; } }
 
+.page-template-page-services .flickity-viewport {
+  max-height: 250px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2rem; }
 
 .page-template-page-about {
   font-size: 1rem; }
@@ -1531,7 +1536,6 @@ footer {
       font-size: 1.5rem;
       max-width: 800px; } }
 
-
 .project-overlay {
   z-index: 2;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
@@ -1541,71 +1545,24 @@ footer {
       background: url("../../assets/images/LandingpageFeatureOverlay.png") left/100% 100% no-repeat;
       height: 100vh; } }
 
-.carousel {
-  width: 100%; }
+p {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0;
+  height: auto;
+  line-height: 2;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center; }
   @media (min-width: 600px) {
-    .carousel {
-      width: 100%;
-      height: 100%; } }
-  .carousel .carousel-cell {
-    position: relative;
-    width: 100%;
-    height: auto; }
-    @media (min-width: 600px) {
-      .carousel .carousel-cell {
-        height: 500px; } }
-  .carousel .project-overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
-    @media (min-width: 600px) {
-      .carousel .project-overlay {
-        z-index: 2;
-        background: url("../../assets/images/LandingpageFeatureOverlay.png") left/100% 100% no-repeat; } }
-  .carousel .wp-post-image {
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: 500px; }
-  .carousel .projects-block-info {
-    color: white; }
-    .carousel .projects-block-info h1 {
-      font-family: "Impact", "Charcoal", sans-serif;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin-top: 0;
-      padding: 1rem 0;
-      text-align: center;
-      color: white;
-      width: 100%;
-      background: #279AB6;
-      position: absolute;
-      top: 0; }
-      @media (min-width: 600px) {
-        .carousel .projects-block-info h1 {
-          font-size: 24px;
-          font-size: 1.5rem;
-          width: 65%;
-          top: 3rem;
-          right: 0; } }
-    .carousel .projects-block-info p {
-      font-size: 16px;
-      font-size: 1rem;
-      margin: 0;
-      height: auto;
-      line-height: 2;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
-      color: white;
-      position: absolute;
-      bottom: 0;
-      text-align: center; }
-      @media (min-width: 600px) {
-        .carousel .projects-block-info p {
-          text-align: left;
-          background: none;
-          max-width: 600px;
-          right: 50px;
-          top: 200px; } }
-
+    p {
+      text-align: left;
+      background: none;
+      max-width: 600px;
+      right: 50px;
+      top: 200px; } }
 
 .partners {
   background-color: lightgray;
@@ -1817,7 +1774,8 @@ footer {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-weight: 100; }
     @media (min-width: 600px) {
       .error-404 .page-content .page-title {
         font-size: 80px;
