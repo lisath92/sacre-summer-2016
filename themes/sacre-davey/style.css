@@ -1780,24 +1780,21 @@ footer {
 .project {
   position: relative; }
   .project .sector-icon {
+    transform: rotate(-40deg);
     display: none; }
     @media (min-width: 600px) {
       .project .sector-icon {
-        position: absolute;
         display: block;
-        height: 100%;
-        padding: 0px 7px;
-        right: 46%;
-        bottom: 36.5%; } }
+        height: 100%; } }
   .project .icon-border {
     display: none; }
     @media (min-width: 600px) {
       .project .icon-border {
         display: block;
-        padding: 12px 12px;
+        padding: 1px 8px;
         position: absolute;
         right: 46%;
-        bottom: 25%;
+        bottom: 23%;
         border: 1px solid white;
         background-color: white;
         transform: rotate(40deg); } }

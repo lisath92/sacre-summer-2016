@@ -140,24 +140,26 @@
 .project {
     position: relative;
     .sector-icon {
+        transform: rotate(-40deg);
+
         display: none;
         @include desktop {
-        position: absolute;
+        // position: absolute;
         display: block;
         height: 100%;
-        padding: 0px 7px;
-        right: 46%;
-        bottom: 36.5%;
+        // padding: 0px 7px;
+        // right: 46%;
+        // bottom: 36.5%;
         }
     }
     .icon-border {
         display: none;
         @include desktop {
         display:block;
-        padding: 12px 12px;
+        padding: 1px 8px;
         position: absolute;
         right: 46%;
-        bottom: 25%;
+        bottom: 23%;
         border: 1px solid white;
         background-color: white;
         transform: rotate(40deg);
