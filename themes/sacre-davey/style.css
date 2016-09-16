@@ -1641,20 +1641,25 @@ footer {
  Projects Archive Page
 ----------------------------------------------------*/
 .project-nav-list ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  height: 100%; }
+  display: none; }
+  @media (min-width: 600px) {
+    .project-nav-list ul {
+      display: block;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      height: 100%; } }
   .project-nav-list ul a {
     font-size: 20px;
     font-size: 1.25rem;
     text-decoration: none;
-    color: #c6c6c6; }
+    color: #c6c6c6;
+    min-width: 100%; }
     .project-nav-list ul a:hover {
       color: black;
       text-decoration: underline; }

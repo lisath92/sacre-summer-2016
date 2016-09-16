@@ -26,7 +26,7 @@ get_header(); ?>
 						<?php endforeach; ?>
 					</ul>
 					
-					</section>
+	</section>
 		<div class="project-description-banner">
 			<p>For a detailed description of a project please enter the information below</p>
 			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">

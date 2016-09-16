@@ -2,19 +2,24 @@
  Projects Archive Page
 ----------------------------------------------------*/
 .project-nav-list ul{
+    display: none;
+    @include desktop {
+        display: block;
     @include display-flex (space-around, center);
-    
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     height: 100%;
+    }
     a {
         @include font-size (1.25);
         text-decoration: none;
         color: $color__grey;
+        min-width: 100%;
     &:hover {
         color: black;
         text-decoration: underline;
     }
     }
+
 }
 //project info email submit banner
 .project-description-banner {
