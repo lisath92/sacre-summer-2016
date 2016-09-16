@@ -94,7 +94,7 @@
         max-height: 600px;
         display:block;
         @include desktop {
-            
+          position: relative;
         }
     }
 
@@ -136,8 +136,31 @@
 }
 
 //Sector icon
-.sector-icon {
-    border: 1px gray solid;
-    transform: rotateY(90deg);
-    padding: 2px;
+.project {
+    position: relative;
+    .sector-icon {
+        display: none;
+        @include desktop {
+        position: absolute;
+        display: block;
+        height: 100%;
+        padding: 0px 7px;
+        right: 45%;
+        bottom: 27%;
+        }
+    }
+    .icon-border {
+        display:block;
+        padding: 9px 9px;
+        position: absolute;
+        right: 46%;
+        bottom: 14%;
+        border: 1px solid white;
+        background-color: white;
+        transform: rotate(40deg);
+    }
 }
+
+
+
+

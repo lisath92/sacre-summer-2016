@@ -1745,6 +1745,9 @@ footer {
     height: auto;
     max-height: 600px;
     display: block; }
+    @media (min-width: 600px) {
+      .projects-grid .wp-post-image {
+        position: relative; } }
   .projects-grid .entry-header {
     width: 100%; }
     .projects-grid .entry-header h2 {
@@ -1773,10 +1776,27 @@ footer {
       .projects-grid .entry-content {
         display: none; } }
 
-.sector-icon {
-  border: 1px gray solid;
-  transform: rotateY(90deg);
-  padding: 2px; }
+.project {
+  position: relative; }
+  .project .sector-icon {
+    display: none; }
+    @media (min-width: 600px) {
+      .project .sector-icon {
+        position: absolute;
+        display: block;
+        height: 100%;
+        padding: 0px 7px;
+        right: 45%;
+        bottom: 27%; } }
+  .project .icon-border {
+    display: block;
+    padding: 9px 9px;
+    position: absolute;
+    right: 46%;
+    bottom: 14%;
+    border: 1px solid white;
+    background-color: white;
+    transform: rotate(40deg); }
 
 .error-404 .page-header {
   min-height: 300px;
