@@ -1585,6 +1585,9 @@ footer {
     text-transform: uppercase;
     text-align: center; }
 
+/*--------------------------------------------------
+ Projects Archive Page
+----------------------------------------------------*/
 .project-description-banner {
   display: none; }
   @media (min-width: 600px) {
@@ -1693,6 +1696,11 @@ footer {
     @media (min-width: 600px) {
       .projects-grid .entry-content {
         display: none; } }
+
+.sector-icon {
+  border: 1px gray solid;
+  transform: rotateY(90deg);
+  padding: 2px; }
 
 .404-banner {
   width: 100%; }

@@ -1,5 +1,8 @@
-//project info email submit banner
+/*--------------------------------------------------
+ Projects Archive Page
+----------------------------------------------------*/
 
+//project info email submit banner
 .project-description-banner {
     display: none;
     @include desktop {
@@ -111,4 +114,11 @@
             display: none;
         }
     }
+}
+
+//Sector icon
+.sector-icon {
+    border: 1px gray solid;
+    transform: rotateY(90deg);
+    padding: 2px;
 }

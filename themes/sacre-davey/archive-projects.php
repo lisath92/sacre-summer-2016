@@ -36,12 +36,11 @@ get_header(); ?>
 									$icon = 'oil-gas';
 								}else {
 									$slug = $icon[0]->slug;
-								}
-								
-								
-								?>
-
+								};	?>
+							
+							<div class="sector-icon">
 								<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
+							</div>
 								
 
 								<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
