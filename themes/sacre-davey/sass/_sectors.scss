@@ -5,6 +5,7 @@
 	color: white;
 	text-align: center;
 	position: relative;
+	
 	@include desktop {
 		height: 100vh;
 	}
@@ -79,6 +80,7 @@
 .read-more {
 	width: 90%;
 	margin: 20px auto 0;
+	@include desktop {display: none;}
 	h2,
 	h3 {
 		text-align: center;
@@ -103,7 +105,6 @@
 
 	ul {
 		list-style-type: disc;
-		// text-align: left;
     font-size: $font__main;
     line-height: 1.4;
 	}
@@ -112,6 +113,7 @@
 
 //Oil and Gas sector specific styles
 .style-1 {
+	margin-top: 0;
 	background-color: $color__dark-blue;
 	width: 100%;
 

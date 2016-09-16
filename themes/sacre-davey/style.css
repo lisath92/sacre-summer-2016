@@ -368,7 +368,8 @@ textarea {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-weight: 100; }
 
 .page-template-contact-page .entry-content {
   display: -ms-flexbox;
@@ -635,6 +636,7 @@ iframe {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-weight: 100;
     color: #272D66;
     text-align: center;
     max-width: 800px;
@@ -733,6 +735,7 @@ iframe {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-weight: 100;
     text-align: center;
     color: white;
     padding: 30px 0;
@@ -796,6 +799,7 @@ iframe {
     font-size: 1.3rem;
     text-transform: none;
     letter-spacing: 3px;
+    font-weight: 100;
     color: white;
     padding: 30px 0;
     width: 90%;
@@ -850,7 +854,8 @@ iframe {
       font-family: "Impact", "Charcoal", sans-serif;
       font-size: 48px;
       text-transform: uppercase;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      font-weight: 100; }
     .page-template-page-about .entry-header p {
       width: 80%;
       max-width: 400px; }
@@ -859,6 +864,7 @@ iframe {
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-weight: 100;
     color: #272D66;
     text-align: center; }
 
@@ -951,6 +957,7 @@ iframe {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-weight: 100;
     margin-top: 0; }
   .each-member .position {
     font-family: Helvetica;
@@ -1018,7 +1025,8 @@ iframe {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-weight: 100; }
 
 .history-wrapper {
   width: 90%;
@@ -1222,7 +1230,8 @@ footer {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 3rem;
     text-transform: lowercase;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-weight: 100; }
 
 .page-template-page-careers .opportunities-wrapper {
   width: 90%;
@@ -1263,7 +1272,8 @@ footer {
   font-family: "Impact", "Charcoal", sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  font-weight: 100; }
 
 .page-template-page-careers .opportunities-title {
   color: #279AB6; }
@@ -1309,7 +1319,8 @@ footer {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-weight: 100; }
     @media (min-width: 600px) {
       .development h1 {
         padding-left: 15px; } }
@@ -1374,6 +1385,9 @@ footer {
 .read-more {
   width: 90%;
   margin: 20px auto 0; }
+  @media (min-width: 600px) {
+    .read-more {
+      display: none; } }
   .read-more h2,
   .read-more h3 {
     text-align: center; }
@@ -1396,6 +1410,7 @@ footer {
     line-height: 1.4; }
 
 .style-1 {
+  margin-top: 0;
   background-color: #272D66;
   width: 100%; }
   .style-1 ul {
@@ -1528,6 +1543,7 @@ footer {
       font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 3px;
+      font-weight: 100;
       margin-top: 0;
       padding: 1rem 0;
       text-align: center;
