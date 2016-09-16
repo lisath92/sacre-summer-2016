@@ -1,7 +1,15 @@
 /*--------------------------------------------------
  Projects Archive Page
 ----------------------------------------------------*/
-
+.project-nav-list ul{
+    @include display-flex (space-around, center);
+    
+    flex-flow: row nowrap;
+    height: 100%;
+    a {
+        text-decoration: none;
+    }
+}
 //project info email submit banner
 .project-description-banner {
     display: none;

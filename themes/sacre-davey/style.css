@@ -1234,24 +1234,25 @@ footer {
 .page-template-page-careers .opportunities-banner-wrapper {
   background: #272D66;
   padding-bottom: 1rem; }
-  .page-template-page-careers .opportunities-banner-wrapper .select-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    width: 90%;
-    margin: 0 auto; }
-    @media (min-width: 600px) {
-      .page-template-page-careers .opportunities-banner-wrapper .select-wrapper {
-        display: block; } }
-  .page-template-page-careers .opportunities-banner-wrapper .opportunity-dropdowns {
+
+.page-template-page-careers .select-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .page-template-page-careers .select-wrapper {
+      display: block; } }
+  .page-template-page-careers .select-wrapper .opportunity-dropdowns {
     border-radius: 0;
     width: 10rem;
     margin-left: 2rem;
     margin-right: 2rem; }
-  .page-template-page-careers .opportunities-banner-wrapper .dropdown-titles {
+  .page-template-page-careers .select-wrapper .dropdown-titles {
     color: white;
     text-transform: uppercase; }
 
@@ -1639,6 +1640,19 @@ footer {
 /*--------------------------------------------------
  Projects Archive Page
 ----------------------------------------------------*/
+.project-nav-list ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  height: 100%; }
+  .project-nav-list ul a {
+    text-decoration: none; }
+
 .project-description-banner {
   display: none; }
   @media (min-width: 600px) {

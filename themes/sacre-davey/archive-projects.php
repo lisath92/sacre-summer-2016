@@ -9,6 +9,24 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+	<section class="project-nav-list">
+
+				<?php  //shop stuff on front page
+				$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => true);
+
+				$terms = get_terms( $arg ); 
+				?>
+				<ul class="">
+					<?php foreach ( $terms as $term ) : ?>
+
+						<li><a href=" <?php echo get_term_link($term); ?> " ><?php echo $term->name
+							?></a>
+						</li> 
+
+						<?php endforeach; ?>
+					</ul>
+					
+					</section>
 		<div class="project-description-banner">
 			<p>For a detailed description of a project please enter the information below</p>
 			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
