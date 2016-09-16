@@ -29,12 +29,12 @@ get_header(); ?>
 
    				$projects_posts = get_posts( $args ); // returns an array of posts
    				?>
-               <div class="project-overlay">
+               
    				<div class="carousel">
    				<?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
    				
    				<div class="carousel-cell">
-
+                  <div class="project-overlay">
    					<div class="projects-block-image"><?php the_post_thumbnail(); ?></div> 
 
    					<div class="projects-block-info">
@@ -42,7 +42,8 @@ get_header(); ?>
    						<a><h1><?php the_title(); ?></h1></a>
    						<p><?php the_excerpt(); ?></p>
 
-   					</div>	
+   					</div>
+                  </div>	
    				</div>
    				
    			<?php endforeach; wp_reset_postdata(); ?>
