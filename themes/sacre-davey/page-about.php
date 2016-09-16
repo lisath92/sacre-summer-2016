@@ -108,8 +108,8 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 			<div class="learn-more-banner">
 				<h2>Learn More</h2>
 				<div class="button-wrapper">
-				<a class="button-class-sectors" href="http://localhost:3000/sacre-davey/sectors">Sectors</a>
-				<a class="button-class-projects" href="http://localhost:3000/sacre-davey/projects">Projects</a>
+				<a class="button-class-sectors" href="/sacre-davey/sector/oil-gas">Sectors</a>
+				<a class="button-class-projects" href="/sacre-davey/projects">Projects</a>
 				</div>
 			</div>
 		</div><!-- .entry-content -->
