@@ -795,50 +795,40 @@ iframe {
   background-color: #279AB6;
   margin-top: 30px; }
   .updates-banner p {
-    font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 1.3rem;
-    text-transform: none;
-    letter-spacing: 3px;
-    font-weight: 100;
     color: white;
     padding: 30px 0;
     width: 90%;
     margin: 0 auto; }
     @media (min-width: 600px) {
       .updates-banner p {
-        max-width: 800px;
+        max-width: 700px;
         font-size: 1.5rem;
         line-height: 1.5; } }
 
-.page-template-page-services.carousel {
+.page-template-page-services .carousel {
   padding-top: 30px;
   margin: 0 auto; }
-  .page-template-page-services.carousel .flickity-page-dots {
+  .page-template-page-services .carousel .flickity-page-dots {
     bottom: -15px; }
     @media (min-width: 600px) {
-      .page-template-page-services.carousel .flickity-page-dots {
+      .page-template-page-services .carousel .flickity-page-dots {
         display: none; } }
   @media (min-width: 600px) {
-    .page-template-page-services.carousel {
+    .page-template-page-services .carousel {
       max-width: 90%; } }
 
-.page-template-page-services.carousel-cell {
+.page-template-page-services .carousel-cell {
   width: 100%;
   text-align: center;
   min-height: 200px; }
   @media (min-width: 600px) {
-    .page-template-page-services.carousel-cell {
-      width: 20%;
-      margin-right: 1vw; } }
+    .page-template-page-services .carousel-cell {
+      width: 14vw;
+      margin-right: 1%;
+      max-width: 200px; } }
   @media (min-width: 600px) {
-    .page-template-page-services.carousel-cell img {
+    .page-template-page-services .carousel-cell img {
       width: 100%; } }
-
-.flickity-viewport {
-  max-height: 250px;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 2rem; }
 
 .page-template-page-about {
   font-size: 1rem; }
@@ -877,23 +867,23 @@ iframe {
   @media (min-width: 600px) {
     .carousel-nav {
       border-bottom: 3px #272D66 solid; } }
-  .carousel-nav .carousel-cell {
+  .carousel-nav .nav-cell {
     width: 42%;
     height: 100%;
     max-width: 125px;
     padding: 0 25vw; }
     @media (min-width: 600px) {
-      .carousel-nav .carousel-cell {
+      .carousel-nav .nav-cell {
         padding: 0 4vw;
         width: 10%;
         max-width: 100px; } }
-    .carousel-nav .carousel-cell .icon-active {
+    .carousel-nav .nav-cell .icon-active {
       display: none; }
-    .carousel-nav .carousel-cell.is-selected .icon-inactive {
+    .carousel-nav .nav-cell.is-selected .icon-inactive {
       display: none; }
-    .carousel-nav .carousel-cell.is-selected .icon-active {
+    .carousel-nav .nav-cell.is-selected .icon-active {
       display: unset; }
-    .carousel-nav .carousel-cell img {
+    .carousel-nav .nav-cell img {
       width: 100%;
       height: 100%; }
 
@@ -1547,66 +1537,6 @@ footer {
     .project-overlay {
       background: url("../../assets/images/LandingpageFeatureOverlay.png") left/100% 100% no-repeat;
       height: 100vh; } }
-
-.carousel {
-  width: 100%; }
-  @media (min-width: 600px) {
-    .carousel {
-      z-index: 1;
-      width: 100%;
-      height: 100%; } }
-  .carousel .carousel-cell {
-    position: relative;
-    width: 100%;
-    height: auto; }
-    @media (min-width: 600px) {
-      .carousel .carousel-cell {
-        z-index: 1;
-        height: 500px; } }
-  .carousel .wp-post-image {
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: auto; }
-    @media (min-width: 600px) {
-      .carousel .wp-post-image {
-        z-index: 1;
-        background: url("../../assets/images/LandingpageFeatureOverlay.png") left/100% 100% no-repeat;
-        background-size: cover; } }
-  .carousel .projects-block-info {
-    color: white; }
-    .carousel .projects-block-info h1 {
-      font-family: "Impact", "Charcoal", sans-serif;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 100;
-      margin-top: 0;
-      padding: 1rem 0;
-      text-align: center;
-      color: white;
-      width: 100%;
-      background: #279AB6;
-      position: absolute;
-      top: 0; }
-      @media (min-width: 600px) {
-        .carousel .projects-block-info h1 {
-          font-size: 24px;
-          font-size: 1.5rem;
-          width: 65%;
-          top: 3rem;
-          right: 0; } }
-    .carousel .projects-block-info p {
-      font-size: 16px;
-      font-size: 1rem;
-      margin: 0;
-      height: auto;
-      line-height: 2;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
-      color: white;
-      position: absolute;
-      bottom: 0;
-      text-align: center; }
 
 .partners {
   background-color: lightgray;

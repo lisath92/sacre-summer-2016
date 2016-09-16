@@ -37,78 +37,78 @@
     height: 100vh;
   }
 }
-.carousel {
+// .carousel {
 
-  width: 100%;
-   @include desktop {
-     z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-.carousel-cell {
- 
-  position:relative;
-  width: 100%;
-  height: auto;
-  @include desktop {
-     z-index: 1;
-    height: 500px;
-  }
-  }
-  .wp-post-image {
-    z-index: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  @include desktop {
-     z-index: 1;
-    background: url('../../assets/images/LandingpageFeatureOverlay.png')left/100% 100% no-repeat;
-    background-size: cover;
+//   width: 100%;
+//   @include desktop {
+//    z-index: 1;
+//    width: 100%;
+//    height: 100%;
+//  }
+//  .carousel-cell {
+   
+//   position:relative;
+//   width: 100%;
+//   height: auto;
+//   @include desktop {
+//    z-index: 1;
+//    height: 500px;
+//  }
+// }
+// .wp-post-image {
+//   z-index: 1;
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   @include desktop {
+//    z-index: 1;
+//    background: url('../../assets/images/LandingpageFeatureOverlay.png')left/100% 100% no-repeat;
+//    background-size: cover;
+   
+//  }
+// }
+// .projects-block-info {
+//  color: white;
+
+//  h1 {
+//   @include impact-heading (1rem, uppercase)
+//   margin-top: 0;
+//   padding: 1rem 0;
+//   text-align: center; 
+//   color:white;
+//   width: 100%;
+//   background: $color__lightblue;
+//   position: absolute;
+//   top: 0;
   
-  }
-}
-.projects-block-info {
-   color: white;
+//   @include desktop {
+//     @include font-size (1.5);
+//     width: 65%;
+//     top: 3rem;
+//     right: 0;
+//   }
+// }
 
-  h1 {
-    @include impact-heading (1rem, uppercase)
-    margin-top: 0;
-    padding: 1rem 0;
-    text-align: center; 
-    color:white;
-    width: 100%;
-    background: $color__lightblue;
-    position: absolute;
-    top: 0;
-    
-    @include desktop {
-      @include font-size (1.5);
-      width: 65%;
-      top: 3rem;
-      right: 0;
-    }
-  }
-
-    p {
-      @include font-size (1);
-      // padding-left: 1rem;
-      margin: 0;
-      height: auto;
-      line-height: 2;
-      background: 
-      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9));
-      color: white;
-      position: absolute;
-      bottom: 0;
-      // right: 0;
-      text-align: center;
-      // max-width: 50%;
-      @include desktop {
+// p {
+//   @include font-size (1);
+//       // padding-left: 1rem;
+//       margin: 0;
+//       height: auto;
+//       line-height: 2;
+//       background: 
+//       linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9));
+//       color: white;
+//       position: absolute;
+//       bottom: 0;
+//       // right: 0;
+//       text-align: center;
+//       // max-width: 50%;
+//       @include desktop {
         
-      }
-    }
-  }
-}
+//       }
+//     }
+//   }
+// }
 
 
 .partners {

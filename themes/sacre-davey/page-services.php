@@ -21,42 +21,21 @@ get_header(); ?>
 						
 						<div class="engineering-needs-block">
 							<h4>Multi-disciplinary engineering</h4>
-							<ul class="engineering-needs-list">
-								<li>Process engineering</li>
-								<li>Mechanical engineering</li>
-								<li>Structural engineering</li>
-								<li>Civil engineering</li>
-								<li>Electrical engineering</li>
-								<li>Instrumentation</li>
-							</ul>
+							<div class="engineering-needs-list">
+								<?php echo CFS()->get('multi_engineering'); ?>
+							</div>
 						</div>
 						<div class="engineering-needs-block">
 							<h4>Project Delivery</h4>
-							<ul class="engineering-needs-list">
-								<li>Project estimating</li>
-								<li>Procurement</li>
-								<li>Scheduling</li>
-								<li>Cost management</li>
-								<li>Expediting</li>
-								<li>Site supervision services</li>
-								<li>Project integration</li>
-								<li>Project and construction</li>
-							</ul>
+							<div class="engineering-needs-list">
+								<?php echo CFS()->get('project_delivery'); ?>
+							</div>
 						</div>
 						<div class="engineering-needs-block">
 							<h4>Services</h4>
-							<ul class="engineering-needs-list">
-								<li>Design and Engineering</li>
-								<li>Feasibility Studies</li>
-								<li>Brownfield CapEx and OpEx</li>
-								<li>Turnaround engineering</li>
-								<li>Code compliance</li>
-								<li>Commissioning &amp; discomissioning</li>
-								<li>Funding strategies &amp; capital planning</li>
-								<li>Asset rationalization</li>
-								<li>Energy efficiency studies</li>
-								<li>Asset integrity management</li>
-							</ul>
+							<div class="engineering-needs-list">
+								<?php echo CFS()->get('services'); ?>
+							</div>
 						</div>
 					</div>
 					
@@ -69,7 +48,7 @@ get_header(); ?>
 						<img src="<?php echo get_template_directory_uri() . '/assets/images/arrow-down.png' ?>">
 						
 						<div class="quality-details">
-							<?php echo CFS()->get('heading_details');?>
+							Our OQM System ensures that we are able to consistently deliver high quality, high value project assistance.
 						</div>
 					</div>
 					<section class="service-image">
@@ -84,7 +63,7 @@ get_header(); ?>
 					</div>
 					<section class="attributes">
 						<h2>We add measurable value to your project by providing</h2>
-						<div class="carousel" >
+						<div class="carousel" data-flickity>
 							<div class="carousel-cell">
 								<img src="<?php echo get_template_directory_uri() . '/assets/images/ServicesRapidResponseIcon.png' ?>">
 							</div>

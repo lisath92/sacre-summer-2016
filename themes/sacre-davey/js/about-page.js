@@ -23,10 +23,10 @@
 
         $navGroup = $('.carousel-nav'),
 
-        $navCells = $navGroup.find('.carousel-cell');
+        $navCells = $navGroup.find('.nav-cell');
 
   //Switch content slider on nav slider click
-    $('.carousel-nav').on('click', '.carousel-cell', function() {
+    $('.carousel-nav').on('click', '.nav-cell', function() {
         var index = $(this).index();
         $gallery.flickity('select', index);
         $nav.flickity('select', index);
