@@ -130,13 +130,13 @@ add_action( 'wp_enqueue_scripts','sacre_davey_sectors_inline_styles');
 /**
 * Custom loop for projects archive page
 */
-function sacre_davey_modifying_product_archive_query($query) {
+function sacre_davey_modifying_project_archive_query($query) {
     if (is_post_type_archive('projects') && !is_admin() && $query->is_main_query()) {
         $query->set( 'posts_per_page', 25);
         $query->set( 'order', 'ASC');
         $query->set( 'orderby', 'title');
     }
 }
-add_action( 'pre_get_posts', 'sacre_davey_modifying_product_archive_query' );
+add_action( 'pre_get_posts', 'sacre_davey_modifying_project_archive_query' );
 
 

@@ -14,8 +14,14 @@ get_header(); ?>
 			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
 			<submit class="project-description-button">Send</submit>
 		</div>
-		<?php if ( have_posts() ) : ?>
-
+		<?php if ( have_posts() ) : 
+				$arr=array(
+					'taxonomy' => 'project_type');
+				$categories=get_terms($arr);
+				// print_r($categories);
+				// echo the_taxonomies();
+		?>
+					
 			<?php /* Start the Loop */ ?>
 			<div class="projects-grid">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -24,7 +30,12 @@ get_header(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<header class="entry-header">
 								<?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail( 'large' ); ?>
+									<?php the_post_thumbnail( 'large' ); 
+									$args=
+									$taxonomies = get_taxonomies('project_type');
+
+
+									;?>
 								<?php endif; ?>
 
 										<?php  //project icons on project page
