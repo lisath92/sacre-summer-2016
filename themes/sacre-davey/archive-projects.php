@@ -14,14 +14,8 @@ get_header(); ?>
 			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
 			<submit class="project-description-button">Send</submit>
 		</div>
-		<?php if ( have_posts() ) : 
-				$arr=array(
-					'taxonomy' => 'project_type');
-				$categories=get_terms($arr);
-				// print_r($categories);
-				// echo the_taxonomies();
-		?>
-					
+		<?php if ( have_posts() ) : ?>
+
 			<?php /* Start the Loop */ ?>
 			<div class="projects-grid">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -30,46 +24,49 @@ get_header(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<header class="entry-header">
 								<?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail( 'large' ); 
-									$args=
-									$taxonomies = get_taxonomies('project_type');
-
-
+									<?php the_post_thumbnail( 'large' );
 									;?>
 								<?php endif; ?>
 
-										<?php  //project icons on project page
-										$arg = array( 'taxonomy' => 'project-type', 'hide_empty' => true);
-										$term = get_term($arg);
-									
-										?>
-									
-										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$term->slug. '.png';?>" alt = ""/>
+							<!-- Get slug name -->
+								<?php 
+								$id=get_the_ID();
+								$icon = get_the_terms($id, 'project_type');
+								if(!$icon) {
+									$icon = 'oil-gas';
+								}else {
+									$slug = $icon[0]->slug;
+								}
 								
-										
-										<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+								
+								?>
 
-										<?php if ( 'post' === get_post_type() ) : ?>
+								<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
+								
 
-										<?php endif; ?>
-									</header><!-- .entry-header -->
+								<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
-									<div class="entry-content">
-										<?php the_content(); ?>
-										<i class="fa fa-times" aria-hidden="true"></i>
-									</div><!-- .entry-content -->
-								</article><!-- #post-## -->
-							</div>
-						<?php endwhile; ?>
+								<?php if ( 'post' === get_post_type() ) : ?>
+
+								<?php endif; ?>
+							</header><!-- .entry-header -->
+
+							<div class="entry-content">
+								<?php the_content(); ?>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div><!-- .entry-content -->
+						</article><!-- #post-## -->
 					</div>
-				<?php else : ?>
+				<?php endwhile; ?>
+			</div>
+		<?php else : ?>
 
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-				<?php endif; ?>
+		<?php endif; ?>
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 
-		<?php get_footer(); ?>
+<?php get_footer(); ?>
