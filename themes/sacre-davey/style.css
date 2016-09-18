@@ -1549,8 +1549,36 @@ footer {
     height: 100%; }
 
 .projects-block-info {
-  position: absolute;
-  top: 0; }
+  position: relative;
+  height: 100%;
+  top: 0;
+  background: url("../../assets/images/right-overlay.png") top right/64% 100% no-repeat; }
+  .projects-block-info h1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #279AB6;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .projects-block-info h1 {
+        width: 66vw;
+        right: 0;
+        top: 20px;
+        text-align: left;
+        padding-left: 1rem; } }
+    .projects-block-info h1 a {
+      text-decoration: none;
+      color: white;
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 100; }
+  .projects-block-info p {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 30px; }
 
 .partners {
   background-color: lightgray;
