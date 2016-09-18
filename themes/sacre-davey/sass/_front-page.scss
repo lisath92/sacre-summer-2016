@@ -25,19 +25,19 @@
 }
 //projects loop 
 
-.project-overlay { 
-  z-index: 2;
-  background:
-  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
-  height: 80vh;
-  @include desktop {
+// .project-overlay { 
+//   z-index: 2;
+//   background:
+//   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+//   height: 80vh;
+//   @include desktop {
     
-    background:
-    url('../../assets/images/LandingpageFeatureOverlay.png')
-    left/100% 100% no-repeat;
-    height: 100vh;
-  }
-}
+//     background:
+//     url('../../assets/images/LandingpageFeatureOverlay.png')
+//     left/100% 100% no-repeat;
+//     height: 100vh;
+//   }
+// }
 // .carousel {
 
 //   width: 100%;
@@ -108,28 +108,28 @@
 //       // max-width: 50%;
 //       @include desktop {
 
-    p {
-      @include font-size (1);
-      // padding-left: 1rem;
-      margin: 0;
-      height: auto;
-      line-height: 2;
-      background: 
-      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9));
-      color: white;
-      position: absolute;
-      bottom: 0;
-      // right: 0;
-      text-align: center;
-      // max-width: 50%;
-      @include desktop {
-       text-align: left;
-       background: none;
-       max-width: 600px;
-       right: 50px;
-       top: 200px;
-      }
-    }
+    // p {
+    //   @include font-size (1);
+    //   // padding-left: 1rem;
+    //   margin: 0;
+    //   height: auto;
+    //   line-height: 2;
+    //   background: 
+    //   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9));
+    //   color: white;
+    //   position: absolute;
+    //   bottom: 0;
+    //   // right: 0;
+    //   text-align: center;
+    //   // max-width: 50%;
+    //   @include desktop {
+    //    text-align: left;
+    //    background: none;
+    //    max-width: 600px;
+    //    right: 50px;
+    //    top: 200px;
+    //   }
+    // }
         
 //       }
 //     }

@@ -760,7 +760,7 @@ iframe {
 
 .service-image {
   display: none;
-  background: url("../../assets/images/ServicesOverlay.png") bottom right/70% no-repeat, url("../../assets/images/services-footer.png") bottom/100% no-repeat; }
+  background: url("../../assets/images/right-overlay.png") bottom right/70% no-repeat, url("../../assets/images/services-footer.png") bottom/100% no-repeat; }
   .service-image ul {
     color: white;
     max-width: 42%;
@@ -1535,34 +1535,6 @@ footer {
       color: black;
       font-size: 1.5rem;
       max-width: 800px; } }
-
-.project-overlay {
-  z-index: 2;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  height: 80vh; }
-  @media (min-width: 600px) {
-    .project-overlay {
-      background: url("../../assets/images/LandingpageFeatureOverlay.png") left/100% 100% no-repeat;
-      height: 100vh; } }
-
-p {
-  font-size: 16px;
-  font-size: 1rem;
-  margin: 0;
-  height: auto;
-  line-height: 2;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
-  color: white;
-  position: absolute;
-  bottom: 0;
-  text-align: center; }
-  @media (min-width: 600px) {
-    p {
-      text-align: left;
-      background: none;
-      max-width: 600px;
-      right: 50px;
-      top: 200px; } }
 
 .partners {
   background-color: lightgray;

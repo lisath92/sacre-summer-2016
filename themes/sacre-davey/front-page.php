@@ -25,40 +25,38 @@ get_header(); ?>
 				</section>
 
 				<?php //sacre-davey project post types on front page
-				$args = array( 'post_type' => 'projects', 'posts_per_page'   => 3 );
+				$args = array( 'post_type' => 'projects', 'posts_per_page'   => 3, 
+            'order' => 'ASC'
+             );
 
    				$projects_posts = get_posts( $args ); // returns an array of posts
    				?>
-               
-   				<div class="carousel">
-   				<?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
-   				
-   				<div class="carousel-cell">
-                  <div class="project-overlay">
-   					<div class="projects-block-image"><?php the_post_thumbnail(); ?></div> 
 
-   					<div class="projects-block-info">
+   				<div class="home-gallery" data-flickity>
+                <?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
 
-   						<a><h1><?php the_title(); ?></h1></a>
-   						<p><?php the_excerpt(); ?></p>
+                   <div class="home-gallery-cell">
+                    <div class="projects-block-image"><?php the_post_thumbnail(); ?>
+                       <div class="projects-block-info">
 
-   					</div>
+                        <?php the_title(sprintf('<h1><a href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
+                        <p><?php the_excerpt(); ?></p>
+                     </div>
                   </div>	
-   				</div>
-   				
-   			<?php endforeach; wp_reset_postdata(); ?>
-				</div>
-            </div>
-   			<section class="partners">
-   				<h3>Partners</h3>
-   				<img src="<?php echo get_template_directory_uri() .'/assets/images/Biochem Logo.png'?>" alt="Biochem partner logo">
-   				<img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo">
-   				<img src="<?php echo get_template_directory_uri() .'/assets/images/FerencoLogo.png'?>" alt="Ferenco partner logo">
-   				<img src="<?php echo get_template_directory_uri() .'/assets/images/HTEClogo.png'?>" alt="HTEC partner logo">
-   			</section>
+               </div>
+            <?php endforeach; wp_reset_postdata(); ?>
+         </div>
+      </div>
+      <section class="partners">
+       <h3>Partners</h3>
+       <img src="<?php echo get_template_directory_uri() .'/assets/images/Biochem Logo.png'?>" alt="Biochem partner logo">
+       <img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo">
+       <img src="<?php echo get_template_directory_uri() .'/assets/images/FerencoLogo.png'?>" alt="Ferenco partner logo">
+       <img src="<?php echo get_template_directory_uri() .'/assets/images/HTEClogo.png'?>" alt="HTEC partner logo">
+    </section>
 
 
-   		</main><!-- #main -->
-   	</div><!-- #primary -->
+ </main><!-- #main -->
+</div><!-- #primary -->
 
-   	<?php get_footer(); ?>
+<?php get_footer(); ?>
