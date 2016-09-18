@@ -32,7 +32,10 @@ get_header(); ?>
    				$projects_posts = get_posts( $args ); // returns an array of posts
    				?>
 
-   				<div class="home-gallery" data-flickity>
+   				<div class="home-gallery" data-flickity='{
+               "contain": true,
+               "pageDots": false,
+               "contain": true }'>
                 <?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
 
                    <div class="home-gallery-cell">

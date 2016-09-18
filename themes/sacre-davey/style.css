@@ -1536,6 +1536,22 @@ footer {
       font-size: 1.5rem;
       max-width: 800px; } }
 
+.home-gallery-cell {
+  width: 100%; }
+
+.projects-block-image {
+  position: relative;
+  height: 100vw;
+  max-height: 500px; }
+  .projects-block-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+.projects-block-info {
+  position: absolute;
+  top: 0; }
+
 .partners {
   background-color: lightgray;
   height: 340px;
