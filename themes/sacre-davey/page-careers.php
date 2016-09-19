@@ -32,8 +32,12 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 				<div class="opportunities-banner-wrapper">
 				<h1 class="opportunities-banner">Opportunities</h1>
 				<div class="select-wrapper">
+				<div>
 				<span class="dropdown-titles">Locations:</span><select class="opportunity-dropdowns" name="location"></select>
+				</div>
+				<div>
 				<span class="dropdown-titles">Field:</span><select class="opportunity-dropdowns" name="field"></select>
+				</div>
 				</div>
 				</div>
 				<div class="opportunities-wrapper">

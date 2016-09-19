@@ -52,21 +52,29 @@
 		
 		}
 	.select-wrapper {
-			@include display-flex (center, center); 
+			display: none;
 			width: 90%;
 			margin: 0 auto;
 			@include desktop {
-				display: block;
+			display: unset;
+			@include display-flex (space-around, center);
+			flex-flow: row wrap;
+				
 			}
 
 		.opportunity-dropdowns {
 			border-radius: 0;
-			width: 10rem;
+			min-width: 200px;
 			margin-left: 2rem;
 			margin-right: 2rem;
+			@include desktop {
+				flex: 1 0 100%;
+				margin-top: 2rem;
+			}
 
 		}
 		.dropdown-titles {
+			width: 50%;
 			color: white;
 			text-transform: uppercase;
 		}

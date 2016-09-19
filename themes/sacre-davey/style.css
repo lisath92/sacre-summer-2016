@@ -1250,23 +1250,32 @@ footer {
   padding-bottom: 1rem; }
 
 .page-template-page-careers .select-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  display: none;
   width: 90%;
   margin: 0 auto; }
   @media (min-width: 600px) {
     .page-template-page-careers .select-wrapper {
-      display: block; } }
+      display: unset;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
   .page-template-page-careers .select-wrapper .opportunity-dropdowns {
     border-radius: 0;
-    width: 10rem;
+    min-width: 200px;
     margin-left: 2rem;
     margin-right: 2rem; }
+    @media (min-width: 600px) {
+      .page-template-page-careers .select-wrapper .opportunity-dropdowns {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+        margin-top: 2rem; } }
   .page-template-page-careers .select-wrapper .dropdown-titles {
+    width: 50%;
     color: white;
     text-transform: uppercase; }
 
