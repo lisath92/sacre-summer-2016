@@ -20,19 +20,25 @@
 		}
 
 
-	.life-work-banner {
+	.life-work-banner-wrapper {
 		text-align: center;
 		padding-top: 1.75rem;
 		padding-bottom: 1rem;
+		.life-work-banner {
+			background: $color__lightblue;
+		}
 		p{
+		padding-top: 2rem;
 		width: 90%;
 		margin: 0 auto;
 		}
 		h2{
 			@include display-flex(center, center)
+			margin:0 auto;
+			width: 90%;
 			height: 100%;
 			color: white;
-			background: $color__lightblue;
+			
 			padding: 1rem 0rem;
 			@include impact-heading(3rem, lowercase);
 		}
