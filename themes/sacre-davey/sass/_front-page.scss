@@ -97,6 +97,7 @@
   text-align: center;
   h1 {
     @include impact-heading(auto, uppercase);
+    margin-bottom: 0;
   }
 
 }
@@ -110,13 +111,16 @@
   @include display-flex(center,center);
   flex-flow: column nowrap;
   width: 100%;
+
+  h2{
+    @include impact-heading(1.5em, capitalize);
+
+  }
   img {
     width: 70%;
   }
   .sector-description {
     width: 95%;
-    // text-align: center;
-    
   }
 }
 

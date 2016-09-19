@@ -1602,7 +1602,8 @@ footer {
     font-size: auto;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100; }
+    font-weight: 100;
+    margin-bottom: 0; }
 
 .sector-categories {
   display: -ms-flexbox;
@@ -1624,6 +1625,12 @@ footer {
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   width: 100%; }
+  .each-category h2 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 100; }
   .each-category img {
     width: 70%; }
   .each-category .sector-description {
