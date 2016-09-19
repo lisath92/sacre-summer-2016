@@ -7,7 +7,7 @@
             contain: true,
             prevNextButtons: false
         }),
-        projectDescription = $('.entry-content');
+        projectDescription = $(this).next('.entry-content');
 
     //Toggle hamburger menu
     $('body').on('click', function(event) {
@@ -21,10 +21,10 @@
         }
 
         if ($(event.target).hasClass('entry-title') && $(window).width() < 582) {
-            projectDescription.css("display", "block");
+            projectDescription.slideToggle('slow');
 
         } else if ($(event.target).hasClass('fa-times')) {
-            projectDescription.css("display", "none");
+            projectDescription.slideToggle('slow');
         }
     });
 
