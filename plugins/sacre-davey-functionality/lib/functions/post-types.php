@@ -96,7 +96,7 @@ function sacre_davey_register_project_cpt() {
 	$args = array(
 		'label'                 => 'Project',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'excerpt' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

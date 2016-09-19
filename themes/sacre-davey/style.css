@@ -1542,7 +1542,7 @@ footer {
 .projects-block-image {
   position: relative;
   height: 100vw;
-  max-height: 500px; }
+  max-height: 400px; }
   .projects-block-image img {
     position: absolute;
     width: 100%;
@@ -1592,7 +1592,6 @@ footer {
     @media (min-width: 600px) {
       .projects-block-info p {
         width: 50%;
-        font-size: 25px;
         bottom: 12%;
         line-height: 2; } }
 
