@@ -1628,14 +1628,29 @@ footer {
   width: 100%; }
   @media (min-width: 600px) {
     .each-category {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
       width: 45%;
-      max-width: 280px; } }
+      max-width: 280px;
+      padding-right: 30px; } }
   .each-category h2 {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 1.5em;
     text-transform: capitalize;
     letter-spacing: 3px;
     font-weight: 100; }
+    @media (min-width: 600px) {
+      .each-category h2 {
+        -ms-flex-order: 2;
+            order: 2;
+        color: black;
+        font-family: Helvetica;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: normal; } }
   .each-category img {
     width: 60%;
     max-width: 280px; }

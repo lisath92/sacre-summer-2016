@@ -119,12 +119,24 @@
 .each-category{
   width: 100%;
   @include desktop {
+    display: flex;
+    flex-flow: column nowrap;
     width: 45%;
     max-width: 280px;
+    padding-right: 30px;
   }
 
   h2{
     @include impact-heading(1.5em, capitalize);
+    @include desktop {
+      order: 2;
+      color: black;
+      font-family: Helvetica;
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: normal;
+    }
 
   }
   img {
@@ -132,7 +144,6 @@
     max-width: 280px;
     @include desktop {
       width:100%;
-      // max-width: none;
     }
   }
 }
