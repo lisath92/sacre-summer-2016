@@ -95,22 +95,33 @@
 .sector-icons {
   color: $color__dark-blue;
   text-align: center;
+  @include display-flex(center,center);
+  flex-flow: column nowrap;
+  @include desktop {
+    flex-flow: row wrap;
+  }
   h1 {
     @include impact-heading(auto, uppercase);
     margin-bottom: 0;
+    @include desktop {
+      width:100%;
+    }
   }
 
 }
-.sector-categories {
-  @include display-flex(center,center);
-  flex-flow: column nowrap;
-
+.sector-img {
+  position:relative;
+  width: 100%;
 }
 
+
+
 .each-category{
-  @include display-flex(center,center);
-  flex-flow: column nowrap;
   width: 100%;
+  @include desktop {
+    width: 45%;
+    max-width: 280px;
+  }
 
   h2{
     @include impact-heading(1.5em, capitalize);
@@ -118,7 +129,11 @@
   }
   img {
     width: 60%;
-    max-width: 220px;
+    max-width: 280px;
+    @include desktop {
+      width:100%;
+      // max-width: none;
+    }
   }
 }
 
@@ -126,12 +141,22 @@
   width: 95%;
   padding: 25px 0;
   max-width: 400px;
+  margin: 0 auto;
+  @include desktop {
+    position: absolute;
+    top: 43px;
+    font-size: 22px;
+    left: 11px;
+    max-width: 250px;
+  }
   p {
     margin-top:10px;
     font-weight: bold;
   }
 }
 
+
+//Partners
 .partners {
   background-color: lightgray;
   height: 340px;

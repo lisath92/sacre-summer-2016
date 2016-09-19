@@ -1596,16 +1596,7 @@ footer {
 
 .sector-icons {
   color: #272D66;
-  text-align: center; }
-  .sector-icons h1 {
-    font-family: "Impact", "Charcoal", sans-serif;
-    font-size: auto;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 100;
-    margin-bottom: 0; }
-
-.sector-categories {
+  text-align: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1614,17 +1605,31 @@ footer {
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
+  @media (min-width: 600px) {
+    .sector-icons {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
+  .sector-icons h1 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-bottom: 0; }
+    @media (min-width: 600px) {
+      .sector-icons h1 {
+        width: 100%; } }
+
+.sector-img {
+  position: relative;
+  width: 100%; }
 
 .each-category {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
   width: 100%; }
+  @media (min-width: 600px) {
+    .each-category {
+      width: 45%;
+      max-width: 280px; } }
   .each-category h2 {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 1.5em;
@@ -1633,12 +1638,23 @@ footer {
     font-weight: 100; }
   .each-category img {
     width: 60%;
-    max-width: 220px; }
+    max-width: 280px; }
+    @media (min-width: 600px) {
+      .each-category img {
+        width: 100%; } }
 
 .sector-description {
   width: 95%;
   padding: 25px 0;
-  max-width: 400px; }
+  max-width: 400px;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .sector-description {
+      position: absolute;
+      top: 43px;
+      font-size: 22px;
+      left: 11px;
+      max-width: 250px; } }
   .sector-description p {
     margin-top: 10px;
     font-weight: bold; }

@@ -51,7 +51,6 @@ get_header(); ?>
          </div>
          <section class="sector-icons">
             <h1>Sectors</h1>
-            <div class="sector-categories">
                <?php 
                $category_arr = array(
                   'taxonomy' => 'project_type',
@@ -64,17 +63,19 @@ get_header(); ?>
                <h2 class="category-title">
                   <?php echo $each_category->name; ?>
                </h2>
+                  <div class="sector-img">
                   <img src="
                   <?php echo get_template_directory_uri().'/assets/images/'.$each_category->slug .'.png';?>" alt=""/>
                   <div class="sector-description">
                   <?php echo $each_category->description; ?>
                   <p><a href="/sacre-davey/sector/<?php echo $each_category->slug; ?>">Learn More</a></p>
                   </div>
+                  </div>
                </div>
             <?php endforeach; ?>
 
 
-         </div>      
+         <!-- </div>       -->
       </section>
       <section class="partners">
         <h3>Partners</h3>
