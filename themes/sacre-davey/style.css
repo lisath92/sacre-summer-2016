@@ -1632,9 +1632,16 @@ footer {
     letter-spacing: 3px;
     font-weight: 100; }
   .each-category img {
-    width: 70%; }
-  .each-category .sector-description {
-    width: 95%; }
+    width: 60%;
+    max-width: 220px; }
+
+.sector-description {
+  width: 95%;
+  padding: 25px 0;
+  max-width: 400px; }
+  .sector-description p {
+    margin-top: 10px;
+    font-weight: bold; }
 
 .partners {
   background-color: lightgray;

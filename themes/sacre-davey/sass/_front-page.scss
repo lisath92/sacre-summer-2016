@@ -117,10 +117,18 @@
 
   }
   img {
-    width: 70%;
+    width: 60%;
+    max-width: 220px;
   }
-  .sector-description {
-    width: 95%;
+}
+
+.sector-description {
+  width: 95%;
+  padding: 25px 0;
+  max-width: 400px;
+  p {
+    margin-top:10px;
+    font-weight: bold;
   }
 }
 
