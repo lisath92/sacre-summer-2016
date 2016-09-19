@@ -95,36 +95,36 @@ wp_add_inline_style('sacre-davey-style', $css);
 add_action( 'wp_enqueue_scripts','sacre_davey_contact_inline_styles');
 
 //Sectors page inline style
-// function sacre_davey_sectors_inline_styles() {
-//   if(!is_single() && is_post_type('sector')) {
-//     return;
-//   }
+function sacre_davey_sectors_inline_styles() {
+  if(!is_single() && is_post_type('sector')) {
+    return;
+  }
 
-//   $css='';
-//   $logo='';
-//   $counter=1;
-//   $images= CFS()->get('development');
-//   if(!$images) {
-//     return;
-//   }
+  $css='';
+  $logo='';
+  $counter=1;
+  $images= CFS()->get('development');
+  if(!$images) {
+    return;
+  }
 
-//   foreach($images as $image) {
-//     $logo = $image['development_photo'];
-//     $css .='
-//           .development:nth-of-type('.$counter.') {
-//       background:
-//         url('.$logo.') center no-repeat;
-//         height: 100%;
-//         width: 100%;
+  foreach($images as $image) {
+    $logo = $image['development_photo'];
+    $css .='
+          .development:nth-of-type('.$counter.') {
+      background:
+        url('.$logo.') center no-repeat;
+        height: 100%;
+        width: 100%;
         
-//           }
-//     ';
-//     $counter++;
+          }
+    ';
+    $counter++;
   
-// wp_add_inline_style('sacre-davey-style', $css);
-// }
-// }
-// add_action( 'wp_enqueue_scripts','sacre_davey_sectors_inline_styles');  
+wp_add_inline_style('sacre-davey-style', $css);
+}
+}
+add_action( 'wp_enqueue_scripts','sacre_davey_sectors_inline_styles');  
 
 
 /**

@@ -1896,13 +1896,13 @@ footer {
     @media (min-width: 600px) {
       .project .icon-border {
         display: block;
-        padding: 1px 8px;
+        padding: .5px 9px;
         position: absolute;
         right: 46%;
-        bottom: 23%;
+        bottom: 22%;
         border: 1px solid white;
         background-color: white;
-        transform: rotate(40deg); } }
+        transform: rotate(47deg); } }
 
 .error-404 .page-header {
   min-height: 300px;
