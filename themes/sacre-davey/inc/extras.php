@@ -139,4 +139,10 @@ function sacre_davey_modifying_project_archive_query($query) {
 }
 add_action( 'pre_get_posts', 'sacre_davey_modifying_project_archive_query' );
 
-
+/*
+* Limit number of words for excerpts
+*/
+function custom_excerpt_length( $length ) {
+  return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

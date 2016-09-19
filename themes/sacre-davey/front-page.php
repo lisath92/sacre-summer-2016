@@ -43,13 +43,7 @@ get_header(); ?>
                        <div class="projects-block-info">
 
                         <?php the_title(sprintf('<h1><a href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
-                        <?php 
-                           $short_excerpt = CFS()->get('excerpt');
-                           if($short_excerpt) :?>
-                           <p><?php echo $short_excerpt; ?></p>
-                        <?php else : ?> 
                         <?php the_excerpt(); ?>
-                        <?php endif ?>
                      </div>
                   </div>	
                </div>
