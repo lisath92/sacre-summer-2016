@@ -966,50 +966,6 @@ iframe {
     .each-member img {
       width: 100%; } }
 
-.learn-more-banner {
-  color: white;
-  height: 250px;
-  width: 100%;
-  background: url("../../assets/images/AboutUsHeader.png") no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; }
-  @media (min-width: 600px) {
-    .learn-more-banner {
-      height: 400px; } }
-  .learn-more-banner h2 {
-    color: white;
-    text-transform: uppercase; }
-    @media (min-width: 600px) {
-      .learn-more-banner h2 {
-        padding-bottom: 2rem;
-        font-size: 48px;
-        font-size: 3rem; } }
-
-.button-wrapper {
-  margin-bottom: 3rem;
-  margin-top: 1rem; }
-
-.button-class-projects,
-.button-class-sectors {
-  color: white;
-  border: 2px solid white;
-  padding: .75rem 3rem;
-  text-decoration: none; }
-  @media (min-width: 600px) {
-    .button-class-projects,
-    .button-class-sectors {
-      font-size: 32px;
-      font-size: 2rem;
-      padding: 1.5rem 5rem; } }
-
 .timeline {
   position: relative;
   z-index: 1;
@@ -1108,16 +1064,69 @@ iframe {
   background: url("../../assets/images/AboutUsHeader.png") no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 2rem; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  @media (min-width: 600px) {
+    .learn-more-banner {
+      height: 400px; } }
   .learn-more-banner h2 {
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100; }
+    @media (min-width: 600px) {
+      .learn-more-banner h2 {
+        padding-bottom: 2rem;
+        font-size: 48px;
+        font-size: 3rem; } }
 
 .button-class {
   color: white;
   border: 1px solid white;
   padding: .75rem 1.5rem;
   text-decoration: none; }
+
+.button-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  margin-bottom: 3rem;
+  margin-top: 1rem; }
+  @media (min-width: 600px) {
+    .button-wrapper {
+      margin-bottom: 8rem; } }
+
+.button-class-projects,
+.button-class-sectors {
+  margin: 0 2rem;
+  color: white;
+  border: 2px solid white;
+  padding: .75rem 3rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  @media (min-width: 600px) {
+    .button-class-projects,
+    .button-class-sectors {
+      font-size: 32px;
+      font-size: 2rem;
+      padding: 1.5rem 3rem;
+      margin: 0 2rem; } }
 
 /*-----------------------------------------
   Footer

@@ -156,50 +156,7 @@
 }
 
 
-//Learn more banner
-.learn-more-banner {
-	color: white;
-	height: 250px;
-	width: 100%;
-	background: url('../../assets/images/AboutUsHeader.png') no-repeat;
-	background-size: cover;
-	text-align: center;
-	@include display-flex(center, center);
-	flex-flow: column nowrap;
-	@include desktop {
-		height: 400px;
-	}
 
-	h2 {
-		color:white;
-		text-transform: uppercase;
-		@include desktop {
-			padding-bottom: 2rem;
-			@include font-size (3);
-		}
-	}
-}
-.button-wrapper {
-	
-	margin-bottom: 3rem;
-	margin-top: 1rem;
-
-
-}
-.button-class-projects,
-.button-class-sectors {
-	
-	color: white;
-	border: 2px solid white;
-	padding: .75rem 3rem;
-	text-decoration: none;
-	@include desktop {
-		@include font-size (2);
-
-		padding: 1.5rem 5rem;
-	}
-	
-}
 
 //new timeline
 
@@ -304,6 +261,7 @@
 }
 
 
+
 //Learn more banner
 .learn-more-banner {
 	color: white;
@@ -312,10 +270,20 @@
 	background: url('../../assets/images/AboutUsHeader.png') no-repeat;
 	background-size: cover;
 	text-align: center;
-	padding-top: 2rem;
+	@include display-flex(center, center);
+	flex-flow: column nowrap;
+	@include desktop {
+		height: 400px;
+	}
+
 	h2 {
 		color:white;
 		text-transform: uppercase;
+		@include impact-heading(2, uppercase);
+		@include desktop {
+			padding-bottom: 2rem;
+			@include font-size (3);
+		}
 	}
 }
 
@@ -326,4 +294,30 @@
 	text-decoration: none;
 	
 }
+.button-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	@include display-flex(center, center);
+	flex-flow: row nowrap;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+	@include desktop {
+		margin-bottom: 8rem;
+	}
 
+}
+.button-class-projects,
+.button-class-sectors {
+	margin: 0 2rem;
+	color: white;
+	border: 2px solid white;
+	padding: .75rem 3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include desktop {
+		@include font-size (2);
+		padding: 1.5rem 3rem;
+		margin: 0 2rem;
+	}
+	
+}
