@@ -61,10 +61,14 @@ get_header(); ?>
                $sector_categories = get_terms($category_arr);
                foreach ($sector_categories as $each_category): ?>
                <div class="each-category">
+               <h2 class="category-title">
+                  <?php echo $each_category->name; ?>
+               </h2>
                   <img src="
                   <?php echo get_template_directory_uri().'/assets/images/'.$each_category->slug .'.png';?>" alt=""/>
                   <div class="sector-description">
                   <?php echo $each_category->description; ?>
+                  <p><a href="/sacre-davey/sector/<?php echo $each_category->slug; ?>">Learn More</a></p>
                   </div>
                </div>
             <?php endforeach; ?>
