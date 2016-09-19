@@ -23,7 +23,8 @@
     max-width: 800px;
   }
 }
-//projects loop 
+
+//Featured Projects
 .home-gallery-cell {
   width: 100%;
 }
@@ -90,6 +91,22 @@
   }
 }
 
+//Sectors Icons
+.sector-categories {
+  @include display-flex(center,center);
+  flex-flow: column nowrap;
+}
+
+.each-category:nth-child(2n) {
+  @include display-flex(flex-start,center);
+  flex-flow: column wrap-reverse;
+  img {
+    width: 40%
+  }
+  .sector-description {
+    width: 40%;
+  }
+}
 
 .partners {
   background-color: lightgray;

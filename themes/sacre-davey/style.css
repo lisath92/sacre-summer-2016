@@ -1594,6 +1594,30 @@ footer {
         width: 50%;
         bottom: 12%; } }
 
+.sector-categories {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+
+.each-category:nth-child(2n) {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column wrap-reverse;
+      flex-flow: column wrap-reverse; }
+  .each-category:nth-child(2n) img {
+    width: 40%; }
+  .each-category:nth-child(2n) .sector-description {
+    width: 40%; }
+
 .partners {
   background-color: lightgray;
   height: 340px;
