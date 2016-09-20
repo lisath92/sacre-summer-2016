@@ -39,7 +39,7 @@ get_header(); ?>
 				<div class="office-contact">
 					<p>Phone: (604) 986-0663<br/>
 					Fax: (604) 986-0525<br/>
-					Email: admin@sacre-davey.com</p>
+					Email: <?php echo antispambot( 'admin@sacre-davey.com' ); ?></p>
 				</div>
 				<h3>Sacre-Davey Calgary Office</h3>
 				<div class="office-address">
@@ -49,7 +49,7 @@ get_header(); ?>
 				</div>
 				<div class="office-contact">
 					<p>Phone: 403-455-2583<br/>
-					Email: admin-ab@sacre-davey.com</p>
+					Email: <?php echo antispambot( 'admin-ab@sacre-davey.com' ); ?></p>
 				</div>
 			</div>
 			<div class="office-block">
@@ -64,7 +64,7 @@ get_header(); ?>
 				<div class="office-contact">
 					<p>Phone: 1-206-462-3600<br/>
 					Fax: 1-206-462-3599<br/>
-					Email: solutions@e3energypartners.com</p>
+					Email: <?php echo antispambot( 'solutions@e3energypartners.com' ); ?></p>
 				</div>
 			</div>					
 			<div class="office-block">
@@ -78,7 +78,7 @@ get_header(); ?>
 				<div class="office-contact">
 					<p>Phone: 971-02-650-9440<br/>
 					Fax: 971-02-650-9441<br/>
-					Email: admin-me@sacre-davey.com</p>
+					Email: <?php echo antispambot( 'admin-me@sacre-davey.com' ); ?></p>
 				</div>
 			</div>	
 			<div class="office-block">
@@ -91,7 +91,7 @@ get_header(); ?>
 				<div class="office-contact">
 					<p>Please contact our Head Office for regional office information<br/>
 					Phone: 604-986-0663<br/>
-					Email: admin@sacre-davey.com</p>
+					Email: <?php echo antispambot( 'admin@sacre-davey.com' ); ?></p>
 				</div>
 
 			</div>
