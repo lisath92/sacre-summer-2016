@@ -183,8 +183,9 @@
     background-color: $color__lightblue;
     border-radius: 50%;
   }
-  
-  .content {
+}
+
+.content {
     margin-top: 0;
     @include desktop {
       color: white;
@@ -193,7 +194,6 @@
       margin: 0;
     }
   }
-}
 
 .learn-more {
     margin-top:10px;

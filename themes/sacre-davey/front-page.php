@@ -53,7 +53,7 @@ get_header(); ?>
             <h1>Sectors</h1>
                <?php 
                $category_arr = array(
-                  'taxonomy' => 'project_type',
+                  'taxonomy' => 'sector_type',
                   'hide_empty' => false,
                   'order'=> 'ASC',
                   'orderby'=>'id');
@@ -61,7 +61,8 @@ get_header(); ?>
                foreach ($sector_categories as $each_category): ?>
                <div class="each-category">
                <h2 class="category-title">
-                  <a href="/sacre-davey/sector/<?php echo $each_category->slug; ?>"><?php echo $each_category->name; ?></a>
+                  <a href="/sacre-davey/sector/<?php 
+                  $each_category->slug; ?>"><?php echo $each_category->name; ?></a>
                </h2>
                   <div class="sector-img">
                   <img src="

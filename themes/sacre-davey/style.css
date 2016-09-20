@@ -1718,14 +1718,15 @@ footer {
               backface-visibility: hidden;
       background-color: #279AB6;
       border-radius: 50%; } }
-  .sector-description .content {
-    margin-top: 0; }
-    @media (min-width: 600px) {
-      .sector-description .content {
-        color: white;
-        font-weight: 100;
-        width: 75%;
-        margin: 0; } }
+
+.content {
+  margin-top: 0; }
+  @media (min-width: 600px) {
+    .content {
+      color: white;
+      font-weight: 100;
+      width: 75%;
+      margin: 0; } }
 
 .learn-more {
   margin-top: 10px;
