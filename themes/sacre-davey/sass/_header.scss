@@ -179,12 +179,22 @@
 
 //Sectors Mobile Menu
 .mobile-nav-title {
-  position: relative;
+  margin: 0;
+  color: $color__dark-blue;
+  padding-left: 30px;
+  @include display-flex(space-between, center);
+  i {
+    background-color: $color__dark-blue;
+    color: white;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    padding-top: 15px;
+  }
 }
+
 .sector-mobile {
-  position: absolute;
-  margin-bottom: 0;
-  padding: 0;
+  position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
   @include desktop {
@@ -192,32 +202,22 @@
   }
 
   ul {
-    top: 35px;
+    top: 0;
+    padding: 0;
+    margin: 0;
     background-color: $color__lightblue;
     width: 100%;
     position: absolute;
     z-index: 2;
-    li a {
+    li {
+      padding: 10px 0;
+    }
+    a {
+      text-decoration: none;
+      padding-left: 30px;
       color: white;
       font-weight: bold;
     }
   }
-
-//   li {
-//         padding: 10px 0;
-//     a {
-//     text-decoration: none;
-//     padding-left: 30px;
-//   }
-// }
+}
   
-}
-
-.current-menu-parent a{
-  color: $color__dark-blue;
-  text-align: center;
-}
-
-#menu-item-392:after {
-// content: '<i class="fa fa-angle-down" aria-hidden="true"></i>';
-}

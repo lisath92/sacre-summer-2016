@@ -7,7 +7,7 @@
 
 get_header(); 
 wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sector-menu' ) ); ?>
-<div class="mobile-nav-title">Sectors<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+<div class="mobile-nav-title"><span>Sectors</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
 <?php wp_nav_menu( array('theme_location' => 'sector-mobile', 'container_class' => 'sector-mobile') ); ?>
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
