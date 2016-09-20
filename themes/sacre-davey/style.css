@@ -1841,6 +1841,7 @@ footer {
       display: none; } }
   .project-icon-toggle p {
     margin: 0;
+    color: #272D66;
     padding-left: 30px; }
   .project-icon-toggle i {
     cursor: pointer;
