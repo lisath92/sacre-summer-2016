@@ -110,7 +110,7 @@
 
      &.current-menu-item a {
       text-decoration: underline;
-      font-size: 1rem;
+      font-size: 1.25rem;
       color: black;
     }
   }
@@ -180,6 +180,16 @@ a {
     }
     li {
       padding: 5px;
+    }
+    a {
+      text-transform: capitalize;
+      font-size: 1.25rem;
+      font-weight: normal;
+      color: $color__grey;
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
     }
   }
 }

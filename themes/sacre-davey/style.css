@@ -565,7 +565,7 @@ iframe {
         .about-menu li.current-menu-item a,
         .menu-main-navigation-container li.current-menu-item a {
           text-decoration: underline;
-          font-size: 1rem;
+          font-size: 1.25rem;
           color: black; } }
 
 .nav-mobile {
@@ -628,7 +628,15 @@ iframe {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
     .sector-menu li {
-      padding: 5px; } }
+      padding: 5px; }
+    .sector-menu a {
+      text-transform: capitalize;
+      font-size: 1.25rem;
+      font-weight: normal;
+      color: #c6c6c6; }
+      .sector-menu a:hover {
+        color: black;
+        text-decoration: underline; } }
 
 .mobile-nav-title {
   margin: 0;
