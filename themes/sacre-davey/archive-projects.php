@@ -51,7 +51,7 @@ get_header(); ?>
 								$id=get_the_ID();
 								$icon = get_the_terms($id, 'project_type');
 								if(!$icon) {
-									$icon = 'cog';
+									$icon = 'default';
 								}else {
 									$slug = $icon[0]->slug;
 								};	?>

@@ -21,7 +21,6 @@
         }
 
         if ($(event.target).hasClass('entry-header') && $(window).width() < 582) {
-         
             projectDescription.css("display", "block");
            
 
