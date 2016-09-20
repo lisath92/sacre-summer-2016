@@ -57,7 +57,7 @@ get_header(); ?>
 								$id=get_the_ID();
 								$icon = get_the_terms($id, 'project_type');
 								if(!$icon) {
-									$icon = 'default';
+									$icon = 'clean-tech';
 								}else {
 									$slug = $icon[0]->slug;
 								};	?>
