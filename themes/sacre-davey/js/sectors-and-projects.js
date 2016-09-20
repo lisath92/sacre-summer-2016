@@ -45,10 +45,13 @@
 
 projectTitle.click(function() {
     var currentDiv = $(this).parent('.entry-header').next('div');
-    currentDiv.slideDown('slow');
+    if($(window).width()<582) {
+      currentDiv.slideDown('slow');
+
     $('.fa-times').click(function(){
       currentDiv.slideUp('slow');
     });
+  }
   });
 
 
