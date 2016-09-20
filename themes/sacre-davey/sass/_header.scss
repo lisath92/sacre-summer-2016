@@ -178,28 +178,46 @@
 }
 
 //Sectors Mobile Menu
-.sector-mobile ul {
+.mobile-nav-title {
+  position: relative;
+}
+.sector-mobile {
+  position: absolute;
   margin-bottom: 0;
   padding: 0;
-  text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
+  @include desktop {
+    display: none;
+  }
 
   ul {
+    top: 35px;
     background-color: $color__lightblue;
     width: 100%;
     position: absolute;
     z-index: 2;
+    li a {
+      color: white;
+      font-weight: bold;
+    }
   }
 
-  li a {
-    padding-bottom: 20px;
-    text-decoration: none;
-  }
+//   li {
+//         padding: 10px 0;
+//     a {
+//     text-decoration: none;
+//     padding-left: 30px;
+//   }
+// }
   
 }
 
 .current-menu-parent a{
   color: $color__dark-blue;
   text-align: center;
+}
+
+#menu-item-392:after {
+// content: '<i class="fa fa-angle-down" aria-hidden="true"></i>';
 }
