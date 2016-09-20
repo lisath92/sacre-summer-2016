@@ -498,6 +498,13 @@ iframe {
   -ms-flex-align: center;
       align-items: center;
   width: 100%; }
+  .main-navigation a {
+    -ms-flex: 1 0 70%;
+        flex: 1 0 70%; }
+    @media (min-width: 600px) {
+      .main-navigation a {
+        -ms-flex: 1 0 5%;
+            flex: 1 0 5%; } }
   @media (min-width: 600px) {
     .main-navigation {
       -ms-flex-wrap: nowrap;
@@ -568,6 +575,7 @@ iframe {
   display: none;
   position: absolute;
   top: 80px;
+  left: 0;
   width: 100%;
   padding-right: 10%;
   max-width: 600px;
