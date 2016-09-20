@@ -67,7 +67,7 @@ get_header(); ?>
                   <img src="
                   <?php echo get_template_directory_uri().'/assets/images/'.$each_category->slug .'.png';?>" alt=""/>
                   <div class="sector-description">
-                  <?php echo $each_category->description; ?>
+                  <p class="content"><?php echo $each_category->description; ?></p>
                   <p><a href="/sacre-davey/sector/<?php echo $each_category->slug; ?>">Learn More</a></p>
                   </div>
                   </div>

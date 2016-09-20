@@ -142,7 +142,9 @@
   }
 
   &:hover .sector-img {
+    @include desktop {
     transform: rotateY(180deg);
+  }
   }
 }
 
@@ -163,27 +165,38 @@
   max-width: 400px;
   margin: 0 auto;
   @include desktop {
-    display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1em;
-  border-radius: 50%;
-  vertical-align: middle;
     position: absolute;
-    top: 43px;
-    font-size: 22px;
-    left: 11px;
+    top: 0px;
+    max-width: 280px;
+    height: 270px;
+    font-size: 1.2rem;
     transform: rotateY(180deg);
     box-sizing: border-box;
     backface-visibility: hidden;
     background-color: $color__lightblue;
-    // border-radius: 50%;
+    border-radius: 50%;
+  }
+  
+  .content {
+    @include desktop {
+      color: white;
+      font-weight: 100;
+      width: 75%;
+      margin: 32px auto 0px;
+    }
   }
   p {
+    margin-bottom: 0;
+  }
+  a {
     margin-top:10px;
     font-weight: bold;
+    @include desktop {
+      display: none;
+    }
   }
 }
+
 
 
 //Partners
