@@ -176,3 +176,30 @@
     }
   }
 }
+
+//Sectors Mobile Menu
+.sector-mobile ul {
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+
+  ul {
+    background-color: $color__lightblue;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  li a {
+    padding-bottom: 20px;
+    text-decoration: none;
+  }
+  
+}
+
+.current-menu-parent a{
+  color: $color__dark-blue;
+  text-align: center;
+}

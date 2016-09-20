@@ -619,6 +619,28 @@ iframe {
     .sector-menu li {
       padding: 5px; } }
 
+.sector-mobile ul {
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Impact", "Charcoal", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 100; }
+  .sector-mobile ul ul {
+    background-color: #279AB6;
+    width: 100%;
+    position: absolute;
+    z-index: 2; }
+  .sector-mobile ul li a {
+    padding-bottom: 20px;
+    text-decoration: none; }
+
+.current-menu-parent a {
+  color: #272D66;
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Services Page Template
 --------------------------------------------------------------*/
