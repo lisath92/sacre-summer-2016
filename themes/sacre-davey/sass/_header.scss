@@ -130,24 +130,24 @@
  }
 
  ul {
-    padding: 0;
-    @include display-flex(center, center);
-    flex-flow: column wrap;
-    @include desktop {
+  padding: 0;
+  @include display-flex(center, center);
+  flex-flow: column wrap;
+  @include desktop {
 
-    }
   }
+}
 
-  li {
-    line-height: 2;
-    width: 100%;
-    text-align: center;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    padding: 0;
-  }
+li {
+  line-height: 2;
+  width: 100%;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0;
+}
 }
 
 //About Us sub-menu
@@ -182,6 +182,7 @@
   margin: 0;
   color: $color__dark-blue;
   padding-left: 30px;
+  background-color: white;
   @include display-flex(space-between, center);
   i {
     background-color: $color__dark-blue;
@@ -202,22 +203,25 @@
   }
 
   ul {
-    top: 0;
-    padding: 0;
-    margin: 0;
-    background-color: $color__lightblue;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    li {
-      padding: 10px 0;
-    }
-    a {
-      text-decoration: none;
-      padding-left: 30px;
-      color: white;
-      font-weight: bold;
-    }
+    display: none;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      background-color: $color__lightblue;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+  }
+
+  li {
+    padding: 10px 0;
+  }
+  a {
+    text-decoration: none;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold;
   }
 }
-  
+
+

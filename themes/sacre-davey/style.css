@@ -623,6 +623,7 @@ iframe {
   margin: 0;
   color: #272D66;
   padding-left: 30px;
+  background-color: white;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -645,6 +646,7 @@ iframe {
     .sector-mobile {
       display: none; } }
   .sector-mobile ul {
+    display: none;
     top: 0;
     padding: 0;
     margin: 0;
@@ -652,13 +654,13 @@ iframe {
     width: 100%;
     position: absolute;
     z-index: 2; }
-    .sector-mobile ul li {
-      padding: 10px 0; }
-    .sector-mobile ul a {
-      text-decoration: none;
-      padding-left: 30px;
-      color: white;
-      font-weight: bold; }
+  .sector-mobile li {
+    padding: 10px 0; }
+  .sector-mobile a {
+    text-decoration: none;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Services Page Template
