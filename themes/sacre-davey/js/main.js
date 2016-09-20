@@ -21,14 +21,6 @@
             $('body').css("background-color", "rgba(0,0,0,0)");
         }
 
-        if($(event.target).hasClass('') && projectMenu.is(":hidden")) {
-                mainMenu.slideDown('slow');
-            $('body').css("background-color", "rgba(0,0,0,0.4)");
-            mainMenu.submit();
-        } else if ($(window).width() < 582) {
-            mainMenu.slideUp('slow');   
-        }
-
         if ($(event.target).hasClass('entry-header') && $(window).width() < 582) {
             projectDescription.css("display", "block");
            
