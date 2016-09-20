@@ -109,7 +109,7 @@ function sacre_davey_scripts() {
 
 	wp_enqueue_script( 'flickity', 'https://npmcdn.com/flickity@2/dist/flickity.pkgd.js', array('jquery'), '2.0.0', true);
 
-	wp_enqueue_script( 'sacre-davey-main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '20160906', true );
+	wp_enqueue_script( 'sacre-davey-sectors', get_template_directory_uri() . '/build/js/sector.min.js', array('jquery'), '20160906', true );
 
 	wp_enqueue_script( 'sacre-davey-about-page', get_template_directory_uri().'/build/js/about-page.min.js', array('jquery'), '20160913', true );
 
