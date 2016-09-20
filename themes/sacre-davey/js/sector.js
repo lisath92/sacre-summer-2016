@@ -33,10 +33,23 @@
     currentDiv.slideDown('slow');
     if (currentDiv.find('div').length === 0) {
       currentDiv.append('<div class="read-less-button">Read Less</div>');
-
       $('.read-less-button').click(function() {
         $(this).parent('div').slideUp('slow');
       });
     }
   });
+
+//Projects click show more info
+// $('.click(function() {
+//     var currentDiv = $(this).parent('.development').next('div');
+//     currentDiv.slideDown('slow');
+//     if (currentDiv.find('div').length === 0) {
+//       currentDiv.append('<div class="read-less-button">Read Less</div>');
+//       $('.read-less-button').click(function() {
+//         $(this).parent('div').slideUp('slow');
+//       });
+//     }
+//   });
+
+
 })(jQuery);
