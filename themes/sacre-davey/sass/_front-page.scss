@@ -109,12 +109,6 @@
   }
 
 }
-.sector-img {
-  position:relative;
-  width: 100%;
-}
-
-
 
 .each-category{
   width: 100%;
@@ -146,6 +140,21 @@
       width:100%;
     }
   }
+
+  &:hover .sector-img {
+    transform: rotateY(180deg);
+  }
+}
+
+.sector-img {
+  width: 100%;
+  @include desktop {
+    position:relative;
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+    backface-visibility: hidden;
+
+  }
 }
 
 .sector-description {
@@ -154,11 +163,21 @@
   max-width: 400px;
   margin: 0 auto;
   @include desktop {
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1em;
+  border-radius: 50%;
+  vertical-align: middle;
     position: absolute;
     top: 43px;
     font-size: 22px;
     left: 11px;
-    max-width: 250px;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    background-color: $color__lightblue;
+    // border-radius: 50%;
   }
   p {
     margin-top:10px;

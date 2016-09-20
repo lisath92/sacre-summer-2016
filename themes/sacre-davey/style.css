@@ -1620,10 +1620,6 @@ footer {
       .sector-icons h1 {
         width: 100%; } }
 
-.sector-img {
-  position: relative;
-  width: 100%; }
-
 .each-category {
   width: 100%; }
   @media (min-width: 600px) {
@@ -1657,6 +1653,18 @@ footer {
     @media (min-width: 600px) {
       .each-category img {
         width: 100%; } }
+  .each-category:hover .sector-img {
+    transform: rotateY(180deg); }
+
+.sector-img {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .sector-img {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: all 1s linear;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden; } }
 
 .sector-description {
   width: 95%;
@@ -1665,11 +1673,24 @@ footer {
   margin: 0 auto; }
   @media (min-width: 600px) {
     .sector-description {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      min-width: 1em;
+      border-radius: 50%;
+      vertical-align: middle;
       position: absolute;
       top: 43px;
       font-size: 22px;
       left: 11px;
-      max-width: 250px; } }
+      transform: rotateY(180deg);
+      box-sizing: border-box;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      background-color: #279AB6; } }
   .sector-description p {
     margin-top: 10px;
     font-weight: bold; }
