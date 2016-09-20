@@ -1841,7 +1841,7 @@ footer {
   .project-icon-toggle p {
     margin: 0;
     padding-left: 30px; }
-  .project-icon-toggle .fa-angle-down {
+  .project-icon-toggle i {
     cursor: pointer;
     background-color: #272D66;
     color: white;
@@ -1850,20 +1850,33 @@ footer {
     text-align: center;
     padding-top: 15px; }
 
-.project-nav-list ul {
+.mobile-project-nav-list ul {
+  display: none;
   font-size: 1.2rem;
   background: #279AB6;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
   z-index: 2;
   width: 100%;
   position: absolute; }
   @media (min-width: 600px) {
+    .mobile-project-nav-list ul {
+      display: none; } }
+  .mobile-project-nav-list ul li {
+    padding: 10px 0; }
+  .mobile-project-nav-list ul a {
+    font-weight: bold;
+    padding-left: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.project-nav-list ul {
+  display: none; }
+  @media (min-width: 600px) {
     .project-nav-list ul {
       margin: 1em 0;
-      background: white;
       padding-left: 0;
-      display: block;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
@@ -1872,24 +1885,17 @@ footer {
           align-items: center;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; } }
-  .project-nav-list ul li {
-    padding: 10px 0; }
-  .project-nav-list ul a {
-    font-weight: bold;
-    padding-left: 30px;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none; }
-    .project-nav-list ul a:hover {
-      color: black;
-      text-decoration: underline; }
-    @media (min-width: 600px) {
-      .project-nav-list ul a {
-        font-size: 20px;
-        font-size: 1.25rem;
-        text-decoration: none;
-        color: #c6c6c6;
-        min-width: 100%; } }
+  @media (min-width: 600px) {
+    .project-nav-list ul a {
+      font-size: 20px;
+      font-size: 1.25rem;
+      padding-left: 30px;
+      text-decoration: none;
+      color: #c6c6c6;
+      min-width: 100%; }
+      .project-nav-list ul a:hover {
+        color: black;
+        text-decoration: underline; } }
 
 .project-description-banner {
   display: none; }

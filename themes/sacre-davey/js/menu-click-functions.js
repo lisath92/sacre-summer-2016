@@ -2,7 +2,7 @@
 
 var mainMenu = $('.nav-mobile'),
 sectorNav = $('.sector-mobile ul'),
-projectNav = $('.project-nav-list ul');
+projectNav = $('.mobile-project-nav-list ul');
 
 //Toggle menus
 $('body').on('click', function(event){
@@ -25,7 +25,7 @@ $('body').on('click', function(event){
   }
 
   //Projects mobile sub menu
-   if($('body').hasClass('post-type-archive') && $(event.target).hasClass('fa-angle-down') && projectNav.is(":hidden")) {
+   if($('body').hasClass('post-type-archive') && $(event.target).hasClass('fa-angle-down')&& projectNav.is(":hidden")) {
     projectNav.slideDown('slow');
   } else {
     projectNav.slideUp('slow');
