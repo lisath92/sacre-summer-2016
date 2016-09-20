@@ -85,13 +85,10 @@ get_header(); ?>
 									<div class="sector-icon">
 
 										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
-
-
 									</div>
-
 								</div>
 
-								<?php the_title(sprintf('<h1><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
+								<?php the_title(sprintf('<h1 class="mobile-project-title"><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
 
 								<?php if ( 'post' === get_post_type() ) : ?>
 

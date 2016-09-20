@@ -40,16 +40,16 @@
   });
 
 //Projects click show more info
-// $('.click(function() {
-//     var currentDiv = $(this).parent('.development').next('div');
-//     currentDiv.slideDown('slow');
-//     if (currentDiv.find('div').length === 0) {
-//       currentDiv.append('<div class="read-less-button">Read Less</div>');
-//       $('.read-less-button').click(function() {
-//         $(this).parent('div').slideUp('slow');
-//       });
-//     }
-//   });
+
+  var projectTitle = $('.mobile-project-title');
+
+projectTitle.click(function() {
+    var currentDiv = $(this).parent('.entry-header').next('div');
+    currentDiv.slideDown('slow');
+    $('.fa-times').click(function(){
+      currentDiv.slideUp('slow');
+    });
+  });
 
 
 })(jQuery);
