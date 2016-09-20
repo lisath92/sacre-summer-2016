@@ -3,56 +3,68 @@
 ----------------------------------------------------*/
 .project-icon-toggle {
     height: 100%;
+    position: relative;
     @include display-flex (space-between, center);
+    @include desktop {
+        display: none;
+    }
     p {
         margin: 0;
+        padding-left:30px;
     }
- .fa-angle-down {
-    cursor: pointer;
-    color: white;
-    background-color: $color__dark-blue;
-    padding: 20px 25px;
-    @include desktop {
-        display: none;
-    }
-}
-    @include desktop {
-        display: none;
+
+    i {
+        cursor: pointer;
+        background-color: $color__dark-blue;
+        color: white;
+        height: 40px;
+        width: 60px;
+        text-align: center;
+        padding-top: 15px;
     }
 
 }
+
 .project-nav-list ul{
-    display: none;
-    text-align: center;
+    // display: none;
+    font-size: 1.2rem;
     background: $color__lightblue;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
     @include desktop {
         margin: 1em 0;
         background: white;
         padding-left: 0;
         display: block;
-    @include display-flex (space-around, center);
-    flex-flow: row wrap;
-    height: 100%;
+        @include display-flex (space-around, center);
+        flex-flow: row wrap;
+    }
+
+    li {
+        padding: 10px 0;
     }
     a { 
+        font-weight: bold;
+        padding-left: 30px;
         color: white;
         text-transform: uppercase;
         text-decoration: none;
         &:hover {
-        color: black;
-        text-decoration: underline;
+            color: black;
+            text-decoration: underline;
         }
 
         @include desktop {
-        @include font-size (1.25);
-        text-decoration: none;
-        color: $color__grey;
-        min-width: 100%;
+            @include font-size (1.25);
+            text-decoration: none;
+            color: $color__grey;
+            min-width: 100%;
         }
-}
-   
+    }
+
 
 }
 //project info email submit banner
@@ -131,18 +143,18 @@
         display:block;
         @include desktop {
           position: relative;
-        }
+      }
+  }
+
+  .entry-header {
+    width: 100%;
+    h2 {
+        margin: 0;
+        border: 0;
     }
 
-    .entry-header {
-        width: 100%;
-        h2 {
-            margin: 0;
-            border: 0;
-        }
-
-    }
-    article {
+}
+article {
         margin: 0; //removes bottom margin from project
     }
     .entry-content {
@@ -153,7 +165,7 @@
         text-align: center;
         padding-bottom: 1rem;
         p {
-            
+
             text-align: left;
         }
         .fa-times {
@@ -195,11 +207,11 @@
         // padding: 0px 7px;
         // right: 46%;
         // bottom: 36.5%;
-        }
     }
-    .icon-border {
-        display: none;
-        @include desktop {
+}
+.icon-border {
+    display: none;
+    @include desktop {
         display:block;
         padding: .5px 9px;
         position: absolute;
@@ -208,8 +220,8 @@
         border: 1px solid white;
         background-color: white;
         transform: rotate(47deg);
-        }
     }
+}
 }
 
 

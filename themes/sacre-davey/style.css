@@ -594,6 +594,9 @@ iframe {
         align-items: center;
     -ms-flex-flow: column wrap;
         flex-flow: column wrap; }
+    @media (min-width: 600px) {
+      .nav-mobile ul {
+        display: none; } }
   .nav-mobile li {
     line-height: 2;
     width: 100%;
@@ -647,7 +650,8 @@ iframe {
     height: 40px;
     width: 60px;
     text-align: center;
-    padding-top: 15px; }
+    padding-top: 15px;
+    cursor: pointer; }
 
 .sector-mobile {
   position: relative;
@@ -1824,32 +1828,36 @@ footer {
 ----------------------------------------------------*/
 .project-icon-toggle {
   height: 100%;
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center; }
-  .project-icon-toggle p {
-    margin: 0; }
-  .project-icon-toggle .fa-angle-down {
-    cursor: pointer;
-    color: white;
-    background-color: #272D66;
-    padding: 20px 25px; }
-    @media (min-width: 600px) {
-      .project-icon-toggle .fa-angle-down {
-        display: none; } }
   @media (min-width: 600px) {
     .project-icon-toggle {
       display: none; } }
+  .project-icon-toggle p {
+    margin: 0;
+    padding-left: 30px; }
+  .project-icon-toggle .fa-angle-down {
+    cursor: pointer;
+    background-color: #272D66;
+    color: white;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    padding-top: 15px; }
 
 .project-nav-list ul {
-  display: none;
-  text-align: center;
+  font-size: 1.2rem;
   background: #279AB6;
   margin: 0;
-  padding: 1rem; }
+  padding: 1rem;
+  z-index: 2;
+  width: 100%;
+  position: absolute; }
   @media (min-width: 600px) {
     .project-nav-list ul {
       margin: 1em 0;
@@ -1863,9 +1871,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-      height: 100%; } }
+          flex-flow: row wrap; } }
+  .project-nav-list ul li {
+    padding: 10px 0; }
   .project-nav-list ul a {
+    font-weight: bold;
+    padding-left: 30px;
     color: white;
     text-transform: uppercase;
     text-decoration: none; }
