@@ -1643,10 +1643,15 @@ footer {
             order: 2;
         color: black;
         font-family: Helvetica;
-        margin-top: 0;
-        font-size: 20px;
+        margin: 0 0 40px;
+        font-size: 25px;
         font-weight: bold;
         letter-spacing: normal; } }
+    .each-category h2 a {
+      text-decoration: none; }
+      @media (min-width: 600px) {
+        .each-category h2 a {
+          text-decoration: underline; } }
   .each-category img {
     width: 60%;
     max-width: 280px; }
@@ -1698,12 +1703,13 @@ footer {
         font-weight: 100;
         width: 75%;
         margin: 0; } }
-  .sector-description .learn-more {
-    margin-top: 10px;
-    font-weight: bold; }
-    @media (min-width: 600px) {
-      .sector-description .learn-more {
-        display: none; } }
+
+.learn-more {
+  margin-top: 10px;
+  font-weight: bold; }
+  @media (min-width: 600px) {
+    .learn-more {
+      display: none; } }
 
 .partners {
   background-color: lightgray;

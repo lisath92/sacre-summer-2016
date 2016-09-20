@@ -126,10 +126,16 @@
       order: 2;
       color: black;
       font-family: Helvetica;
-      margin-top: 0;
-      font-size: 20px;
+      margin: 0 0 40px;
+      font-size: 25px;
       font-weight: bold;
       letter-spacing: normal;
+    }
+    & a {
+      text-decoration: none;
+      @include desktop {
+        text-decoration: underline;
+      }
     }
 
   }
@@ -186,16 +192,15 @@
       margin: 0;
     }
   }
-  .learn-more {
+}
+
+.learn-more {
     margin-top:10px;
     font-weight: bold;
     @include desktop {
       display: none;
     }
   }
-}
-
-
 
 //Partners
 .partners {
