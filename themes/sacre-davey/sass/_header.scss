@@ -184,6 +184,9 @@ a {
   padding-left: 30px;
   background-color: white;
   @include display-flex(space-between, center);
+  @include desktop {
+    display: none;
+  }
   i {
     background-color: $color__dark-blue;
     color: white;
