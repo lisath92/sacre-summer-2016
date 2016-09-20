@@ -95,6 +95,7 @@
 .sector-icons {
   color: $color__dark-blue;
   text-align: center;
+  margin-bottom: 40px;
   @include display-flex(center,center);
   flex-flow: column nowrap;
   @include desktop {
