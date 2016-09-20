@@ -1,11 +1,32 @@
 /*--------------------------------------------------
  Projects Archive Page
 ----------------------------------------------------*/
+.project-icon-toggle {
+    height: 100%;
+    @include display-flex (space-between, center);
+    p {
+        margin: 0;
+    }
+ .fa-angle-down {
+    color: white;
+    background-color: $color__dark-blue;
+    padding: 10px 20px;
+    @include desktop {
+        display: none;
+    }
+}
+    @include desktop {
+        display: none;
+    }
+
+}
 .project-nav-list ul{
     // display: none;
+
     text-align: center;
-    background: $color__grey;
+    background: $color__lightblue;
     margin: 0;
+    padding: 1rem;
     @include desktop {
         margin: 1em 0;
         background: white;
@@ -17,25 +38,21 @@
     }
     a { 
         color: white;
+        text-transform: uppercase;
         text-decoration: none;
+        &:hover {
+        color: black;
+        text-decoration: underline;
+        }
+
         @include desktop {
         @include font-size (1.25);
         text-decoration: none;
         color: $color__grey;
         min-width: 100%;
-    &:hover {
-        color: black;
-        text-decoration: underline;
         }
-    }
 }
-    // .fa-angle-down {
-    //     background-color: $color__dark-blue;
-    //     padding: 5px 10px;
-    //     @include desktop {
-    //         display: none;
-    //     }
-    // }
+   
 
 }
 //project info email submit banner
