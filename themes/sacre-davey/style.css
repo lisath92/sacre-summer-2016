@@ -1669,11 +1669,16 @@ footer {
 
 .sector-description {
   width: 95%;
-  padding: 25px 0;
   max-width: 400px;
   margin: 0 auto; }
   @media (min-width: 600px) {
     .sector-description {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
       position: absolute;
       top: 0px;
       max-width: 280px;
@@ -1685,21 +1690,20 @@ footer {
               backface-visibility: hidden;
       background-color: #279AB6;
       border-radius: 50%; } }
-  @media (min-width: 600px) {
-    .sector-description .content {
-      color: white;
-      font-weight: 100;
-      width: 75%;
-      margin: 32px auto 0px; } }
-  .sector-description p {
-    margin-bottom: 0; }
-  .sector-description a {
+  .sector-description .content {
+    margin-top: 0; }
+    @media (min-width: 600px) {
+      .sector-description .content {
+        color: white;
+        font-weight: 100;
+        width: 75%;
+        margin: 0; } }
+  .sector-description .learn-more {
     margin-top: 10px;
     font-weight: bold; }
     @media (min-width: 600px) {
-      .sector-description a {
-        color: white;
-        margin-top: 20px; } }
+      .sector-description .learn-more {
+        display: none; } }
 
 .partners {
   background-color: lightgray;

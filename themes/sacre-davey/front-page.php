@@ -61,14 +61,14 @@ get_header(); ?>
                foreach ($sector_categories as $each_category): ?>
                <div class="each-category">
                <h2 class="category-title">
-                  <?php echo $each_category->name; ?>
+                  <a href="/sacre-davey/sector/<?php echo $each_category->slug; ?>"><?php echo $each_category->name; ?></a>
                </h2>
                   <div class="sector-img">
                   <img src="
-                  <?php echo get_template_directory_uri().'/assets/images/'.$each_category->slug .'.png';?>" alt=""/>
+                  <?php echo get_template_directory_uri().'/assets/images/'.$each_category->slug .'.png';?>" alt=""/></a>
                   <div class="sector-description">
                   <p class="content"><?php echo $each_category->description; ?></p>
-                  <p><a href="/sacre-davey/sector/<?php echo $each_category->slug; ?>">Learn More</a></p>
+                  <p><a href="/sacre-davey/sector/<?php echo $each_category->slug; ?>" class="learn-more">Learn More</a></p>
                   </div>
                   </div>
                </div>

@@ -161,10 +161,10 @@
 
 .sector-description {
   width: 95%;
-  padding: 25px 0;
   max-width: 400px;
   margin: 0 auto;
   @include desktop {
+    @include display-flex(center, center);
     position: absolute;
     top: 0px;
     max-width: 280px;
@@ -178,17 +178,15 @@
   }
   
   .content {
+    margin-top: 0;
     @include desktop {
       color: white;
       font-weight: 100;
       width: 75%;
-      margin: 32px auto 0px;
+      margin: 0;
     }
   }
-  p {
-    margin-bottom: 0;
-  }
-  a {
+  .learn-more {
     margin-top:10px;
     font-weight: bold;
     @include desktop {
