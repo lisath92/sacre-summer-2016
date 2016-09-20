@@ -20,11 +20,13 @@
             $('body').css("background-color", "rgba(0,0,0,0)");
         }
 
-        if ($(event.target).hasClass('entry-title') && $(window).width() < 582) {
-            projectDescription.slideToggle('slow');
+        if ($(event.target).hasClass('entry-header') && $(window).width() < 582) {
+         
+            projectDescription.css("display", "block");
+           
 
         } else if ($(event.target).hasClass('fa-times')) {
-            projectDescription.slideToggle('slow');
+            projectDescription.css("display", "none");
         }
     });
 

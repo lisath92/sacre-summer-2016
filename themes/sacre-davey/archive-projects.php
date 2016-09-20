@@ -65,7 +65,7 @@ get_header(); ?>
 		
 							</div>
 
-								 <?php the_title(sprintf('<h1><a href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
+								 <?php the_title(sprintf('<h1><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
 
 								<?php if ( 'post' === get_post_type() ) : ?>
 

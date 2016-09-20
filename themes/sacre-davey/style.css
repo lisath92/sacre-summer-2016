@@ -1904,6 +1904,13 @@ footer {
     @media (min-width: 600px) {
       .projects-grid .entry-content {
         display: none; } }
+  .projects-grid .not-active {
+    pointer-events: none;
+    cursor: default; }
+    @media (min-width: 600px) {
+      .projects-grid .not-active {
+        pointer-events: unset;
+        cursor: pointer; } }
 
 .project {
   position: relative; }

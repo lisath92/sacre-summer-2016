@@ -135,6 +135,16 @@
             display: none;
         }
     }
+
+    //removes project-title single page link on mobile
+    .not-active {
+        pointer-events: none;
+        cursor: default;
+        @include desktop {
+            pointer-events: unset;
+            cursor:pointer;
+        }
+    }
 }
 
 //Sector icon
