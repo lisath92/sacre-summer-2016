@@ -95,15 +95,6 @@ function sacre_davey_mce( $init ) {
 add_filter('tiny_mce_before_init', 'sacre_davey_mce');
 
 
-/*
-* Check for post type.
-*/
-function is_post_type($type){
-    global $wp_query;
-    if($type == get_post_type($wp_query->post->ID)) return true;
-    return false;
-}
-
 /**
  * Enqueue scripts and styles.
  */

@@ -31,6 +31,14 @@ function sacre_davey_remove_submenus() {
 
 add_action('admin_menu','sacre_davey_remove_submenus',110);
 
+/*
+* Check for post type.
+*/
+function is_post_type($type){
+    global $wp_query;
+    if($type == get_post_type($wp_query->post->ID)) return true;
+    return false;
+}
 
 /**
 * Add featured image for about us page
