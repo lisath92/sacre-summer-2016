@@ -8,6 +8,7 @@
             prevNextButtons: false
         }),
         projectDescription = $(this).next('.entry-content');
+        projectMenu = $('project-nav-list')
 
     //Toggle hamburger menu
     $('body').on('click', function(event) {
@@ -18,6 +19,14 @@
         } else if ($(window).width() < 582) {
             mainMenu.slideUp('slow');
             $('body').css("background-color", "rgba(0,0,0,0)");
+        }
+
+        if($(event.target).hasClass('') && projectMenu.is(":hidden")) {
+                mainMenu.slideDown('slow');
+            $('body').css("background-color", "rgba(0,0,0,0.4)");
+            mainMenu.submit();
+        } else if ($(window).width() < 582) {
+            mainMenu.slideUp('slow');   
         }
 
         if ($(event.target).hasClass('entry-header') && $(window).width() < 582) {

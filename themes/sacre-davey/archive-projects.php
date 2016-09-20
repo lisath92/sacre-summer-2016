@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 	<section class="project-nav-list">
-
+		
 				<?php  //shop stuff on front page
 				$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => false);
 
@@ -26,6 +26,7 @@ get_header(); ?>
 
 						<?php endforeach; ?>
 					</ul>
+					<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
 					
 	</section>
 		<div class="project-description-banner">
