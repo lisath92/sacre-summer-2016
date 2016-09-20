@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 	<section class="project-nav-list">
 
-				<?php  //shop stuff on front page
+				<?php  
 				$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => false);
 
 				$terms = get_terms( $arg ); 
