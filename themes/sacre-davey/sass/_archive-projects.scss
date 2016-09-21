@@ -110,6 +110,7 @@
 .projects-grid {
     @include display-flex (center, center);
     flex-flow: column nowrap;
+    margin-bottom: 30px;
     @include desktop {
         flex-flow: row wrap;
         align-items: flex-start;
