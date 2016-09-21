@@ -30,6 +30,7 @@ get_header(); ?>
 
 				<?php endforeach; ?>
 			</ul>
+
 		</section>
 		<section class="project-nav-list">
 
@@ -48,8 +49,6 @@ get_header(); ?>
 
 				<?php endforeach; ?>
 			</ul>
-
-
 		</section>
 		<div class="project-description-banner">
 
