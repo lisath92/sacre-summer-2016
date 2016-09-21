@@ -25,7 +25,7 @@ $('body').on('click', function(event){
   }
 
   //Projects mobile sub menu
-   if($('body').hasClass('post-type-archive') && $(event.target).hasClass('fa-angle-down')&& projectNav.is(":hidden")) {
+   if($('body').hasClass('post-type-archive')||$('body').hasClass('tax-project_type') && $(event.target).hasClass('fa-angle-down')&& projectNav.is(":hidden")) {
     projectNav.slideDown('slow');
   } else {
     projectNav.slideUp('slow');
