@@ -25,7 +25,7 @@ $('body').on('click', function(event){
   }
 
   //Projects mobile sub menu
-   if($('body').hasClass('archive')||$('body').hasClass('single-projects') && $(event.target).hasClass('fa-angle-down')&& projectNav.is(":hidden")) {
+   if($('body').hasClass('archive')&&projectNav.is(':hidden')||$('body').hasClass('single-projects') && $(event.target).hasClass('fa-angle-down')&& projectNav.is(":hidden")) {
     projectNav.slideDown('slow');
   } else {
     projectNav.slideUp('slow');
