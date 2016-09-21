@@ -30,7 +30,6 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</ul>
 
-
 		</section>
 		<div class="project-description-banner">
 
