@@ -1860,6 +1860,9 @@ footer {
     width: 60px;
     text-align: center;
     padding-top: 15px; }
+    @media (min-width: 600px) {
+      .project-icon-toggle i {
+        display: none; } }
 
 .mobile-project-nav-list ul {
   display: none;
