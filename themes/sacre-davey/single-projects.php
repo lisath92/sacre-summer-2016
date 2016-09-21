@@ -20,8 +20,8 @@ get_header(); ?>
 			<div class="projects-block-image"><?php the_post_thumbnail(); ?>
 				<div class="projects-block-info">
 					 <?php the_title(sprintf('<h1><a href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
-					<?php the_excerpt(); ?>
-					<?php the_content(); ?>
+					<?php echo the_excerpt(); ?>
+					
 				</div>
 			</div>
 		</section><!-- .entry-header -->
