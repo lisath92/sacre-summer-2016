@@ -115,6 +115,7 @@ function sacre_davey_sectors_inline_styles() {
         url('.$logo.') center no-repeat;
         height: 100%;
         width: 100%;
+        background-size: cover;
         
           }
     ';
