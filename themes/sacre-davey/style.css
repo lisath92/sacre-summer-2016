@@ -1472,9 +1472,6 @@ footer {
 .read-more {
   width: 90%;
   margin: 20px auto 0; }
-  @media (min-width: 600px) {
-    .read-more {
-      display: none; } }
   .read-more h2,
   .read-more h3 {
     text-align: center; }
@@ -1860,6 +1857,9 @@ footer {
     width: 60px;
     text-align: center;
     padding-top: 15px; }
+    @media (min-width: 600px) {
+      .project-icon-toggle i {
+        display: none; } }
 
 .mobile-project-nav-list ul {
   display: none;

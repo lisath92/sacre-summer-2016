@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-	<div class="project-icon-toggle">
+		<div class="project-icon-toggle">
 			<p>Projects</p>
 			<i class="fa fa-angle-down" aria-hidden="true"></i>
 		</div>
@@ -33,25 +33,25 @@ get_header(); ?>
 
 
 		</section>
-	<section class="project-nav-list">
+		<section class="project-nav-list">
 
-				<?php  
-				$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => false);
+			<?php  
+			$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => false);
 
-				$terms = get_terms( $arg ); 
-				?>
-				<ul class="">
-					<li><a href="<?php echo get_post_type_archive_link('projects'); ?>">All</a></li>
-					<?php foreach ( $terms as $term ) : ?>
+			$terms = get_terms( $arg ); 
+			?>
+			<ul class="">
+				<li><a href="<?php echo get_post_type_archive_link('projects'); ?>">All</a></li>
+				<?php foreach ( $terms as $term ) : ?>
 
-						<li><a href=" <?php echo get_term_link($term); ?> " ><?php echo $term->name
-							?></a>
-						</li> 
+					<li><a href=" <?php echo get_term_link($term); ?> " ><?php echo $term->name
+						?></a>
+					</li> 
 
-						<?php endforeach; ?>
-					</ul>
-					
-	</section>
+				<?php endforeach; ?>
+			</ul>
+
+		</section>
 		<div class="project-description-banner">
 			<p>For a detailed description of a project please enter the information below</p>
 			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
@@ -71,7 +71,7 @@ get_header(); ?>
 									;?>
 								<?php endif; ?>
 
-							<!-- Get slug name -->
+								<!-- Get slug name -->
 								<?php 
 								$id=get_the_ID();
 								$icon = get_the_terms($id, 'project_type');
@@ -80,23 +80,16 @@ get_header(); ?>
 								}else {
 									$slug = $icon[0]->slug;
 								};	?>
-							<div class="icon-border">
-							<div class="sector-icon">
-
-								<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
-
-
+								<div class="icon-border">
+									<div class="sector-icon">
+										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
+									</div>
 								</div>
-		
-							</div>
-
-								 <?php the_title(sprintf('<h1><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
-
+								<?php the_title(sprintf('<h1 class="mobile-project-title"><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
 								<?php if ( 'post' === get_post_type() ) : ?>
 
 								<?php endif; ?>
 							</header><!-- .entry-header -->
-
 							<div class="entry-content">
 								<?php the_content(); ?>
 								<i class="fa fa-times" aria-hidden="true"></i>
