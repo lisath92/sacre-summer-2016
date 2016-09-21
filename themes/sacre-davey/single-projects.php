@@ -8,11 +8,11 @@
 get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div class="project-icon-toggle">
+			<div class="project-icon-toggle">
 			<p>Projects</p>
 			<i class="fa fa-angle-down" aria-hidden="true"></i>
 		</div>
-		<section class="project-nav-list">
+		<section class="mobile-project-nav-list">
 
 			<?php  
 			$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => false);
@@ -42,7 +42,7 @@ get_header(); ?>
 		<section class="home-gallery-cell">
 			<div class="projects-block-image"><?php the_post_thumbnail(); ?>
 				<div class="projects-block-info">
-					<?php the_title(sprintf('<h1><a href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
+					 <?php the_title(sprintf('<h1><a href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
 					<?php the_excerpt(); ?>
 					
 				</div>
@@ -50,7 +50,7 @@ get_header(); ?>
 		</section><!-- .entry-header -->
 
 
-	</main><!-- #main -->
+</main><!-- #main -->
 </div><!-- #primary -->
 
 
