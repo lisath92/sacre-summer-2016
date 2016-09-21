@@ -6,9 +6,10 @@
  */
 
 get_header(); ?>
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-			<div class="project-icon-toggle">
+		<div class="project-icon-toggle">
 			<p>Projects</p>
 			<i class="fa fa-angle-down" aria-hidden="true"></i>
 		</div>
@@ -29,7 +30,6 @@ get_header(); ?>
 
 				<?php endforeach; ?>
 			</ul>
-
 		</section>
 		<div class="project-description-banner">
 
