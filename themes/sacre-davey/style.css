@@ -1499,7 +1499,8 @@ footer {
 .style-1 {
   margin-top: 0;
   background-color: #272D66;
-  width: 100%; }
+  width: 100%;
+  display: block; }
   .style-1 ul {
     margin: 0 auto 25px;
     color: white;
