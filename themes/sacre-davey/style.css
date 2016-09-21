@@ -1944,8 +1944,6 @@ footer {
           -ms-grid-row-align: flex-start;
           align-items: flex-start; } }
   .projects-grid .project {
-    -ms-flex: 1 0 100%;
-        flex: 1 0 100%;
     width: 100%; }
     @media (min-width: 600px) {
       .projects-grid .project {
