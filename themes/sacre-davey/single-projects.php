@@ -50,6 +50,26 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</ul>
 		</section>
+		<section class="project-nav-list">
+
+			<?php  
+			$arg = array( 'taxonomy' => 'project_type', 'hide_empty' => false);
+
+			$terms = get_terms( $arg ); 
+			?>
+			<ul class="">
+				<li><a href="<?php echo get_post_type_archive_link('projects'); ?>">All</a></li>
+				<?php foreach ( $terms as $term ) : ?>
+
+					<li><a href=" <?php echo get_term_link($term); ?> " ><?php echo $term->name
+						?></a>
+					</li> 
+
+				<?php endforeach; ?>
+			</ul>
+
+
+		</section>
 		<div class="project-description-banner">
 
 			<p>For a detailed description of a project please enter the information below</p>
