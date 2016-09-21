@@ -1472,9 +1472,6 @@ footer {
 .read-more {
   width: 90%;
   margin: 20px auto 0; }
-  @media (min-width: 600px) {
-    .read-more {
-      display: none; } }
   .read-more h2,
   .read-more h3 {
     text-align: center; }
