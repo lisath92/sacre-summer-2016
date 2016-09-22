@@ -132,7 +132,7 @@ add_action( 'wp_enqueue_scripts','sacre_davey_sectors_inline_styles');
 */
 function sacre_davey_modifying_project_archive_query($query) {
     if (is_post_type_archive('projects') && !is_admin() && $query->is_main_query()) {
-        $query->set( 'posts_per_page', 25);
+        $query->set( 'posts_per_page', 30);
         $query->set( 'order', 'ASC');
         $query->set( 'orderby', 'title');
     }
