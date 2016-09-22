@@ -1101,13 +1101,7 @@ iframe {
       font-size: 2rem; } }
 
 .tm_timeline-layout-vertical-chessOrder .tm_timeline__tense {
-  background-color: #279AB6;
-  height: 82%;
-  top: 3.5%; }
-  @media (min-width: 600px) {
-    .tm_timeline-layout-vertical-chessOrder .tm_timeline__tense {
-      height: 82%;
-      top: 5%; } }
+  background-color: #279AB6; }
 
 .tm_timeline {
   text-align: left; }

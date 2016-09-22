@@ -232,12 +232,12 @@
 .tm_timeline-layout-vertical-chessOrder {
 	.tm_timeline__tense {
 		background-color: $color__lightblue;
-		height: 82%;
-		top: 3.5%;
-		@include desktop {
-			height: 82%;
-			top: 5%;
-		}	
+		// height: 82%;
+		// top: 3.5%;
+		// @include desktop {
+		// 	height: 82%;
+		// 	top: 5%;
+		// }	
 	}
 }
 .tm_timeline {
