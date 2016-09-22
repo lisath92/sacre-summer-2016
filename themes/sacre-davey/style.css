@@ -1646,7 +1646,6 @@ footer {
     width: 100%;
     position: absolute;
     top: 0;
-    font-size: 1.5rem;
     margin-top: 0;
     background-color: #279AB6;
     text-align: center; }
@@ -1662,7 +1661,7 @@ footer {
       text-decoration: none;
       color: white;
       font-family: "Impact", "Charcoal", sans-serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       letter-spacing: 3px;
       font-weight: 100; }

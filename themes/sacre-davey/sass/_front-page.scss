@@ -55,7 +55,6 @@
     width: 100%;
     position: absolute;
     top:0;
-    font-size: 1.5rem;
     margin-top: 0;
     background-color: $color__lightblue;
     text-align: center;
@@ -71,7 +70,7 @@
     a {
       text-decoration: none;
       color: white;
-      @include impact-heading(2rem,uppercase);
+      @include impact-heading(1.5rem,uppercase);
     }
 
   }
