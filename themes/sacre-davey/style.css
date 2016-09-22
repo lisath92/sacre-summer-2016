@@ -1027,10 +1027,15 @@ iframe {
     font-size: 1.5rem;
     word-wrap: break-word; }
   .each-member .member-photo {
-    border-radius: 50%; }
-  @media (min-width: 600px) {
-    .each-member img {
-      width: 100%; } }
+    border-radius: 115px;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto; }
+    @media (min-width: 600px) {
+      .each-member .member-photo {
+        width: 100%; } }
+  .each-member img {
+    width: 100%; }
 
 .timeline {
   position: relative;

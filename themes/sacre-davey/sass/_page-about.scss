@@ -146,14 +146,19 @@
 	}
 
 	.member-photo {
-		border-radius: 50%;
+		border-radius: 115px;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+    @include desktop {
+    	width: 100%;
+    }
 	}
 	img {
-		@include desktop {
 			width: 100%;
 		}
 	}
-}
+
 
 
 
