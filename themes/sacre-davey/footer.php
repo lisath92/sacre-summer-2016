@@ -22,9 +22,9 @@
   </div>
   <div class="social-media">
     <h1>Follow Us</h1>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-facebook" aria-hidden="true"></i>
-    <i class="fa fa-youtube" aria-hidden="true"></i>
+    <a href="https://www.linkedin.com/company/sacr--davey-engineering" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/Sacr%C3%A9-Davey-Engineering-349287118415639/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://www.youtube.com/user/sacredavey" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
   </div>
 
 
