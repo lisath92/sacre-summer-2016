@@ -6,7 +6,7 @@ footer {
   color: white;
   text-align: center;
   @include desktop {
-    height: 250px;
+    height: 220px;
   }
 }
 
@@ -19,10 +19,6 @@ footer {
       height: 100%;
       justify-content: space-between;
       flex-flow: row  nowrap;
-    }
-
-    div {
-      // padding-bottom: 40px;
     }
 
     h1 {
@@ -52,7 +48,7 @@ footer {
     .fa {
       border: 1px white solid;
       border-radius:30px;
-      padding: 10px 14px;
+      padding: 12px 14px;
       color: white;
       margin-right: 10px;
       @include desktop {

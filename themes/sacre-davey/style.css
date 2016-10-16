@@ -1207,7 +1207,7 @@ footer {
   text-align: center; }
   @media (min-width: 600px) {
     footer {
-      height: 250px; } }
+      height: 220px; } }
 
 .site-info {
   padding: 30px 0;
@@ -1248,7 +1248,7 @@ footer {
   .site-info .fa {
     border: 1px white solid;
     border-radius: 30px;
-    padding: 10px 14px;
+    padding: 12px 14px;
     color: white;
     margin-right: 10px; }
     @media (min-width: 600px) {
