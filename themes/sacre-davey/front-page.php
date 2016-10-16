@@ -10,18 +10,21 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<section class="hero-image">
-			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'full' ); ?>
-			<?php endif; ?>
+			 <h2><?php echo CFS()->get('front_page_header'); ?></h1>
+       <h3><?php echo CFS()->get('front_page_tagline'); ?></h3>
 		</section>
 		<section class="intro">
-			<p>Sacré-Davey provides engineering and project management services. 
+			<p><?php echo CFS()->get('front_page_description'); ?></p>
+
+<!-- 
+      Sacré-Davey provides engineering and project management services. 
 				We offer professional advice and technical expertise that help you 
-				improve your return on investments.</p>
+				improve your return on investments.</p> -->
 				<img src="<?php echo get_template_directory_uri() .'/assets/images/diamond.png'?>" alt="">
 				<p>
-					We work hard to develop a deep understanding of your needs 
-					and objectives, and to provide you with the personal service you deserve.</p>
+        <?php echo CFS()->get('front_page_more_info'); ?></p>
+					<!-- We work hard to develop a deep understanding of your needs 
+					and objectives, and to provide you with the personal service you deserve.</p> -->
 				</section>
 
 				<?php //sacre-davey project post types on front page

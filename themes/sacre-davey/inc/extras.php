@@ -32,6 +32,37 @@ function sacre_davey_remove_submenus() {
 add_action('admin_menu','sacre_davey_remove_submenus',110);
 
 /**
+* Add featured image for front page
+*/
+function sacre_davey_front_page_inline_styles() {
+  if(!is_front_page()) {
+    return;
+  }
+  $css='';
+  $logo= CFS()->get('front_page_banner');
+  if(!$logo) {
+    return;
+  }
+  $css .='
+      .hero-image {
+        background:
+        url('.$logo.') bottom/100% 100% no-repeat;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+}';
+
+wp_add_inline_style('sacre-davey-style', $css);
+}
+
+add_action( 'wp_enqueue_scripts','sacre_davey_front_page_inline_styles');
+
+
+/**
 * Add featured image for about us page
 */
 function sacre_davey_about_inline_styles() {
