@@ -648,6 +648,7 @@ iframe {
   color: #272D66;
   padding-left: 30px;
   background-color: white;
+  border-top: 1px #272D66 solid;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1837,6 +1838,7 @@ footer {
 .project-icon-toggle {
   height: 100%;
   position: relative;
+  border-top: 1px #272D66 solid;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;

@@ -4,6 +4,7 @@
 .project-icon-toggle {
     height: 100%;
     position: relative;
+    border-top: 1px $color__dark-blue solid;
     @include display-flex (space-between, center);
     @include desktop {
         display: none;

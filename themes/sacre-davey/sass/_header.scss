@@ -215,6 +215,7 @@ a {
   color: $color__dark-blue;
   padding-left: 30px;
   background-color: white;
+  border-top: 1px $color__dark-blue solid;
   @include display-flex(space-between, center);
   @include desktop {
     display: none;
