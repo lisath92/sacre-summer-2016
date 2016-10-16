@@ -1242,9 +1242,11 @@ footer {
     font-size: 28px; }
     @media (min-width: 600px) {
       .site-info button {
-        font-size: 1rem; } }
-    .site-info button:hover {
-      color: #279AB6; }
+        font-size: 1rem; }
+        .site-info button:hover {
+          background-color: #279AB6;
+          border-color: #279AB6;
+          text-shadow: none; } }
   .site-info .fa {
     border: 1px white solid;
     border-radius: 30px;
@@ -1254,7 +1256,10 @@ footer {
     @media (min-width: 600px) {
       .site-info .fa {
         font-size: 1rem;
-        margin-right: 5px; } }
+        margin-right: 5px; }
+        .site-info .fa:hover {
+          background-color: #279AB6;
+          border-color: #279AB6; } }
 
 @media (min-width: 600px) {
   .footer-logo {
