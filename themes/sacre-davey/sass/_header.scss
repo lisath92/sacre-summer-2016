@@ -15,9 +15,6 @@
   @include desktop {
     margin: 0 auto;
   }
-  // a {
-  //   padding-left: 10%;
-  // }
 }
 
 .site-content {
@@ -66,7 +63,6 @@
   .fa-bars {
     font-size: $font__h4;
     cursor: pointer;
-    padding-right: 10%;
     @include desktop {
       display: none;
     }
@@ -82,14 +78,14 @@
   @include desktop {
     display: unset;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     max-width: 600px;
     text-align: center;
     width: 100%;
     margin: 0 auto;
     ul {
-      width: 94%;
+      width: 100%;
       padding-left: 0;
       @include display-flex(space-around, center);
       flex-flow: row nowrap;
@@ -109,8 +105,7 @@
      white-space: nowrap;
 
      &.current-menu-item a {
-      text-decoration: underline;
-      font-size: 1.25rem;
+      border-bottom: 3px black solid;
       color: black;
     }
   }

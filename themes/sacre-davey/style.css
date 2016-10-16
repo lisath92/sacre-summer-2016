@@ -510,8 +510,7 @@ iframe {
       margin: 0 auto; } }
   .main-navigation .fa-bars {
     font-size: 30px;
-    cursor: pointer;
-    padding-right: 10%; }
+    cursor: pointer; }
     @media (min-width: 600px) {
       .main-navigation .fa-bars {
         display: none; } }
@@ -526,7 +525,7 @@ iframe {
     .menu-main-navigation-container {
       display: unset;
       font-weight: bold;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       max-width: 600px;
       text-align: center;
@@ -535,7 +534,7 @@ iframe {
       .sector-menu ul,
       .about-menu ul,
       .menu-main-navigation-container ul {
-        width: 94%;
+        width: 100%;
         padding-left: 0;
         display: -ms-flexbox;
         display: flex;
@@ -562,8 +561,7 @@ iframe {
         .sector-menu li.current-menu-item a,
         .about-menu li.current-menu-item a,
         .menu-main-navigation-container li.current-menu-item a {
-          text-decoration: underline;
-          font-size: 1.25rem;
+          border-bottom: 3px black solid;
           color: black; } }
 
 .nav-mobile {
