@@ -463,8 +463,7 @@ iframe {
   position: fixed;
   z-index: 11;
   height: 100px;
-  background-color: white;
-  border-bottom: 1px #279AB6 solid; }
+  background-color: white; }
   @media (min-width: 600px) {
     .site-header {
       margin: 0 auto; } }
@@ -514,6 +513,16 @@ iframe {
     @media (min-width: 600px) {
       .main-navigation .fa-bars {
         display: none; } }
+  .main-navigation .contact {
+    background-color: #279AB6;
+    border-radius: 7px;
+    padding: 10px 15px; }
+    .main-navigation .contact a {
+      color: white; }
+    .main-navigation .contact:hover {
+      background-color: #272D66; }
+      .main-navigation .contact:hover a {
+        color: white; }
 
 .sector-menu,
 .about-menu,
@@ -523,18 +532,16 @@ iframe {
     .sector-menu,
     .about-menu,
     .menu-main-navigation-container {
-      display: unset;
+      display: block;
       font-weight: bold;
       font-size: 0.85rem;
       text-transform: uppercase;
-      max-width: 600px;
       text-align: center;
-      width: 100%;
+      width: 80%;
       margin: 0 auto; }
       .sector-menu ul,
       .about-menu ul,
       .menu-main-navigation-container ul {
-        width: 100%;
         padding-left: 0;
         display: -ms-flexbox;
         display: flex;
@@ -603,8 +610,7 @@ iframe {
     padding: 0; }
 
 .about-menu {
-  max-width: 400px;
-  margin: 15px auto;
+  margin: 20px auto;
   padding: 0; }
   .about-menu li {
     text-align: right; }
@@ -617,12 +623,15 @@ iframe {
         justify-content: space-around;
     -ms-flex-align: center;
         align-items: center;
-    max-width: none; }
+    width: 100%;
+    margin: 20px auto; }
     .sector-menu ul {
+      width: 100%;
       -ms-flex-pack: distribute;
           justify-content: space-around;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      margin: 0; }
     .sector-menu li {
       padding: 5px; }
     .sector-menu a {

@@ -10,7 +10,7 @@
   z-index: 11;
   height: 100px;
   background-color: white;
-  border-bottom: 1px $color__lightblue solid;
+  // border-bottom: 1px $color__lightblue solid;
 
   @include desktop {
     margin: 0 auto;
@@ -68,7 +68,26 @@
     }
   }
 
+  .contact {
+    background-color: $color__lightblue;
+    border-radius: 7px;
+    padding: 10px 15px;
+
+    a {
+      color: white;
+    }
+    &:hover {
+      background-color: $color__dark-blue;
+
+      a {
+        color: white;
+      }
+    }
+  }
 }
+
+
+
 
 //Menus at desktop view
 .sector-menu,
@@ -76,17 +95,15 @@
 .menu-main-navigation-container {
   display: none;
   @include desktop {
-    display: unset;
+    display: block;
     font-weight: bold;
     font-size: 0.85rem;
     text-transform: uppercase;
-    max-width: 600px;
     text-align: center;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 
     ul {
-      width: 100%;
       padding-left: 0;
       @include display-flex(space-around, center);
       flex-flow: row nowrap;
@@ -154,8 +171,7 @@ a {
 
 //About Us sub-menu
 .about-menu {
-  max-width: 400px;
-  margin: 15px auto;
+  margin: 20px auto;
   padding: 0;
 
   li {
@@ -167,11 +183,15 @@ a {
 .sector-menu {
   @include desktop {
     @include display-flex(space-around, center);
-    max-width: none;
+    width: 100%;
+    margin: 20px auto;
+
 
     ul {
+      width: 100%;
       justify-content: space-around;
       flex-wrap: wrap;
+      margin: 0;
     }
     li {
       padding: 5px;
@@ -220,13 +240,13 @@ a {
 
   ul {
     display: none;
-      top: 0;
-      padding: 0;
-      margin: 0;
-      background-color: $color__lightblue;
-      width: 100%;
-      position: absolute;
-      z-index: 2;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background-color: $color__lightblue;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
   }
 
   li {
