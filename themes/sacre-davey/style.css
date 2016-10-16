@@ -462,22 +462,20 @@ iframe {
   margin: 0;
   position: fixed;
   z-index: 11;
-  height: 80px;
+  height: 100px;
   background-color: white;
   border-bottom: 1px #279AB6 solid; }
   @media (min-width: 600px) {
     .site-header {
       margin: 0 auto; } }
-  .site-header a {
-    padding-left: 10%; }
 
 .site-content {
   padding-top: 80px; }
 
 .site-header h1 {
   background: url("../../assets/images/mobile-logo.png") center/100% 68% no-repeat;
-  height: 80px;
-  width: 60px;
+  height: 100px;
+  width: 80px;
   overflow: hidden;
   text-indent: 80%;
   margin: 0;
@@ -486,18 +484,18 @@ iframe {
     .site-header h1 {
       background: url("../../assets/images/large-logo.png") center/100% 80% no-repeat;
       height: 8vw;
-      max-height: 55px;
-      max-width: 200px;
+      max-height: 70px;
+      max-width: 230px;
       width: 23vw; } }
 
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%; }
+  width: 90%; }
   .main-navigation a {
     -ms-flex: 1 0 70%;
         flex: 1 0 70%; }
@@ -730,7 +728,6 @@ iframe {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
       -ms-flex-align: start;
-          -ms-grid-row-align: flex-start;
           align-items: flex-start;
       max-width: 91%; } }
   .engineering-needs-wrapper .engineering-needs-block {
@@ -1427,7 +1424,6 @@ footer {
       max-width: 80%;
       max-height: 600px;
       -ms-flex-align: start;
-          -ms-grid-row-align: flex-start;
           align-items: flex-start;
       text-align: left; } }
 
@@ -1946,7 +1942,6 @@ footer {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
       -ms-flex-align: start;
-          -ms-grid-row-align: flex-start;
           align-items: flex-start; } }
   .projects-grid .project {
     width: 100%; }

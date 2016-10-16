@@ -8,16 +8,16 @@
   margin: 0;
   position: fixed;
   z-index: 11;
-  height: 80px;
+  height: 100px;
   background-color: white;
   border-bottom: 1px $color__lightblue solid;
 
   @include desktop {
     margin: 0 auto;
   }
-  a {
-    padding-left: 10%;
-  }
+  // a {
+  //   padding-left: 10%;
+  // }
 }
 
 .site-content {
@@ -30,8 +30,8 @@
   url("../../assets/images/mobile-logo.png")
   center/100% 68%
   no-repeat;
-  height: 80px;
-  width: 60px;
+  height: 100px;
+  width: 80px;
   overflow: hidden;
   text-indent: 80%;
   margin:0;
@@ -42,8 +42,8 @@
     center/100% 80%
     no-repeat;
     height: 8vw;
-    max-height: 55px;
-    max-width: 200px;
+    max-height: 70px;
+    max-width: 230px;
     width: 23vw;
   }
 }
@@ -51,8 +51,8 @@
 
 //Main Navigation
 .main-navigation {
-  @include display-flex(space-between, center);
-  width: 100%;
+  @include display-flex(space-around, center);
+  width: 90%;
   a {
     flex:1 0 70%;
     @include desktop {
