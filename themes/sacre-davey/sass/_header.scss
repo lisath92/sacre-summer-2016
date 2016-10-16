@@ -18,7 +18,7 @@
 }
 
 .site-content {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 //Logo
@@ -39,8 +39,8 @@
     center/100% 80%
     no-repeat;
     height: 8vw;
-    max-height: 70px;
-    max-width: 230px;
+    max-height: 80px;
+    max-width: 270px;
     width: 23vw;
   }
 }
@@ -84,12 +84,12 @@
     text-align: center;
     width: 100%;
     margin: 0 auto;
+
     ul {
       width: 100%;
       padding-left: 0;
       @include display-flex(space-around, center);
       flex-flow: row nowrap;
-
     }
 
     a {

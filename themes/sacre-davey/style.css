@@ -470,7 +470,7 @@ iframe {
       margin: 0 auto; } }
 
 .site-content {
-  padding-top: 80px; }
+  padding-top: 100px; }
 
 .site-header h1 {
   background: url("../../assets/images/mobile-logo.png") center/100% 68% no-repeat;
@@ -484,8 +484,8 @@ iframe {
     .site-header h1 {
       background: url("../../assets/images/large-logo.png") center/100% 80% no-repeat;
       height: 8vw;
-      max-height: 70px;
-      max-width: 230px;
+      max-height: 80px;
+      max-width: 270px;
       width: 23vw; } }
 
 .main-navigation {
