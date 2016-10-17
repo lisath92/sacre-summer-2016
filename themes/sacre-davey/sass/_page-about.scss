@@ -15,7 +15,6 @@
 		
 		h1 {
 			@include impact-heading($font__h2, uppercase);
-			font-weight:bolder;
 		}
 		p {
 			width: 90%;
