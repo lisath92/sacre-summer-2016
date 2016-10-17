@@ -5,8 +5,13 @@
   color: white;
 
   h2 {
-    @include impact-heading(3.5em, uppercase);
+    @include impact-heading(5em, uppercase);
     margin: 0;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-weight:400;
   }
 }
 
@@ -17,6 +22,10 @@
   font-size: 1rem;
   line-height: 1.75;
   color: $color__dark-blue;
+
+  p {
+    margin: 3rem 0;
+  }
 
   @include desktop {
     color: black;

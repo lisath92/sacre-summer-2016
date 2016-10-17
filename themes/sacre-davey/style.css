@@ -1626,11 +1626,14 @@ footer {
   color: white; }
   .hero-image h2 {
     font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 3.5em;
+    font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 100;
     margin: 0; }
+  .hero-image h3 {
+    font-size: 3rem;
+    font-weight: 400; }
 
 .intro {
   text-align: center;
@@ -1639,6 +1642,8 @@ footer {
   font-size: 1rem;
   line-height: 1.75;
   color: #272D66; }
+  .intro p {
+    margin: 3rem 0; }
   @media (min-width: 600px) {
     .intro {
       color: black;
