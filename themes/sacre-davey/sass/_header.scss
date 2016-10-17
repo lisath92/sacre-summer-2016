@@ -10,7 +10,6 @@
   z-index: 11;
   height: 100px;
   background-color: white;
-  // border-bottom: 1px $color__lightblue solid;
 
   @include desktop {
     margin: 0 auto;
@@ -28,7 +27,7 @@
   center/100% 68%
   no-repeat;
   height: 100px;
-  width: 80px;
+  width: 75px;
   overflow: hidden;
   text-indent: 80%;
   margin:0;
