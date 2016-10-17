@@ -1833,7 +1833,7 @@ footer {
 
 .affiliation {
   background-color: lightgray;
-  height: 340px;
+  height: 400px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1844,6 +1844,9 @@ footer {
       align-content: center;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
+  @media (min-width: 600px) {
+    .affiliation {
+      height: 340px; } }
   .affiliation img {
     width: 37vw;
     padding: 20px; }

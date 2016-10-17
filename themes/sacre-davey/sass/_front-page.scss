@@ -221,10 +221,13 @@
 //Affiliated Companies
 .affiliation {
   background-color: lightgray;
-  height: 340px;
+  height: 400px;
   @include display-flex(center,center);
   align-content: center;
   flex-flow: row wrap;
+  @include desktop {
+    height: 340px;
+  }
 
   img {
     width: 37vw;
