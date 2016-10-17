@@ -1793,7 +1793,7 @@ footer {
 .sector-description {
   width: 95%;
   max-width: 400px;
-  margin: 0 auto; }
+  margin: 20px auto; }
   @media (min-width: 600px) {
     .sector-description {
       display: -ms-flexbox;
