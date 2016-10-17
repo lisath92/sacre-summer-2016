@@ -1055,7 +1055,7 @@ iframe {
 .timeline {
   position: relative;
   z-index: 1;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0;
   text-align: center;
   color: white;
   background-color: #272D66; }
@@ -1140,8 +1140,7 @@ iframe {
   color: white;
   height: 250px;
   width: 100%;
-  background: url("../../assets/images/AboutUsHeader.png") no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/learn-more-banner.png") top/cover no-repeat;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
@@ -1158,14 +1157,9 @@ iframe {
     color: white;
     text-transform: uppercase;
     font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 2;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 3px; }
-    @media (min-width: 600px) {
-      .learn-more-banner h2 {
-        padding-bottom: 2rem;
-        font-size: 48px;
-        font-size: 3rem; } }
 
 .button-class {
   color: white;

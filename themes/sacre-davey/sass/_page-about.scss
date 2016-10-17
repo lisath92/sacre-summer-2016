@@ -182,7 +182,7 @@
 
 	position:relative;
 	z-index: 1;
-	padding-top: 2rem;
+	padding: 2rem 2rem 0;
 	text-align: center;
 	color: white;
 	background-color: $color__dark-blue;
@@ -250,12 +250,6 @@
 .tm_timeline-layout-vertical-chessOrder {
 	.tm_timeline__tense {
 		background-color: $color__lightblue;
-		// height: 82%;
-		// top: 3.5%;
-		// @include desktop {
-		// 	height: 82%;
-		// 	top: 5%;
-		// }	
 	}
 }
 .tm_timeline {
@@ -285,8 +279,9 @@
 	color: white;
 	height: 250px;
 	width: 100%;
-	background: url('../../assets/images/AboutUsHeader.png') no-repeat;
-	background-size: cover;
+	background: 
+	linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+	url('../../assets/images/learn-more-banner.png') top/cover no-repeat;
 	text-align: center;
 	@include display-flex(center, center);
 	flex-flow: column nowrap;
@@ -297,11 +292,7 @@
 	h2 {
 		color:white;
 		text-transform: uppercase;
-		@include impact-heading(2, uppercase);
-		@include desktop {
-			padding-bottom: 2rem;
-			@include font-size (3);
-		}
+		@include impact-heading(3rem, uppercase);
 	}
 }
 
