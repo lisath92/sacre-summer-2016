@@ -1,6 +1,7 @@
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/
+//Banner image with header and tagline
 .hero-image {
   color: white;
 
@@ -18,7 +19,7 @@
     font-weight:400;
     text-align: center;
     @include desktop {
-      font-size: 3em;
+      font-size: 2em;
     }
 
   }

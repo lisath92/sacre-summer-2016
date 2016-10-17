@@ -1641,7 +1641,7 @@ footer {
     text-align: center; }
     @media (min-width: 600px) {
       .hero-image h3 {
-        font-size: 3em; } }
+        font-size: 2em; } }
 
 .intro {
   text-align: center;
