@@ -53,8 +53,9 @@ footer {
     padding: 12px 14px;
     color: white;
     margin-right: 10px;
+    font-size: 1.5rem;
     @include desktop {
-      font-size: 1.5rem;
+      
       margin-right: 5px;
       &:hover {
         background-color: $color__lightblue;
@@ -80,9 +81,14 @@ footer {
 }
 
 .more-info {
+  margin: 30px auto;
   @include desktop {
     margin-left: auto;
     padding-right: 5%;
   }
+}
+
+.social-media h1 {
+  font-size: 1rem;
 }
 

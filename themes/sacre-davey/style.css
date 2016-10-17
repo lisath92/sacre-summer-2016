@@ -1255,10 +1255,10 @@ footer {
     border-radius: 30px;
     padding: 12px 14px;
     color: white;
-    margin-right: 10px; }
+    margin-right: 10px;
+    font-size: 1.5rem; }
     @media (min-width: 600px) {
       .site-info .fa {
-        font-size: 1.5rem;
         margin-right: 5px; }
         .site-info .fa:hover {
           background-color: #279AB6;
@@ -1274,10 +1274,15 @@ footer {
 .footer-logo img {
   width: 100%; }
 
-@media (min-width: 600px) {
-  .more-info {
-    margin-left: auto;
-    padding-right: 5%; } }
+.more-info {
+  margin: 30px auto; }
+  @media (min-width: 600px) {
+    .more-info {
+      margin-left: auto;
+      padding-right: 5%; } }
+
+.social-media h1 {
+  font-size: 1rem; }
 
 .page-template-page-careers article {
   margin-bottom: 0; }
