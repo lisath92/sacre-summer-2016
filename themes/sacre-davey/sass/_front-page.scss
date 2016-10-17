@@ -4,13 +4,13 @@
 //Banner image with header and tagline
 .hero-image {
   color: white;
-  height: 400px;
+  height: 300px;
   @include desktop {
     height: 90vh;
   }
 
   h2 {
-    @include impact-heading(3em, uppercase);
+    @include impact-heading(2em, uppercase);
     margin: 0;
     text-align: center;
     word-break: break-word;
