@@ -46,8 +46,7 @@ function sacre_davey_front_page_inline_styles() {
   $css .='
       .hero-image {
         background:
-        url('.$logo.') bottom/100% 100% no-repeat;
-        height: 600px;
+        url('.$logo.') bottom/cover no-repeat;
         width: 100%;
         display: flex;
         justify-content: center;

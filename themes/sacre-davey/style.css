@@ -1623,7 +1623,11 @@ footer {
   Front Page
 ----------------------------------------------------------------*/
 .hero-image {
-  color: white; }
+  color: white;
+  height: 400px; }
+  @media (min-width: 600px) {
+    .hero-image {
+      height: 100vh; } }
   .hero-image h2 {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 3em;
@@ -1631,6 +1635,7 @@ footer {
     letter-spacing: 3px;
     font-weight: 100;
     margin: 0;
+    text-align: center;
     word-break: break-word; }
     @media (min-width: 600px) {
       .hero-image h2 {
