@@ -31,7 +31,8 @@ get_header(); ?>
    				<div class="home-gallery" data-flickity='{
                "contain": true,
                "prevNextButtons": false,
-               "contain": true }'>
+               "contain": true,
+               "pageDots": false }'>
                <?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
 
                  <div class="home-gallery-cell">
