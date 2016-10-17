@@ -1823,7 +1823,7 @@ footer {
     .learn-more {
       display: none; } }
 
-.partners {
+.affiliation {
   background-color: lightgray;
   height: 340px;
   display: -ms-flexbox;
@@ -1836,21 +1836,21 @@ footer {
       align-content: center;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
-  @media (min-width: 600px) {
-    .partners {
-      height: 40%; } }
-  .partners img {
+  .affiliation img {
     width: 37vw;
     padding: 20px; }
     @media (min-width: 600px) {
-      .partners img {
+      .affiliation img {
         width: 17vw; } }
-  .partners h3 {
+  .affiliation h3 {
+    font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
-    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-top: 0;
     width: 100vw;
     color: white;
-    text-transform: uppercase;
     text-align: center; }
 
 /*--------------------------------------------------

@@ -143,9 +143,6 @@
     }
     & a {
       text-decoration: none;
-      // @include desktop {
-      //   text-decoration: underline;
-      // }
     }
 
   }
@@ -159,8 +156,8 @@
 
   &:hover .sector-img {
     @include desktop {
-    transform: rotateY(180deg);
-  }
+      transform: rotateY(180deg);
+    }
   }
 }
 
@@ -195,33 +192,30 @@
 }
 
 .content {
-    margin-top: 0;
-    @include desktop {
-      color: white;
-      font-weight: 100;
-      width: 75%;
-      margin: 0;
-    }
+  margin-top: 0;
+  @include desktop {
+    color: white;
+    font-weight: 100;
+    width: 75%;
+    margin: 0;
   }
+}
 
 .learn-more {
-    margin-top:10px;
-    font-weight: bold;
-    @include desktop {
-      display: none;
-    }
+  margin-top:10px;
+  font-weight: bold;
+  @include desktop {
+    display: none;
   }
+}
 
-//Partners
-.partners {
+//Affiliated Companies
+.affiliation {
   background-color: lightgray;
   height: 340px;
   @include display-flex(center,center);
   align-content: center;
   flex-flow: row wrap;
-  @include desktop {
-    height: 40%;
-  }
 
   img {
     width: 37vw;
@@ -233,11 +227,10 @@
 
 
   h3 {
-    font-size: $font__h2;
-    margin-bottom: 0;
+    @include impact-heading($font__h2, uppercase);
+    margin-top: 0;
     width: 100vw;
     color: white;
-    text-transform: uppercase;
     text-align: center;
   }
 }
