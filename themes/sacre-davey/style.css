@@ -320,7 +320,7 @@ textarea {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80vw; }
+  width: 90vw; }
 
 .sticky {
   display: block; }
@@ -1267,9 +1267,9 @@ footer {
         margin-right: 5px; }
         .site-info .fa:hover {
           background-color: #279AB6;
-          border-color: #279AB6; }
-        .site-info .fa.fa-facebook {
-          padding: 12px 16px; } }
+          border-color: #279AB6; } }
+    .site-info .fa.fa-facebook {
+      padding: 12px 16px; }
 
 @media (min-width: 600px) {
   .footer-logo {
