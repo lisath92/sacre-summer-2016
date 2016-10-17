@@ -230,9 +230,6 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: 100; }
 
-h1, h2, h3, h4 {
-  font-weight: 100; }
-
 ul {
   list-style: none; }
 
@@ -375,8 +372,7 @@ textarea {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 100; }
+    letter-spacing: 3px; }
 
 .page-template-contact-page .entry-content {
   display: -ms-flexbox;
@@ -715,7 +711,6 @@ iframe {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100;
     color: #272D66;
     text-align: center;
     max-width: 800px;
@@ -813,7 +808,6 @@ iframe {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100;
     text-align: center;
     color: white;
     padding: 30px 0;
@@ -920,27 +914,37 @@ iframe {
     margin-bottom: 0; }
   .page-template-page-about .entry-header {
     color: white;
-    height: 50vw;
+    height: 400px;
     text-align: center;
-    width: 100%;
-    max-height: 300px; }
+    width: 100%; }
+    @media (min-width: 600px) {
+      .page-template-page-about .entry-header {
+        height: 50vh; } }
     .page-template-page-about .entry-header h1 {
       font-family: "Impact", "Charcoal", sans-serif;
       font-size: 48px;
       text-transform: uppercase;
       letter-spacing: 3px;
-      font-weight: 100; }
+      font-weight: bolder; }
     .page-template-page-about .entry-header p {
-      width: 80%;
-      max-width: 400px; }
+      width: 90%;
+      max-width: 850px;
+      font-size: 1.5rem;
+      line-height: 1.5; }
+      @media (min-width: 600px) {
+        .page-template-page-about .entry-header p {
+          max-width: 850px;
+          font-size: 1.8rem; } }
   .page-template-page-about .entry-content h1 {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100;
     color: #272D66;
     text-align: center; }
+
+.hero {
+  height: 100%; }
 
 .carousel-nav {
   height: 20vh;
@@ -1031,7 +1035,6 @@ iframe {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100;
     margin-top: 0; }
   .each-member .position {
     font-family: Helvetica;
@@ -1060,8 +1063,7 @@ iframe {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 100; }
+    letter-spacing: 3px; }
 
 .history-wrapper {
   width: 90%;
@@ -1158,8 +1160,7 @@ iframe {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 2;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 100; }
+    letter-spacing: 3px; }
     @media (min-width: 600px) {
       .learn-more-banner h2 {
         padding-bottom: 2rem;
@@ -1324,8 +1325,7 @@ footer {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 3rem;
     text-transform: lowercase;
-    letter-spacing: 3px;
-    font-weight: 100; }
+    letter-spacing: 3px; }
 
 .page-template-page-careers .opportunities-wrapper {
   width: 90%;
@@ -1376,8 +1376,7 @@ footer {
   font-family: "Impact", "Charcoal", sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 100; }
+  letter-spacing: 3px; }
 
 .page-template-page-careers .opportunities-title {
   color: #279AB6; }
@@ -1423,8 +1422,7 @@ footer {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 100; }
+    letter-spacing: 3px; }
     @media (min-width: 600px) {
       .development h1 {
         padding-left: 15px; } }
@@ -1627,13 +1625,12 @@ footer {
   height: 400px; }
   @media (min-width: 600px) {
     .hero-image {
-      height: 100vh; } }
+      height: 90vh; } }
   .hero-image h2 {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100;
     margin: 0;
     text-align: center;
     word-break: break-word; }
@@ -1704,8 +1701,7 @@ footer {
       font-family: "Impact", "Charcoal", sans-serif;
       font-size: 1.5rem;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 100; }
+      letter-spacing: 3px; }
   .projects-block-info p {
     font-size: 20px;
     line-height: 2;
@@ -1741,7 +1737,6 @@ footer {
     font-size: auto;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100;
     margin-bottom: 0; }
     @media (min-width: 600px) {
       .sector-icons h1 {
@@ -1762,8 +1757,7 @@ footer {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 1.5em;
     text-transform: capitalize;
-    letter-spacing: 3px;
-    font-weight: 100; }
+    letter-spacing: 3px; }
     @media (min-width: 600px) {
       .each-category h2 {
         -ms-flex-order: 2;
@@ -1863,7 +1857,6 @@ footer {
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 100;
     margin-top: 0;
     width: 100vw;
     color: white;
@@ -2107,8 +2100,7 @@ footer {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 100; }
+    letter-spacing: 3px; }
     @media (min-width: 600px) {
       .error-404 .page-content .page-title {
         font-size: 80px;

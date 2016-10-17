@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<section class="hero-image">
+		<section id="hero-image" class="hero-image">
 			 <h2><?php echo CFS()->get('front_page_header'); ?></h1>
        <h3><?php echo CFS()->get('front_page_tagline'); ?></h3>
 		</section>
