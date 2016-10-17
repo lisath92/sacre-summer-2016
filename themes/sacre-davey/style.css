@@ -1626,14 +1626,22 @@ footer {
   color: white; }
   .hero-image h2 {
     font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 100;
-    margin: 0; }
+    margin: 0;
+    word-break: break-word; }
+    @media (min-width: 600px) {
+      .hero-image h2 {
+        font-size: 5em; } }
   .hero-image h3 {
-    font-size: 3rem;
-    font-weight: 400; }
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .hero-image h3 {
+        font-size: 3em; } }
 
 .intro {
   text-align: center;
