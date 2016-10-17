@@ -1763,9 +1763,6 @@ footer {
         letter-spacing: normal; } }
     .each-category h2 a {
       text-decoration: none; }
-      @media (min-width: 600px) {
-        .each-category h2 a {
-          text-decoration: underline; } }
   .each-category img {
     width: 60%;
     max-width: 280px; }

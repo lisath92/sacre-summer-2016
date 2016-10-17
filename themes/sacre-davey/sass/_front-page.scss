@@ -143,9 +143,9 @@
     }
     & a {
       text-decoration: none;
-      @include desktop {
-        text-decoration: underline;
-      }
+      // @include desktop {
+      //   text-decoration: underline;
+      // }
     }
 
   }
