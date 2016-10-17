@@ -9,14 +9,11 @@
 	.hentry {
 		margin: 0;
 	}
-	.entry-header {
-		height: 300px;
-		width: 100%;
-		background: 
-		url('../../assets/images/ServiceHeader.png') 
-		top/100% 100%
-		no-repeat;
-		background-size: cover;
+	
+	h1 {
+		@include impact-heading($font__h2, uppercase);
+		color: white;
+		text-align: center;
 	}
 
 	h2 {
@@ -33,6 +30,24 @@
 			font-size: 2rem;
 		}
 	}
+
+	p {
+		color: white;
+		text-align: center;
+		font-weight: 100;
+		width: 90%;
+		font-size: 1.5rem;
+		line-height:1.5;
+		@include desktop {
+			max-width: 850px;
+			font-size: 1.8rem;
+		}
+
+	}
+}
+
+.services-hero {
+	height: 50vh;
 }
 
 //Lists of engineering needs

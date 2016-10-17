@@ -701,11 +701,13 @@ iframe {
   font-size: 1rem; }
   .page-template-page-services .hentry {
     margin: 0; }
-  .page-template-page-services .entry-header {
-    height: 300px;
-    width: 100%;
-    background: url("../../assets/images/ServiceHeader.png") top/100% 100% no-repeat;
-    background-size: cover; }
+  .page-template-page-services h1 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center; }
   .page-template-page-services h2 {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 1rem;
@@ -722,6 +724,20 @@ iframe {
         max-width: none;
         font-weight: 800;
         font-size: 2rem; } }
+  .page-template-page-services p {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    width: 90%;
+    font-size: 1.5rem;
+    line-height: 1.5; }
+    @media (min-width: 600px) {
+      .page-template-page-services p {
+        max-width: 850px;
+        font-size: 1.8rem; } }
+
+.services-hero {
+  height: 50vh; }
 
 .engineering-needs-wrapper {
   display: -ms-flexbox;

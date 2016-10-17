@@ -92,6 +92,38 @@ wp_add_inline_style('sacre-davey-style', $css);
 add_action( 'wp_enqueue_scripts','sacre_davey_about_inline_styles');
 
 /**
+* Add featured image for services page
+*/
+function sacre_davey_services_inline_styles() {
+  if(!is_page_template('page-services.php')) {
+    return;
+  }
+  $css='';
+  $logo= CFS()->get('services_banner');
+  if(!$logo) {
+    return;
+  }
+  $css .='
+      #services-hero {
+        background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('.$logo.') bottom/cover no-repeat;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+}';
+
+wp_add_inline_style('sacre-davey-style', $css);
+}
+
+add_action( 'wp_enqueue_scripts','sacre_davey_services_inline_styles');
+
+
+
+/**
 * Add featured image for contact us page
 */
 function sacre_davey_contact_inline_styles() {

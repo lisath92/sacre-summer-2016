@@ -13,6 +13,12 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<header class="entry-header">
+					<div id="services-hero" class="services-hero">
+					<h1><?php the_title(); ?></h1>
+					<p><?php echo CFS()->get('services_tagline'); ?></p>
+					</div>
+					</header>
 				<div class="entry-header">
 				</div>
 				<div class="entry-content">
