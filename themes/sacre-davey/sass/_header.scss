@@ -52,7 +52,7 @@
   a {
     flex:1 0 70%;
     @include desktop {
-      flex:1 0 5%;
+      flex:0 1 50%;
     }
   }
   @include desktop {
