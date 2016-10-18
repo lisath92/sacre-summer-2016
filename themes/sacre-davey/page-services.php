@@ -44,9 +44,8 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-					
 					<div class="banner">
-						<h3 class="engineer-trust">Engineers and project managers you can trust.</h3>
+						<p class="trust">Engineers and project managers you can trust.</p>
 					</div>
 					<div class="certification-block">
 						<h2>Sacre-Davey Engineering Inc. was one of the first companies to be certified under the APEG of BC in Organizational Quality Management Program.</h2>

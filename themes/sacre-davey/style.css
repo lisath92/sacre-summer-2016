@@ -710,7 +710,7 @@ iframe {
     text-align: center; }
   .page-template-page-services h2 {
     font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 1rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #272D66;
@@ -718,12 +718,10 @@ iframe {
     max-width: 800px;
     margin: 0 auto;
     width: 90%;
-    padding-top: 30px;
-    font-size: 2rem; }
+    padding-top: 30px; }
     @media (min-width: 600px) {
       .page-template-page-services h2 {
-        max-width: none;
-        font-weight: 800; } }
+        max-width: none; } }
   .page-template-page-services p {
     color: white;
     text-align: center;
@@ -828,7 +826,6 @@ iframe {
     letter-spacing: 3px;
     text-align: center;
     color: white;
-    padding: 30px 0;
     max-width: 650px;
     margin: 0 auto;
     width: 90%; }
@@ -839,14 +836,18 @@ iframe {
   .banner .engineer-trust {
     text-transform: none; }
   .banner p {
-    margin-top: 0;
-    max-width: 850px;
-    width: 70%;
-    text-align: center;
-    font-size: 1.2rem; }
+    color: white;
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto; }
     @media (min-width: 600px) {
       .banner p {
-        font-weight: bold; } }
+        max-width: 700px;
+        font-size: 1.5rem;
+        line-height: 1.5; } }
+  @media (min-width: 600px) {
+    .banner .trust {
+      max-width: 400px; } }
 
 .service-image {
   display: none;
@@ -888,11 +889,11 @@ iframe {
     color: white;
     padding: 30px 0;
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 1.2rem; }
     @media (min-width: 600px) {
       .updates-banner p {
         max-width: 700px;
-        font-size: 1.5rem;
         line-height: 1.5; } }
 
 .page-template-page-services .carousel {
