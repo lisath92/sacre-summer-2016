@@ -15,7 +15,7 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 					<div id="services-hero" class="services-hero">
-					<h1><?php the_title(); ?></h1>
+					<h1 class="title"><?php the_title(); ?></h1>
 					<p><?php echo CFS()->get('services_tagline'); ?></p>
 					</div>
 					</header>

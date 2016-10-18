@@ -1,34 +1,27 @@
 /*--------------------------------------------------------------
 # Services Page Template
 --------------------------------------------------------------*/
-
-
 .page-template-page-services {
 	font-size: 1rem;
-	
 	.hentry {
 		margin: 0;
 	}
-
-	h1 {
+	.title {
 		@include impact-heading($font__h2, uppercase);
 		color: white;
 		text-align: center;
 	}
-
 	h2 {
 		@include impact-heading(1.7rem, uppercase);
 		color: $color__dark-blue;
 		text-align: center;
 		max-width: 800px;
-		margin: 0 auto;
+		margin: 3rem auto 0;
 		width: 90%;
-		padding-top: 30px;
 		@include desktop {
 			max-width: none;
 		}
 	}
-
 	p {
 		color: white;
 		text-align: center;
@@ -40,14 +33,11 @@
 			max-width: 850px;
 			font-size: 1.8rem;
 		}
-
 	}
 }
-
 .services-hero {
 	height: 50vh;
 }
-
 //Lists of engineering needs
 .engineering-needs-wrapper {
 	@include display-flex(center, center);
@@ -62,12 +52,11 @@
 		line-height:1.3;
 		text-align: center;
 		width: 60%;
-		margin: 2rem 0;
+		margin: 1rem 0 3rem;
 		@include desktop {
 			text-align: left;
 			font-size: $font__main;
 			padding-left: 5%;
-			
 		}
 		h4 {
 			font-weight: 800;
@@ -79,7 +68,6 @@
 				line-height:1;
 			}
 		}
-
 	}
 	.engineering-needs-list {
 		padding:0;
@@ -89,12 +77,10 @@
 		}
 	}
 }
-
 //Lists of certifications
 .certification-block {
 	text-align: center;
-	margin: 0 auto;
-
+	margin: 0 auto 3rem;
 	p {
 		color: black;
 		font-weight: bold;
@@ -107,7 +93,7 @@
 			width: 70%;
 			font-weight: normal;
 			font-size: $font__main;
-		} 
+		}
 	}
 	.quality-details {
 		max-width: 350px;
@@ -121,11 +107,11 @@
 		}
 	}
 }
-
 //Banner throughout page
 .banner {
 	background-color: $color__dark-blue;
-	min-height:240px;
+	// min-height:240px;
+	padding: 3rem 0;
 	@include display-flex(center,center);
 	flex-flow: column nowrap;
 	color: white;
@@ -146,7 +132,7 @@
 	}
 	p {
 		color: white;
-		padding: 30px 0;
+		padding-top: 30px;
 		width: 90%;
 		margin: 0 auto;
 		@include desktop {
@@ -156,17 +142,15 @@
 		}
 	}
 	.trust {
-	@include desktop {
-		max-width: 400px;
+		@include desktop {
+			max-width: 400px;
+		}
 	}
 }
-}
-
-
 //Image show on desktop
 .service-image {
 	display: none;
-	background: 
+	background:
 	url('../../assets/images/right-overlay.png')
 	bottom right/70% no-repeat,
 	url('../../assets/images/services-footer.png')
@@ -176,11 +160,11 @@
 		max-width: 42%;
 		padding: 89px 0 30px;
 		font-size: 2vw;
-		margin: 2% 3% 0 auto;
+		margin: 0 3% 0 auto;
 		list-style-type: none;
 		line-height: 1.3;
 	}
-	li 
+	li
 	{
 		position: relative;
 		padding-bottom: 20px;
@@ -191,8 +175,8 @@
 			left: -5vw;
 			width: 3vw;
 			height: 6vw;
-			background: 
-			url(../../assets/images/arrow-right.png) 
+			background:
+			url(../../assets/images/arrow-right.png)
 			top center/79% no-repeat;
 		}
 	}
@@ -200,15 +184,14 @@
 		display: block;
 	}
 }
-
 .updates-banner {
 	@include display-flex(center,center);
 	text-align: center;
 	background-color: $color__lightblue;
-	margin-top: 30px;
+	margin-top: 3rem;
 	p {
 		color: white;
-		padding: 30px 0;
+		padding: 3rem 0;
 		width: 90%;
 		margin: 0 auto;
 		font-size: 1.2rem;
@@ -218,7 +201,6 @@
 		}
 	}
 }
-
 //Flickity carousel
 .page-template-page-services .carousel {
 	padding-top: 30px;
@@ -233,7 +215,6 @@
 		max-width: 90%;
 	}
 }
-
 .page-template-page-services .carousel-cell {
 	width: 100%;
 	text-align: center;
@@ -243,16 +224,13 @@
 		margin-right: 1%;
 		max-width: 200px;
 	}
-
 	img {
 		@include desktop {
 			width: 100%;
 		}
 	}
 }
-
 // add to fix mobile slider
-
 .page-template-page-services {
 	.flickity-viewport {
 		max-height: 250px;
@@ -261,5 +239,3 @@
 		padding-top:2rem;
 	}
 }
-
-

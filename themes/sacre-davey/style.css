@@ -701,7 +701,7 @@ iframe {
   font-size: 1rem; }
   .page-template-page-services .hentry {
     margin: 0; }
-  .page-template-page-services h1 {
+  .page-template-page-services .title {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
@@ -716,9 +716,8 @@ iframe {
     color: #272D66;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto;
-    width: 90%;
-    padding-top: 30px; }
+    margin: 3rem auto 0;
+    width: 90%; }
     @media (min-width: 600px) {
       .page-template-page-services h2 {
         max-width: none; } }
@@ -758,7 +757,7 @@ iframe {
     line-height: 1.3;
     text-align: center;
     width: 60%;
-    margin: 2rem 0; }
+    margin: 1rem 0 3rem; }
     @media (min-width: 600px) {
       .engineering-needs-wrapper .engineering-needs-block {
         text-align: left;
@@ -782,7 +781,7 @@ iframe {
 
 .certification-block {
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto 3rem; }
   .certification-block p {
     color: black;
     font-weight: bold;
@@ -809,7 +808,7 @@ iframe {
 
 .banner {
   background-color: #272D66;
-  min-height: 240px;
+  padding: 3rem 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -837,7 +836,7 @@ iframe {
     text-transform: none; }
   .banner p {
     color: white;
-    padding: 30px 0;
+    padding-top: 30px;
     width: 90%;
     margin: 0 auto; }
     @media (min-width: 600px) {
@@ -857,7 +856,7 @@ iframe {
     max-width: 42%;
     padding: 89px 0 30px;
     font-size: 2vw;
-    margin: 2% 3% 0 auto;
+    margin: 0 3% 0 auto;
     list-style-type: none;
     line-height: 1.3; }
   .service-image li {
@@ -884,10 +883,10 @@ iframe {
       align-items: center;
   text-align: center;
   background-color: #279AB6;
-  margin-top: 30px; }
+  margin-top: 3rem; }
   .updates-banner p {
     color: white;
-    padding: 30px 0;
+    padding: 3rem 0;
     width: 90%;
     margin: 0 auto;
     font-size: 1.2rem; }
