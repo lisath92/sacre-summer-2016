@@ -25,8 +25,8 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					<h1>Our Values</h1>
 					<div class="carousel-nav">
 						<div class="nav-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/service_active.png' ?>" class="icon-active">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/service_inactive.png' ?>" class="icon-inactive">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/services_active.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/services_inactive.png' ?>" class="icon-inactive">
 						</div>
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active.png' ?>" class="icon-active">
