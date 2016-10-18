@@ -220,8 +220,7 @@
 	text-align: center;
 	min-height: 200px;
 	@include desktop {
-		width: 14%;
-		margin-right: 1%;
+		width: 17%;
 		max-width: 200px;
 	}
 	img {
@@ -233,7 +232,8 @@
 // add to fix mobile slider
 .page-template-page-services {
 	.flickity-viewport {
-		max-height: 250px;
+		min-height: 230px;
+		height: 100%;
 		text-align: center;
 		margin: 0 auto;
 		padding-top:2rem;
