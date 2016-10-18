@@ -83,7 +83,7 @@ footer {
 .more-info {
   margin: 30px auto;
   @include desktop {
-    margin-left: auto;
+    margin-right: 0;
     padding-right: 5%;
   }
 }
