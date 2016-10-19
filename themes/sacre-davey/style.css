@@ -504,7 +504,8 @@ iframe {
     @media (min-width: 600px) {
       .main-navigation a {
         -ms-flex: 0 1 50%;
-            flex: 0 1 50%; } }
+            flex: 0 1 50%;
+        margin-right: 10px; } }
   @media (min-width: 600px) {
     .main-navigation {
       -ms-flex-wrap: nowrap;
