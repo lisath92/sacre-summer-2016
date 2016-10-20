@@ -1467,7 +1467,7 @@ footer {
 
 .development-description {
   font-size: 0.8em;
-  padding: 0 20px 30%; }
+  padding: 0 30px 25%; }
   @media (min-width: 600px) {
     .development-description {
       width: 64%;
@@ -1516,8 +1516,7 @@ footer {
         text-align: center;
         width: 100%; } }
   .read-more h2 {
-    color: #272D66;
-    padding-bottom: 20px; }
+    color: #272D66; }
     @media (min-width: 600px) {
       .read-more h2 {
         border-bottom: 2px #272D66 solid; } }
@@ -1543,9 +1542,11 @@ footer {
     .style-1 li:before {
       content: "";
       position: absolute;
-      top: -0.2vw;
-      left: -4vw;
-      width: 2vw;
+      top: 0.8vw;
+      left: -6vw;
+      width: 4vw;
+      max-width: 27px;
+      min-width: 15px;
       height: 6vw;
       background: url(../../assets/images/arrow-right.png) top center/79% no-repeat; }
 
@@ -1577,7 +1578,7 @@ footer {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   color: #272D66;
   border-bottom: 3px #272D66 solid;
   position: relative; }
@@ -1599,20 +1600,16 @@ footer {
   margin-top: 6px; }
 
 .read-less-button {
-  display: none; }
-  @media (min-width: 600px) {
-    .read-less-button {
-      display: block;
-      background-color: #272D66;
-      color: white;
-      box-shadow: none;
-      padding: 10px 0;
-      text-align: center;
-      margin: 0 auto 20px;
-      width: 166px;
-      border: 0;
-      cursor: pointer;
-      text-shadow: none; } }
+  background-color: #272D66;
+  color: white;
+  box-shadow: none;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 auto 20px;
+  width: 166px;
+  border: 0;
+  cursor: pointer;
+  text-shadow: none; }
 
 .more-projects {
   width: 100%;
