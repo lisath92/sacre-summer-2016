@@ -1630,14 +1630,14 @@ footer {
     font-size: 30px; }
 
 .link-to-projects {
-  width: 250px;
-  padding: 10px 20px;
-  border: 1px #272D66 solid;
-  margin: 0 auto; }
+  margin-top: 30px; }
   .link-to-projects a {
+    padding: 10px 20px;
+    border: 1px #272D66 solid;
     font-size: 1.3rem;
     font-weight: 600;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-top: 30px; }
 
 /*---------------------------------------------------------------
   Front Page

@@ -164,11 +164,11 @@
 }
 
 .sub-sector-lists {
-		display: none;
-		padding-top: 15px;
-		column-count: 2;
-		column-width: 250px;
-		max-width: 970px;
+	display: none;
+	padding-top: 15px;
+	column-count: 2;
+	column-width: 250px;
+	max-width: 970px;
 	
 	ul {
 		margin: 0;
@@ -238,14 +238,14 @@
 }
 
 .link-to-projects {
-	width: 250px;
-	padding: 10px 20px;
-	border: 1px $color__dark-blue solid;
-	margin: 0 auto;
+	margin-top: 30px;
+
 	a {
+		padding: 10px 20px;
+		border: 1px $color__dark-blue solid;
 		font-size: 1.3rem;
 		font-weight: 600;
 		text-decoration: none;
+		margin-top: 30px;
 	}
-	
 }
