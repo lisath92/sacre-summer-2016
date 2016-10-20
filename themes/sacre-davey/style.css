@@ -1504,7 +1504,16 @@ footer {
 
 .read-more {
   width: 90%;
-  margin: 20px auto 0; }
+  margin: 0 auto 3rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media (min-width: 600px) {
+    .read-more {
+      margin-top: 3rem; } }
   .read-more h2,
   .read-more h3 {
     text-align: center; }
@@ -1516,7 +1525,8 @@ footer {
         text-align: center;
         width: 100%; } }
   .read-more h2 {
-    color: #272D66; }
+    color: #272D66;
+    width: 100%; }
     @media (min-width: 600px) {
       .read-more h2 {
         border-bottom: 2px #272D66 solid; } }
@@ -1613,7 +1623,7 @@ footer {
   box-shadow: none;
   padding: 10px 0;
   text-align: center;
-  margin: 0 auto 20px;
+  margin: 30px auto;
   width: 166px;
   border: 0;
   cursor: pointer;

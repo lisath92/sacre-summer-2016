@@ -82,7 +82,14 @@
 //Read more drop down list
 .read-more {
 	width: 90%;
-	margin: 20px auto 0;
+	margin: 0 auto 3rem;
+	display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    @include desktop {
+    	margin-top: 3rem;
+    }
+
 	
 	h2,
 	h3 {
@@ -100,6 +107,7 @@
 
 	h2 {
 		color: $color__dark-blue;
+		width: 100%;
 		@include desktop {
 			border-bottom: 2px $color__dark-blue solid;
 		}
@@ -215,7 +223,7 @@
 	box-shadow: none;
 	padding: 10px 0;
 	text-align: center;
-	margin: 0 auto 20px;
+	margin: 30px auto;
 	width: 166px;
 	border: 0;
 	cursor: pointer;
