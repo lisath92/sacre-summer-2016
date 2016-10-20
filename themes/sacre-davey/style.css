@@ -1460,7 +1460,7 @@ footer {
       z-index: 2;
       background: url("../../assets/images/left-overlay.png") left/100% 100% no-repeat;
       max-width: 80%;
-      max-height: 600px;
+      max-height: 650px;
       -ms-flex-align: start;
           align-items: flex-start;
       text-align: left; } }
@@ -1535,7 +1535,8 @@ footer {
     color: white;
     padding: 50px 0px;
     width: 80%;
-    list-style-type: none; }
+    list-style-type: none;
+    line-height: 1.8; }
   .style-1 li {
     position: relative;
     padding-bottom: 20px; }
@@ -1545,10 +1546,15 @@ footer {
       top: 0.8vw;
       left: -6vw;
       width: 4vw;
-      max-width: 27px;
+      max-width: 20px;
       min-width: 15px;
       height: 6vw;
       background: url(../../assets/images/arrow-right.png) top center/79% no-repeat; }
+      @media (min-width: 600px) {
+        .style-1 li:before {
+          top: 0.6vw;
+          left: -4vw;
+          width: 4vw; } }
 
 .sub-sector {
   display: -ms-flexbox;
@@ -1562,14 +1568,16 @@ footer {
   width: 95%;
   margin: 30px auto;
   height: 100%; }
-  .sub-sector .sub-sector-lists {
-    display: none;
-    padding-top: 15px;
-    -moz-column-count: 2;
-         column-count: 2;
-    -moz-column-width: 250px;
-         column-width: 250px; }
-  .sub-sector ul {
+
+.sub-sector-lists {
+  display: none;
+  padding-top: 15px;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-width: 250px;
+       column-width: 250px;
+  max-width: 970px; }
+  .sub-sector-lists ul {
     margin: 0;
     list-style-type: disc; }
 
