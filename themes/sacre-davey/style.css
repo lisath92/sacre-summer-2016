@@ -1922,7 +1922,7 @@ footer {
   @media (min-width: 600px) {
     .project-description-banner {
       display: block;
-      padding: 1rem 0;
+      padding: 3rem 0;
       text-align: center;
       color: white;
       background: #272D66; }
@@ -1930,7 +1930,9 @@ footer {
         margin-right: .5rem;
         font-size: 14px;
         padding: .5rem 2rem;
-        border-radius: 0; } }
+        border-radius: 0; }
+      .project-description-banner p {
+        margin-top: 0; } }
 
 .project-description-button {
   padding: .6rem 2.25rem;

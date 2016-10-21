@@ -2,36 +2,12 @@
  Projects Archive Page
 ----------------------------------------------------*/
 
-
-// .project-nav-list ul {
-//     display: none;
-//     @include desktop {
-//         margin: 1em 0;
-//         padding-left: 0;
-//         @include display-flex (space-around, center);
-//         flex-flow: row wrap;
-//     }
-
-//     a {
-//         @include desktop {
-//             @include font-size (1.25);
-//             padding-left: 30px;
-//             text-decoration: none;
-//             color: $color__grey;
-//             min-width: 100%;
-//             &:hover {
-//                 color: black;
-//                 text-decoration: underline;
-//             }
-//         }
-//     }
-// }
 //project info email submit banner
 .project-description-banner {
     display: none;
     @include desktop {
         display: block;
-        padding: 1rem 0;
+        padding: 3rem 0;
         text-align: center;
         color: white;
         background: $color__dark-blue;
@@ -40,6 +16,10 @@
             font-size: 14px;
             padding: .5rem 2rem;
             border-radius: 0;
+        }
+
+        p {
+            margin-top: 0;
         }
     }
 }
