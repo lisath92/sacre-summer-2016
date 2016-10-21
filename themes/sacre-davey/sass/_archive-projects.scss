@@ -7,7 +7,7 @@
     display: none;
     @include desktop {
         display: block;
-        padding: 3rem 0;
+        padding: 3rem 0 2rem;
         text-align: center;
         color: white;
         background: $color__dark-blue;
@@ -35,7 +35,6 @@
 }
 
 //grid for displaying projects page
-
 .projects-grid {
     @include display-flex (center, center);
     flex-flow: column nowrap;
@@ -91,6 +90,7 @@
     }
 
 }
+
 article {
         margin: 0; //removes bottom margin from project
     }
@@ -124,7 +124,7 @@ article {
         pointer-events: none;
         cursor: default;
         @include desktop {
-            pointer-events: unset;
+            pointer-events: auto;
             cursor:pointer;
         }
     }

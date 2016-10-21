@@ -1922,7 +1922,7 @@ footer {
   @media (min-width: 600px) {
     .project-description-banner {
       display: block;
-      padding: 3rem 0;
+      padding: 3rem 0 2rem;
       text-align: center;
       color: white;
       background: #272D66; }
@@ -2032,7 +2032,7 @@ footer {
     cursor: default; }
     @media (min-width: 600px) {
       .projects-grid .not-active {
-        pointer-events: unset;
+        pointer-events: auto;
         cursor: pointer; } }
 
 @media (min-width: 600px) {
