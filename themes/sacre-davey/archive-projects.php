@@ -84,22 +84,24 @@ get_header(); ?>
 								<div class="icon-border">
 									<div class="sector-icon">
 
-										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
+										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/new-'.$slug.'.png';?>" alt = ""/>
+									</div>
+									
+									<div class="project-name">
+										<?php the_title(sprintf('<h1 class="mobile-project-title"><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
 									</div>
 								</div>
 
-								<?php the_title(sprintf('<h1 class="mobile-project-title"><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
+								<?php //if ( 'post' === get_post_type() ) : ?>
 
-								<?php if ( 'post' === get_post_type() ) : ?>
-
-								<?php endif; ?>
+								<?php //endif; ?>
 							</header><!-- .entry-header -->
 
 							<div class="entry-content">
 								<?php the_content(); ?>
 								<i class="fa fa-times" aria-hidden="true"></i>
 							</div><!-- .entry-content -->
-						</article><!-- #post-## -->
+						</article><!-- #post-##-->
 					</div>
 				<?php endwhile; ?>
 			</div>

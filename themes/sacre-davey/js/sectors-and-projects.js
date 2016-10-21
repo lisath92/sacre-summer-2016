@@ -43,8 +43,8 @@
 
   var projectTitle = $('.mobile-project-title');
 
-projectTitle.click(function() {
-    var currentDiv = $(this).parent('.entry-header').next('div');
+projectTitle.click(function(event) {
+    var currentDiv = $(this).parents('.entry-header').next('div');
     if($(window).width()<582) {
       currentDiv.slideDown('slow');
 
