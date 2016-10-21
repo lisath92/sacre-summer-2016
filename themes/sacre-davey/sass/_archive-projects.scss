@@ -1,83 +1,31 @@
 /*--------------------------------------------------
  Projects Archive Page
 ----------------------------------------------------*/
-.project-icon-toggle {
-    height: 100%;
-    position: relative;
-    border-top: 1px $color__dark-blue solid;
-    @include display-flex (space-between, center);
-    @include desktop {
-        display: none;
-    }
-    p {
-        margin: 0;
-        color: $color__dark-blue;
-        padding-left:30px;
-    }
 
-    i {
-        cursor: pointer;
-        background-color: $color__dark-blue;
-        color: white;
-        height: 40px;
-        width: 60px;
-        text-align: center;
-        padding-top: 15px;
-        @include desktop {
-            display: none;
-        }
-    }
 
-}
+// .project-nav-list ul {
+//     display: none;
+//     @include desktop {
+//         margin: 1em 0;
+//         padding-left: 0;
+//         @include display-flex (space-around, center);
+//         flex-flow: row wrap;
+//     }
 
-.mobile-project-nav-list ul{
-    display: none;
-    font-size: 1.2rem;
-    background: $color__lightblue;
-    margin: 0;
-    padding: 0;
-    z-index: 2;
-    width: 100%;
-    position: absolute;
-    @include desktop {
-        display: none;
-    }
-
-    li {
-        padding: 10px 0;
-    }
-    a { 
-        font-weight: bold;
-        padding-left: 30px;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-}
-
-.project-nav-list ul {
-    display: none;
-    @include desktop {
-        margin: 1em 0;
-        padding-left: 0;
-        @include display-flex (space-around, center);
-        flex-flow: row wrap;
-    }
-
-    a {
-        @include desktop {
-            @include font-size (1.25);
-            padding-left: 30px;
-            text-decoration: none;
-            color: $color__grey;
-            min-width: 100%;
-            &:hover {
-                color: black;
-                text-decoration: underline;
-            }
-        }
-    }
-}
+//     a {
+//         @include desktop {
+//             @include font-size (1.25);
+//             padding-left: 30px;
+//             text-decoration: none;
+//             color: $color__grey;
+//             min-width: 100%;
+//             &:hover {
+//                 color: black;
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+// }
 //project info email submit banner
 .project-description-banner {
     display: none;
@@ -129,23 +77,19 @@
         @include display-flex(center, center);
         width: 100%;
         background-color: $color__dark-blue;
-        height: 100px;
+        height: 80px;
         color: white;
         text-decoration: none;
         text-align: center;
         font-size: 18px;
         cursor: pointer;
         margin: 0;
+        font-weight: 100;
         a {
             cursor: pointer;
             color: white;
             text-decoration: none;
             text-align: center;
-        }
-        @include desktop {
-            @include font-size (.75);
-            height: 50px;
-            height: 100px;
         }
     }
     .wp-post-image {
