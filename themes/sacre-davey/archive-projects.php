@@ -84,9 +84,9 @@ get_header(); ?>
 								<div class="icon-border">
 									<div class="sector-icon">
 
-										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/new-'.$slug.'.png';?>" alt = ""/>
+										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
 									</div>
-									
+
 									<div class="project-name">
 										<?php the_title(sprintf('<h1 class="mobile-project-title"><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
 									</div>

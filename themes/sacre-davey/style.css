@@ -1960,16 +1960,17 @@ footer {
           flex-flow: row wrap;
       -ms-flex-align: start;
           align-items: flex-start; } }
-  .projects-grid .project {
-    width: 100%; }
-    @media (min-width: 600px) {
-      .projects-grid .project {
-        min-width: 250px;
-        max-width: 350px;
-        -ms-flex: 1 0 18%;
-            flex: 1 0 18%;
-        margin: .5rem .5rem; } }
-  .projects-grid h1 {
+
+.project {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .project {
+      min-width: 250px;
+      max-width: 350px;
+      -ms-flex: 1 0 18%;
+          flex: 1 0 18%;
+      margin: .5rem .5rem; } }
+  .project h1 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1979,44 +1980,36 @@ footer {
     width: 100%;
     background-color: #272D66;
     height: 80px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
     margin: 0;
-    font-weight: 100;
-    font-size: 14px; }
-    .projects-grid h1 a {
-      cursor: pointer;
+    font-weight: 100; }
+    .project h1 a {
       color: white;
       text-decoration: none;
       text-align: center; }
-  .projects-grid .wp-post-image {
+  .project .wp-post-image {
     min-width: 100%;
     height: auto;
     max-height: 600px;
     display: block; }
-    @media (min-width: 600px) {
-      .projects-grid .wp-post-image {
-        position: relative; } }
-  .projects-grid .entry-header {
+  .project .entry-header {
     width: 100%; }
-    .projects-grid .entry-header h2 {
+    .project .entry-header h2 {
       margin: 0;
       border: 0; }
-  .projects-grid article {
+  .project article {
     margin: 0; }
-  .projects-grid .entry-content {
+  .project .entry-content {
     margin: 0 auto;
     width: 90%;
     display: none;
     font-size: 1rem;
     text-align: center;
     padding-bottom: 1rem; }
-    .projects-grid .entry-content p {
+    .project .entry-content p {
       text-align: left; }
-    .projects-grid .entry-content .fa-times {
+    .project .entry-content .fa-times {
       font-size: 1.5rem;
       text-align: center;
       color: white;
@@ -2025,13 +2018,13 @@ footer {
       background-color: #272D66;
       cursor: pointer; }
     @media (min-width: 600px) {
-      .projects-grid .entry-content {
+      .project .entry-content {
         display: none; } }
-  .projects-grid .not-active {
+  .project .not-active {
     pointer-events: none;
     cursor: default; }
     @media (min-width: 600px) {
-      .projects-grid .not-active {
+      .project .not-active {
         pointer-events: auto;
         cursor: pointer; } }
 
