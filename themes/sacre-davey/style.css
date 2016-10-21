@@ -522,6 +522,7 @@ iframe {
     border-radius: 7px;
     padding: 10px 15px; }
     .main-navigation .contact a {
+      margin: 0;
       color: white; }
     .main-navigation .contact:hover {
       background-color: #272D66; }
