@@ -2049,8 +2049,11 @@ footer {
       display: block;
       position: absolute;
       height: 100%;
-      top: -30px;
-      left: 40%; } }
+      top: -28px;
+      left: 44%;
+      width: 16%; }
+      .sector-icon img {
+        width: 100%; } }
 
 .error-404 .page-header {
   min-height: 300px;

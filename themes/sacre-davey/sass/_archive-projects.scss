@@ -133,10 +133,8 @@ article {
 //Sector icon
 
 .icon-border {
-    // display: none;
     @include desktop {
         display:block;
-        // padding: .5px 9px;
         position: relative;
         border: 1px solid white;
         background-color: white;
@@ -149,8 +147,13 @@ article {
         display: block;
         position: absolute;
         height: 100%;
-        top: -30px;
-        left: 40%;
+        top: -28px;
+        left: 44%;
+        width: 16%;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
