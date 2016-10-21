@@ -58,6 +58,8 @@ get_header(); ?>
 			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
 			<submit class="project-description-button">Send</submit>
 		</div>
+
+		
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -91,10 +93,6 @@ get_header(); ?>
 										<?php the_title(sprintf('<h1 class="mobile-project-title"><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
 									</div>
 								</div>
-
-								<?php //if ( 'post' === get_post_type() ) : ?>
-
-								<?php //endif; ?>
 							</header><!-- .entry-header -->
 
 							<div class="entry-content">
