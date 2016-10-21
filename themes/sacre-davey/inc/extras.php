@@ -46,6 +46,7 @@ function sacre_davey_front_page_inline_styles() {
   $css .='
       #hero-image {
         background:
+        linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
         url('.$logo.') bottom/cover no-repeat;
         width: 100%;
         display: flex;
