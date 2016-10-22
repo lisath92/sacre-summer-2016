@@ -46,7 +46,7 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
   <?php endif; ?>
     <section class="more-projects">
       <h2>Learn more about <?php echo get_the_title(); ?> projects.</h2>
-      <div class="link-to-projects"><a href="/sacre-davey/?project_type=<?php 
+      <div class="link-to-projects"><a href="/?project_type=<?php 
 
       $post = get_the_ID();
       $arr = get_the_terms($post, 'sector_type');
