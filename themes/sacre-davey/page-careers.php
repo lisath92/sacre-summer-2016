@@ -27,17 +27,18 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					<p><?php echo CFS()->get('careers_sub_content'); ?></p>
 					
 				</section>
-				<div class="opportunities-banner-wrapper">
-				<h1 class="opportunities-banner">Opportunities</h1>
-				<div class="select-wrapper">
-				<div>
-				<span class="dropdown-titles">Locations:</span><select class="opportunity-dropdowns" name="location"></select>
-				</div>
-				<div>
-				<span class="dropdown-titles">Field:</span><select class="opportunity-dropdowns" name="field"></select>
-				</div>
-				</div>
-				</div>
+				<section class="opportunities-banner-wrapper">
+					<h1 class="opportunities-banner">Opportunities</h1>
+					<div class="select-wrapper">
+						<div>
+							<span class="dropdown-titles">Locations:</span><select class="opportunity-dropdowns" name="location"></select>
+
+						</div>
+						<div>
+							<span class="dropdown-titles">Field:</span><select class="opportunity-dropdowns" name="field"></select>
+						</div>
+					</div>
+				</section>
 				<div class="opportunities-wrapper">
 					
 					<ul class="canadian-opportunities">
@@ -66,9 +67,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 						<p>Interested in working for our office in the UAE?</p>
 						<a href="">admin-me@sacre-davey.com.</a>
 					</div>
-
 				</div>
-				<?php the_content(); ?>
 
 			</div><!-- .entry-content -->
 		</article><!-- #post-## -->

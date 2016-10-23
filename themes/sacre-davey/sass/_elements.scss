@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
  # Elements
 --------------------------------------------------------------*/
-
+html {
+	font-size: 16px;
+}
 body {
   font-size: $font__main;
   font-family: "Helvetica", "Arial", sans-serif;
