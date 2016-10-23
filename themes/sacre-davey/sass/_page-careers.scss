@@ -93,6 +93,7 @@
 	color: $color__lightblue;
 }
 .join-team-banner {
+	padding: 3rem 0;
 
 	background: $color__lightblue;
 	@include display-flex(center, center);
@@ -106,31 +107,32 @@
 		
 	}
 
-	
-
 	div {
-		width: 100%;
-		text-align: center;
+		width: 90%;
+		margin: 0 auto;
 		@include desktop {
-			width: 50%;
+			width: 40%;
+			text-align: left;
+			max-width: 400px;
+
+		}
+	}
+
+	p {
+		text-align: center;
+		margin-top: 0;
+		color: white;
+		font-weight: 400;
+		@include desktop {
 			text-align: left;
 		}
 	}
 
 	a {
 		word-wrap: break-word;
+		color: $color__dark-blue;
+		&:hover {
+			color: $color__dark-blue;
+		}
 	}
 }
-	// .international-team,
-	// .north-american-team {
-	// 	width: 90%;
-	// 	margin:0 auto;
-	// 	color: white;
-	// 	min-width: 250px;
-	// 	max-width: 500px;
-	// 	padding-bottom: 2rem;
-	// 	p {
-	// 		margin-bottom: 0;
-	// 	}
-
-	// }

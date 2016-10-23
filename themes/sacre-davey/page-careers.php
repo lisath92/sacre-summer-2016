@@ -60,11 +60,11 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 				</div>
 				<section class="join-team-banner">
 					<div class="north-american-team">
-						<p>To become a part of our North American teams, email:</p>
+						<p>To apply to become a part of our North American teams, send your information to:</p>
 						<a href="">makingadifference@sacre-davey.com.</a>
 					</div>
 					<div class="international-team">
-						<p>Interested in working for our office in the UAE?</p>
+						<p>Interested in working for our office in the UAE? Send your information to: </p>
 						<a href="mailto:admin-me@sacre-davey.com" target="_top">admin-me@sacre-davey.com.</a>
 					</div>
 				</section>
