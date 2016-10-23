@@ -83,6 +83,8 @@
     margin-top: 0;
     background-color: $color__lightblue;
     text-align: center;
+    color: white;
+    @include impact-heading(1.5rem,uppercase);
     @include desktop {
       font-size: 2rem;
       width: 65vw;
@@ -92,19 +94,13 @@
       padding: 10px 1.5rem;
     }
 
-    a {
-      text-decoration: none;
-      color: white;
-      @include impact-heading(1.5rem,uppercase);
-    }
-
   }
   p {
     font-size: 20px;
-    line-height: 2;
+    line-height: 1.2;
     position: absolute;
     right: 0;
-    bottom: 8%;
+    bottom: 10%;
     margin: 0;
     width: 60%;
     color: white;

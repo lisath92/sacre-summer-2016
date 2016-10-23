@@ -20,31 +20,27 @@ get_header(); ?>
         <?php echo CFS()->get('front_page_more_info'); ?></p>
 				</section>
 
-				<?php //sacre-davey project post types on front page
-				$args = array( 'post_type' => 'projects', 'posts_per_page'   => 3, 
-               'order' => 'ASC'
-               );
-
-   				$projects_posts = get_posts( $args ); // returns an array of posts
-   				?>
-
    				<div class="home-gallery" data-flickity='{
                "contain": true,
                "prevNextButtons": false,
                "contain": true,
                "pageDots": false }'>
-               <?php foreach ( $projects_posts as $post ) : setup_postdata( $post ); ?>
+               <?php //sacre-davey featured projects on front page
+            $projects = CFS()->get('feature_project');
+            foreach ($projects as $project):
+          ?>
 
                  <div class="home-gallery-cell">
-                   <div class="projects-block-image"><?php the_post_thumbnail(); ?>
+                   <div class="projects-block-image">
+                   <img src="<?php echo $project['feature_project_image']; ?>" alt ="">
                       <div class="projects-block-info">
 
-                        <?php the_title(sprintf('<h1><a href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
-                        <?php the_excerpt(); ?>
+                        <h1><?php echo $project['feature_project_title']; ?></h1>
+                        <p><?php echo $project['feature_project_excerpt']; ?></p>
                      </div>
                   </div>	
                </div>
-            <?php endforeach; wp_reset_postdata(); ?>
+            <?php endforeach; ?>
          </div>
          <section class="sector-icons">
             <h1>Sectors</h1>
