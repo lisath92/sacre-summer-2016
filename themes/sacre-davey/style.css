@@ -1329,30 +1329,30 @@ footer {
 .page-template-page-careers article {
   margin-bottom: 0; }
 
-.page-template-page-careers .careers-hero-image {
+.careers-hero-image {
   height: 200px; }
-  .page-template-page-careers .careers-hero-image h1 {
+  .careers-hero-image h1 {
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white; }
 
-.page-template-page-careers .main-content {
+.main-content {
   text-align: center;
   width: 90%;
   margin: 0 auto;
   line-height: 1.75; }
 
-.page-template-page-careers .life-work-banner-wrapper {
+.life-work-banner-wrapper {
   text-align: center;
   padding-top: 1.75rem;
   padding-bottom: 1rem; }
-  .page-template-page-careers .life-work-banner-wrapper p {
+  .life-work-banner-wrapper p {
     padding-top: 2rem;
     width: 90%;
     margin: 0 auto; }
-  .page-template-page-careers .life-work-banner-wrapper h2 {
+  .life-work-banner-wrapper h2 {
     text-align: center;
     width: 100%;
     margin: 0;
@@ -1364,23 +1364,23 @@ footer {
     text-transform: initial;
     letter-spacing: 3px; }
 
-.page-template-page-careers .opportunities-wrapper {
+.opportunities-wrapper {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 2rem; }
-  .page-template-page-careers .opportunities-wrapper .job-positions {
+  .opportunities-wrapper .job-positions {
     padding-top: 2rem; }
 
-.page-template-page-careers .opportunities-banner-wrapper {
+.opportunities-banner-wrapper {
   background: #272D66;
   padding-bottom: 1rem; }
 
-.page-template-page-careers .select-wrapper {
+.select-wrapper {
   display: none;
   width: 90%;
   margin: 0 auto; }
   @media (min-width: 600px) {
-    .page-template-page-careers .select-wrapper {
+    .select-wrapper {
       display: unset;
       display: -ms-flexbox;
       display: flex;
@@ -1390,22 +1390,22 @@ footer {
           align-items: center;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; } }
-  .page-template-page-careers .select-wrapper .opportunity-dropdowns {
+  .select-wrapper .opportunity-dropdowns {
     border-radius: 0;
     min-width: 200px;
     margin-left: 2rem;
     margin-right: 2rem; }
     @media (min-width: 600px) {
-      .page-template-page-careers .select-wrapper .opportunity-dropdowns {
+      .select-wrapper .opportunity-dropdowns {
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
         margin-top: 2rem; } }
-  .page-template-page-careers .select-wrapper .dropdown-titles {
+  .select-wrapper .dropdown-titles {
     width: 50%;
     color: white;
     text-transform: uppercase; }
 
-.page-template-page-careers .opportunities-banner {
+.opportunities-banner {
   text-align: center;
   height: 100px;
   color: white;
@@ -1415,35 +1415,37 @@ footer {
   text-transform: uppercase;
   letter-spacing: 3px; }
 
-.page-template-page-careers .opportunities-title {
+.opportunities-title {
   color: #279AB6; }
 
-.page-template-page-careers .join-team-banner {
+.join-team-banner {
+  background: #279AB6;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  background: #279AB6; }
-
-.page-template-page-careers .international-team,
-.page-template-page-careers .north-american-team {
-  width: 90%;
-  margin: 0 auto;
-  color: white;
-  min-width: 250px;
-  max-width: 500px;
-  padding-bottom: 2rem; }
-  .page-template-page-careers .international-team p,
-  .page-template-page-careers .north-american-team p {
-    margin-bottom: 0; }
+  -ms-flex-flow: column;
+      flex-flow: column;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .join-team-banner {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+  .join-team-banner div {
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .join-team-banner div {
+        width: 50%;
+        text-align: left; } }
+  .join-team-banner a {
+    word-wrap: break-word; }
 
 /*-----------------------------------------------------------
  Sectors

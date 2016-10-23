@@ -94,7 +94,7 @@ get_header(); ?>
 						</div>
 					</section>
 					<div class="updates-banner">
-						<p>We don’t believe clients like to be in the dark, so we keep you informed during all phases of a project- updating you and checking in throughout all project milestones.</p>
+						<p>We appreciate that clients like to be well informed about their projects, so we provide constant communication during all phases of a project – updating you and checking in throughout all project milestones.</p>
 					</div>
 
 				</div><!-- .entry-content -->

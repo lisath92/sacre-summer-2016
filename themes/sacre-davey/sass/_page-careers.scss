@@ -3,113 +3,134 @@
 	article {
 		margin-bottom: 0;
 	}
+}
 
-	.careers-hero-image {
-			height: 200px;
-		h1{
+.careers-hero-image {
+	height: 200px;
+	h1{
 		@include impact-heading(2.5rem, uppercase);
 		color: white;
 	}
 }
 
-	.main-content {
-		text-align: center;
-		width: 90%;
-		margin: 0 auto;
-		line-height: 1.75;
-		}
+.main-content {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 1.75;
+}
 
 
-	.life-work-banner-wrapper {
-		text-align: center;
-		padding-top: 1.75rem;
-		padding-bottom: 1rem;
-		p{
+.life-work-banner-wrapper {
+	text-align: center;
+	padding-top: 1.75rem;
+	padding-bottom: 1rem;
+	p{
 		padding-top: 2rem;
 		width: 90%;
 		margin: 0 auto;
-		}
-		h2{
-			text-align:center;
-			width: 100%;
-			margin: 0;
-			color: white;
-			background: $color__lightblue;			
-			padding: 3rem 0rem;
-			@include impact-heading(2rem, initial);
-		}
 	}
-	.opportunities-wrapper {
-			width: 90%;
-			margin: 0 auto;
-			padding-bottom: 2rem;
-		.job-positions {
-			padding-top: 2rem;
-			
-		}
-	}
-	.opportunities-banner-wrapper {
-		background: $color__dark-blue;
-		padding-bottom: 1rem;
-		
-		}
-	.select-wrapper {
-			display: none;
-			width: 90%;
-			margin: 0 auto;
-			@include desktop {
-			display: unset;
-			@include display-flex (space-around, center);
-			flex-flow: row wrap;
-				
-			}
-
-		.opportunity-dropdowns {
-			border-radius: 0;
-			min-width: 200px;
-			margin-left: 2rem;
-			margin-right: 2rem;
-			@include desktop {
-				flex: 1 0 100%;
-				margin-top: 2rem;
-			}
-
-		}
-		.dropdown-titles {
-			width: 50%;
-			color: white;
-			text-transform: uppercase;
-		}
-	}
-	.opportunities-banner {
+	h2{
 		text-align:center;
-		height: 100px;
+		width: 100%;
+		margin: 0;
 		color: white;
+		background: $color__lightblue;			
+		padding: 3rem 0rem;
+		@include impact-heading(2rem, initial);
+	}
+}
+.opportunities-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+	.job-positions {
 		padding-top: 2rem;
-		@include impact-heading(3rem, uppercase);
-	}
-	.opportunities-title {
-		color: $color__lightblue;
-	}
-	.join-team-banner {
-
-		@include display-flex(center, center);
-		flex-flow: row nowrap;
-		align-items: flex-start;
-		justify-content: space-between;
-		background: $color__lightblue;
-	}
-	.international-team,
-	.north-american-team {
-		width: 90%;
-		margin:0 auto;
-		color: white;
-		min-width: 250px;
-		max-width: 500px;
-		padding-bottom: 2rem;
-		p {
-			margin-bottom: 0;
-		}
 
 	}
 }
+.opportunities-banner-wrapper {
+	background: $color__dark-blue;
+	padding-bottom: 1rem;
+
+}
+.select-wrapper {
+	display: none;
+	width: 90%;
+	margin: 0 auto;
+	@include desktop {
+		display: unset;
+		@include display-flex (space-around, center);
+		flex-flow: row wrap;
+
+	}
+
+	.opportunity-dropdowns {
+		border-radius: 0;
+		min-width: 200px;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		@include desktop {
+			flex: 1 0 100%;
+			margin-top: 2rem;
+		}
+
+	}
+	.dropdown-titles {
+		width: 50%;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+.opportunities-banner {
+	text-align:center;
+	height: 100px;
+	color: white;
+	padding-top: 2rem;
+	@include impact-heading(3rem, uppercase);
+}
+.opportunities-title {
+	color: $color__lightblue;
+}
+.join-team-banner {
+
+	background: $color__lightblue;
+	@include display-flex(center, center);
+	flex-flow: column;
+	text-align: center;
+
+	@include desktop {
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	justify-content: space-around;
+		
+	}
+
+	
+
+	div {
+		width: 100%;
+		text-align: center;
+		@include desktop {
+			width: 50%;
+			text-align: left;
+		}
+	}
+
+	a {
+		word-wrap: break-word;
+	}
+}
+	// .international-team,
+	// .north-american-team {
+	// 	width: 90%;
+	// 	margin:0 auto;
+	// 	color: white;
+	// 	min-width: 250px;
+	// 	max-width: 500px;
+	// 	padding-bottom: 2rem;
+	// 	p {
+	// 		margin-bottom: 0;
+	// 	}
+
+	// }
