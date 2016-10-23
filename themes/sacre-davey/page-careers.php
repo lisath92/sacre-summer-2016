@@ -15,23 +15,18 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
-			<section class="hero-image">
-			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'full' ); ?>
-			<?php endif; ?>
+			<section class="careers-hero-image">
+				<h1><?php echo CFS()->get('careers_headline'); ?></h1>
 			</section>
 			<div class="entry-content">
-				<div class="growing-text">
-					<p>Our established engineering firm is GROWING! With our home office in North Vancouver and regional offices across Canada and the Western United States, we are looking for dynamic, well rounded individuals to join our team. These positions require an individual who is highly motivated, self-directed and has amazing attention to detail. We’re always looking for talented individuals to join our team in making a difference.</p>
+				<div class="main-content">
+					<p><?php echo CFS()->get('careers_main_content'); ?></p>
 				</div>
-				<?php echo do_shortcode("[robo-gallery id='51']"); ?>
-				<div class="life-work-banner-wrapper">
-					<div class="life-work-banner">
-					<h2>Join us and put a little more life in your life/work</h2>
-					</div>
-					<p>Sacré Davey is our home not just where we work, we are a family and we want you to be apart of it. Come join us for a challenging yet rewarding work experience where you'll be able to learn and move your career forward.</p>
+				<section class="life-work-banner-wrapper">
+					<h2><?php echo CFS()->get('careers_tagline'); ?></h2>
+					<p><?php echo CFS()->get('careers_sub_content'); ?></p>
 					
-				</div>
+				</section>
 				<div class="opportunities-banner-wrapper">
 				<h1 class="opportunities-banner">Opportunities</h1>
 				<div class="select-wrapper">

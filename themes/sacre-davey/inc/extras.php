@@ -155,6 +155,36 @@ wp_add_inline_style('sacre-davey-style', $css);
 
 add_action( 'wp_enqueue_scripts','sacre_davey_contact_inline_styles');
 
+/**
+* Add featured image for careers page
+*/
+function sacre_davey_careers_inline_styles() {
+  if(!is_page_template('page-careers.php')) {
+    return;
+  }
+  $css='';
+  $logo= CFS()->get('careers_banner');
+  if(!$logo) {
+    return;
+  }
+  $css .='
+      .careers-hero-image {
+        background:
+        url('.$logo.') bottom/100% 100% no-repeat;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+
+}';
+
+wp_add_inline_style('sacre-davey-style', $css);
+}
+
+add_action( 'wp_enqueue_scripts','sacre_davey_careers_inline_styles');
+
+
 //Sectors page inline style
 function sacre_davey_sectors_inline_styles() {
   if(!is_single()) {

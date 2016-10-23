@@ -1326,13 +1326,16 @@ footer {
 .page-template-page-careers article {
   margin-bottom: 0; }
 
-.page-template-page-careers .hero-image {
-  width: 100%; }
-  .page-template-page-careers .hero-image img {
-    width: 100%;
-    height: 100%; }
+.page-template-page-careers .careers-hero-image {
+  height: 200px; }
+  .page-template-page-careers .careers-hero-image h1 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white; }
 
-.page-template-page-careers .growing-text {
+.page-template-page-careers .main-content {
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -1342,27 +1345,20 @@ footer {
   text-align: center;
   padding-top: 1.75rem;
   padding-bottom: 1rem; }
-  .page-template-page-careers .life-work-banner-wrapper .life-work-banner {
-    background: #279AB6; }
   .page-template-page-careers .life-work-banner-wrapper p {
     padding-top: 2rem;
     width: 90%;
     margin: 0 auto; }
   .page-template-page-careers .life-work-banner-wrapper h2 {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 0 auto;
-    width: 90%;
-    height: 100%;
+    text-align: center;
+    width: 100%;
+    margin: 0;
     color: white;
-    padding: 1rem 0rem;
+    background: #279AB6;
+    padding: 3rem 0rem;
     font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 3rem;
-    text-transform: lowercase;
+    font-size: 2rem;
+    text-transform: initial;
     letter-spacing: 3px; }
 
 .page-template-page-careers .opportunities-wrapper {
