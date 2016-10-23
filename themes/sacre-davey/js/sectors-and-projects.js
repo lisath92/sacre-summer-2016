@@ -22,7 +22,7 @@
   button = $('.read-more-button');
 
 //Show read-more button condition
-  if (count > 1) {
+  if (count > 0) {
     button.show();
     $('.read-more').hide();
   };
