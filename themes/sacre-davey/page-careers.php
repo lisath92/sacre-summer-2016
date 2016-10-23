@@ -28,39 +28,8 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					
 				</section>
 				<section class="job-board">
-				<?php echo CFS()->get('opportunities'); ?>
+					<?php echo CFS()->get('opportunities'); ?>
 				</section>
-				<!-- <section class="opportunities-banner-wrapper">
-					<h1 class="opportunities-banner">Opportunities</h1>
-					<div class="select-wrapper">
-						<div>
-							<span class="dropdown-titles">Locations:</span><select class="opportunity-dropdowns" name="location"></select>
-
-						</div>
-						<div>
-							<span class="dropdown-titles">Field:</span><select class="opportunity-dropdowns" name="field"></select>
-						</div>
-					</div>
-				</section>
-				<div class="opportunities-wrapper">
-					
-					<ul class="canadian-opportunities">
-						<li><span class="opportunities-title">Calgary, Canada</span>
-							<ul>
-								<li class="job-positions">Intermediate Process Engineer</li>
-							</ul>
-						</li>
-					</ul>
-					
-					<ul class="american-opportunities">
-						<li><span class="opportunities-title">Seattle, USA</span>
-							<ul>
-								<li class="job-positions">Office &amp; Finance Manager</li>
-								<li class="job-positions">Senior Process Engineer, SDE3</li>
-							</ul>
-						</li>
-					</ul>	
-				</div> -->
 				<section class="join-team-banner">
 					<div class="north-american-team">
 						<p>To apply to become a part of our North American teams, send your information to:</p>
