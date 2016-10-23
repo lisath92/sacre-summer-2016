@@ -27,6 +27,9 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					<p><?php echo CFS()->get('careers_sub_content'); ?></p>
 					
 				</section>
+				<section class="job-board">
+				<?php echo CFS()->get('opportunities'); ?>
+				</section>
 				<!-- <section class="opportunities-banner-wrapper">
 					<h1 class="opportunities-banner">Opportunities</h1>
 					<div class="select-wrapper">

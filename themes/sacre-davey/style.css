@@ -1406,6 +1406,36 @@ footer {
     .join-team-banner a:hover {
       color: #272D66; }
 
+.job-board p {
+  width: 100%;
+  background-color: #272D66;
+  color: white;
+  font-family: "Impact", "Charcoal", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0;
+  padding-top: 3rem; }
+
+.sjb-wrap {
+  margin: 0;
+  float: none; }
+  .sjb-wrap input[type=submit]:hover {
+    box-shadow: none;
+    background-color: #279AB6; }
+
+.sjb-search-keywords {
+  display: none; }
+
+.sjb-row {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+.no-job-listing p a {
+  display: none; }
+
 /*-----------------------------------------------------------
  Sectors
 -------------------------------------------------------------*/

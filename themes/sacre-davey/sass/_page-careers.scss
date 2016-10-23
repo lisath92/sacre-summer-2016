@@ -101,9 +101,9 @@
 	text-align: center;
 
 	@include desktop {
-	flex-flow: row nowrap;
-	align-items: flex-start;
-	justify-content: space-around;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: space-around;
 		
 	}
 
@@ -135,4 +135,41 @@
 			color: $color__dark-blue;
 		}
 	}
+}
+
+//Simple Job Board
+.job-board p {
+	width: 100%;
+	background-color: $color__dark-blue;
+	color: white;
+	@include impact-heading(2rem, uppercase);
+	text-align: center;
+	margin: 0;
+	padding-top: 3rem;
+}
+
+.sjb-wrap {
+	margin: 0;
+	float: none;
+
+	input[type=submit]:hover {
+		box-shadow: none;
+		background-color: $color__lightblue;
+	}
+}
+
+.sjb-search-keywords {
+	display: none;
+}
+
+.sjb-row {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	@include desktop {
+	}
+}
+
+.no-job-listing p a {
+	display: none;
 }
