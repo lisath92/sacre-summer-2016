@@ -1364,60 +1364,6 @@ footer {
     text-transform: initial;
     letter-spacing: 3px; }
 
-.opportunities-wrapper {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 2rem; }
-  .opportunities-wrapper .job-positions {
-    padding-top: 2rem; }
-
-.opportunities-banner-wrapper {
-  background: #272D66;
-  padding-bottom: 1rem; }
-
-.select-wrapper {
-  display: none;
-  width: 90%;
-  margin: 0 auto; }
-  @media (min-width: 600px) {
-    .select-wrapper {
-      display: unset;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; } }
-  .select-wrapper .opportunity-dropdowns {
-    border-radius: 0;
-    min-width: 200px;
-    margin-left: 2rem;
-    margin-right: 2rem; }
-    @media (min-width: 600px) {
-      .select-wrapper .opportunity-dropdowns {
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-        margin-top: 2rem; } }
-  .select-wrapper .dropdown-titles {
-    width: 50%;
-    color: white;
-    text-transform: uppercase; }
-
-.opportunities-banner {
-  text-align: center;
-  height: 100px;
-  color: white;
-  padding-top: 2rem;
-  font-family: "Impact", "Charcoal", sans-serif;
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 3px; }
-
-.opportunities-title {
-  color: #279AB6; }
-
 .join-team-banner {
   padding: 3rem 0;
   background: #279AB6;

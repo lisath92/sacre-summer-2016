@@ -27,7 +27,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					<p><?php echo CFS()->get('careers_sub_content'); ?></p>
 					
 				</section>
-				<section class="opportunities-banner-wrapper">
+				<!-- <section class="opportunities-banner-wrapper">
 					<h1 class="opportunities-banner">Opportunities</h1>
 					<div class="select-wrapper">
 						<div>
@@ -57,7 +57,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 							</ul>
 						</li>
 					</ul>	
-				</div>
+				</div> -->
 				<section class="join-team-banner">
 					<div class="north-american-team">
 						<p>To apply to become a part of our North American teams, send your information to:</p>
