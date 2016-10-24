@@ -79,7 +79,7 @@ get_header(); ?>
 								$id=get_the_ID();
 								$icon = get_the_terms($id, 'project_type');
 								if(!$icon) {
-									$icon = 'clean-tech';
+									$slug = 'cogwheel';
 								}else {
 									$slug = $icon[0]->slug;
 								};	?>
