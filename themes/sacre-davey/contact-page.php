@@ -18,7 +18,7 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 					<div id="contact-hero" class="hero">
-					<h1>Contact Us</h1>
+					<h1><?php echo CFS()->get('contact_headline'); ?></h1>
 	</header> <!-- .entry-header-->
 	<div class="entry-content">
 		<?php the_content(); ?>
