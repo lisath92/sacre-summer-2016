@@ -6,12 +6,12 @@
 		line-height: 180px;
 	}
 
-.entry-header {
+	.entry-header {
 		color: white;
-    height: 50vw;
-    text-align: center;
-    width: 100%;
-    max-height: 300px;
+		height: 50vw;
+		text-align: center;
+		width: 100%;
+		max-height: 300px;
 		
 		h1 {
 			@include impact-heading($font__h2, uppercase);
@@ -28,51 +28,49 @@
 		}
 	}
 	p {
-	width: 100%;
-}
-}
-
-
-
-form{
-	margin: 30px 0;
-	width: 100%;
-	
-	p {
-		margin: 0;
-	}
-
-	textarea {
-		height: 20vw;
-		max-height: 300px;
-	}
-	
-	input[type="email"],
-	input[type="text"],
-	textarea{
 		width: 100%;
-		background-color: #f4f4f4;
-		margin-bottom: 30px;
 	}
 
-	input {
-		font-size: 1.5rem;
-		padding: 7px;
-	}
+	form{
+		margin: 30px 0;
+		width: 100%;
+		
+		p {
+			margin: 0;
+		}
 
-	.required {
-		color: $color__dark-blue;
-	}
+		textarea {
+			height: 20vw;
+			max-height: 300px;
+		}
+		
+		input[type="email"],
+		input[type="text"],
+		textarea{
+			width: 100%;
+			background-color: #f4f4f4;
+			margin-bottom: 30px;
+		}
 
-	input[type="submit"] {
-		padding: 10px 20px;
-		text-align: center;
-		border: none;
-		background-color: $color__dark-blue;
-		color: white;
-		box-shadow: none;
-		font-size: 1.5rem;
-		text-transform: uppercase;
+		input {
+			font-size: 1.5rem;
+			padding: 7px;
+		}
+
+		.required {
+			color: $color__dark-blue;
+		}
+
+		input[type="submit"] {
+			padding: 10px 20px;
+			text-align: center;
+			border: none;
+			background-color: $color__dark-blue;
+			color: white;
+			box-shadow: none;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+		}
 	}
 }
 

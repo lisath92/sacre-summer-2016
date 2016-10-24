@@ -389,26 +389,26 @@ textarea {
 .page-template-contact-page p {
   width: 100%; }
 
-form {
+.page-template-contact-page form {
   margin: 30px 0;
   width: 100%; }
-  form p {
+  .page-template-contact-page form p {
     margin: 0; }
-  form textarea {
+  .page-template-contact-page form textarea {
     height: 20vw;
     max-height: 300px; }
-  form input[type="email"],
-  form input[type="text"],
-  form textarea {
+  .page-template-contact-page form input[type="email"],
+  .page-template-contact-page form input[type="text"],
+  .page-template-contact-page form textarea {
     width: 100%;
     background-color: #f4f4f4;
     margin-bottom: 30px; }
-  form input {
+  .page-template-contact-page form input {
     font-size: 1.5rem;
     padding: 7px; }
-  form .required {
+  .page-template-contact-page form .required {
     color: #272D66; }
-  form input[type="submit"] {
+  .page-template-contact-page form input[type="submit"] {
     padding: 10px 20px;
     text-align: center;
     border: none;
@@ -1908,23 +1908,24 @@ footer {
       text-align: center;
       color: white;
       background: #272D66; }
-      .project-description-banner input {
+      .project-description-banner input[type="text"],
+      .project-description-banner input[type="email"] {
         margin-right: .5rem;
         font-size: 14px;
-        padding: .5rem 2rem;
-        border-radius: 0; }
+        padding: 8px 10px;
+        border-radius: 0;
+        width: 160px; }
       .project-description-banner p {
         margin-top: 0; } }
-
-.project-description-button {
-  padding: .6rem 2.25rem;
-  border-radius: 0;
-  color: white;
-  background: #279AB6;
-  box-shadow: none;
-  border: none;
-  text-transform: uppercase;
-  font-size: .75rem; }
+  .project-description-banner input[type="submit"] {
+    padding: .6rem 2.25rem;
+    border-radius: 0;
+    color: white;
+    background: #279AB6;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: .75rem; }
 
 .projects-grid {
   display: -ms-flexbox;

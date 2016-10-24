@@ -55,8 +55,7 @@ get_header(); ?>
 		</section>
 		<div class="project-description-banner">
 			<p>For a detailed description of a project please enter the information below</p>
-			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
-			<submit class="project-description-button">Send</submit>
+			<?php echo do_shortcode( '[contact-form-7 id="524" title="More Project Info"]' ); ?>
 		</div>
 
 		

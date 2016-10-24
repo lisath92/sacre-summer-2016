@@ -11,27 +11,30 @@
         text-align: center;
         color: white;
         background: $color__dark-blue;
-        input {
+        input[type="text"],
+        input[type="email"] {
             margin-right: .5rem;
             font-size: 14px;
-            padding: .5rem 2rem;
+            padding: 8px 10px;
             border-radius: 0;
+            width: 160px;
         }
 
         p {
             margin-top: 0;
         }
     }
-}
-.project-description-button {
-    padding: .6rem 2.25rem;
-    border-radius: 0;
-    color: white;
-    background: $color__lightblue;
-    box-shadow: none;
-    border: none;
-    text-transform: uppercase;
-    font-size: .75rem;
+
+    input[type="submit"]{
+        padding: .6rem 2.25rem;
+        border-radius: 0;
+        color: white;
+        background: $color__lightblue;
+        box-shadow: none;
+        border: none;
+        text-transform: uppercase;
+        font-size: .75rem;
+    }
 }
 
 //grid for displaying projects page
@@ -44,6 +47,7 @@
         align-items: flex-start;
     }
 }
+
 .project {
     width: 100%;
     @include desktop {
