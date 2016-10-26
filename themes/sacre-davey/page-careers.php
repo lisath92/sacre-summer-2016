@@ -23,7 +23,9 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					<p><?php echo CFS()->get('careers_main_content'); ?></p>
 				</div>
 				<section class="life-work-banner-wrapper">
-					<h2><?php echo CFS()->get('careers_tagline'); ?></h2>
+					<div>
+						<h2><?php echo CFS()->get('careers_tagline'); ?></h2>
+					</div>
 					<p><?php echo CFS()->get('careers_sub_content'); ?></p>
 					
 				</section>

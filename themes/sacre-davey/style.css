@@ -1323,6 +1323,11 @@ footer {
 .social-media h1 {
   font-size: 1rem; }
 
+/*---------------------------------------------------------
+
+ Careers Page
+
+--------------------------------------------------------*/
 .page-template-page-careers article {
   margin-bottom: 0; }
 
@@ -1349,7 +1354,7 @@ footer {
     padding-top: 2rem;
     width: 90%;
     margin: 0 auto; }
-  .life-work-banner-wrapper h2 {
+  .life-work-banner-wrapper div {
     text-align: center;
     width: 100%;
     margin: 0;
@@ -1360,6 +1365,9 @@ footer {
     font-size: 2rem;
     text-transform: initial;
     letter-spacing: 3px; }
+  .life-work-banner-wrapper h2 {
+    width: 90%;
+    margin: 0 auto; }
 
 .join-team-banner {
   padding: 3rem 0;

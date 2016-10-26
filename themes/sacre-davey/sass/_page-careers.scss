@@ -1,3 +1,9 @@
+/*---------------------------------------------------------
+
+ Careers Page
+
+--------------------------------------------------------*/
+
 .page-template-page-careers {
 	//removes white space between footer and content
 	article {
@@ -20,7 +26,7 @@
 	line-height: 1.75;
 }
 
-
+//Tagline
 .life-work-banner-wrapper {
 	text-align: center;
 	padding-top: 1.75rem;
@@ -30,7 +36,7 @@
 		width: 90%;
 		margin: 0 auto;
 	}
-	h2{
+	div{
 		text-align:center;
 		width: 100%;
 		margin: 0;
@@ -39,59 +45,12 @@
 		padding: 3rem 0rem;
 		@include impact-heading(2rem, initial);
 	}
+	h2 {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
-// .opportunities-wrapper {
-// 	width: 90%;
-// 	margin: 0 auto;
-// 	padding-bottom: 2rem;
-// 	.job-positions {
-// 		padding-top: 2rem;
 
-// 	}
-// }
-// .opportunities-banner-wrapper {
-// 	background: $color__dark-blue;
-// 	padding-bottom: 1rem;
-
-// }
-// .select-wrapper {
-// 	display: none;
-// 	width: 90%;
-// 	margin: 0 auto;
-// 	@include desktop {
-// 		display: unset;
-// 		@include display-flex (space-around, center);
-// 		flex-flow: row wrap;
-
-// 	}
-
-// 	.opportunity-dropdowns {
-// 		border-radius: 0;
-// 		min-width: 200px;
-// 		margin-left: 2rem;
-// 		margin-right: 2rem;
-// 		@include desktop {
-// 			flex: 1 0 100%;
-// 			margin-top: 2rem;
-// 		}
-
-// 	}
-// 	.dropdown-titles {
-// 		width: 50%;
-// 		color: white;
-// 		text-transform: uppercase;
-// 	}
-// }
-// .opportunities-banner {
-// 	text-align:center;
-// 	height: 100px;
-// 	color: white;
-// 	padding-top: 2rem;
-// 	@include impact-heading(3rem, uppercase);
-// }
-// .opportunities-title {
-// 	color: $color__lightblue;
-// }
 .join-team-banner {
 	padding: 3rem 0;
 
