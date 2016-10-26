@@ -24,39 +24,14 @@ button = $('.read-more-button');
 //Show read-more button condition
 for (var i = 1; i<=count; i++) {
   var dev = $('.development:nth-of-type('+i+')');
-  console.log(dev);
-  // console.log(dev.next('.read-more').html());
   if (dev.next('.read-more').text().trim()) {
     dev.find('.read-more-button').show();
     dev.next('.read-more').hide();
   } else {
-    dev.next('.read-more').css('margin', '0px');
-   
-    
+    dev.next('.read-more').css('margin', '0px');    
   }
 }
-//     if(dev.children('.read-more').text()) {
-//       console.log(dev);
-//       console.log(dev.children('.read-more').text());
 
-//   //     $('.read-more').html()) {
-//   //   console.log('there are nothing here!');
-//   // } else {
-//     
-//   }
-// }
-  // if($('.read-more').html()) {
-  //   console.log('there are nothing here!');
-  // } else {
-  //   button.show();
-  //   $('.read-more').hide();
-  // }
-
-  // if (count > 0 && $('.read-more').text()) {
-  //   button.show();
-  //    console.log($('.read-more').text());
-  //   $('.read-more').hide();
-  // }
 
 //Show more info section
 button.click(function() {
