@@ -1038,10 +1038,10 @@ iframe {
   font-size: 1.3rem;
   line-height: 1.5;
   width: 100%;
-  min-height: 250px; }
+  min-height: 270px; }
   .gallery-cell p {
     width: 90%;
-    margin: 15px auto; }
+    margin: 30px auto; }
 
 .our-team {
   display: -ms-flexbox;
