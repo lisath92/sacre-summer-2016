@@ -2076,11 +2076,16 @@ footer {
       font-size: 2rem;
       text-transform: uppercase;
       letter-spacing: 3px;
-      background-color: #279AB6; }
+      background-color: #279AB6;
+      font-size: 1.7rem;
+      height: auto;
+      padding: 10px 50px;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
     .desktop-entry-content .single-project-header i {
       margin-right: 30px;
-      font-size: 2rem;
-      padding: 6px 10px;
+      font-size: 1.5rem;
+      padding: 5px 9px;
       border-radius: 30px;
       color: #272D66;
       border: 1px white solid;
@@ -2088,7 +2093,8 @@ footer {
   .desktop-entry-content img {
     min-width: inherit; }
   .desktop-entry-content .desktop-content {
-    width: 60%; }
+    width: 60%;
+    font-size: 1rem; }
 
 .error-404 .page-header {
   min-height: 300px;

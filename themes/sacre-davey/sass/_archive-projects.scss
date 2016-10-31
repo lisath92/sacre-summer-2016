@@ -1,7 +1,6 @@
 /*--------------------------------------------------
  Projects Archive Page
 ----------------------------------------------------*/
-
 //project info email submit banner
 .project-description-banner {
     display: none;
@@ -19,12 +18,10 @@
             border-radius: 0;
             width: 160px;
         }
-
         p {
             margin-top: 0;
         }
     }
-
     input[type="submit"]{
         padding: .6rem 2.25rem;
         border-radius: 0;
@@ -36,7 +33,6 @@
         font-size: .75rem;
     }
 }
-
 //grid for displaying projects page
 .projects-grid {
     @include display-flex (center, center);
@@ -48,7 +44,6 @@
         position: relative;
     }
 }
-
 .project {
     width: 100%;
     @include desktop {
@@ -78,16 +73,13 @@
         max-height: 600px;
         display:block;
     }
-
     .entry-header {
         width: 100%;
         h2 {
             margin: 0;
             border: 0;
         }
-
     }
-
     article {
         margin: 0;
     }
@@ -98,9 +90,7 @@
         font-size: 1rem;
         text-align: center;
         padding-bottom: 1rem;
-
         p {
-
             text-align: left;
         }
         .fa-times {
@@ -112,12 +102,10 @@
             background-color: $color__dark-blue;
             cursor: pointer;
         }
-        
         @include desktop {
             display: none;
         }
     }
-
     //removes project-title single page link on mobile
     .not-active {
         pointer-events: none;
@@ -128,9 +116,7 @@
         }
     }
 }
-
 //Sector icon
-
 .icon-border {
     @include desktop {
         display:block;
@@ -139,7 +125,6 @@
         background-color: white;
     }
 }
-
 .sector-icon {
     display: none;
     @include desktop {
@@ -149,13 +134,11 @@
         top: -28px;
         left: 44%;
         width: 16%;
-
         img {
             width: 100%;
         }
     }
 }
-
 //Single Project
 .desktop-entry-content {
     display: none;
@@ -171,7 +154,6 @@
         color: white;
         background-color: $color__dark-blue;
     }
-
     .single-project-header {
         width: 100%;
         @include display-flex(space-between, center);
@@ -180,30 +162,27 @@
             width: 60%;
             @include impact-heading(2rem, uppercase);
             background-color: $color__lightblue;
+            font-size: 1.7rem;
+            height: auto;
+            padding: 10px 50px;
+            justify-content: space-between;
+            
         }
-
         i {
             margin-right: 30px;
-            font-size: 2rem;
-            padding: 6px 10px;
+            font-size: 1.5rem;
+            padding: 5px 9px;
             border-radius: 30px;
             color: $color__dark-blue;
             border: 1px white solid;
             background-color: white;
         }
     }
-
     img {
         min-width: inherit;
     }
-
     .desktop-content {
         width: 60%;
+        font-size: 1rem;
     }
-
-
-
 }
-
-
-
