@@ -89,7 +89,7 @@ get_header(); ?>
 									</div>
 
 									<div class="project-name">
-										<?php the_title(sprintf('<h1 class="mobile-project-title"><a class="not-active" href="%s">', esc_url(get_permalink() ) ), '</a></h1>'); ?>
+										<?php the_title(sprintf('<h1 class="mobile-project-title">'), '</h1>'); ?>
 									</div>
 								</div>
 							</header><!-- .entry-header -->
