@@ -1951,7 +1951,8 @@ footer {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
       -ms-flex-align: start;
-          align-items: flex-start; } }
+          align-items: flex-start;
+      position: relative; } }
 
 .project {
   width: 100%; }
@@ -2039,6 +2040,14 @@ footer {
       width: 16%; }
       .sector-icon img {
         width: 100%; } }
+
+.desktop-entry-content {
+  display: none; }
+  @media (min-width: 600px) {
+    .desktop-entry-content {
+      display: block;
+      position: absolute;
+      top: 0; } }
 
 .error-404 .page-header {
   min-height: 300px;

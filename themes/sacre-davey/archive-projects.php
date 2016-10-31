@@ -98,6 +98,20 @@ get_header(); ?>
 								<?php the_content(); ?>
 								<i class="fa fa-times" aria-hidden="true"></i>
 							</div><!-- .entry-content -->
+
+							<section class="desktop-entry-content">
+								<?php the_title(sprintf('<h1 class="single-project-title">'), '</h1>'); ?>
+								<i class="fa fa-times" aria-hidden="true"></i>
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'thumbnail' );
+									;?>
+								<?php endif; ?>
+								<div class="desktop-content">
+								<?php the_content(); ?>
+								</div>
+								
+							</section><!-- .desktop-entry-content -->
+
 						</article><!-- #post-##-->
 					</div>
 				<?php endwhile; ?>

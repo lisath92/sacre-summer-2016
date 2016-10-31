@@ -45,6 +45,7 @@
     @include desktop {
         flex-flow: row wrap;
         align-items: flex-start;
+        position: relative;
     }
 }
 
@@ -155,7 +156,15 @@
     }
 }
 
-
+//Single Project
+.desktop-entry-content {
+    display: none;
+    @include desktop {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+}
 
 
 
