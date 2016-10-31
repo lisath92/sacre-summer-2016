@@ -1976,11 +1976,9 @@ footer {
     font-size: 14px;
     cursor: pointer;
     margin: 0;
-    font-weight: 100; }
-    .project h1 a {
-      color: white;
-      text-decoration: none;
-      text-align: center; }
+    font-weight: 100;
+    color: white;
+    text-align: center; }
   .project img {
     min-width: 100%;
     height: auto;
@@ -2083,7 +2081,8 @@ footer {
       height: auto;
       padding: 10px 50px;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+      cursor: auto; }
     .desktop-entry-content .single-project-header i {
       margin-right: 30px;
       font-size: 1.5rem;
@@ -2091,7 +2090,11 @@ footer {
       border-radius: 30px;
       color: #272D66;
       border: 1px white solid;
-      background-color: white; }
+      background-color: white;
+      cursor: pointer; }
+      .desktop-entry-content .single-project-header i:hover {
+        border-color: #c6c6c6;
+        background-color: #c6c6c6; }
   .desktop-entry-content .full-project-img {
     max-width: 300px;
     width: 40%;
