@@ -164,7 +164,7 @@
         flex-flow: row wrap;
         align-items: center;
         position: fixed;
-        bottom: 40px;
+        bottom: 40%;
         z-index: 2;
         min-width: 100%;
         left: 0;
@@ -195,6 +195,10 @@
 
     img {
         min-width: inherit;
+    }
+
+    .desktop-content {
+        width: 60%;
     }
 
 
