@@ -106,7 +106,7 @@ get_header(); ?>
 								</div>
 								<div class="full-project-img">
 									<?php if ( has_post_thumbnail() ) : ?>
-										<?php the_post_thumbnail( 'medium' );
+										<?php the_post_thumbnail( 'full' );
 										;?>
 									<?php endif; ?>
 								</div>
