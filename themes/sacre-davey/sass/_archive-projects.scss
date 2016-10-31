@@ -147,17 +147,22 @@
         flex-flow: row wrap;
         align-items: center;
         position: fixed;
-        bottom: 40%;
+        bottom: 35%;
         z-index: 2;
         min-width: 100%;
         left: 0;
         color: white;
         background-color: $color__dark-blue;
+        padding-bottom: 3rem;
     }
+
+    div {
+        margin-top: 30px;
+    }
+
     .single-project-header {
         width: 100%;
         @include display-flex(space-between, center);
-        margin-top: 30px;
         h1 {
             width: 60%;
             @include impact-heading(2rem, uppercase);
@@ -166,7 +171,7 @@
             height: auto;
             padding: 10px 50px;
             justify-content: space-between;
-            
+
         }
         i {
             margin-right: 30px;
@@ -178,11 +183,23 @@
             background-color: white;
         }
     }
+
+    .full-project-img {
+        max-width: 300px;
+        // max-height: 250px;
+        width: 40%;
+        margin-left: auto;
+        margin-right: 60px;
+    }
+
     img {
-        min-width: inherit;
+        width: 100%;
     }
     .desktop-content {
-        width: 60%;
+        width: 55%;
         font-size: 1rem;
+        max-width: 640px;
+        margin-right: auto;
+
     }
 }

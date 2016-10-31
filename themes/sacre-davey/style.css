@@ -2055,12 +2055,15 @@ footer {
           flex-flow: row wrap;
       align-items: center;
       position: fixed;
-      bottom: 40%;
+      bottom: 35%;
       z-index: 2;
       min-width: 100%;
       left: 0;
       color: white;
-      background-color: #272D66; } }
+      background-color: #272D66;
+      padding-bottom: 3rem; } }
+  .desktop-entry-content div {
+    margin-top: 30px; }
   .desktop-entry-content .single-project-header {
     width: 100%;
     display: -ms-flexbox;
@@ -2068,8 +2071,7 @@ footer {
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
-        align-items: center;
-    margin-top: 30px; }
+        align-items: center; }
     .desktop-entry-content .single-project-header h1 {
       width: 60%;
       font-family: "Impact", "Charcoal", sans-serif;
@@ -2090,11 +2092,18 @@ footer {
       color: #272D66;
       border: 1px white solid;
       background-color: white; }
+  .desktop-entry-content .full-project-img {
+    max-width: 300px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 60px; }
   .desktop-entry-content img {
-    min-width: inherit; }
+    width: 100%; }
   .desktop-entry-content .desktop-content {
-    width: 60%;
-    font-size: 1rem; }
+    width: 55%;
+    font-size: 1rem;
+    max-width: 640px;
+    margin-right: auto; }
 
 .error-404 .page-header {
   min-height: 300px;
