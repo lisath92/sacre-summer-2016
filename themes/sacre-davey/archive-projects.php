@@ -100,14 +100,18 @@ get_header(); ?>
 							</div><!-- .entry-content -->
 
 							<section class="desktop-entry-content">
-								<?php the_title(sprintf('<h1 class="single-project-title">'), '</h1>'); ?>
-								<i class="fa fa-times" aria-hidden="true"></i>
-								<?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail( 'thumbnail' );
-									;?>
-								<?php endif; ?>
+								<div class="single-project-header">
+									<?php the_title(sprintf('<h1>'), '</h1>'); ?>
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</div>
+								<div class="full-project-img">
+									<?php if ( has_post_thumbnail() ) : ?>
+										<?php the_post_thumbnail( 'medium' );
+										;?>
+									<?php endif; ?>
+								</div>
 								<div class="desktop-content">
-								<?php the_content(); ?>
+									<?php the_content(); ?>
 								</div>
 								
 							</section><!-- .desktop-entry-content -->
