@@ -2099,14 +2099,16 @@ footer {
     max-width: 300px;
     width: 40%;
     margin-left: auto;
-    margin-right: 60px; }
+    margin-right: 30px;
+    padding-left: 10px; }
   .desktop-entry-content img {
     width: 100%; }
   .desktop-entry-content .desktop-content {
-    width: 55%;
+    width: 50%;
     font-size: 1rem;
     max-width: 640px;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-right: 10px; }
 
 .error-404 .page-header {
   min-height: 300px;
