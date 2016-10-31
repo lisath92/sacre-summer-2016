@@ -1981,7 +1981,7 @@ footer {
       color: white;
       text-decoration: none;
       text-align: center; }
-  .project .wp-post-image {
+  .project img {
     min-width: 100%;
     height: auto;
     max-height: 600px;
@@ -2045,9 +2045,48 @@ footer {
   display: none; }
   @media (min-width: 600px) {
     .desktop-entry-content {
-      display: block;
-      position: absolute;
-      top: 0; } }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      align-items: center;
+      position: fixed;
+      bottom: 40px;
+      z-index: 2;
+      min-width: 100%;
+      left: 0;
+      color: white;
+      background-color: #272D66; } }
+  .desktop-entry-content .single-project-header {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 30px; }
+    .desktop-entry-content .single-project-header h1 {
+      width: 60%;
+      font-family: "Impact", "Charcoal", sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background-color: #279AB6; }
+    .desktop-entry-content .single-project-header i {
+      margin-right: 30px;
+      font-size: 2rem;
+      padding: 6px 10px;
+      border-radius: 30px;
+      color: #272D66;
+      border: 1px white solid;
+      background-color: white; }
+  .desktop-entry-content img {
+    min-width: inherit; }
 
 .error-404 .page-header {
   min-height: 300px;
