@@ -44,6 +44,13 @@
         position: relative;
     }
 }
+
+.project-name {
+    height: 80px;
+    background-color: $color__dark-blue;
+    @include display-flex(center, center);
+    cursor: pointer;
+}
 .project {
     width: 100%;
     @include desktop {
@@ -53,12 +60,12 @@
         margin: .5rem .5rem;
     }
     h1 {
-        @include display-flex(center, center);
+        // @include display-flex(center, center);
         width: 100%;
-        background-color: $color__dark-blue;
-        height: 80px;
+        // background-color: $color__dark-blue;
+        // height: 80px;
         font-size: 14px;
-        cursor: pointer;
+        
         margin: 0;
         font-weight: 100;
         color: white;
@@ -168,11 +175,8 @@
             @include impact-heading(2rem, uppercase);
             background-color: $color__lightblue;
             font-size: 1.7rem;
-            height: auto;
+            text-align: left;
             padding: 10px 50px;
-            justify-content: space-between;
-            cursor: auto;
-
         }
         i {
             margin-right: 30px;
