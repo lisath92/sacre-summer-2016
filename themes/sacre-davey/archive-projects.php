@@ -88,7 +88,7 @@ get_header(); ?>
 										<img src="<?php echo get_template_directory_uri().'/assets/images/project-type-icons/'.$slug.'.png';?>" alt = ""/>
 									</div>
 
-									<div class="project-name">
+									<div class="project-title">
 										<?php the_title(sprintf('<h1 class="mobile-project-title">'), '</h1>'); ?>
 									</div>
 								</div>
