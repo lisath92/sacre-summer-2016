@@ -59,7 +59,6 @@ projectTitle.click(function() {
   var singleModal = $(this).parents('.entry-header').nextAll('section');
 
   if($(window).width()<582) {
-
     currentDiv.slideDown('slow');
 
     $('.fa-times').click(function(){
@@ -67,10 +66,8 @@ projectTitle.click(function() {
     });
   } else {
 
-    singleModal.css('display', 'flex');
-    singleModal.fadeIn('slow');
+    singleModal.css('display','flex').hide().fadeIn('slow');
     
-
   $('.fa-times').click(function(){
       singleModal.fadeOut('fast');
     });
