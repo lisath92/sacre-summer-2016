@@ -10,10 +10,9 @@ $('body').on('click', function(event){
   //Main mobile nav menu
   if($(event.target).hasClass('fa-bars')&&mainMenu.is(':hidden')) {
     mainMenu.slideDown('slow');
-    $('body').css('background-color', 'rgba(0,0,0,0.4)');
+
   } else {
     mainMenu.slideUp('slow');
-    $('body').css('background-color', 'rgba(0,0,0,0)');
   }
 
   //Sector mobile sub menu
@@ -21,7 +20,6 @@ $('body').on('click', function(event){
     sectorNav.slideDown('slow');
   } else {
     sectorNav.slideUp('slow');
-    $('body').css('background-color', 'rgba(0,0,0,0)');
   }
 
   //Projects mobile sub menu
@@ -29,7 +27,6 @@ $('body').on('click', function(event){
     projectNav.slideDown('slow');
   } else {
     projectNav.slideUp('slow');
-    $('body').css('background-color', 'rgba(0,0,0,0)');
   }
 });
 

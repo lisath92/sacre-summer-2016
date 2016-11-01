@@ -48,10 +48,6 @@ button.click(function() {
 
 //Projects click show more info
 
-// if($(window).width()>582) {
-//   $('.desktop-entry-content').hide();
-// }
-
 var projectTitle = $('.project-title');
 
 projectTitle.click(function() {
