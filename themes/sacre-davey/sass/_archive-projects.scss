@@ -45,7 +45,7 @@
     }
 }
 
-.project-name {
+.project-title {
     height: 80px;
     background-color: $color__dark-blue;
     @include display-flex(center, center);
@@ -151,6 +151,7 @@
     display: none;
     @include desktop {
         @include display-flex(space-around, center);
+        display: none;
         flex-flow: row wrap;
         align-items: center;
         position: fixed;

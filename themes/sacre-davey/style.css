@@ -1954,7 +1954,7 @@ footer {
           align-items: flex-start;
       position: relative; } }
 
-.project-name {
+.project-title {
   height: 80px;
   background-color: #272D66;
   display: -ms-flexbox;
@@ -2051,6 +2051,7 @@ footer {
           justify-content: space-around;
       -ms-flex-align: center;
           align-items: center;
+      display: none;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
       align-items: center;
