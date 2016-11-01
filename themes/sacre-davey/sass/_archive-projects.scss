@@ -33,6 +33,7 @@
         font-size: .75rem;
     }
 }
+
 //grid for displaying projects page
 .projects-grid {
     @include display-flex (center, center);
@@ -50,6 +51,11 @@
     background-color: $color__dark-blue;
     @include display-flex(center, center);
     cursor: pointer;
+    @include desktop {
+        &:hover h1{
+            color: $color__grey;
+        }
+    }
 }
 .project {
     width: 100%;
@@ -107,16 +113,8 @@
             display: none;
         }
     }
-    //removes project-title single page link on mobile
-    .not-active {
-        pointer-events: none;
-        cursor: default;
-        @include desktop {
-            pointer-events: auto;
-            cursor:pointer;
-        }
-    }
 }
+
 //Sector icon
 .icon-border {
     @include desktop {
@@ -148,7 +146,6 @@
     @include desktop {
         justify-content: space-around;
         align-items: center;
-        // @include display-flex(space-around, center);
         flex-flow: row wrap;
         align-items: center;
         position: fixed;

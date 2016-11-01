@@ -1964,6 +1964,9 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   cursor: pointer; }
+  @media (min-width: 600px) {
+    .project-title:hover h1 {
+      color: #c6c6c6; } }
 
 .project {
   width: 100%; }
@@ -2013,13 +2016,6 @@ footer {
     @media (min-width: 600px) {
       .project .entry-content {
         display: none; } }
-  .project .not-active {
-    pointer-events: none;
-    cursor: default; }
-    @media (min-width: 600px) {
-      .project .not-active {
-        pointer-events: auto;
-        cursor: pointer; } }
 
 @media (min-width: 600px) {
   .icon-border {
