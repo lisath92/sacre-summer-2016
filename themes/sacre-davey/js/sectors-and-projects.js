@@ -45,7 +45,12 @@ button.click(function() {
   }
 });
 
+
 //Projects click show more info
+
+// if($(window).width()>582) {
+//   $('.desktop-entry-content').hide();
+// }
 
 var projectTitle = $('.project-title');
 
@@ -54,7 +59,6 @@ projectTitle.click(function() {
   var singleModal = $(this).parents('.entry-header').nextAll('section');
 
   if($(window).width()<582) {
-    // singleModal.style.display = 'none';
 
     currentDiv.slideDown('slow');
 
@@ -63,9 +67,9 @@ projectTitle.click(function() {
     });
   } else {
 
-    console.log('this is larger width');
+    singleModal.css('display', 'flex');
     singleModal.fadeIn('slow');
-    console.log(singleModal.html());
+    
 
   $('.fa-times').click(function(){
       singleModal.fadeOut('fast');
@@ -73,13 +77,5 @@ projectTitle.click(function() {
 
   }
 });
-
-
-//Single Projects Modal
-
-// var desktopTitle = $('.project-name');
-
-// desktopTitle.click(function())
-
 
 })(jQuery);
