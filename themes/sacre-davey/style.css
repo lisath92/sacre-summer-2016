@@ -2045,13 +2045,10 @@ footer {
   display: none; }
   @media (min-width: 600px) {
     .desktop-entry-content {
-      display: -ms-flexbox;
-      display: flex;
       -ms-flex-pack: distribute;
           justify-content: space-around;
       -ms-flex-align: center;
           align-items: center;
-      display: none;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
       align-items: center;

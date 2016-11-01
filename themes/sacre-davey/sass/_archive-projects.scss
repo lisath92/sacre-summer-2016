@@ -60,12 +60,8 @@
         margin: .5rem .5rem;
     }
     h1 {
-        // @include display-flex(center, center);
         width: 100%;
-        // background-color: $color__dark-blue;
-        // height: 80px;
         font-size: 14px;
-        
         margin: 0;
         font-weight: 100;
         color: white;
@@ -150,8 +146,9 @@
 .desktop-entry-content {
     display: none;
     @include desktop {
-        @include display-flex(space-around, center);
-        display: none;
+        justify-content: space-around;
+        align-items: center;
+        // @include display-flex(space-around, center);
         flex-flow: row wrap;
         align-items: center;
         position: fixed;
