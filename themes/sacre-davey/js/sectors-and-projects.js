@@ -47,18 +47,39 @@ button.click(function() {
 
 //Projects click show more info
 
-var projectTitle = $('.mobile-project-title');
+var projectTitle = $('.project-title');
 
 projectTitle.click(function() {
   var currentDiv = $(this).parents('.entry-header').next('div');
+  var singleModal = $(this).parents('.entry-header').nextAll('section');
+
   if($(window).width()<582) {
+    // singleModal.style.display = 'none';
+
     currentDiv.slideDown('slow');
 
     $('.fa-times').click(function(){
       currentDiv.slideUp('slow');
     });
+  } else {
+
+    console.log('this is larger width');
+    singleModal.fadeIn('slow');
+    console.log(singleModal.html());
+
+  $('.fa-times').click(function(){
+      singleModal.fadeOut('fast');
+    });
+
   }
 });
+
+
+//Single Projects Modal
+
+// var desktopTitle = $('.project-name');
+
+// desktopTitle.click(function())
 
 
 })(jQuery);
