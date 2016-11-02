@@ -1875,7 +1875,6 @@ footer {
       display: none; } }
 
 .affiliation {
-  background-color: lightgray;
   height: 400px;
   display: -ms-flexbox;
   display: flex;
@@ -1903,7 +1902,7 @@ footer {
     letter-spacing: 3px;
     margin-top: 0;
     width: 100vw;
-    color: white;
+    color: #272D66;
     text-align: center; }
 
 /*--------------------------------------------------

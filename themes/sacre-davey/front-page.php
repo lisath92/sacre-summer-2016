@@ -71,7 +71,7 @@ get_header(); ?>
       </section>
       <section class="affiliation">
         <h3>Affiliated Companies</h3>
-        <img src="<?php echo get_template_directory_uri() .'/assets/images/Biochem Logo.png'?>" alt="Biochem partner logo">
+        <img src="<?php echo get_template_directory_uri() .'/assets/images/BiochemLogo.jpg'?>" alt="Biochem partner logo">
         <img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo">
         <img src="<?php echo get_template_directory_uri() .'/assets/images/FerencoLogo.png'?>" alt="Ferenco partner logo">
         <img src="<?php echo get_template_directory_uri() .'/assets/images/HTEClogo.png'?>" alt="HTEC partner logo">

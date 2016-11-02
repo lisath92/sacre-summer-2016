@@ -224,7 +224,7 @@
 
 //Affiliated Companies
 .affiliation {
-  background-color: lightgray;
+  // background-color: lightgray;
   height: 400px;
   @include display-flex(center,center);
   align-content: center;
@@ -246,7 +246,7 @@
     @include impact-heading($font__h2, uppercase);
     margin-top: 0;
     width: 100vw;
-    color: white;
+    color: $color__dark-blue;
     text-align: center;
   }
 }
