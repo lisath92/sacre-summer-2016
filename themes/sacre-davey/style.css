@@ -529,13 +529,13 @@ iframe {
       .main-navigation .contact:hover a {
         color: white; }
 
-.project-nav-list,
+.project-type,
 .sector-menu,
 .about-menu,
 .menu-main-navigation-container {
   display: none; }
   @media (min-width: 600px) {
-    .project-nav-list,
+    .project-type,
     .sector-menu,
     .about-menu,
     .menu-main-navigation-container {
@@ -546,7 +546,7 @@ iframe {
       text-align: center;
       width: 80%;
       margin: 0 auto; }
-      .project-nav-list ul,
+      .project-type ul,
       .sector-menu ul,
       .about-menu ul,
       .menu-main-navigation-container ul {
@@ -559,24 +559,24 @@ iframe {
             align-items: center;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap; }
-      .project-nav-list a,
+      .project-type a,
       .sector-menu a,
       .about-menu a,
       .menu-main-navigation-container a {
         text-decoration: none;
         color: #272D66;
         width: 10vw; }
-        .project-nav-list a:hover,
+        .project-type a:hover,
         .sector-menu a:hover,
         .about-menu a:hover,
         .menu-main-navigation-container a:hover {
           color: #279AB6; }
-      .project-nav-list li,
+      .project-type li,
       .sector-menu li,
       .about-menu li,
       .menu-main-navigation-container li {
         white-space: nowrap; }
-        .project-nav-list li.current-menu-item a,
+        .project-type li.current-menu-item a,
         .sector-menu li.current-menu-item a,
         .about-menu li.current-menu-item a,
         .menu-main-navigation-container li.current-menu-item a {
@@ -628,7 +628,7 @@ iframe {
     text-align: right; }
 
 @media (min-width: 600px) {
-  .project-nav-list,
+  .project-type,
   .sector-menu {
     display: -ms-flexbox;
     display: flex;
@@ -638,7 +638,7 @@ iframe {
         align-items: center;
     width: 100%;
     margin: 20px auto; }
-    .project-nav-list ul,
+    .project-type ul,
     .sector-menu ul {
       width: 100%;
       -ms-flex-pack: distribute;
@@ -646,21 +646,21 @@ iframe {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       margin: 0; }
-    .project-nav-list li,
+    .project-type li,
     .sector-menu li {
       padding: 5px; }
-    .project-nav-list a,
+    .project-type a,
     .sector-menu a {
       text-transform: capitalize;
       font-size: 1rem;
       font-weight: normal;
       color: #c6c6c6; }
-      .project-nav-list a:hover,
+      .project-type a:hover,
       .sector-menu a:hover {
         color: black;
         text-decoration: underline; } }
 
-.project-icon-toggle,
+.project-mobile,
 .mobile-nav-title {
   margin: 0;
   color: #272D66;
@@ -674,10 +674,10 @@ iframe {
   -ms-flex-align: center;
       align-items: center; }
   @media (min-width: 600px) {
-    .project-icon-toggle,
+    .project-mobile,
     .mobile-nav-title {
       display: none; } }
-  .project-icon-toggle i,
+  .project-mobile i,
   .mobile-nav-title i {
     background-color: #272D66;
     color: white;
@@ -687,16 +687,16 @@ iframe {
     padding-top: 15px;
     cursor: pointer; }
 
-.mobile-project-nav-list,
+.project-mobile,
 .sector-mobile {
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem; }
   @media (min-width: 600px) {
-    .mobile-project-nav-list,
+    .project-mobile,
     .sector-mobile {
       display: none; } }
-  .mobile-project-nav-list ul,
+  .project-mobile ul,
   .sector-mobile ul {
     display: none;
     top: 0;
@@ -706,10 +706,10 @@ iframe {
     width: 100%;
     position: absolute;
     z-index: 2; }
-  .mobile-project-nav-list li,
+  .project-mobile li,
   .sector-mobile li {
     padding: 10px 0; }
-  .mobile-project-nav-list a,
+  .project-mobile a,
   .sector-mobile a {
     text-decoration: none;
     padding-left: 30px;

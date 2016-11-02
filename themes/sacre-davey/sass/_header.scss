@@ -91,7 +91,8 @@
 
 
 //Menus at desktop view
-.project-nav-list,
+// .project-nav-list,
+.project-type,
 .sector-menu,
 .about-menu,
 .menu-main-navigation-container {
@@ -182,7 +183,7 @@ a {
 }
 
 //Sectors sub-menu
-.project-nav-list,
+.project-type,
 .sector-menu {
   @include desktop {
     @include display-flex(space-around, center);
@@ -213,7 +214,7 @@ a {
 }
 
 //Sectors Mobile Menu
-.project-icon-toggle,
+.project-mobile,
 .mobile-nav-title {
   margin: 0;
   color: $color__dark-blue;
@@ -235,7 +236,7 @@ a {
   }
 }
 
-.mobile-project-nav-list,
+.project-mobile,
 .sector-mobile {
   position: relative;
   text-transform: uppercase;
