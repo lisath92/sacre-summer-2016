@@ -12,8 +12,7 @@ wp_nav_menu( array('theme_location' => 'project-types', 'container_class' => 'pr
 	<main id="main" class="site-main" role="main">
 		<div class="project-description-banner">
 			<p>For a detailed description of a project please enter the information below</p>
-			<input type="text" placeholder="Project Name"><input type="text" placeholder="Email">
-			<submit class="project-description-button">Send</submit>
+			<?php echo do_shortcode( '[contact-form-7 id="524" title="More Project Info"]' ); ?>
 		</div>
 		<?php if ( have_posts() ) : ?>
 			<?php /* Start the Loop */ ?>
