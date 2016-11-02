@@ -24,7 +24,7 @@
 
 		<?php else : ?>
 
-			<p class="no-result"><?php echo esc_html( 'Send us an email for more information on this!' ); ?></p>
+			<p class="no-result"><?php echo esc_html( 'Send us an email for more information!' ); ?></p>
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
