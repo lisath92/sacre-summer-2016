@@ -28,6 +28,8 @@ function sacre_davey_setup() {
 		'primary-mobile-menu' => esc_html('Mobile Menu'),
 		'sector-posts' => esc_html( 'Sector Posts' ),
 		'sector-mobile' => esc_html( 'Sector Mobile Menu'),
+		'project-mobile' => esc_html( 'Project Types Mobile'),
+		'project-types' => esc_html( 'Project Types'),
 	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
