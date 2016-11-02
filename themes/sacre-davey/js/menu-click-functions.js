@@ -2,7 +2,7 @@
 
 var mainMenu = $('.nav-mobile'),
 sectorNav = $('.sector-mobile ul'),
-projectNav = $('.mobile-project-nav-list ul');
+projectNav = $('.project-mobile ul');
 
 //Toggle menus
 $('body').on('click', function(event){
