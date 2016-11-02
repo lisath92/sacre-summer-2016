@@ -2142,3 +2142,8 @@ footer {
   text-transform: uppercase;
   border: 2px solid #272D66;
   padding: 1rem 2rem; }
+
+.no-result {
+  margin: 0 auto 1.5em;
+  width: 100%;
+  text-align: center; }
