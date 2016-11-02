@@ -700,6 +700,7 @@ iframe {
   .sector-mobile ul {
     display: none;
     top: 0;
+    left: 0;
     padding: 0;
     margin: 0;
     background-color: #272D66;

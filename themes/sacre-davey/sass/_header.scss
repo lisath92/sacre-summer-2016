@@ -91,7 +91,6 @@
 
 
 //Menus at desktop view
-// .project-nav-list,
 .project-type,
 .sector-menu,
 .about-menu,
@@ -248,6 +247,7 @@ a {
   ul {
     display: none;
     top: 0;
+    left: 0;
     padding: 0;
     margin: 0;
     background-color: $color__dark-blue;
