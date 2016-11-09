@@ -2170,15 +2170,37 @@ footer {
 .news-articles {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
-  margin: 0 auto;
-  max-width: 1000px;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap; }
   .news-articles article {
-    width: 80%; }
+    width: 80%;
+    margin-right: auto; }
+  .news-articles .entry-content {
+    margin-left: 60px; }
   .news-articles .widget-area {
-    width: 10%; }
+    width: 14%;
+    font-size: 1rem; }
+    .news-articles .widget-area h2 {
+      font-size: 1.2rem; }
+    .news-articles .widget-area ul {
+      padding-left: 15px; }
+
+.news-title {
+  font-family: "Impact", "Charcoal", sans-serif;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  background: url("../../assets/images/news-title-bg.png") top left/100% 100% no-repeat;
+  width: 100%;
+  max-width: 680px;
+  padding: 18px 65px 34px 30px; }
+  @media (min-width: 600px) {
+    .news-title {
+      padding: 18px 0px 34px 85px; } }
+  .news-title a {
+    color: white;
+    text-decoration: none; }

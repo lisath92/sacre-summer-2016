@@ -10,7 +10,6 @@
 		url('../../assets/images/news-banner.jpg')bottom center/100% 100% no-repeat;
 		@include display-flex(center, center);
 		height: 250px;
-		// width: 100%;
 
 		h1 {
 			@include impact-heading(2.5rem, uppercase);
@@ -21,9 +20,7 @@
 
 //News articles and sidebar
 .news-articles {
-	@include display-flex(space-between, center);
-	margin: 0 auto;
-	max-width: 1000px;
+	@include display-flex(space-around, center);
 	flex-flow: row nowrap;
 
 	article {
