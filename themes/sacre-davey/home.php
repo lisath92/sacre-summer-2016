@@ -15,6 +15,7 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<section class="news-header">
+				
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</section>
 			<?php endif; ?>
