@@ -5,17 +5,18 @@
  * @package Sacre Davey Theme
  */
 
-get_header(); ?>
+get_header(); 
+wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-menu') ); 
 
+?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		This is the News page!
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
+				<section class="news-header">
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+				</section>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
