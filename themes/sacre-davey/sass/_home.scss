@@ -28,11 +28,35 @@
 
 	article {
 		width: 80%;
+		margin-right: auto;	
+	}
+
+	.entry-content {
+		margin-left: 60px;
 	}
 
 	.widget-area {
 		width: 10%;
 	}
+}
+
+.news-title {
+	@include impact-heading(1.5rem, capitalize);
+	background:
+	url('../../assets/images/news-title-bg.png')
+	top left/100% 100% no-repeat;
+	width: 100%;
+	max-width: 680px;
+	padding: 18px 65px 34px 30px;
+	@include desktop {
+		padding: 18px 0px 34px 85px;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
 }
 
 
