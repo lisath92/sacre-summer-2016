@@ -2049,12 +2049,12 @@ footer {
           flex-flow: row wrap;
       align-items: center;
       position: fixed;
-      bottom: 20%;
+      bottom: 18%;
       z-index: 2;
-      min-width: 100%;
-      left: 0;
-      color: white;
-      background-color: #272D66;
+      left: 5%;
+      width: 90%;
+      color: black;
+      background-color: white;
       padding-bottom: 3rem; } }
   .desktop-entry-content div {
     margin-top: 30px; }
@@ -2081,9 +2081,9 @@ footer {
       font-size: 1.5rem;
       padding: 6px 9px;
       border-radius: 30px;
-      color: #272D66;
-      border: 1px white solid;
-      background-color: white;
+      color: white;
+      border: 1px #272D66 solid;
+      background-color: #272D66;
       cursor: pointer; }
       .desktop-entry-content .single-project-header i:hover {
         border-color: #c6c6c6;

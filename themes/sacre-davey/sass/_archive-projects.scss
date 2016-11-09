@@ -149,12 +149,12 @@
         flex-flow: row wrap;
         align-items: center;
         position: fixed;
-        bottom: 20%;
+        bottom: 18%;
         z-index: 2;
-        min-width: 100%;
-        left: 0;
-        color: white;
-        background-color: $color__dark-blue;
+        left: 5%;
+        width: 90%;
+        color: black;
+        background-color: white;
         padding-bottom: 3rem;
     }
 
@@ -178,9 +178,9 @@
             font-size: 1.5rem;
             padding: 6px 9px;
             border-radius: 30px;
-            color: $color__dark-blue;
-            border: 1px white solid;
-            background-color: white;
+            color: white;
+            border: 1px $color__dark-blue solid;
+            background-color: $color__dark-blue;
             cursor: pointer;
 
             &:hover {
