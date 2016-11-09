@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Page Templates
 	## Front page
+# Home
 --------------------------------------------------------------*/
 html {
   font-family: sans-serif;
@@ -2146,3 +2147,19 @@ footer {
   margin: 0 auto 1.5em;
   width: 100%;
   text-align: center; }
+
+.blog .news-header {
+  background: url("../../assets/images/news-banner.jpg") bottom center/100% 100% no-repeat;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 250px; }
+  .blog .news-header h1 {
+    font-family: "Impact", "Charcoal", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white; }
