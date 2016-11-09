@@ -19,7 +19,7 @@
 }
 
 //News articles and sidebar
-.news-articles {
+.news-wrapper {
 	@include display-flex(space-around, center);
 	flex-flow: row nowrap;
 
@@ -45,13 +45,14 @@
 	}
 }
 
+//Article title
 .news-title {
 	@include impact-heading(1.5rem, capitalize);
 	background:
 	url('../../assets/images/news-title-bg.png')
 	top left/100% 100% no-repeat;
 	width: 100%;
-	max-width: 680px;
+	max-width: 730px;
 	padding: 18px 65px 34px 30px;
 	@include desktop {
 		padding: 18px 0px 34px 85px;
@@ -60,6 +61,10 @@
 	a {
 		color: white;
 		text-decoration: none;
+
+		&:hover {
+			color: $color__grey;
+		}
 	}
 
 }
