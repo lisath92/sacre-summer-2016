@@ -2166,3 +2166,19 @@ footer {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white; }
+
+.news-articles {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; }
+  .news-articles article {
+    width: 80%; }
+  .news-articles .widget-area {
+    width: 10%; }

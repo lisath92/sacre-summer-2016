@@ -2,15 +2,37 @@
  News
 --------------------------------------------------- */
 
+//Header
+.blog {
 
-.blog .news-header {
-	background: 
-	url('../../assets/images/news-banner.jpg')bottom center/100% 100% no-repeat;
-	@include display-flex(center, center);
-	height: 250px;
+	.news-header {
+		background: 
+		url('../../assets/images/news-banner.jpg')bottom center/100% 100% no-repeat;
+		@include display-flex(center, center);
+		height: 250px;
+		// width: 100%;
 
-	h1 {
-		@include impact-heading(2.5rem, uppercase);
-		color: white;
+		h1 {
+			@include impact-heading(2.5rem, uppercase);
+			color: white;
+		}
 	}
 }
+
+//News articles and sidebar
+.news-articles {
+	@include display-flex(space-between, center);
+	margin: 0 auto;
+	max-width: 1000px;
+	flex-flow: row nowrap;
+
+	article {
+		width: 80%;
+	}
+
+	.widget-area {
+		width: 10%;
+	}
+}
+
+
