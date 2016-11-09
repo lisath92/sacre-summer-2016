@@ -92,6 +92,41 @@ wp_add_inline_style('sacre-davey-style', $css);
 
 add_action( 'wp_enqueue_scripts','sacre_davey_about_inline_styles');
 
+// /**
+// * Add featured image for news page
+// */
+// function sacre_davey_news_inline_styles() {
+//   if(!is_home()) {
+//     return;
+//   } 
+
+//   $css='yo';
+//   $logo= CFS()->get( 'news_banner');
+//   print_r($logo);
+//   if(!$logo) {
+//     // echo $logo;
+//     return;
+//   } 
+//   echo 'hey'.$css;
+//   $css .='
+//       #news-header {
+//         background:
+//         url('.$logo.')bottom center/100% 100% no-repeat;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 250px;
+
+// }';
+
+
+
+// wp_add_inline_style('sacre-davey-style', $css);
+// }
+
+
+// add_action( 'wp_enqueue_scripts','sacre_davey_news_inline_styles');
+
 /**
 * Add featured image for services page
 */
