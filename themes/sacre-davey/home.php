@@ -20,7 +20,8 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</section>
 			<?php endif; ?>
-<section class="news-articles">
+			<section class="news-wrapper">
+<div class="news-articles">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -41,6 +42,7 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 				</article><!-- #post-## -->
 
 			<?php endwhile; ?>
+			</div>
 			<?php get_sidebar(); ?>
 
 			<?php //the_posts_navigation(); ?>
