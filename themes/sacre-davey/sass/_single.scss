@@ -43,4 +43,19 @@ span {
 	textarea {
 		max-width: 700px;
 	}
+
+	input[type="submit"] {
+		box-shadow: none;
+		border: none;
+		text-shadow: none;
+		background-color: $color__dark-blue;
+		color: white;
+		font-size: 1.3rem;
+		padding: 15px 20px;
+
+		&:hover {
+			background-color:$color__lightblue;
+		}
+	}
+}
 }
