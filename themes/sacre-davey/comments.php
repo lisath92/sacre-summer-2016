@@ -25,51 +25,65 @@ if ( post_password_required() ) {
 		</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
-			<div class="nav-links">
+			<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
+				<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
+				<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
+					<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
+					<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
 
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-above -->
+				</div><!-- .nav-links -->
+			</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
 		<ol class="comment-list">
 			<?php
-				wp_list_comments( array(
-					'callback' => 'red_starter_comment_list'
+			wp_list_comments( array(
+				'callback' => 'red_starter_comment_list'
 				) );
-			?>
-		</ol><!-- .comment-list -->
+				?>
+			</ol><!-- .comment-list -->
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
-			<div class="nav-links">
+			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+				<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
+					<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
+					<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
+						<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
+						<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
 
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-below -->
-		<?php endif; // Check for comment navigation. ?>
+					</div><!-- .nav-links -->
+				</nav><!-- #comment-nav-below -->
+			<?php endif; // Check for comment navigation. ?>
 
-	<?php endif; // Check for have_comments(). ?>
+		<?php endif; // Check for have_comments(). ?>
 
-	<?php
+		<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-	?>
+			?>
 		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
 	<?php endif; ?>
 
+
+
 	<?php comment_form( array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
-		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
+		'comment_notes_before' => wp_kses( '<p class="comment-notes">Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
 		'label_submit'         => esc_html( 'Submit' ),
-		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
-	) ); ?>
+		'cancel_reply_link'    => esc_html( '[Cancel reply]' ),
+		'fields' => apply_filters('comment_form_default_fields', array (
+			'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Your Name' ) . '<span>*<span></label> ' .
 
-</div><!-- #comments -->
+			'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',   
+
+			'email'  => '<p class="comment-form-email">' .
+
+			'<label for="email">' . __( 'Your Email' ) . '<span>*<span></label> ' .
+
+			'<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />'.'</p>',
+
+			'url'    => '' ) ),
+			) ); ?>
+
+		</div><!-- #comments -->
