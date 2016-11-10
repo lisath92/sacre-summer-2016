@@ -29,15 +29,16 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
-
-						<?php the_title( sprintf( '<h2 class="news-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+					<?php the_title( sprintf( '<h2 class="news-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
+						<div class="news-excerpt">
 						<?php the_excerpt(); ?>
+						</div>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
 
