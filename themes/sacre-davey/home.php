@@ -52,7 +52,11 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 
 			<?php endif; ?>
 		</section>
-			<?php the_posts_navigation(); ?>
+			<?php 
+				$args = array(
+					'prev_text' => 'Previous posts',
+					'screen_reader_text' => ' ', );
+			the_posts_navigation($args); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
