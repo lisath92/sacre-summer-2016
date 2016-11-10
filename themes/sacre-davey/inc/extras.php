@@ -284,7 +284,7 @@ if ( '' == $text ) {
     $allowed_tags = '<p>'; /*** MODIFY THIS. Add the allowed HTML tags separated by a comma.***/
     $text = strip_tags($text, $allowed_tags);
      
-    $excerpt_word_count = 70; 
+    $excerpt_word_count = 65; 
     $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
      
     $excerpt_end = '<p class="news-read-more"><a href="'. get_permalink($post->ID) . '">Read more</a></p>'; 
