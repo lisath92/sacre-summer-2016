@@ -2239,3 +2239,10 @@ footer {
 
 .nav-previous {
   text-align: right; }
+
+/* -----------------------------------------------------
+ Single News Article
+--------------------------------------------------- */
+.author-date {
+  margin-top: 40px;
+  font-style: italic; }
