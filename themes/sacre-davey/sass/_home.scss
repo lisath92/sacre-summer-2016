@@ -20,10 +20,10 @@
 
 //News articles and sidebar
 .news-wrapper {
-	@include display-flex(space-around, center);
+	@include display-flex(space-around, flex-start);
 	flex-flow: row nowrap;
 
-	.news-article {
+	.news-articles {
 		width: 80%;
 		margin-right: auto;	
 	}
@@ -31,6 +31,7 @@
 	.entry-content {
 		margin-left: 60px;
 	}
+}
 
 .widget-area {
 		display: none;
@@ -42,6 +43,7 @@
 			margin-right: 20px;
 			h2 {
 				font-size: 1.2rem;
+			}
 
 			ul {
 				padding-left: 15px;

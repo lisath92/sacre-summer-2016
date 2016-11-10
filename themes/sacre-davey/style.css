@@ -2172,22 +2172,29 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap; }
-  .news-wrapper .news-article {
+  .news-wrapper .news-articles {
     width: 80%;
     margin-right: auto; }
   .news-wrapper .entry-content {
     margin-left: 60px; }
-  .news-wrapper .widget-area {
-    width: 14%;
-    font-size: 1rem; }
-    .news-wrapper .widget-area h2 {
-      font-size: 1.2rem; }
-    .news-wrapper .widget-area ul {
-      padding-left: 15px; }
+
+.widget-area {
+  display: none; }
+  @media (min-width: 600px) {
+    .widget-area {
+      display: block;
+      margin-top: 150px;
+      width: 14%;
+      font-size: 1rem;
+      margin-right: 20px; }
+      .widget-area h2 {
+        font-size: 1.2rem; }
+      .widget-area ul {
+        padding-left: 15px; } }
 
 .news-title {
   font-family: "Impact", "Charcoal", sans-serif;
