@@ -2176,7 +2176,7 @@ footer {
       align-items: center;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap; }
-  .news-wrapper article {
+  .news-wrapper .news-article {
     width: 80%;
     margin-right: auto; }
   .news-wrapper .entry-content {
@@ -2192,7 +2192,7 @@ footer {
 .news-title {
   font-family: "Impact", "Charcoal", sans-serif;
   font-size: 1.5rem;
-  text-transform: capitalize;
+  text-transform: initial;
   letter-spacing: 3px;
   background: url("../../assets/images/news-title-bg.png") top left/100% 100% no-repeat;
   width: 100%;

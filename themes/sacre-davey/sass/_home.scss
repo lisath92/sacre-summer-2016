@@ -23,7 +23,7 @@
 	@include display-flex(space-around, center);
 	flex-flow: row nowrap;
 
-	article {
+	.news-article {
 		width: 80%;
 		margin-right: auto;	
 	}
@@ -47,7 +47,7 @@
 
 //Article title
 .news-title {
-	@include impact-heading(1.5rem, capitalize);
+	@include impact-heading(1.5rem, initial);
 	background:
 	url('../../assets/images/news-title-bg.png')
 	top left/100% 100% no-repeat;
