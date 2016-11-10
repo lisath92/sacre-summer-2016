@@ -17,9 +17,7 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'single' ); ?>
-					<?php previous_post_link(); ?>
-<?php next_post_link(); ?>
-
+				
 					<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
@@ -35,7 +33,7 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 
 		<!-- <div style="text-align:center;"> -->
 
-<!-- </div> -->
+		<!-- </div> -->
 	</main><!-- #main -->
 </div><!-- #primary -->
 
