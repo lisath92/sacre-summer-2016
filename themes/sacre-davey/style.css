@@ -2264,7 +2264,8 @@ footer {
   .comments-area h3 {
     color: #272D66; }
   .comments-area label {
-    display: block; }
+    display: block;
+    margin-bottom: 15px; }
   .comments-area span {
     color: red; }
   .comments-area textarea {
