@@ -2243,10 +2243,29 @@ footer {
 /* -----------------------------------------------------
  Single News Article
 --------------------------------------------------- */
+.single-post img {
+  width: 100%;
+  max-width: 600px; }
+
+.single-post .widget-area {
+  margin-top: 250px;
+  margin-right: 2%; }
+
 .author-date {
   margin-top: 40px;
   font-style: italic; }
 
 .comments-area {
-  width: 90%;
+  width: 100%;
   margin: 0 auto; }
+  @media (min-width: 600px) {
+    .comments-area {
+      width: 90%; } }
+  .comments-area h3 {
+    color: #272D66; }
+  .comments-area label {
+    display: block; }
+  .comments-area span {
+    color: red; }
+  .comments-area textarea {
+    max-width: 700px; }
