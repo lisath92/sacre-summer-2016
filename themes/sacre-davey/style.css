@@ -2197,7 +2197,7 @@ footer {
   background: url("../../assets/images/news-title-bg.png") top left/100% 100% no-repeat;
   width: 100%;
   max-width: 730px;
-  padding: 18px 65px 34px 30px; }
+  padding: 18px 45px 34px 30px; }
   @media (min-width: 600px) {
     .news-title {
       padding: 18px 0px 34px 85px; } }
