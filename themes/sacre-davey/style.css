@@ -2229,3 +2229,12 @@ footer {
   .news-read-more a {
     font-size: 24px;
     text-decoration: none; }
+
+.navigation {
+  margin: 65px; }
+  .navigation a {
+    text-decoration: none;
+    font-weight: bold; }
+
+.nav-previous {
+  text-align: right; }
