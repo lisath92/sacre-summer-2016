@@ -2256,11 +2256,8 @@ footer {
   font-style: italic; }
 
 .comments-area {
-  width: 100%;
-  margin: 0 auto; }
-  @media (min-width: 600px) {
-    .comments-area {
-      width: 90%; } }
+  width: 90%;
+  margin: 0 auto 65px; }
   .comments-area h3 {
     color: #272D66; }
   .comments-area label {
@@ -2270,3 +2267,37 @@ footer {
     color: red; }
   .comments-area textarea {
     max-width: 700px; }
+  .comments-area input[type="submit"] {
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    background-color: #272D66;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 20px; }
+    .comments-area input[type="submit"]:hover {
+      background-color: #279AB6; }
+
+.comment-list {
+  list-style-type: none; }
+
+.comment-body img {
+  display: none; }
+
+.comment-body ol {
+  list-style-type: none; }
+
+.comment-body .comment-author {
+  font-weight: bold;
+  color: #272D66;
+  margin-bottom: 15px; }
+
+.comment-body cite {
+  font-style: normal; }
+
+.comment-body .comment-metadata {
+  font-size: 1rem;
+  font-style: italic; }
+
+.comment-body p {
+  padding-left: 30px; }

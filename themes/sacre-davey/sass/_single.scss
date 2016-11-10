@@ -24,22 +24,19 @@
 
 //Comments if open
 .comments-area {
-	width: 100%;
-	margin: 0 auto;
-	@include desktop {
-		width: 90%;
-	}
+	width: 90%;
+	margin: 0 auto 65px;
 
 	h3 {
 		color: $color__dark-blue;
 	}
-label {
-	display: block;
-	margin-bottom: 15px;
-}
-span {
-	color: red;
-}
+	label {
+		display: block;
+		margin-bottom: 15px;
+	}
+	span {
+		color: red;
+	}
 	textarea {
 		max-width: 700px;
 	}
