@@ -30,26 +30,31 @@
 
 	.entry-content {
 		margin-left: 60px;
+		font-size: 26px;
 	}
 }
 
+//Archive widget
 .widget-area {
-		display: none;
-		@include desktop {
-			display: block;
-			margin-top: 150px;
-			width: 14%;
-			font-size: 1rem;	
-			margin-right: 20px;
-			h2 {
-				font-size: 1.2rem;
-			}
+	display: none;
+	@include desktop {
+		display: block;
+		margin-top: 150px;
+		width: 14%;
+		font-size: 1rem;	
+		margin-right: 50px;
+		h2 {
+			font-size: 1.2rem;
+		}
 
-			ul {
-				padding-left: 15px;
-			}
+		ul {
+			padding-left: 15px;
+		}
+		li a{
+			text-decoration:none;		
 		}
 	}
+}
 
 //Article title
 .news-title {
@@ -75,4 +80,11 @@
 
 }
 
+.news-read-more {
+	text-align:right;
+
+	a {
+		text-decoration: none;
+	}
+}
 

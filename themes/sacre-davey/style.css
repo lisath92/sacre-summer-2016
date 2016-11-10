@@ -2180,7 +2180,8 @@ footer {
     width: 80%;
     margin-right: auto; }
   .news-wrapper .entry-content {
-    margin-left: 60px; }
+    margin-left: 60px;
+    font-size: 26px; }
 
 .widget-area {
   display: none; }
@@ -2190,11 +2191,13 @@ footer {
       margin-top: 150px;
       width: 14%;
       font-size: 1rem;
-      margin-right: 20px; }
+      margin-right: 50px; }
       .widget-area h2 {
         font-size: 1.2rem; }
       .widget-area ul {
-        padding-left: 15px; } }
+        padding-left: 15px; }
+      .widget-area li a {
+        text-decoration: none; } }
 
 .news-title {
   font-family: "Impact", "Charcoal", sans-serif;
@@ -2213,3 +2216,8 @@ footer {
     text-decoration: none; }
     .news-title a:hover {
       color: #c6c6c6; }
+
+.news-read-more {
+  text-align: right; }
+  .news-read-more a {
+    text-decoration: none; }
