@@ -270,6 +270,7 @@ add_action( 'pre_get_posts', 'sacre_davey_modifying_project_archive_query' );
 
 function custom_wp_trim_excerpt($text) {
 $raw_excerpt = $text;
+global $post;
 if ( '' == $text ) {
     //Retrieve the post content. 
     $text = get_the_content('');
@@ -286,14 +287,14 @@ if ( '' == $text ) {
     $excerpt_word_count = 70; 
     $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
      
-    $excerpt_end = 'Read more'; 
+    $excerpt_end = '<span class="view-full-post"><a href="'. get_permalink($post->ID) . '"class="view-full-post-btn">Read more</a></span>;'; 
     $excerpt_more = apply_filters('excerpt_more', ' ' . $excerpt_end);
      
     $words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
     if ( count($words) > $excerpt_length ) {
         array_pop($words);
         $text = implode(' ', $words);
-        $text = $text . '...' . $excerpt_more;
+       $text = $text . '...' . $excerpt_more;
     } else {
         $text = implode(' ', $words);
     }
