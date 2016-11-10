@@ -287,7 +287,7 @@ if ( '' == $text ) {
     $excerpt_word_count = 70; 
     $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
      
-    $excerpt_end = '<span class="view-full-post"><a href="'. get_permalink($post->ID) . '"class="view-full-post-btn">Read more</a></span>'; 
+    $excerpt_end = '<p class="view-full-post"><a href="'. get_permalink($post->ID) . '"class="view-full-post-btn">Read more</a></p>'; 
     $excerpt_more = apply_filters('excerpt_more', ' ' . $excerpt_end);
      
     $words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
