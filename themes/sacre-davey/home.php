@@ -11,7 +11,7 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-	
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -21,39 +21,38 @@ wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-m
 				</section>
 			<?php endif; ?>
 			<section class="news-wrapper">
-<div class="news-articles">
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="news-articles">
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php //get_template_part( 'template-parts/content' ); ?>
+						<?php //get_template_part( 'template-parts/content' ); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-					<?php the_title( sprintf( '<h2 class="news-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-					</header><!-- .entry-header -->
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<header class="entry-header">
+								<?php the_title( sprintf( '<h2 class="news-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+							</header><!-- .entry-header -->
 
-					<div class="entry-content">
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
-						<div class="news-excerpt">
-						<?php the_excerpt(); ?>
-						</div>
-					</div><!-- .entry-content -->
-				</article><!-- #post-## -->
+							<div class="entry-content">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'large' ); ?>
+								<?php endif; ?>
+								<div class="news-excerpt">
+									<?php the_excerpt(); ?>
+								</div>
+							</div><!-- .entry-content -->
+						</article><!-- #post-## -->
 
-			<?php endwhile; ?>
-			</div>
-			<?php get_sidebar(); ?>
+					<?php endwhile; ?>
+				</div>
+				<?php get_sidebar(); ?>
 
-			<?php //the_posts_navigation(); ?>
+			<?php else : ?>
 
-		<?php else : ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+			<?php endif; ?>
 		</section>
+			<?php the_posts_navigation(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
