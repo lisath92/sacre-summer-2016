@@ -58,4 +58,35 @@ span {
 		}
 	}
 }
+
+//Display comments
+.comment-list {
+	list-style-type: none;
+}
+.comment-body {
+	img {
+		display: none;
+	}
+
+	ol {
+		list-style-type: none;
+	}
+
+	.comment-author {
+		font-weight: bold;
+		color: $color__dark-blue;
+		margin-bottom: 15px;
+	}
+	cite {
+		font-style: normal;
+	}
+
+	.comment-metadata {
+		font-size: 1rem;
+		font-style:italic;
+	}
+	p {
+		padding-left: 30px;
+	}
+
 }
