@@ -5,28 +5,40 @@
  * @package Sacre Davey Theme
  */
 
-get_header(); ?>
+get_header(); 
+wp_nav_menu( array('theme_location' => 'about-us', 'container_class' => 'about-menu') ); 
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<section class="news-wrapper">
+			<div class="news-articles">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+					<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
-
-			<?php
+					<?php
 				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+					?>
 
-		<?php endwhile; // End of the loop. ?>
+				<?php endwhile; // End of the loop. ?>
+			</div>
+			<?php get_sidebar(); ?>
 
+		</section>
+		<?php 
+		$args = array(
+			'prev_text' => 'Previous posts',
+			'screen_reader_text' => ' ', );
+			the_posts_navigation($args); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+
+
+
+	<?php get_footer(); ?>
