@@ -304,14 +304,12 @@
 }
 .button-wrapper {
 	width: 90%;
-	margin: 0 auto;
+	margin: 1rem auto 3rem;
 	@include display-flex(center, center);
 	flex-flow: row nowrap;
-	margin-bottom: 3rem;
-	margin-top: 1rem;
-	@include desktop {
-		margin-bottom: 8rem;
-	}
+	// @include desktop {
+	// 	margin-bottom: 8rem;
+	// }
 
 }
 .button-class-projects,

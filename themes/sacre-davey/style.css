@@ -1210,7 +1210,7 @@ iframe {
 
 .button-wrapper {
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto 3rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1218,12 +1218,7 @@ iframe {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  margin-bottom: 3rem;
-  margin-top: 1rem; }
-  @media (min-width: 600px) {
-    .button-wrapper {
-      margin-bottom: 8rem; } }
+      flex-flow: row nowrap; }
 
 .button-class-projects,
 .button-class-sectors {
