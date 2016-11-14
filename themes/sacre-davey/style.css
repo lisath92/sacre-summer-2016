@@ -1468,7 +1468,7 @@ footer {
       z-index: 2;
       background: url("../../assets/images/left-overlay.png") left/100% 100% no-repeat;
       max-width: 80%;
-      max-height: 650px;
+      max-height: 780px;
       min-height: 450px;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1503,7 +1503,7 @@ footer {
   padding: 8px 15px;
   font-size: 1.3rem;
   bottom: 30px;
-  left: 33%;
+  left: 39%;
   border: 2px white solid; }
   @media (min-width: 600px) {
     .read-more-button {
