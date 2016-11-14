@@ -14,9 +14,6 @@ $('.sub-sector-title').on('click', function() {
 
 
 //Add specific class to Oil-Gas sector
-if ($('body').hasClass('postid-67')) {
-  $('.read-more').toggleClass('style-1');
-}
 
 var count = $('section.development').length,
 button = $('.read-more-button');
