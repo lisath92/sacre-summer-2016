@@ -2147,17 +2147,20 @@ footer {
     margin-right: auto; }
   .news-wrapper .entry-content {
     margin-left: 60px;
-    font-size: 26px;
     max-width: 1140px; }
     .news-wrapper .entry-content p {
+      font-size: 24px;
       margin: 30px 0 0; }
+    .news-wrapper .entry-content img {
+      width: 100%;
+      max-width: 570px; }
 
 .widget-area {
   display: none; }
   @media (min-width: 600px) {
     .widget-area {
       display: block;
-      margin-top: 150px;
+      margin-top: 250px;
       width: 14%;
       font-size: 1rem;
       margin-right: 50px; }
@@ -2170,7 +2173,7 @@ footer {
 
 .news-title {
   font-family: "Impact", "Charcoal", sans-serif;
-  font-size: 1.5rem;
+  font-size: 30px;
   text-transform: initial;
   letter-spacing: 3px;
   background: url("../../assets/images/news-title-bg.png") top left/100% 100% no-repeat;
@@ -2179,7 +2182,7 @@ footer {
   padding: 18px 45px 34px 30px; }
   @media (min-width: 600px) {
     .news-title {
-      padding: 18px 0px 34px 85px; } }
+      padding-left: 85px; } }
   .news-title a {
     color: white;
     text-decoration: none; }
