@@ -77,7 +77,7 @@
 	url('../../assets/images/news-title-bg.png')
 	top left/100% 100% no-repeat;
 	width: 100%;
-	max-width: 730px;
+	max-width: 642px;
 	padding: 18px 45px 34px 30px;
 	@include desktop {
 		padding-left: 85px;
@@ -120,4 +120,13 @@
 .nav-previous {
 	text-align: right;
 
+}
+
+//Archive Page
+.search-result {
+	color: $color__dark-blue;
+	margin-bottom: 0;
+	margin-top: 100px;
+	font-size: 2rem;
+	text-align: center;
 }
