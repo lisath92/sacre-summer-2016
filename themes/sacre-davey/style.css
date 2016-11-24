@@ -1954,11 +1954,6 @@ footer {
     font-weight: 100;
     color: white;
     text-align: center; }
-  .project img {
-    min-width: 100%;
-    height: auto;
-    max-height: 600px;
-    display: block; }
   .project .entry-header {
     width: 100%; }
     .project .entry-header h2 {
@@ -1986,6 +1981,15 @@ footer {
     @media (min-width: 600px) {
       .project .entry-content {
         display: none; } }
+
+.project-image {
+  width: 100%;
+  overflow: hidden;
+  max-height: 300px; }
+  .project-image img {
+    min-width: 100%;
+    height: auto;
+    display: block; }
 
 @media (min-width: 600px) {
   .icon-border {
@@ -2065,7 +2069,8 @@ footer {
     margin-right: 30px;
     padding-left: 10px; }
   .desktop-entry-content img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .desktop-entry-content .desktop-content {
     width: 50%;
     font-size: 1rem;
