@@ -375,3 +375,11 @@ function mytheme_change_tinymce_colors( $init ) {
     return $init;
 }
 add_filter('tiny_mce_before_init', 'mytheme_change_tinymce_colors');
+
+//Show all projects on archive page
+function get_all_projects_posts( $query ) {
+    if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'projects' ) ) {
+        $query->set( 'posts_per_page', '-1' );
+    }
+}
+add_action( 'pre_get_posts', 'get_all_projects_posts' );
