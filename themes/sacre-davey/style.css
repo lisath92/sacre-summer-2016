@@ -2163,7 +2163,6 @@ footer {
       font-size: 24px;
       margin: 30px 0 0; }
     .news-wrapper .entry-content img {
-      width: 100%;
       max-width: 570px; }
 
 .widget-area {
@@ -2228,8 +2227,7 @@ footer {
 /* -----------------------------------------------------
  Single News Article
 --------------------------------------------------- */
-.single-post img {
-  width: 100%;
+.single-post .news-wrapper img {
   max-width: 600px; }
 
 .single-post .widget-area {
