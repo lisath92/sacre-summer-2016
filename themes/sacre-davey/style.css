@@ -2227,12 +2227,13 @@ footer {
 /* -----------------------------------------------------
  Single News Article
 --------------------------------------------------- */
-.single-post .news-wrapper img {
-  max-width: 600px; }
-
-.single-post .widget-area {
-  margin-top: 250px;
-  margin-right: 2%; }
+.single-post {
+  font-size: 20px; }
+  .single-post .news-wrapper img {
+    max-width: 600px; }
+  .single-post .widget-area {
+    margin-top: 250px;
+    margin-right: 2%; }
 
 .author-date {
   margin-top: 40px;
