@@ -12,7 +12,7 @@
 		height: 250px;
 
 		h1 {
-			@include impact-heading(43px, uppercase);
+			@include impact-heading(35px, uppercase);
 			color: white;
 		}
 	}
