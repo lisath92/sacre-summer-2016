@@ -31,16 +31,16 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active.png' ?>" class="icon-active">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_inactive.png' ?>" class="icon-inactive">
-							</div>
+						</div>
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/innovation_active.png' ?>" class="icon-active">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/innovation_inactive.png' ?>" class="icon-inactive">
 
-							</div>
+						</div>
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_active.png' ?>" class="icon-active">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_inactive.png' ?>" class="icon-inactive">
-							</div>
+						</div>
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_active.png' ?>" class="icon-active">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_inactive.png' ?>" class="icon-inactive">
@@ -95,23 +95,25 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 
 									<?php echo $member['position'];?>
 								</p>
+								<div class="member-description"><?php echo $member['description']; ?>
+									</div>
 							</div>
 						<?php endforeach;
 						?>
 					</div>
 
 				</section>
-		
-			<div class="learn-more-banner">
-				<h2>Learn More</h2>
-				<div class="button-wrapper">
-				<a class="button-class-sectors" href="/sector/oil-gas">Sectors</a>
-				<a class="button-class-projects" href="/projects">Projects</a>
+
+				<div class="learn-more-banner">
+					<h2>Learn More</h2>
+					<div class="button-wrapper">
+						<a class="button-class-sectors" href="/sector/oil-gas">Sectors</a>
+						<a class="button-class-projects" href="/projects">Projects</a>
+					</div>
 				</div>
-			</div>
-		</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-<?php endwhile; ?>
+			</div><!-- .entry-content -->
+		</article><!-- #post-## -->
+	<?php endwhile; ?>
 
 </main><!-- #main -->
 </div><!-- #primary -->
