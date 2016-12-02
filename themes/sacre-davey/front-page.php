@@ -22,9 +22,7 @@ get_header(); ?>
 
    				<div class="home-gallery" data-flickity='{
                "contain": true,
-               "prevNextButtons": false,
-               "contain": true,
-               "pageDots": false }'>
+               "contain": true }'>
                <?php //sacre-davey featured projects on front page
             $projects = CFS()->get('feature_project');
             foreach ($projects as $project):
