@@ -224,7 +224,9 @@
 	width: 90%;
 	margin: 0 auto 3rem;
 	display: none;
-	transition: all 1s ease-in-out;
+	padding-top: 15px;
+	column-count: 1;
+	max-width: 970px;
 	ul {
 		margin: 0;
 		list-style-type: disc;
