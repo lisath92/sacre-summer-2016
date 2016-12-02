@@ -178,6 +178,21 @@
 	}
 }
 
+.member-description {
+	display: none;
+	@include desktop {
+		@include display-flex(center, center);
+		position: absolute;
+		top: 0px;
+		max-width: 280px;
+		height: 270px;
+		font-size: 1rem;
+		transform: rotateY(180deg);
+		box-sizing: border-box;
+		backface-visibility: hidden;
+	}
+}
+
 
 
 
