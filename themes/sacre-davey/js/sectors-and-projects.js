@@ -1,15 +1,9 @@
 (function($) {
 
-//Add specific class to Mining sector
-if ($('body').hasClass('postid-69')) {
-  console.log('hey there');
-  $('.sub-sector-lists').removeClass('sub-sector-lists').addClass('mining-lists');
-}
-
-
 //Toggle sub-sector lists
 $('.sub-sector-title').on('click', function() {
   var subSectorList = $(this).next('div');
+  console.log(subSectorList);
   subSectorList.slideToggle('fast', function() {
     if (subSectorList.is(':visible')) {
       $(this).prev('div').addClass('new-sub-sector-title');
@@ -18,6 +12,12 @@ $('.sub-sector-title').on('click', function() {
     }
   });
 });
+
+
+//Add specific class to Mining sector
+if ($('body').hasClass('postid-69')) {
+  $('.sub-sector-lists').addClass('mining-lists');
+}
 
 
 
