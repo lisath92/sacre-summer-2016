@@ -1654,6 +1654,18 @@ footer {
     text-decoration: none;
     margin-top: 30px; }
 
+.mining-lists {
+  width: 90%;
+  margin: 0 auto 3rem;
+  display: none;
+  transition: all 1s ease-in-out; }
+  .mining-lists ul {
+    margin: 0;
+    list-style-type: disc; }
+
+@media (min-width: 600px) {
+  margin-top: 3rem; }
+
 /*---------------------------------------------------------------
   Front Page
 ----------------------------------------------------------------*/
