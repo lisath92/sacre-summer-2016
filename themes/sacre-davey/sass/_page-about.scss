@@ -143,6 +143,15 @@
 		width: 30vw;
 		max-width: 239px;
 		padding-right: 30px;
+		position:relative;
+		transform-style: preserve-3d;
+		transition: all 1s linear;
+		backface-visibility: hidden;
+
+
+		&:hover {
+			transform: rotateY(180deg);
+		}
 	}
 
 	.name {
@@ -167,10 +176,9 @@
 
 		@include desktop {
 			width: 100%;
-    max-width: none;
-    min-width: 205px;
-    max-height: 240px;
-
+			max-width: none;
+			min-width: 205px;
+			max-height: 240px;
 		}
 	}
 	img {
@@ -209,10 +217,7 @@
 	background-color: $color__dark-blue;
 	h2 {
 		@include impact-heading($font__h2, uppercase);
-
 	}
-
-
 }
 .history-wrapper {
 	width: 90%;
@@ -324,16 +329,14 @@
 	text-decoration: none;
 	
 }
+
 .button-wrapper {
 	width: 90%;
 	margin: 1rem auto 3rem;
 	@include display-flex(center, center);
 	flex-flow: row nowrap;
-	// @include desktop {
-	// 	margin-bottom: 8rem;
-	// }
-
 }
+
 .button-class-projects,
 .button-class-sectors {
 	margin: 0 2rem;
