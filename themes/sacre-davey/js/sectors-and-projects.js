@@ -1,5 +1,12 @@
 (function($) {
 
+//Add specific class to Mining sector
+if ($('body').hasClass('postid-69')) {
+  console.log('hey there');
+  $('.sub-sector-lists').removeClass('sub-sector-lists').addClass('mining-lists');
+}
+
+
 //Toggle sub-sector lists
 $('.sub-sector-title').on('click', function() {
   var subSectorList = $(this).next('div');
@@ -13,7 +20,6 @@ $('.sub-sector-title').on('click', function() {
 });
 
 
-//Add specific class to Oil-Gas sector
 
 var count = $('section.development').length,
 button = $('.read-more-button');
