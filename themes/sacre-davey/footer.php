@@ -17,7 +17,7 @@
   <div class="more-info">
     <h1>Need more info?</h1>
     <a href="/sacre-davey/contact">
-    <button type="submit">Contact Us</button>
+      <button type="submit">Contact Us</button>
     </a>
   </div>
   <div class="social-media">
@@ -25,6 +25,7 @@
     <a href="https://www.linkedin.com/company/sacr--davey-engineering" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
     <a href="https://www.facebook.com/Sacr%C3%A9-Davey-Engineering-349287118415639/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
     <a href="https://www.youtube.com/user/sacredavey" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/sacredavey" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
   </div>
 
 
