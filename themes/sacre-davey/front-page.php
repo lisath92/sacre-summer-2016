@@ -69,12 +69,14 @@ get_header(); ?>
     </section>
     <section class="affiliation">
       <h3>Affiliated Companies</h3>
-      <img src="<?php echo get_template_directory_uri() .'/assets/images/BiochemLogo.jpg'?>" alt="Biochem partner logo">
-      <img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo">
-      <img src="<?php echo get_template_directory_uri() .'/assets/images/FerencoLogo.png'?>" alt="Ferenco partner logo">
-      <img src="<?php echo get_template_directory_uri() .'/assets/images/HTEClogo.png'?>" alt="HTEC partner logo">
-    </section>
-  </main><!-- #main -->
-</div><!-- #primary -->
+      <a href="http://www.s2gbiochem.com/" target="_blank">
+        <img src="<?php echo get_template_directory_uri() .'/assets/images/BiochemLogo.jpg'?>" alt="Biochem partner logo"></a>
+        <a href="http://www.e3energypartners.com" target="_blank"><img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo"></a>
+        <a href="http://ferenco.com/" target="_blank"><img src="<?php echo get_template_directory_uri() .'/assets/images/FerencoLogo.png'?>" alt="Ferenco partner logo"></a>
+        <a href="http://ferenco.com/" target="_blank">
+          <img src="<?php echo get_template_directory_uri() .'/assets/images/HTEClogo.png'?>" alt="HTEC partner logo"></a>
+        </section>
+      </main><!-- #main -->
+    </div><!-- #primary -->
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
