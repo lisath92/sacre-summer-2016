@@ -48,7 +48,7 @@ get_header(); ?>
 						<p class="trust">Engineers and Project Managers you can trust</p>
 					</div>
 					<div class="certification-block">
-						<h2>Sacre-Davey Engineering Inc. was one of the first companies to be certified under the APEG of BC in Organizational Quality Management Program.</h2>
+						<h2>Sacré-Davey Engineering Inc. was one of the first companies to be certified under the APEG of BC in Organizational Quality Management Program.</h2>
 						<p>Our in-house quality controls system is compliant with the Organizational Quality Management Program as outlined by the Association of Professional Engineers &amp; Geoscientists of British Columbia.</p>
 						<img src="<?php echo get_template_directory_uri() . '/assets/images/arrow-down.png' ?>">
 						
