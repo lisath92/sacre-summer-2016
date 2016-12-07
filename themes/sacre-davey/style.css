@@ -1658,10 +1658,7 @@ footer {
   width: 90%;
   margin: 0 auto 3rem;
   display: none;
-  padding-top: 15px;
-  -moz-column-count: 1;
-       column-count: 1;
-  max-width: 970px; }
+  transition: all 1s ease-in-out; }
   .mining-lists ul {
     margin: 0;
     list-style-type: disc; }
