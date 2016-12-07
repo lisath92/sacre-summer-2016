@@ -1357,6 +1357,8 @@ footer {
 .careers-hero-image {
   height: 200px; }
   .careers-hero-image h1 {
+    text-align: center;
+    padding: 0 20px;
     font-family: "Impact", "Charcoal", sans-serif;
     font-size: 2.5rem;
     text-transform: uppercase;
