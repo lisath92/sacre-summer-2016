@@ -43,11 +43,12 @@
 		color: white;
 		background: $color__lightblue;			
 		padding: 3rem 0rem;
-		@include impact-heading(2rem, initial);
+		font-size: 1.5rem;
 	}
 	h2 {
 		width: 90%;
 		margin: 0 auto;
+		font-weight:100;
 	}
 }
 

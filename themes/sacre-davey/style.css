@@ -1384,13 +1384,11 @@ footer {
     color: white;
     background: #279AB6;
     padding: 3rem 0rem;
-    font-family: "Impact", "Charcoal", sans-serif;
-    font-size: 2rem;
-    text-transform: initial;
-    letter-spacing: 3px; }
+    font-size: 1.5rem; }
   .life-work-banner-wrapper h2 {
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-weight: 100; }
 
 .join-team-banner {
   padding: 3rem 0;
