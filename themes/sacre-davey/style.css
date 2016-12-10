@@ -795,7 +795,8 @@ iframe {
         .engineering-needs-wrapper .engineering-needs-block h4 {
           font-size: 1.7rem;
           font-weight: normal;
-          line-height: 1; } }
+          line-height: 1;
+          min-height: 80px; } }
   .engineering-needs-wrapper .engineering-needs-list {
     padding: 0;
     font-weight: bold; }
