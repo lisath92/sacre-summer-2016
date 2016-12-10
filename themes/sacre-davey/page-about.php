@@ -45,6 +45,10 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_active.png' ?>" class="icon-active">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_inactive.png' ?>" class="icon-inactive">
 						</div>
+						<div class="nav-cell">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/safety_active.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/safety_inactive.png' ?>" class="icon-inactive">
+						</div>
 					</div>
 					<div class="carousel-main">
 						<div class="gallery-cell">
