@@ -51,11 +51,11 @@ button.click(function() {
 
 //Projects click show more info
 
-var projectTitle = $('.project-title');
+var projectTitle = $('.entry-header');
 
 projectTitle.click(function() {
-  var currentDiv = $(this).parents('.entry-header').next('div');
-  var singleModal = $(this).parents('.entry-header').nextAll('section');
+  var currentDiv = $(this).next('div');
+  var singleModal = $(this).nextAll('section');
 
   if($(window).width()<582) {
     currentDiv.slideDown('slow');
