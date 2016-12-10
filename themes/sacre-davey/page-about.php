@@ -67,6 +67,9 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 						<div class="gallery-cell">
 							<p>We hold ourselves to the highest standard of business and professional conduct. In the service business, our customers rely on us to give them the right answer – which is not always the most popular one. We pledge to do your work safely, with sound advice and without taking shortcuts. We will have the tough discussion that sometimes needs to happen to ensure the needs of your project are met and in doing so we promise to act consistently with integrity and respect for our customers and stakeholders.</p>
 						</div>
+						<div class="gallery-cell">
+							<p>This is the safety icon description.</p>
+						</div>
 					</div>
 
 					<section class="timeline">
