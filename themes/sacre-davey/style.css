@@ -1003,8 +1003,8 @@ iframe {
     padding: 0 25vw; }
     @media (min-width: 600px) {
       .carousel-nav .nav-cell {
-        padding: 0 4vw;
-        width: 10%;
+        padding: 0 3vw;
+        width: 9%;
         max-width: 100px; } }
     .carousel-nav .nav-cell .icon-active {
       display: none; }
