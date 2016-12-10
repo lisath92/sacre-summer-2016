@@ -22,7 +22,7 @@ get_header(); ?>
 				<div class="entry-header">
 				</div>
 				<div class="entry-content">
-					<h2>One-stop-shop for all your engineering needs</h2>
+					<h2>One stop shop for all your engineering needs</h2>
 					<div class="engineering-needs-wrapper">
 						
 						<div class="engineering-needs-block">
@@ -32,7 +32,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="engineering-needs-block">
-							<h4>Project Delivery</h4>
+							<h4>Project Management &amp; Project Delivery</h4>
 							<div class="engineering-needs-list">
 								<?php echo CFS()->get('project_delivery'); ?>
 							</div>
