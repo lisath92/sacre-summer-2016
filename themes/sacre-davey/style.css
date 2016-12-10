@@ -1981,11 +1981,7 @@ footer {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
-  cursor: pointer; }
-  @media (min-width: 600px) {
-    .project-title:hover h1 {
-      color: #c6c6c6; } }
+      align-items: center; }
 
 .project {
   width: 100%; }
@@ -2005,6 +2001,11 @@ footer {
     text-align: center; }
   .project .entry-header {
     width: 100%; }
+    @media (min-width: 600px) {
+      .project .entry-header:hover {
+        cursor: pointer; }
+        .project .entry-header:hover h1 {
+          color: #c6c6c6; } }
     .project .entry-header h2 {
       margin: 0;
       border: 0; }

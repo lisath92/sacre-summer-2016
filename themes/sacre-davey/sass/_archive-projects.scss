@@ -50,13 +50,8 @@
     height: 80px;
     background-color: $color__dark-blue;
     @include display-flex(center, center);
-    cursor: pointer;
-    @include desktop {
-        &:hover h1{
-            color: $color__grey;
-        }
-    }
 }
+
 .project {
     width: 100%;
     @include desktop {
@@ -77,37 +72,45 @@
     
     .entry-header {
         width: 100%;
-        h2 {
-            margin: 0;
-            border: 0;
-        }
-    }
-    article {
-        margin: 0;
-    }
-    .entry-content {
-        margin: 3rem auto;
-        width: 90%;
-        display: none;
-        font-size: 1rem;
-        text-align: center;
-        padding-bottom: 1rem;
-        p {
-            text-align: left;
-        }
-        .fa-times {
-            font-size: 1.5rem;
-            text-align: center;
-            color: white;
-            border-radius: 50%;
-            padding: .4rem .6rem;
-            background-color: $color__dark-blue;
-            cursor: pointer;
-        }
         @include desktop {
-            display: none;
-        }
+            &:hover {
+                cursor: pointer;
+                h1 {
+                   color: $color__grey;
+               }
+           }
+       }
+       h2 {
+        margin: 0;
+        border: 0;
     }
+}
+article {
+    margin: 0;
+}
+.entry-content {
+    margin: 3rem auto;
+    width: 90%;
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    p {
+        text-align: left;
+    }
+    .fa-times {
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        padding: .4rem .6rem;
+        background-color: $color__dark-blue;
+        cursor: pointer;
+    }
+    @include desktop {
+        display: none;
+    }
+}
 }
 
 //Project image
