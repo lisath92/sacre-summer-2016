@@ -15,7 +15,6 @@
             asNavFor: $('.carousel-main'),
             prevNextButtons: false,
             pageDots: false,
-            cellAlign: 'left',
             dragThreshold: 1,
             contain: true,
             setGallerySize: false
