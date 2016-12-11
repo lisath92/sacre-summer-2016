@@ -36,21 +36,21 @@ get_header(); ?>
 					North Vancouver, BC, V7J 2K7
 					Canada</p>
 				</div>
-				<div class="office-contact">
-					<p>Phone: (604) 986-0663<br/>
-					Fax: (604) 986-0525<br/>
-					Email: <?php echo antispambot( 'admin@sacre-davey.com' ); ?></p>
-				</div>
+				<ul class="office-contact">
+					<li>Phone: (604) 986-0663</li>
+					<li>Fax: (604) 986-0525</li>
+					<li>Email: <a href="mailto:admin@sacre-davey.com" target="blank">admin@sacre-davey.com</a></li>
+				</ul>
 				<h3>Sacre-Davey Calgary Office</h3>
 				<div class="office-address">
 					<p>1300 8th Street SW Suite #403
 					Calgary, Alberta, T2R 1B2
 					Canada</p>
 				</div>
-				<div class="office-contact">
-					<p>Phone: 403-455-2583<br/>
-					Email: <?php echo antispambot( 'admin-ab@sacre-davey.com' ); ?></p>
-				</div>
+				<ul class="office-contact">
+					<li>Phone: 403-455-2583</li>
+					<li>Email: <a href="mailto:admin-ab@sacre-davey.com">admin-ab@sacre-davey.com</a></li>
+				</ul>
 			</div>
 			<div class="office-block">
 				<h2>United States Office</h2>
@@ -61,11 +61,11 @@ get_header(); ?>
 					Seattle, WA 98121
 					USA</p>
 				</div>
-				<div class="office-contact">
-					<p>Phone: 1-206-462-3600<br/>
-					Fax: 1-206-462-3599<br/>
-					Email: <?php echo antispambot( 'solutions@e3energypartners.com' ); ?></p>
-				</div>
+				<ul class="office-contact">
+					<li>Phone: 1-206-462-3600</li>
+					<li>Fax: 1-206-462-3599</li>
+					<li>Email: <a href="mailto:solutions@e3energypartners.com">solutions@e3energypartners.com</a></li>
+				</ul>
 			</div>					
 			<div class="office-block">
 				<h2>Associated Offices</h2>
@@ -75,11 +75,11 @@ get_header(); ?>
 					Abu Dhabi<br/>
 					United Arab Emirates</p>
 				</div>
-				<div class="office-contact">
-					<p>Phone: 971-02-650-9440<br/>
-					Fax: 971-02-650-9441<br/>
-					Email: <?php echo antispambot( 'admin-me@sacre-davey.com' ); ?></p>
-				</div>
+				<ul class="office-contact">
+					<li>Phone: 971-02-650-9440</li>
+					<li>Fax: 971-02-650-9441</li>
+					<li>Email: <a href="mailto:admin-me@sacre-davey.com">admin-me@sacre-davey.com</a></li>
+				</ul>
 			</div>	
 			<div class="office-block">
 				<h2>Canadian Regional Offices</h2>
@@ -88,11 +88,11 @@ get_header(); ?>
 					Vernon, British Columbia<br/>
 					Regina, Saskatchewan</p>
 				</div>
-				<div class="office-contact">
-					<p>Please contact our Head Office for regional office information<br/>
-					Phone: 604-986-0663<br/>
-					Email: <?php echo antispambot( 'admin@sacre-davey.com' ); ?></p>
-				</div>
+				<ul class="office-contact">
+					<li>Please contact our Head Office for regional office information</li>
+					<li>Phone: 604-986-0663</li>
+					<li>Email: <a href="mailto:admin@sacre-davey.com">admin@sacre-davey.com</a></li>
+				</ul>
 
 			</div>
 		</div>
