@@ -419,7 +419,7 @@ iframe {
   width: 100%; }
 
 .offices-wrapper {
-  width: 80%;
+  width: 81%;
   margin: 0 auto;
   word-wrap: break-word;
   display: -ms-flexbox;
@@ -444,15 +444,19 @@ iframe {
       padding-right: 20px; } }
   .office-block h2 {
     color: #272D66;
-    min-height: 82px; }
+    min-height: 87px; }
   .office-block h3 {
     font-weight: bold;
-    min-height: 65px; }
+    min-height: 96px;
+    margin-top: 30px; }
 
 .office-address {
   width: 200px; }
   .office-address p {
     line-height: 1.25; }
+
+.office-contact {
+  padding: 0; }
 
 /*-----------------------------------------------------
   Header
