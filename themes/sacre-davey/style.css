@@ -434,21 +434,25 @@ iframe {
     .offices-wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between; } }
-  .offices-wrapper .office-block {
-    width: 100%; }
-    @media (min-width: 600px) {
-      .offices-wrapper .office-block {
-        padding-bottom: 20px;
-        width: 30%;
-        padding-right: 20px; } }
-    .offices-wrapper .office-block h2 {
-      color: #272D66; }
-    .offices-wrapper .office-block h3 {
-      font-weight: bold; }
-  .offices-wrapper .office-address {
-    width: 200px; }
-    .offices-wrapper .office-address p {
-      line-height: 1.25; }
+
+.office-block {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .office-block {
+      padding-bottom: 20px;
+      width: 30%;
+      padding-right: 20px; } }
+  .office-block h2 {
+    color: #272D66;
+    min-height: 82px; }
+  .office-block h3 {
+    font-weight: bold;
+    min-height: 65px; }
+
+.office-address {
+  width: 200px; }
+  .office-address p {
+    line-height: 1.25; }
 
 /*-----------------------------------------------------
   Header
@@ -1999,9 +2003,8 @@ footer {
     width: 100%; }
     @media (min-width: 600px) {
       .project .entry-header:hover {
-        cursor: pointer; }
-        .project .entry-header:hover h1 {
-          color: #c6c6c6; } }
+        cursor: pointer;
+        opacity: 0.6; } }
     .project .entry-header h2 {
       margin: 0;
       border: 0; }

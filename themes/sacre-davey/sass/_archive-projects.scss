@@ -75,9 +75,7 @@
         @include desktop {
             &:hover {
                 cursor: pointer;
-                h1 {
-                   color: $color__grey;
-               }
+                opacity: 0.6;
            }
        }
        h2 {
