@@ -1005,11 +1005,11 @@ iframe {
     width: 42%;
     height: 100%;
     max-width: 125px;
-    padding: 0 25vw; }
+    padding: 0 30vw; }
     @media (min-width: 600px) {
       .carousel-nav .nav-cell {
-        padding: 0 3vw;
-        width: 9%;
+        padding: 0 2vw;
+        width: 12%;
         max-width: 100px; } }
     .carousel-nav .nav-cell .icon-active {
       display: none; }

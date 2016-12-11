@@ -54,10 +54,10 @@
 		width: 42%;
 		height: 100%;
 		max-width: 125px;
-		padding: 0 25vw;
+		padding: 0 30vw;
 		@include desktop {
-			padding: 0 3vw;
-			width: 9%;
+			padding: 0 2vw;
+			width: 12%;
 			max-width: 100px;
 		}
 		
