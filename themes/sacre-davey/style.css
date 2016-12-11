@@ -1001,6 +1001,8 @@ iframe {
   @media (min-width: 600px) {
     .carousel-nav {
       border-bottom: 3px #272D66 solid; } }
+  .carousel-nav .flickity-slider {
+    left: 13px; }
   .carousel-nav .nav-cell {
     width: 42%;
     height: 100%;
@@ -1008,8 +1010,9 @@ iframe {
     padding: 0 30vw; }
     @media (min-width: 600px) {
       .carousel-nav .nav-cell {
-        padding: 0 2vw;
-        width: 12%;
+        padding-right: 0;
+        padding-left: 4vw;
+        width: 11.5%;
         max-width: 100px; } }
     .carousel-nav .nav-cell .icon-active {
       display: none; }
