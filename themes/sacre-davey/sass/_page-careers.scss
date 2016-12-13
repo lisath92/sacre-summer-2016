@@ -126,4 +126,17 @@
 
 .no-job-listing p a {
 	display: none;
+//Single Job Post
+.single-jobpost {
+	h2 {
+		text-align: center;
+		@include desktop {
+			text-align: left;
+			margin-left: 15px;
+		}
+	}
+
+	.sjb-heading{
+		padding: 0;
+	}
 }
