@@ -126,6 +126,8 @@
 
 .no-job-listing p a {
 	display: none;
+}
+
 //Single Job Post
 .single-jobpost {
 	h2 {
@@ -148,5 +150,13 @@
 		width: 85%;
 		margin: 0 auto;
 	}
+
+	button {
+		box-shadow: none;
+	}
+}
+
+.sjb-wrap #sjb-form-padding-button button:hover {
+	background-color: $color__lightblue;
 
 }

@@ -1479,6 +1479,29 @@ footer {
 .no-job-listing p a {
   display: none; }
 
+.single-jobpost h2 {
+  text-align: center; }
+  @media (min-width: 600px) {
+    .single-jobpost h2 {
+      text-align: left;
+      margin-left: 15px; } }
+
+.single-jobpost .sjb-heading {
+  padding: 0; }
+
+.single-jobpost article.sjb-row {
+  margin: 15px; }
+
+.single-jobpost article.sjb-job-details {
+  width: 85%;
+  margin: 0 auto; }
+
+.single-jobpost button {
+  box-shadow: none; }
+
+.sjb-wrap #sjb-form-padding-button button:hover {
+  background-color: #279AB6; }
+
 /*-----------------------------------------------------------
  Sectors
 -------------------------------------------------------------*/
