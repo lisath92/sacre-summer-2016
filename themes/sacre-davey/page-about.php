@@ -68,7 +68,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 							<p>We hold ourselves to the highest standard of business and professional conduct. In the service business, our customers rely on us to give them the right answer – which is not always the most popular one. We pledge to do your work safely, with sound advice and without taking shortcuts. We will have the tough discussion that sometimes needs to happen to ensure the needs of your project are met and in doing so we promise to act consistently with integrity and respect for our customers and stakeholders.</p>
 						</div>
 						<div class="gallery-cell">
-							<p>This is the safety icon description.</p>
+							<p>Safety is essential to our everyday culture, whether working in the office, from a project site or outside of work, we are committed to reducing risk, preventing injuries and promoting good health for our people and everyone we work with. We will ensure we provide our staff with knowledge, tools and training to work safely and prevent accidents, and be proactive about ensuring we speak up about unsafe conditions. Our zero loss record is something we are very proud and protective of.</p>
 						</div>
 					</div>
 
