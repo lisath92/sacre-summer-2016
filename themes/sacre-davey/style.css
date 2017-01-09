@@ -1538,7 +1538,7 @@ footer {
       background: url("../../assets/images/left-overlay.png") left/100% 100% no-repeat;
       max-width: 80%;
       max-height: 780px;
-      min-height: 450px;
+      min-height: 600px;
       -ms-flex-align: start;
           align-items: flex-start;
       text-align: left; } }
