@@ -51,7 +51,7 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
       $post = get_the_ID();
       $arr = get_the_terms($post, 'sector_type');
       echo $arr[0]->slug; ?>">
-
+      
       <?php echo get_the_title(); ?> Projects</a>
       </div>
     </section>
