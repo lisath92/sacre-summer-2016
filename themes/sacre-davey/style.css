@@ -1467,7 +1467,7 @@ footer {
   padding-top: 3rem; }
 
 .sjb-wrap {
-  margin: 0;
+  margin: 0 0 100px;
   float: none; }
   .sjb-wrap input[type=submit]:hover {
     box-shadow: none;
