@@ -192,7 +192,7 @@
   @include desktop {
     @include display-flex(center, center);
     position: absolute;
-    top: 0px;
+    top: -10px;
     max-width: 280px;
     height: 270px;
     font-size: 1.2rem;
