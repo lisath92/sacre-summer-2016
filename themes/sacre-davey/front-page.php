@@ -53,7 +53,7 @@ get_header(); ?>
           <div class="each-category">
            <h2 class="category-title">
             <a href="/sacre-davey/sector/<?php 
-            $each_category->slug; ?>"><?php echo $each_category->name; ?></a>
+            echo $each_category->slug; ?>"><?php echo $each_category->name; ?></a>
           </h2>
           <div class="sector-img">
             <img src="
