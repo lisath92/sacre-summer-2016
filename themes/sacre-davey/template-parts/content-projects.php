@@ -8,8 +8,8 @@
 ?>
 
 <div class="project-description-banner">
-	<p>For a detailed description of a project please enter the information below</p>
-	<?php echo do_shortcode( '[contact-form-7 id="524" title="More Project Info"]' ); ?>
+	<p>For more information regarding other SDE projects please enter details below</p>
+	<?php echo do_shortcode( '[contact-form-7 id="524" title="More Sector Info"]' ); ?>
 </div>
 
 
