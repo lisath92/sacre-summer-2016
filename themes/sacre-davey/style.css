@@ -1499,6 +1499,10 @@ footer {
 .single-jobpost button {
   box-shadow: none; }
 
+.single-jobpost .sjb-job-features,
+.single-jobpost #apply {
+  display: none; }
+
 .sjb-wrap #sjb-form-padding-button button:hover {
   background-color: #279AB6; }
 

@@ -154,7 +154,16 @@
 	button {
 		box-shadow: none;
 	}
+
+	.sjb-job-features, 
+	#apply {
+		display: none;
+	}
 }
+
+
+
+
 
 .sjb-wrap #sjb-form-padding-button button:hover {
 	background-color: $color__lightblue;
