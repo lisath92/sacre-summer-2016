@@ -1764,7 +1764,7 @@ footer {
 
 .projects-block-image {
   position: relative;
-  height: 100vw;
+  height: 480px;
   max-height: 600px; }
   .projects-block-image img {
     position: absolute;
@@ -1800,17 +1800,18 @@ footer {
         text-align: left;
         padding: 10px 1.5rem; } }
   .projects-block-info p {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.2;
     position: absolute;
     right: 0;
-    bottom: 10%;
+    bottom: 2%;
     margin: 0;
     width: 60%;
     color: white; }
     @media (min-width: 600px) {
       .projects-block-info p {
         width: 50%;
+        font-size: 20px;
         bottom: 12%; } }
 
 .sector-icons {
