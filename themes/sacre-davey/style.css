@@ -1100,10 +1100,10 @@ iframe {
   .each-member .member-photo {
     border-radius: 125px;
     overflow: hidden;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     max-height: 200px;
-    max-width: 185px; }
+    max-width: 205px; }
     @media (min-width: 600px) {
       .each-member .member-photo {
         width: 100%;
@@ -1213,7 +1213,7 @@ iframe {
 
 .learn-more-banner {
   color: white;
-  height: 250px;
+  height: 400px;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/learn-more-banner.png") top/cover no-repeat;
   text-align: center;
@@ -1225,9 +1225,6 @@ iframe {
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
-  @media (min-width: 600px) {
-    .learn-more-banner {
-      height: 400px; } }
   .learn-more-banner h2 {
     color: white;
     text-transform: uppercase;
@@ -1235,12 +1232,6 @@ iframe {
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 3px; }
-
-.button-class {
-  color: white;
-  border: 1px solid white;
-  padding: .75rem 1.5rem;
-  text-decoration: none; }
 
 .button-wrapper {
   width: 90%;
@@ -1251,24 +1242,25 @@ iframe {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap; }
-
-.button-class-projects,
-.button-class-sectors {
-  margin: 0 2rem;
-  color: white;
-  border: 2px solid white;
-  padding: .75rem 3rem;
-  text-decoration: none;
-  text-transform: uppercase; }
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
   @media (min-width: 600px) {
-    .button-class-projects,
-    .button-class-sectors {
-      font-size: 32px;
-      font-size: 2rem;
-      padding: 1.5rem 3rem;
-      margin: 0 2rem; } }
+    .button-wrapper {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  .button-wrapper a {
+    color: white;
+    border: 2px solid white;
+    padding: .75rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 15px auto; }
+    @media (min-width: 600px) {
+      .button-wrapper a {
+        font-size: 32px;
+        font-size: 2rem;
+        padding: 1.5rem 3rem;
+        margin: 0 2rem; } }
 
 /*-----------------------------------------
   Footer

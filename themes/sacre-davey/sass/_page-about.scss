@@ -146,8 +146,8 @@
 	margin-bottom: 30px;
 	@include desktop {
 		width: 34vw;
-    max-width: 250px;
-    padding-right: 30px;
+		max-width: 250px;
+		padding-right: 30px;
 		position:relative;
 		transform-style: preserve-3d;
 		transition: all 1s linear;
@@ -174,10 +174,10 @@
 	.member-photo {
 		border-radius: 125px;
 		overflow: hidden;
-		width: 50%;
+		width: 70%;
 		margin: 0 auto;
 		max-height:200px;
-		max-width: 185px;
+		max-width: 205px;
 
 		@include desktop {
 			width: 100%;
@@ -303,7 +303,7 @@
 //Learn more banner
 .learn-more-banner {
 	color: white;
-	height: 250px;
+	height: 400px;
 	width: 100%;
 	background: 
 	linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
@@ -311,9 +311,6 @@
 	text-align: center;
 	@include display-flex(center, center);
 	flex-flow: column nowrap;
-	@include desktop {
-		height: 400px;
-	}
 
 	h2 {
 		color:white;
@@ -323,10 +320,7 @@
 }
 
 .button-class {
-	color: white;
-	border: 1px solid white;
-	padding: .75rem 1.5rem;
-	text-decoration: none;
+	
 	
 }
 
@@ -334,21 +328,22 @@
 	width: 90%;
 	margin: 1rem auto 3rem;
 	@include display-flex(center, center);
-	flex-flow: row nowrap;
-}
-
-.button-class-projects,
-.button-class-sectors {
-	margin: 0 2rem;
-	color: white;
-	border: 2px solid white;
-	padding: .75rem 3rem;
-	text-decoration: none;
-	text-transform: uppercase;
+	flex-flow: column nowrap;
 	@include desktop {
-		@include font-size (2);
-		padding: 1.5rem 3rem;
-		margin: 0 2rem;
+		flex-direction: row;
 	}
-	
+
+	a {
+		color: white;
+		border: 2px solid white;
+		padding: .75rem 3rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 15px auto;
+		@include desktop {
+			@include font-size(2);
+			padding: 1.5rem 3rem;
+			margin: 0 2rem;
+		}
+	}
 }
