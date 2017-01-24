@@ -8,13 +8,15 @@
 
 	.entry-header {
 		color: white;
-		height: 50vw;
 		text-align: center;
 		width: 100%;
-		max-height: 300px;
 		
 		h1 {
 			@include impact-heading($font__h2, uppercase);
+		}
+
+		.hero {
+			min-height: 300px;
 		}
 	}
 
