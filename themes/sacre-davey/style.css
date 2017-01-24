@@ -961,12 +961,11 @@ iframe {
     margin-bottom: 0; }
   .page-template-page-about .entry-header {
     color: white;
-    height: 400px;
     text-align: center;
     width: 100%; }
     @media (min-width: 600px) {
       .page-template-page-about .entry-header {
-        height: 50vh; } }
+        height: 100%; } }
     .page-template-page-about .entry-header h1 {
       font-family: "Impact", "Charcoal", sans-serif;
       font-size: 48px;
@@ -990,6 +989,7 @@ iframe {
     text-align: center; }
 
 .hero {
+  min-height: 420px;
   height: 100%; }
 
 .carousel-nav {
