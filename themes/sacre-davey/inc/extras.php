@@ -141,7 +141,6 @@ function sacre_davey_contact_inline_styles() {
         background:
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url('.$logo.') bottom/100% 100% no-repeat;
-        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
