@@ -158,13 +158,14 @@ article {
         flex-flow: row wrap;
         align-items: center;
         position: fixed;
-        bottom: 18%;
+        top: 20%;
         z-index: 2;
         left: 5%;
         width: 90%;
         color: black;
         background-color: white;
         padding-bottom: 3rem;
+        z-index: 11;
     }
 
     div {
