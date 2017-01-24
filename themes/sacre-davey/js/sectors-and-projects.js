@@ -64,7 +64,7 @@ projectTitle.click(function() {
       currentDiv.slideUp('slow');
     });
   } else {
-
+    $('.desktop-entry-content').hide();
     singleModal.css('display','flex').hide().fadeIn('slow');
     
   $('.fa-times').click(function(){
