@@ -30,7 +30,7 @@ get_header(); ?>
 		<div class="offices-wrapper container">
 			<div class="office-block">
 				<h2>Canada</h2>
-				<h3>Sacre-Davey Head Office</h3>
+				<h3>Sacré-Davey Head Office</h3>
 				<div class="office-address">
 					<p>315 Mountain Hwy
 					North Vancouver, BC, V7J 2K7
@@ -41,7 +41,7 @@ get_header(); ?>
 					<li>Fax: (604) 986-0525</li>
 					<li>Email: <a href="mailto:admin@sacre-davey.com" target="blank">admin@sacre-davey.com</a></li>
 				</ul>
-				<h3>Sacre-Davey Calgary Office</h3>
+				<h3>Sacré-Davey Calgary Office</h3>
 				<div class="office-address">
 					<p>1300 8th Street SW Suite #403
 					Calgary, Alberta, T2R 1B2
@@ -54,7 +54,7 @@ get_header(); ?>
 			</div>
 			<div class="office-block">
 				<h2>United States Office</h2>
-				<h3>SD3</h3>
+				<h3>SDE3</h3>
 				<div class="office-address">
 					<p>2200 Sixth Avenue
 					Suite #520
@@ -69,7 +69,7 @@ get_header(); ?>
 			</div>					
 			<div class="office-block">
 				<h2>Associated Offices</h2>
-				<h3>Sacre-Davey Group International</h3>
+				<h3>Sacré-Davey Group International</h3>
 				<div class="office-address">
 					<p>PO BOX 111751<br/>
 					Abu Dhabi<br/>
