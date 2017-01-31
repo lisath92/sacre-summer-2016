@@ -1066,7 +1066,8 @@ iframe {
   color: #272D66;
   text-align: center;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 900px; }
   @media (min-width: 600px) {
     .our-team {
       -ms-flex-flow: row wrap;
