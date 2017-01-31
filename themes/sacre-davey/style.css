@@ -490,7 +490,7 @@ iframe {
   @media (min-width: 600px) {
     .site-header h1 {
       background: url("../../assets/images/large-logo.png") center/100% 80% no-repeat;
-      height: 8vw;
+      height: 6.5vw;
       max-height: 80px;
       max-width: 270px;
       width: 23vw; } }
