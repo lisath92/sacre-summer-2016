@@ -99,7 +99,7 @@
 	}
 }
 
-//Simple Job Board
+//WP Job Board
 .job-board p {
 	width: 100%;
 	background-color: $color__dark-blue;
@@ -110,62 +110,47 @@
 	padding-top: 3rem;
 }
 
-.sjb-wrap {
-	margin: 0 0 100px;
-	float: none;
+.job_filters {
+	background-color: $color__dark-blue;
+}
 
-	input[type=submit]:hover {
-		box-shadow: none;
+.single-job_listing {
+	.widget-area {
+		display: none;
+	}
+
+	.news-article {
+		width: 90%;
+	}
+}
+
+.job_filters .job_types {
+	background-color: white;
+	li {
+		border-right: none;
+	}
+}
+
+li.job_listing {
+	font-size: 20px;
+}
+//Single Job Listing
+.single_job_listing .application .application_button  {
+	font-size: 20px;
+	padding: 15px 30px;
+	background-color: $color__dark-blue;
+	color: white;
+	box-shadow: none;
+
+	&:hover {
 		background-color: $color__lightblue;
 	}
 }
 
-.sjb-search-keywords {
-	display: none;
+.job_description li {
+	font-size: 20px;
 }
 
-.no-job-listing p a {
-	display: none;
-}
-
-//Single Job Post
-.single-jobpost {
-	h2 {
-		text-align: center;
-		@include desktop {
-			text-align: left;
-			margin-left: 15px;
-		}
-	}
-
-	.sjb-heading{
-		padding: 0;
-	}
-
-	article.sjb-row {
-		margin: 15px;
-	}
-
-	article.sjb-job-details {
-		width: 85%;
-		margin: 0 auto;
-	}
-
-	button {
-		box-shadow: none;
-	}
-
-	.sjb-job-features, 
-	#apply {
-		display: none;
-	}
-}
-
-
-
-
-
-.sjb-wrap #sjb-form-padding-button button:hover {
-	background-color: $color__lightblue;
-
+.single_job_listing .job-listing-meta .job-type {
+	background-color: $color__dark-blue;
 }

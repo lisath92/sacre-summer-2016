@@ -84,6 +84,11 @@
         color: white;
       }
     }
+
+    &.current-menu-item a  {
+      border-bottom-color: #fff;
+      color: white;
+    }
   }
 }
 

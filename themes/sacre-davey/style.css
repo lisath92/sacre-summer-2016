@@ -533,6 +533,9 @@ iframe {
       background-color: #272D66; }
       .main-navigation .contact:hover a {
         color: white; }
+    .main-navigation .contact.current-menu-item a {
+      border-bottom-color: #fff;
+      color: white; }
 
 .project-type,
 .sector-menu,
@@ -1155,16 +1158,6 @@ iframe {
       display: none; } }
 
 .desktop-history {
-  line-height: 1.25;
-  font-size: 20px;
-  font-size: 1.25rem;
-  display: none; }
-
-@media (min-width: 600px) and (min-width: 600px) {
-  .desktop-history {
-    display: none; } }
-
-.desktop-history {
   display: none; }
   @media (min-width: 600px) {
     .desktop-history {
@@ -1181,37 +1174,34 @@ iframe {
       line-height: 1.5;
       font-size: 1.5rem; } }
 
-.tm_timeline__event__date {
-  display: none; }
+.timeline .tm_timeline__tense {
+  background-color: #279AB6; }
 
-.tm_timeline__event__dot {
+.timeline .tm_timeline-layout-vertical-chessOrder .tm_timeline__tense {
+  background-color: #279AB6; }
+
+.timeline .tm_timeline__event__dot {
   background-color: #279AB6;
   box-shadow: 0 0 0 6px #279AB6; }
 
-.tm_timeline__event__title {
+.timeline .tm_timeline__event__title {
   color: white;
   font-size: 1.5rem;
   margin-left: 1rem; }
   @media (min-width: 600px) {
-    .tm_timeline__event__title {
+    .timeline .tm_timeline__event__title {
       font-size: 2rem; } }
 
-.tm_timeline-layout-vertical-chessOrder .tm_timeline__tense {
-  background-color: #279AB6; }
+.timeline .tm_timeline__event__date {
+  display: none; }
 
-.tm_timeline {
-  text-align: left; }
-
-.tm_timeline__event__description {
-  padding-top: 1rem;
+.timeline .tm_timeline__event__description {
+  line-height: 1.5;
   margin-left: 1rem;
   font-size: 1rem; }
   @media (min-width: 600px) {
-    .tm_timeline__event__description {
+    .timeline .tm_timeline__event__description {
       font-size: 1.25rem; } }
-
-.tm_timeline__body-tense {
-  color: white; }
 
 .learn-more-banner {
   color: white;
@@ -1460,45 +1450,37 @@ footer {
   margin: 0;
   padding-top: 3rem; }
 
-.sjb-wrap {
-  margin: 0 0 100px;
-  float: none; }
-  .sjb-wrap input[type=submit]:hover {
-    box-shadow: none;
+.job_filters {
+  background-color: #272D66; }
+
+.single-job_listing .widget-area {
+  display: none; }
+
+.single-job_listing .news-article {
+  width: 90%; }
+
+.job_filters .job_types {
+  background-color: white; }
+  .job_filters .job_types li {
+    border-right: none; }
+
+li.job_listing {
+  font-size: 20px; }
+
+.single_job_listing .application .application_button {
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: #272D66;
+  color: white;
+  box-shadow: none; }
+  .single_job_listing .application .application_button:hover {
     background-color: #279AB6; }
 
-.sjb-search-keywords {
-  display: none; }
+.job_description li {
+  font-size: 20px; }
 
-.no-job-listing p a {
-  display: none; }
-
-.single-jobpost h2 {
-  text-align: center; }
-  @media (min-width: 600px) {
-    .single-jobpost h2 {
-      text-align: left;
-      margin-left: 15px; } }
-
-.single-jobpost .sjb-heading {
-  padding: 0; }
-
-.single-jobpost article.sjb-row {
-  margin: 15px; }
-
-.single-jobpost article.sjb-job-details {
-  width: 85%;
-  margin: 0 auto; }
-
-.single-jobpost button {
-  box-shadow: none; }
-
-.single-jobpost .sjb-job-features,
-.single-jobpost #apply {
-  display: none; }
-
-.sjb-wrap #sjb-form-padding-button button:hover {
-  background-color: #279AB6; }
+.single_job_listing .job-listing-meta .job-type {
+  background-color: #272D66; }
 
 /*-----------------------------------------------------------
  Sectors

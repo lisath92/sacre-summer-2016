@@ -220,33 +220,20 @@
 		@include impact-heading($font__h2, uppercase);
 	}
 }
+
 .history-wrapper {
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
-
-
 }
-.mobile-history {
 
-	
+.mobile-history {
 	@include font-size (1.25);
 	@include desktop {
 		display:none
 	}
 }
-.desktop-history {
-	line-height: 1.25;
-	@include font-size (1.25);
-	display: none;
-	@include desktop {
 
-		
-		@include desktop {
-			display:none
-		}
-	}
-}
 .desktop-history {
 	display: none;
 	@include desktop {
@@ -258,47 +245,51 @@
 		font-size: 1.5rem;
 	}
 }
-.tm_timeline__event__date {
-	display: none;
-}
-.tm_timeline__event__dot {
-	background-color: $color__lightblue;
-	box-shadow: 0 0 0 6px #279AB6;
-}
 
-.tm_timeline__event__title {
-	color: white;
-	font-size: 1.5rem;
-	margin-left: 1rem;
-	@include desktop {
-		font-size: 2rem;
-	}
-}
-.tm_timeline-layout-vertical-chessOrder {
+.timeline {
 	.tm_timeline__tense {
 		background-color: $color__lightblue;
 	}
 }
-.tm_timeline {
-	text-align: left;
-}
-.tm_timeline__layout_vertical {
 
-}
-.tm_timeline__event__description {
-	padding-top: 1rem;
-	margin-left: 1rem;
-	font-size: 1rem;
-	@include desktop {
-		font-size: 1.25rem;
+
+
+
+.timeline {
+	.tm_timeline-layout-vertical-chessOrder {
+		.tm_timeline__tense {
+			background-color: $color__lightblue;
+		}
+	}
+
+	.tm_timeline__event__dot {
+		background-color: $color__lightblue;
+		box-shadow: 0 0 0 6px #279AB6;
+	}
+
+
+	.tm_timeline__event__title {
+		color: white;
+		font-size: 1.5rem;
+		margin-left: 1rem;
+		@include desktop {
+			font-size: 2rem;
+		}
+	}
+
+	.tm_timeline__event__date {
+		display: none;
+	}
+
+	.tm_timeline__event__description {
+		line-height: 1.5;
+		margin-left: 1rem;
+		font-size: 1rem;
+		@include desktop {
+			font-size: 1.25rem;
+		}
 	}
 }
-
-.tm_timeline__body-tense {
-
-	color: white;
-}
-
 
 
 //Learn more banner
