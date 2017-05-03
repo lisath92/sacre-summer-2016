@@ -43,9 +43,7 @@ get_header(); ?>
 				</ul>
 				<h3>Sacré-Davey Calgary Office</h3>
 				<div class="office-address">
-					<p>1300 8th Street SW Suite #403
-					Calgary, Alberta, T2R 1B2
-					Canada</p>
+					<p>435 – 4th Avenue SW, Suite 560, Calgary, AB T2P 3A8</p>
 				</div>
 				<ul class="office-contact">
 					<li>Phone: 403-455-2583</li>
@@ -84,8 +82,7 @@ get_header(); ?>
 			<div class="office-block">
 				<h2>Canadian Regional Offices</h2>
 				<div class="office-address">
-					<p>Toronto, Ontario
-					Vernon, British Columbia<br/>
+					<p>Toronto, Ontario<br/>
 					Regina, Saskatchewan</p>
 				</div>
 				<ul class="office-contact">
