@@ -3,7 +3,6 @@
 //Toggle sub-sector lists
 $('.sub-sector-title').on('click', function() {
   var subSectorList = $(this).next('div');
-  console.log(subSectorList);
   subSectorList.slideToggle('fast', function() {
     if (subSectorList.is(':visible')) {
       $(this).prev('div').addClass('new-sub-sector-title');
@@ -25,13 +24,13 @@ var count = $('section.development').length,
 button = $('.read-more-button');
 
 //Show read-more button condition
-for (var i = 1; i<=count; i++) {
+for (var i = 1; i <= count; i++) {
   var dev = $('.development:nth-of-type('+i+')');
-  if (dev.next('.read-more').text().trim()) {
+  if(dev.next('.read-more').children().first().hasClass('jp-relatedposts')) {
+    dev.next('.read-more').css('margin', '0px');
+  } else {
     dev.find('.read-more-button').show();
     dev.next('.read-more').hide();
-  } else {
-    dev.next('.read-more').css('margin', '0px');    
   }
 }
 
@@ -40,7 +39,7 @@ for (var i = 1; i<=count; i++) {
 button.click(function() {
   var currentDiv = $(this).parent('.development').next('div');
   currentDiv.slideDown('slow');
-  if (currentDiv.find('div').length === 0) {
+  if (currentDiv.find('div').length <= 1) {
     currentDiv.append('<div class="read-less-button">Read Less</div>');
     $('.read-less-button').click(function() {
       $(this).parent('div').slideUp('slow');
