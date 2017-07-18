@@ -1398,40 +1398,15 @@ footer {
 
 .join-team-banner {
   padding: 3rem 0;
-  background: #279AB6;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-flow: column;
-      flex-flow: column;
-  text-align: center; }
-  @media (min-width: 600px) {
-    .join-team-banner {
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-      -ms-flex-align: start;
-          align-items: flex-start;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+  background: #279AB6; }
   .join-team-banner div {
     width: 90%;
     margin: 0 auto; }
-    @media (min-width: 600px) {
-      .join-team-banner div {
-        width: 40%;
-        text-align: left;
-        max-width: 415px; } }
   .join-team-banner p {
     text-align: center;
     margin: 0 0 15px;
     color: white;
     font-weight: 400; }
-    @media (min-width: 600px) {
-      .join-team-banner p {
-        text-align: left; } }
   .join-team-banner a {
     word-wrap: break-word;
     color: #272D66; }
@@ -1481,6 +1456,21 @@ li.job_listing {
 
 .single_job_listing .job-listing-meta .job-type {
   background-color: #272D66; }
+
+.smartWidget {
+  margin-bottom: 50px; }
+
+.job-board #smartWidget0 .srJobList .srJobListTitles * {
+  background-color: #279AB6;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0px 15px 25px;
+  font-family: "Helvetica", "Arial", sans-serif; }
+
+.job-board #smartWidget0 .srJobList .srJobListJobOdd *,
+.job-board #smartWidget0 .srJobList .srJobListJobEven * {
+  font-size: 13px;
+  padding: 15px 0px 15px 25px; }
 
 /*-----------------------------------------------------------
  Sectors

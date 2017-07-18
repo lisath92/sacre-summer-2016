@@ -56,28 +56,11 @@
 
 .join-team-banner {
 	padding: 3rem 0;
-
 	background: $color__lightblue;
-	@include display-flex(center, center);
-	flex-flow: column;
-	text-align: center;
-
-	@include desktop {
-		flex-flow: row nowrap;
-		align-items: flex-start;
-		justify-content: space-around;
-		
-	}
 
 	div {
 		width: 90%;
 		margin: 0 auto;
-		@include desktop {
-			width: 40%;
-			text-align: left;
-			max-width: 415px;
-
-		}
 	}
 
 	p {
@@ -85,9 +68,6 @@
 		margin: 0 0 15px;
 		color: white;
 		font-weight: 400;
-		@include desktop {
-			text-align: left;
-		}
 	}
 
 	a {
@@ -153,4 +133,34 @@ li.job_listing {
 
 .single_job_listing .job-listing-meta .job-type {
 	background-color: $color__dark-blue;
+}
+
+//Small Widget
+.smartWidget {
+	margin-bottom: 50px;
+}
+
+.job-board {
+
+
+#smartWidget0 {
+
+	.srJobList .srJobListTitles * {
+		background-color: $color__lightblue;
+		color: white;
+		font-size: 20px;
+		padding: 15px 0px 15px 25px;
+		font-family: "Helvetica", "Arial", sans-serif;
+	}
+
+	.srJobList .srJobListJobOdd *,
+	.srJobList .srJobListJobEven * {
+		font-size: 13px;
+		padding: 15px 0px 15px 25px;
+
+		// &:hover {
+		// 	background-color: lighten($color__dark-blue, 10);
+		// }
+	}
+}
 }
