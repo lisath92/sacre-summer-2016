@@ -33,13 +33,9 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 					<?php echo CFS()->get('opportunities'); ?>
 				</section>
 				<section class="join-team-banner">
-					<div class="north-american-team">
-						<p>Become a part of our North America team and send your information to:</p>
-						<a href="mailto:makingadifference@sacre-davey.com" target="_blank">makingadifference@sacre-davey.com.</a>
-					</div>
 					<div class="international-team">
 						<p>Interested in working for our office in the UAE? Send your information to: </p>
-						<a href="mailto:admin-me@sacre-davey.com" target="blank">admin-me@sacre-davey.com.</a>
+						<p><a href="mailto:admin-me@sacre-davey.com" target="blank">admin-me@sacre-davey.com.</a></p>
 					</div>
 				</section>
 
