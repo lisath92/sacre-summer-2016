@@ -384,7 +384,8 @@ textarea {
           flex-flow: row wrap; } }
 
 .page-template-contact-page p {
-  width: 100%; }
+  width: 100%;
+  font-size: 18px; }
 
 .page-template-contact-page form {
   margin: 30px 0;
@@ -412,16 +413,15 @@ textarea {
     background-color: #272D66;
     color: white;
     box-shadow: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase; }
 
 iframe {
   width: 100%; }
 
-.offices-wrapper {
-  width: 81%;
+.offices {
+  width: 80%;
   margin: 0 auto;
-  word-wrap: break-word;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -431,9 +431,8 @@ iframe {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
   @media (min-width: 600px) {
-    .offices-wrapper {
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
+    .offices {
+      width: 83%; } }
 
 .office-block {
   width: 100%; }
@@ -441,14 +440,30 @@ iframe {
     .office-block {
       padding-bottom: 20px;
       width: 30%;
-      padding-right: 20px; } }
+      padding-right: 20px;
+      line-height: 1.5; } }
+  .office-block ul {
+    padding: 0;
+    font-size: 18px;
+    max-width: 350px; }
   .office-block h2 {
     color: #272D66;
-    min-height: 87px; }
+    font-size: 30px; }
+    @media (min-width: 600px) {
+      .office-block h2 {
+        min-height: 50px; } }
   .office-block h3 {
     font-weight: bold;
-    min-height: 96px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    max-width: 380px;
+    font-size: 24px; }
+    @media (min-width: 600px) {
+      .office-block h3 {
+        min-height: 70px; } }
+  .office-block p {
+    max-width: 300px; }
+  .office-block a {
+    word-break: break-all; }
 
 .office-address {
   width: 200px; }
