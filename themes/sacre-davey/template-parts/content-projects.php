@@ -8,7 +8,12 @@
 ?>
 
 <div class="project-description-banner">
-	<p>For more information regarding other SDE projects please enter details below</p>
+	<p><?php $lang = qtranxf_getLanguage();
+    if ($lang == 'fr') {
+      echo 'En francais';
+    } else {
+      echo 'For more information regarding other SDE projects please enter details below';
+    } ?></p>
 	<?php echo do_shortcode( '[contact-form-7 id="524" title="More Sector Info"]' ); ?>
 </div>
 

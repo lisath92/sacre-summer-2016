@@ -250,9 +250,14 @@ if ( '' == $text ) {
     $text = strip_tags($text, $allowed_tags);
      
     $excerpt_word_count = 65; 
-    $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
+    $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count);
+    if (qtranxf_getLanguage() == 'fr') {
+      $read_more = 'Lire la suite';
+    } else {
+      $read_more = 'Read more';
+    }
      
-    $excerpt_end = '<p class="news-read-more"><a href="'. get_permalink($post->ID) . '">Read more</a></p>'; 
+    $excerpt_end = '<p class="news-read-more"><a href="'. get_permalink($post->ID) . '">'.$read_more.'</a></p>'; 
     $excerpt_more = apply_filters('excerpt_more', ' ' . $excerpt_end);
      
     $words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);

@@ -107,7 +107,7 @@
     color: white;
     @include desktop {
       width: 50%;
-      font-size: 20px;
+      font-size: 19px;
       bottom: 12%;
     }
   }
@@ -141,7 +141,7 @@
     display: flex;
     flex-flow: column nowrap;
     width: 45%;
-    max-width: 280px;
+    max-width: 320px;
     padding-right: 30px;
   }
 
@@ -195,8 +195,8 @@
     @include display-flex(center, center);
     position: absolute;
     top: -10px;
-    max-width: 280px;
-    height: 270px;
+    max-width: 310px;
+    height: 280px;
     font-size: 1.2rem;
     transform: rotateY(180deg);
     box-sizing: border-box;
@@ -211,7 +211,7 @@
   @include desktop {
     color: white;
     font-weight: 100;
-    width: 75%;
+    width: 92%;
     margin: 0;
   }
 }

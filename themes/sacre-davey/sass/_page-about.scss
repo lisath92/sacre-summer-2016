@@ -147,7 +147,8 @@
 	margin-bottom: 30px;
 	@include desktop {
 		width: 34vw;
-		max-width: 250px;
+		max-width: 265px;
+		margin-bottom: 115px;
 		padding-right: 30px;
 		position:relative;
 		transform-style: preserve-3d;
@@ -173,7 +174,7 @@
 	}
 
 	.member-photo {
-		border-radius: 125px;
+		border-radius: 130px;
 		overflow: hidden;
 		width: 70%;
 		margin: 0 auto;
@@ -183,7 +184,7 @@
 		@include desktop {
 			width: 100%;
 			max-width: none;
-			min-width: 205px;
+			min-width: 260px;
 			max-height: 250px;
 		}
 	}

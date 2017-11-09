@@ -18,7 +18,10 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 					<div id="contact-hero" class="hero">
-					<h1><?php echo CFS()->get('contact_headline'); ?></h1>
+					<h1><?php 
+					$lang = qtranxf_getLanguage();
+					echo CFS()->get('contact_headline_'.$lang); ?></h1>
+
 	</header> <!-- .entry-header-->
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -54,7 +57,7 @@ get_header(); ?>
 				<h2></h2>
 				<div class="contact">
 					<h3>Sacré-Davey Toronto Office</h3>
-					<p>42425 Matheson Boulevard East, Suite 891 Mississauga, Toronto, ON, L4W 5K4</p>
+					<p>2425 Matheson Boulevard East, Suite 891 Mississauga, Toronto, ON, L4W 5K4</p>
 					<ul>
 						<li>Phone: 905-361-2598</li>
 					</ul>
@@ -64,7 +67,7 @@ get_header(); ?>
 				<h2>United States Office</h2>
 				<div class="contact">
 					<h3>SDE3</h3>
-					<p>2200 Sixth Avenue Suite #520 Seattle, WA 98121 USA</p>
+					<p>800 Maynard Ave South Suite #403 Seattle, WA 98134 USA</p>
 					<ul>
 						<li>Phone: 1-206-462-3600</li>
 						<li>Fax: 1-206-462-3599</li>

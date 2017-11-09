@@ -38,8 +38,10 @@ for (var i = 1; i <= count; i++) {
 //Show more info section
 button.click(function() {
   var currentDiv = $(this).parent('.development').next('div');
+  console.log(currentDiv.find('div').length);
   currentDiv.slideDown('slow');
-  if (currentDiv.find('div').length <= 1) {
+  if (currentDiv.find('div').length < 1) {
+    console.log(currentDiv.find('div').length);
     currentDiv.append('<div class="read-less-button">Read Less</div>');
     $('.read-less-button').click(function() {
       $(this).parent('div').slideUp('slow');
