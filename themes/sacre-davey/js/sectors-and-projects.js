@@ -42,7 +42,11 @@ button.click(function() {
   currentDiv.slideDown('slow');
   if (currentDiv.find('div').length < 1) {
     console.log(currentDiv.find('div').length);
-    currentDiv.append('<div class="read-less-button">Read Less</div>');
+    if ($('#qtranxs_select_qtranslate-chooser option:selected').text()) == 'English') {      
+      currentDiv.append('<div class="read-less-button">Read Less</div>');
+    } else {
+      currentDiv.append('<div class="read-less-button">Lire moins</div>');
+    };
     $('.read-less-button').click(function() {
       $(this).parent('div').slideUp('slow');
     });
