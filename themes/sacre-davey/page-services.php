@@ -124,22 +124,22 @@ get_header(); ?>
 						"prevNextButtons": false
 						}'>
 							<div class="carousel-cell">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-response.png' ?>">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-response-'. $lang .'.png' ?>">
 							</div>
 							<div class="carousel-cell">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-discipline.png' ?>">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-discipline-'. $lang .'.png' ?>">
 							</div>
 							<div class="carousel-cell">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-innovative.png' ?>">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-innovative-'. $lang . '.png' ?>">
 							</div>
 							<div class="carousel-cell">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-multi.png' ?>">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-multi-'. $lang . '.png' ?>">
 							</div>
 							<div class="carousel-cell">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-delivery.png' ?>">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-delivery-'. $lang .'.png' ?>">
 							</div>
 							<div class="carousel-cell">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-management.png' ?>">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/services-management-'. $lang .'.png' ?>">
 							</div>
 						</div>
 					</section>
