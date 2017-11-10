@@ -10,7 +10,7 @@
 <div class="project-description-banner">
 	<p><?php $lang = qtranxf_getLanguage();
     if ($lang == 'fr') {
-      echo 'En francais';
+      echo 'Pour recevoir de l’information sur les autres projets de SDE veuillez indiquer vos coordonnées';
     } else {
       echo 'For more information regarding other SDE projects please enter details below';
     } ?></p>
