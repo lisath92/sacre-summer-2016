@@ -85,7 +85,11 @@ get_header(); ?>
 
     </section>
     <section class="affiliation">
-      <h3>Affiliated Companies</h3>
+      <h3><?php if ($lang == 'fr') {
+        echo 'Sociétés affiliées';
+      } else {
+        echo 'Affiliated Companies'; 
+      }; ?></h3>
       <a href="http://www.s2gbiochem.com/" target="_blank">
         <img src="<?php echo get_template_directory_uri() .'/assets/images/BiochemLogo.jpg'?>" alt="Biochem partner logo"></a>
         <a href="http://www.e3energypartners.com" target="_blank"><img src="<?php echo get_template_directory_uri() .'/assets/images/EngineeringLogo.png'?>" alt="Engineering partner logo"></a>
