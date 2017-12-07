@@ -14,7 +14,11 @@
     } else {
       echo 'For more information regarding other SDE projects please enter details below';
     } ?></p>
-	<?php echo do_shortcode( '[contact-form-7 id="524" title="More Sector Info"]' ); ?>
+	<?php if ($lang == 'fr') {
+		echo do_shortcode( '[contact-form-7 id="1024" title="More Sector Info_copy"]' );
+	} else {
+		echo do_shortcode( '[contact-form-7 id="524" title="More Sector Info"]' ); 
+	}; ?>
 </div>
 
 

@@ -83,7 +83,7 @@ iframe {
 
 
 .offices {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	@include display-flex(center, flex-start);
 	flex-flow: row wrap;
@@ -96,7 +96,7 @@ iframe {
 	width: 100%;
 	@include desktop {
 		padding-bottom: 20px;
-		width: 30%;
+		width: 22%;
 		padding-right: 20px;
 		line-height: 1.5;
 	}

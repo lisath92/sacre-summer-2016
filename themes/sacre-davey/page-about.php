@@ -25,7 +25,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 
 				<div class="entry-content">
 					<h1><?php if ($lang == 'fr') {
-						echo 'Notre valeurs';
+						echo 'Nos valeurs';
 					} else {
 						echo 'Our Values';
 					}; ?></h1>
@@ -35,8 +35,8 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/services_inactive.png' ?>" class="icon-inactive">
 						</div>
 						<div class="nav-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active.png' ?>" class="icon-active">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_inactive.png' ?>" class="icon-inactive">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active-' . $lang .'.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active-' . $lang .'.png' ?>" class="icon-inactive">
 						</div>
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/innovation_active.png' ?>" class="icon-active">
@@ -44,16 +44,16 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 
 						</div>
 						<div class="nav-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_active.png' ?>" class="icon-active">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_inactive.png' ?>" class="icon-inactive">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_active-'. $lang .'.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/quality_inactive-'. $lang . '.png' ?>" class="icon-inactive">
 						</div>
 						<div class="nav-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_active.png' ?>" class="icon-active">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_inactive.png' ?>" class="icon-inactive">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_active-'. $lang .'.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/integrity_inactive-'. $lang .'.png' ?>" class="icon-inactive">
 						</div>
 						<div class="nav-cell">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/safety_active.png' ?>" class="icon-active">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/safety_inactive.png' ?>" class="icon-inactive">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/safety_active-'. $lang .'.png' ?>" class="icon-active">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/safety_inactive-'. $lang . '.png' ?>" class="icon-inactive">
 						</div>
 					</div>
 					<div class="carousel-main">
