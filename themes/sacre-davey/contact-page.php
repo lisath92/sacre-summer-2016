@@ -77,13 +77,27 @@ get_header(); ?>
 				<h2></h2>
 				<div class="contact">
 					<h3>Sacré-Davey Toronto Office</h3>
-					<p>2425 Matheson Boulevard East, Suite 891 Mississauga, Toronto, ON, L4W 5K4</p>
+					<p>2425 Matheson Boulevard East, Suite 891, Mississauga, Toronto, ON, L4W 5K4</p>
 					<ul>
 						<li><? if ($lang == 'fr') {
 							echo 'Téléphone';
 						} else {
 							echo 'Phone';
 						}; ?>: 905-361-2598</li>
+					</ul>
+				</div>
+			</div>
+			<div class="office-block">
+				<h2></h2>
+				<div class="contact">
+					<h3>Sacré-Davey Montreal Office</h3>
+					<p>801 – 625 René-Lévesque Ouest Blvd, Montréal, QC, H3B 1R2</p>
+					<ul>
+						<li><? if ($lang == 'fr') {
+							echo 'Téléphone';
+						} else {
+							echo 'Phone';
+						}; ?>: 514-433-4443</li>
 					</ul>
 				</div>
 			</div>
