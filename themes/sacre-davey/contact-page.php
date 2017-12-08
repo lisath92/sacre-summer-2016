@@ -128,8 +128,8 @@ get_header(); ?>
 			<div class="office-block">
 				<h2>Associated Offices</h2>
 					<div class="contact">
-					<h3>Sacré-Davey Group International</h3>
-					<p>PO BOX 111751<br/>Abu Dhabi<br/>United Arab<br/>Emirates</p>
+					<h3>SDV Consulting Engineers</h3>
+					<p>PO BOX 111571<br/>Abu Dhabi<br/>United Arab<br/>Emirates</p>
 					<ul>
 						<li><? if ($lang == 'fr') {
 							echo 'Téléphone';
@@ -145,7 +145,7 @@ get_header(); ?>
 							echo 'Courriel';
 						} else {
 							echo 'Email';
-						}; ?>: <a href="mailto:admin-me@sacre-davey.com">admin-me@sacre-davey.com</a></li>
+						}; ?>: <a href="mailto:admin@sdvce.com">admin-me@sacre-davey.com</a></li>
 					</ul>
 				</div>
 			</div>
