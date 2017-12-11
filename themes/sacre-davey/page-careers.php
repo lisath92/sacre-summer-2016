@@ -46,7 +46,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 						} else {
 							echo 'Interested in working for our office in the UAE? Send your information to: ';
 						}; ?></p>
-						<p><a href="mailto:admin@sdvce.com" target="blank">admin-me@sacre-davey.com.</a></p>
+						<p><a href="mailto:admin@sdvce.com" target="blank">admin@sdvce.com.</a></p>
 					</div>
 				</section>
 

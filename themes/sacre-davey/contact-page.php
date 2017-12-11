@@ -129,7 +129,7 @@ get_header(); ?>
 				<h2>Associated Offices</h2>
 					<div class="contact">
 					<h3>SDV Consulting Engineers</h3>
-					<p>PO BOX 111571<br/>Abu Dhabi<br/>United Arab<br/>Emirates</p>
+					<p>PO BOX 111571<br/>Abu Dhabi<br/>United Arab Emirates</p>
 					<ul>
 						<li><? if ($lang == 'fr') {
 							echo 'Téléphone';
@@ -145,7 +145,7 @@ get_header(); ?>
 							echo 'Courriel';
 						} else {
 							echo 'Email';
-						}; ?>: <a href="mailto:admin@sdvce.com">admin-me@sacre-davey.com</a></li>
+						}; ?>: <a href="mailto:admin@sdvce.com">admin@sdvce.com</a></li>
 					</ul>
 				</div>
 			</div>
