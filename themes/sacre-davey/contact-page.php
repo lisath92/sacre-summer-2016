@@ -97,7 +97,7 @@ get_header(); ?>
 							echo 'Téléphone';
 						} else {
 							echo 'Phone';
-						}; ?>: 514-433-4443</li>
+						}; ?>: 514-789-9330</li>
 					</ul>
 				</div>
 			</div>
