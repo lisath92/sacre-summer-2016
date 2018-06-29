@@ -77,7 +77,7 @@ get_header(); ?>
 				<h2></h2>
 				<div class="contact">
 					<h3>Sacré-Davey Toronto Office</h3>
-					<p>2425 Matheson Boulevard East, Suite 891, Mississauga, Toronto, ON, L4W 5K4</p>
+					<p>151 Randall Street #212, Oakville, ON, L6J 1P5</p>
 					<ul>
 						<li><? if ($lang == 'fr') {
 							echo 'Téléphone';

@@ -36,7 +36,7 @@ wp_nav_menu( array( 'theme_location' => 'about-us', 'container_class' => 'about-
 						</div>
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active-' . $lang .'.png' ?>" class="icon-active">
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_active-' . $lang .'.png' ?>" class="icon-inactive">
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/value_inactive-' . $lang .'.png' ?>" class="icon-inactive">
 						</div>
 						<div class="nav-cell">
 							<img src="<?php echo get_template_directory_uri() . '/assets/images/innovation_active.png' ?>" class="icon-active">
