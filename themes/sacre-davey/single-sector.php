@@ -53,7 +53,7 @@ wp_nav_menu( array('theme_location' => 'sector-posts', 'container_class' => 'sec
           <?php echo $sub_sector['sub_sector_title_'.$lang]; ?>
         </div>
         <div class="sub-sector-lists">
-          <?php echo strip_tags($sub_sector['sub_sector_lists'], '<ul><li>'); ?>
+          <?php echo strip_tags($sub_sector['sub_sector_lists'], '<ul><li><iframe>'); ?>
         </div>
       </section>
     <?php endforeach; ?> 
